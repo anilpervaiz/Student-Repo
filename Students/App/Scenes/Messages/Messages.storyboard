@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0KI-0R-MOs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat View Controller-->
+        <scene sceneID="YcI-zk-aJa">
+            <objects>
+                <viewController storyboardIdentifier="ChatViewController" id="LWV-Oj-Mkc" customClass="ChatViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ep2-CC-kBj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hYR-Zp-E4b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BXN-Wa-lkg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LUO-Jh-BXO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="-607"/>
+        </scene>
+        <!--Messages List View Controller-->
+        <scene sceneID="s3L-MK-ETH">
+            <objects>
+                <viewController storyboardIdentifier="MessagesListViewController" id="0KI-0R-MOs" customClass="MessagesListViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t1w-Tr-BdU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o1S-pL-Mao">
+                                <rect key="frame" x="0.0" y="77" width="414" height="785"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWl-rp-ttr" customClass="HeadingLabel2" customModule="Teachers" customModuleProvider="target">
+                                <rect key="frame" x="16" y="48" width="77.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J2B-y1-Mkd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J2B-y1-Mkd" firstAttribute="trailing" secondItem="o1S-pL-Mao" secondAttribute="trailing" id="LgN-lI-x6o"/>
+                            <constraint firstItem="J2B-y1-Mkd" firstAttribute="bottom" secondItem="o1S-pL-Mao" secondAttribute="bottom" id="XlE-Ui-zyo"/>
+                            <constraint firstItem="OWl-rp-ttr" firstAttribute="leading" secondItem="J2B-y1-Mkd" secondAttribute="leading" constant="16" id="bxA-7I-aYn"/>
+                            <constraint firstItem="o1S-pL-Mao" firstAttribute="top" secondItem="OWl-rp-ttr" secondAttribute="bottom" constant="8" id="eeE-Zb-2l6"/>
+                            <constraint firstItem="OWl-rp-ttr" firstAttribute="top" secondItem="J2B-y1-Mkd" secondAttribute="top" constant="4" id="gTf-9h-7Yi"/>
+                            <constraint firstItem="o1S-pL-Mao" firstAttribute="leading" secondItem="J2B-y1-Mkd" secondAttribute="leading" id="huJ-sx-5Uf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gXY-Cg-Sds"/>
+                    <connections>
+                        <outlet property="tableView" destination="o1S-pL-Mao" id="LOO-Un-JeA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xXl-N0-f2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918.84057971014499" y="-619.41964285714278"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="OWl-rp-ttr">
+            <size key="intrinsicContentSize" width="77.5" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

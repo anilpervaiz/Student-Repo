@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="167" id="ZNy-pv-IFA" customClass="RateStudentTableViewCell" customModule="Teachers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZNy-pv-IFA" id="Q5k-8k-R1h">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Rate The Student" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGE-bG-ZUC">
+                        <rect key="frame" x="16" y="16" width="382" height="21"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                        <color key="textColor" name="darkBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tell others what you think" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1Y-vc-M7R">
+                        <rect key="frame" x="16" y="37" width="382" height="21"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                        <color key="textColor" name="lightGray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rl1-lT-99g" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="24" y="74" width="366" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="EL0-tJ-W9b"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="28"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="starIconFilled"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="starOutline"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Write a review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogd-I7-IcV">
+                        <rect key="frame" x="16" y="130" width="382" height="21"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <color key="textColor" name="halfBaked"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ogd-I7-IcV" firstAttribute="leading" secondItem="Q5k-8k-R1h" secondAttribute="leading" constant="16" id="18J-8O-vlx"/>
+                    <constraint firstAttribute="trailing" secondItem="tGE-bG-ZUC" secondAttribute="trailing" constant="16" id="1eJ-cb-JXZ"/>
+                    <constraint firstAttribute="trailing" secondItem="m1Y-vc-M7R" secondAttribute="trailing" constant="16" id="82x-1T-kDk"/>
+                    <constraint firstItem="m1Y-vc-M7R" firstAttribute="top" secondItem="tGE-bG-ZUC" secondAttribute="bottom" id="FIT-Bh-Vgs"/>
+                    <constraint firstItem="Rl1-lT-99g" firstAttribute="top" secondItem="m1Y-vc-M7R" secondAttribute="bottom" constant="16" id="HEc-ot-Tks"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ogd-I7-IcV" secondAttribute="bottom" constant="12" id="K2f-pd-GPk"/>
+                    <constraint firstItem="tGE-bG-ZUC" firstAttribute="leading" secondItem="Q5k-8k-R1h" secondAttribute="leading" constant="16" id="Ldf-HG-rDp"/>
+                    <constraint firstAttribute="trailing" secondItem="Rl1-lT-99g" secondAttribute="trailing" constant="24" id="Ty5-UG-4HM"/>
+                    <constraint firstItem="ogd-I7-IcV" firstAttribute="top" secondItem="Rl1-lT-99g" secondAttribute="bottom" constant="16" id="jKh-TJ-K5M"/>
+                    <constraint firstAttribute="trailing" secondItem="ogd-I7-IcV" secondAttribute="trailing" constant="16" id="rEX-WA-xBa"/>
+                    <constraint firstItem="Rl1-lT-99g" firstAttribute="leading" secondItem="Q5k-8k-R1h" secondAttribute="leading" constant="24" id="uBn-TO-E28"/>
+                    <constraint firstItem="tGE-bG-ZUC" firstAttribute="top" secondItem="Q5k-8k-R1h" secondAttribute="top" constant="16" id="vDz-wq-3Db"/>
+                    <constraint firstItem="m1Y-vc-M7R" firstAttribute="leading" secondItem="Q5k-8k-R1h" secondAttribute="leading" constant="16" id="zzV-7M-zIb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cosmosView" destination="Rl1-lT-99g" id="q5O-ti-60R"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="124.88839285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="starIconFilled" width="12" height="12"/>
+        <image name="starOutline" width="30" height="29"/>
+        <namedColor name="darkBlue">
+            <color red="0.066666666666666666" green="0.10588235294117647" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="halfBaked">
+            <color red="0.47058823529411764" green="0.77647058823529413" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightGray">
+            <color red="0.67843137254901964" green="0.70196078431372544" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

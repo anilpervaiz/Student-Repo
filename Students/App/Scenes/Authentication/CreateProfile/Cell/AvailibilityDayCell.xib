@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Wlg-wh-o5i" customClass="AvailibilityDayCell" customModule="Teachers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LHV-lS-FLT">
+                <rect key="frame" x="0.0" y="0.0" width="114" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVD-Do-RAs">
+                        <rect key="frame" x="16" y="18" width="82" height="67"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uVD-Do-RAs" firstAttribute="top" secondItem="LHV-lS-FLT" secondAttribute="top" constant="18" id="1QS-jQ-go5"/>
+                    <constraint firstAttribute="trailing" secondItem="uVD-Do-RAs" secondAttribute="trailing" constant="16" id="FXy-Px-knE"/>
+                    <constraint firstItem="uVD-Do-RAs" firstAttribute="leading" secondItem="LHV-lS-FLT" secondAttribute="leading" constant="16" id="MrM-vC-ca0"/>
+                    <constraint firstAttribute="bottom" secondItem="uVD-Do-RAs" secondAttribute="bottom" constant="18" id="XKy-VH-2vW"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="114" height="103"/>
+            <connections>
+                <outlet property="titleLabel" destination="uVD-Do-RAs" id="CEh-96-5ag"/>
+            </connections>
+            <point key="canvasLocation" x="130.43478260869566" y="73.325892857142847"/>
+        </collectionViewCell>
+    </objects>
+</document>

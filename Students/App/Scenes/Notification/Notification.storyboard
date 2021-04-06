@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="4OL-6V-iOn">
+            <objects>
+                <viewController storyboardIdentifier="NotificationViewController" id="Mb7-7a-Myd" customClass="NotificationViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wPL-sV-wuh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LML-gr-G5z">
+                                <rect key="frame" x="16" y="60" width="382" height="28"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="24"/>
+                                <color key="textColor" name="darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LIJ-zX-Kla">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A7y-hU-0kn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LML-gr-G5z" firstAttribute="leading" secondItem="A7y-hU-0kn" secondAttribute="leading" constant="16" id="Fkt-A8-Qry"/>
+                            <constraint firstItem="A7y-hU-0kn" firstAttribute="trailing" secondItem="LML-gr-G5z" secondAttribute="trailing" constant="16" id="JD0-0s-xM8"/>
+                            <constraint firstItem="A7y-hU-0kn" firstAttribute="trailing" secondItem="LIJ-zX-Kla" secondAttribute="trailing" id="Poq-tx-N7S"/>
+                            <constraint firstItem="A7y-hU-0kn" firstAttribute="bottom" secondItem="LIJ-zX-Kla" secondAttribute="bottom" id="VK8-fl-wjB"/>
+                            <constraint firstItem="LIJ-zX-Kla" firstAttribute="top" secondItem="LML-gr-G5z" secondAttribute="bottom" constant="16" id="Vfv-wr-7rq"/>
+                            <constraint firstItem="LML-gr-G5z" firstAttribute="top" secondItem="A7y-hU-0kn" secondAttribute="top" constant="16" id="cbW-gG-Wmd"/>
+                            <constraint firstItem="LIJ-zX-Kla" firstAttribute="leading" secondItem="A7y-hU-0kn" secondAttribute="leading" id="gBR-ci-3x4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="LIJ-zX-Kla" id="LLK-7d-LeN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iU0-mD-Vxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-320" y="46"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="darkBlue">
+            <color red="0.066666666666666666" green="0.10588235294117647" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

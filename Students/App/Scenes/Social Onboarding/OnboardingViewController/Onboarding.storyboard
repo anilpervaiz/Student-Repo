@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8x1-nj-AkU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="H4c-5V-W3i">
+            <objects>
+                <viewController id="8x1-nj-AkU" customClass="OnboardingViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a0E-fa-hyc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dtt-Hp-BhK">
+                                <rect key="frame" x="0.0" y="104" width="414" height="626"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="O2A-XI-9sQ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4i-6a-JcR" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                                <rect key="frame" x="16" y="790" width="382" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="cAf-pM-t0e"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Next" image="forward-arrow"/>
+                                <connections>
+                                    <segue destination="QEQ-0L-pra" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="hpV-8x-nY4"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GD1-hZ-U5s" customClass="PageControlView" customModule="Teachers" customModuleProvider="target">
+                                <rect key="frame" x="177" y="742" width="60" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="0om-es-HmK"/>
+                                    <constraint firstAttribute="width" constant="60" placeholder="YES" id="6zP-cn-uSi"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbV-tr-ZwJ">
+                                <rect key="frame" x="342" y="56" width="56" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="hqY-vc-6t7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="14" minY="10" maxX="14" maxY="10"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" name="aquaMarine"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QEQ-0L-pra" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="p8k-3g-UxZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dIU-xq-6dc"/>
+                        <color key="backgroundColor" name="primary"/>
+                        <constraints>
+                            <constraint firstItem="V4i-6a-JcR" firstAttribute="leading" secondItem="dIU-xq-6dc" secondAttribute="leading" constant="16" id="ArF-K2-2S8"/>
+                            <constraint firstItem="dIU-xq-6dc" firstAttribute="trailing" secondItem="dtt-Hp-BhK" secondAttribute="trailing" id="Axu-Cm-KuY"/>
+                            <constraint firstItem="GD1-hZ-U5s" firstAttribute="top" secondItem="dtt-Hp-BhK" secondAttribute="bottom" constant="12" id="DrC-8q-GwH"/>
+                            <constraint firstItem="dtt-Hp-BhK" firstAttribute="leading" secondItem="dIU-xq-6dc" secondAttribute="leading" id="G1B-Gd-ftT"/>
+                            <constraint firstItem="dtt-Hp-BhK" firstAttribute="top" secondItem="jbV-tr-ZwJ" secondAttribute="bottom" constant="12" id="K08-5O-CGu"/>
+                            <constraint firstItem="jbV-tr-ZwJ" firstAttribute="top" secondItem="dIU-xq-6dc" secondAttribute="top" constant="12" id="fJH-uE-Koe"/>
+                            <constraint firstItem="dIU-xq-6dc" firstAttribute="trailing" secondItem="V4i-6a-JcR" secondAttribute="trailing" constant="16" id="piB-5K-bvP"/>
+                            <constraint firstItem="V4i-6a-JcR" firstAttribute="top" secondItem="GD1-hZ-U5s" secondAttribute="bottom" constant="38" id="rbA-bt-py3"/>
+                            <constraint firstItem="GD1-hZ-U5s" firstAttribute="centerX" secondItem="a0E-fa-hyc" secondAttribute="centerX" id="roz-VZ-mNV"/>
+                            <constraint firstItem="dIU-xq-6dc" firstAttribute="trailing" secondItem="jbV-tr-ZwJ" secondAttribute="trailing" constant="16" id="tP5-OR-23k"/>
+                            <constraint firstItem="dIU-xq-6dc" firstAttribute="bottom" secondItem="V4i-6a-JcR" secondAttribute="bottom" constant="16" id="vV5-Hz-ZZJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="dtt-Hp-BhK" id="h6d-LQ-c7E"/>
+                        <outlet property="pageControl" destination="GD1-hZ-U5s" id="dBV-3u-lLg"/>
+                        <outlet property="skipButton" destination="jbV-tr-ZwJ" id="oAr-cg-Isz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ys2-4h-jU8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="170.75892857142856"/>
+        </scene>
+        <!--GetStarted-->
+        <scene sceneID="2fJ-iQ-kfd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GetStarted" id="QEQ-0L-pra" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0wy-Zh-fdK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GcJ-7d-jBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="127"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="V4i-6a-JcR">
+            <size key="intrinsicContentSize" width="62" height="24"/>
+        </designable>
+    </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="hpV-8x-nY4"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="forward-arrow" width="24" height="24"/>
+        <namedColor name="aquaMarine">
+            <color red="0.27058823529411763" green="0.99607843137254903" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

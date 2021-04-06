@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectionViewTitleHeader" customModule="Teachers" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="PEO-Wm-Gf9" id="x4D-cQ-KsT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEO-Wm-Gf9">
+                    <rect key="frame" x="16" y="12" width="346" height="40"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                    <color key="textColor" name="gray"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forwardIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7Fz-fM-C5U">
+                    <rect key="frame" x="374" y="20" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7Fz-fM-C5U" secondAttribute="height" id="GoS-oZ-RNl"/>
+                        <constraint firstAttribute="width" constant="24" id="o3b-do-NiA"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="7Fz-fM-C5U" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Ax5-6H-gLm"/>
+                <constraint firstItem="7Fz-fM-C5U" firstAttribute="leading" secondItem="PEO-Wm-Gf9" secondAttribute="trailing" constant="12" id="NlG-a3-qCa"/>
+                <constraint firstAttribute="trailing" secondItem="7Fz-fM-C5U" secondAttribute="trailing" constant="16" id="Tkm-go-MG0"/>
+                <constraint firstItem="PEO-Wm-Gf9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="YxF-xE-QMN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PEO-Wm-Gf9" secondAttribute="bottom" constant="12" id="eJL-4V-KdP"/>
+                <constraint firstItem="PEO-Wm-Gf9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="eo3-6i-9FN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-242" y="138"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="forwardIcon" width="24" height="24"/>
+        <namedColor name="gray">
+            <color red="0.47843137254901963" green="0.49803921568627452" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

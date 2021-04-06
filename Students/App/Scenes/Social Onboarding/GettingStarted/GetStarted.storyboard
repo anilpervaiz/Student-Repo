@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AUE-nM-29g">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Get Started View Controller-->
+        <scene sceneID="VUY-6o-HFu">
+            <objects>
+                <viewController interfaceStyle="light" id="axf-YN-DU5" customClass="GetStartedViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q6T-Zo-1lk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZk-by-03z">
+                                <rect key="frame" x="16" y="685.5" width="382" height="160.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLr-J5-RUL" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="8iQ-vG-bUt"/>
+                                        </constraints>
+                                        <state key="normal" title="Create Account">
+                                            <color key="titleColor" name="primary"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapSignupButton:" destination="axf-YN-DU5" eventType="touchUpInside" id="KBv-mN-ga1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJP-15-blk" customClass="SecondaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="382" height="56"/>
+                                        <state key="normal" title="Login"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapLoginButton:" destination="axf-YN-DU5" eventType="touchUpInside" id="hKa-CN-niS"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing you accept our Terms &amp; Conditions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-xB-mhP">
+                                        <rect key="frame" x="0.0" y="140" width="382" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="PrN-xB-mhP" secondAttribute="trailing" id="2Qy-aF-UJO"/>
+                                    <constraint firstAttribute="trailing" secondItem="IJP-15-blk" secondAttribute="trailing" id="5LQ-WH-6cF"/>
+                                    <constraint firstItem="eLr-J5-RUL" firstAttribute="top" secondItem="CZk-by-03z" secondAttribute="top" id="LkU-6X-FZC"/>
+                                    <constraint firstItem="eLr-J5-RUL" firstAttribute="leading" secondItem="CZk-by-03z" secondAttribute="leading" id="NwY-rD-zX8"/>
+                                    <constraint firstAttribute="trailing" secondItem="eLr-J5-RUL" secondAttribute="trailing" id="RKQ-Cy-NVd"/>
+                                    <constraint firstItem="IJP-15-blk" firstAttribute="top" secondItem="eLr-J5-RUL" secondAttribute="bottom" constant="8" id="RZI-hz-XuP"/>
+                                    <constraint firstItem="IJP-15-blk" firstAttribute="leading" secondItem="CZk-by-03z" secondAttribute="leading" id="TKY-hv-tEd"/>
+                                    <constraint firstAttribute="bottom" secondItem="PrN-xB-mhP" secondAttribute="bottom" id="V1k-d2-U5B"/>
+                                    <constraint firstItem="PrN-xB-mhP" firstAttribute="top" secondItem="IJP-15-blk" secondAttribute="bottom" constant="20" id="a8G-QQ-ymt"/>
+                                    <constraint firstItem="IJP-15-blk" firstAttribute="height" secondItem="eLr-J5-RUL" secondAttribute="height" id="fjO-Hd-D2y"/>
+                                    <constraint firstItem="PrN-xB-mhP" firstAttribute="leading" secondItem="CZk-by-03z" secondAttribute="leading" id="g3X-n0-mXk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weE-9l-KVk">
+                                <rect key="frame" x="0.0" y="201.5" width="414" height="468"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getStartedIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="onF-Dc-g4k">
+                                        <rect key="frame" x="32" y="0.0" width="350" height="287"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Build your student network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-f3-P1W">
+                                        <rect key="frame" x="32" y="327" width="350" height="79.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="34"/>
+                                        <color key="textColor" name="pureWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ny-qi-p0d">
+                                        <rect key="frame" x="32" y="414.5" width="350" height="37.5"/>
+                                        <string key="text">Choose from 100,000 online 
+certified teachers.</string>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <color key="textColor" name="sapphireLight"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZWI-f3-P1W" secondAttribute="trailing" constant="32" id="0Sk-VV-hyk"/>
+                                    <constraint firstItem="onF-Dc-g4k" firstAttribute="leading" secondItem="weE-9l-KVk" secondAttribute="leading" constant="32" id="8Mg-L6-EN5"/>
+                                    <constraint firstAttribute="trailing" secondItem="onF-Dc-g4k" secondAttribute="trailing" constant="32" id="MRA-jC-Ssl"/>
+                                    <constraint firstItem="ZWI-f3-P1W" firstAttribute="leading" secondItem="weE-9l-KVk" secondAttribute="leading" constant="32" id="MmR-uc-wvd"/>
+                                    <constraint firstItem="onF-Dc-g4k" firstAttribute="top" secondItem="weE-9l-KVk" secondAttribute="top" id="Tpd-YE-NxK"/>
+                                    <constraint firstItem="ZWI-f3-P1W" firstAttribute="top" secondItem="onF-Dc-g4k" secondAttribute="bottom" constant="40" id="XSN-Sn-0Bh"/>
+                                    <constraint firstItem="8ny-qi-p0d" firstAttribute="leading" secondItem="weE-9l-KVk" secondAttribute="leading" constant="32" id="cQP-6F-ogQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ny-qi-p0d" secondAttribute="trailing" constant="32" id="g8A-BY-M6Y"/>
+                                    <constraint firstItem="8ny-qi-p0d" firstAttribute="top" secondItem="ZWI-f3-P1W" secondAttribute="bottom" constant="8" id="irt-n5-zpw"/>
+                                    <constraint firstAttribute="bottom" secondItem="8ny-qi-p0d" secondAttribute="bottom" constant="16" id="uot-vl-MaV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ttP-EA-1a3"/>
+                        <color key="backgroundColor" name="primary"/>
+                        <constraints>
+                            <constraint firstItem="weE-9l-KVk" firstAttribute="leading" secondItem="ttP-EA-1a3" secondAttribute="leading" id="17z-Sf-qUx"/>
+                            <constraint firstItem="ttP-EA-1a3" firstAttribute="bottom" secondItem="CZk-by-03z" secondAttribute="bottom" constant="16" id="FJ2-MH-lMK"/>
+                            <constraint firstItem="CZk-by-03z" firstAttribute="top" secondItem="weE-9l-KVk" secondAttribute="bottom" constant="16" id="NAE-R2-QFs"/>
+                            <constraint firstItem="CZk-by-03z" firstAttribute="leading" secondItem="ttP-EA-1a3" secondAttribute="leading" constant="16" id="Pbh-KN-bhr"/>
+                            <constraint firstItem="ttP-EA-1a3" firstAttribute="trailing" secondItem="weE-9l-KVk" secondAttribute="trailing" id="RRm-1f-Oop"/>
+                            <constraint firstItem="weE-9l-KVk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="q6T-Zo-1lk" secondAttribute="top" constant="24" id="YjP-je-nhW"/>
+                            <constraint firstItem="ttP-EA-1a3" firstAttribute="trailing" secondItem="CZk-by-03z" secondAttribute="trailing" constant="16" id="eSS-vF-VLL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HOR-DF-cBm"/>
+                    <connections>
+                        <outlet property="termsAndConditionLabel" destination="PrN-xB-mhP" id="Vb5-1B-g5e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iQW-yl-bCf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98.550724637681171" y="142.63392857142856"/>
+        </scene>
+        <!--Base Navigation Controller-->
+        <scene sceneID="HdN-g3-66z">
+            <objects>
+                <navigationController interfaceStyle="light" id="AUE-nM-29g" customClass="BaseNavigationController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UMM-Xh-Yre">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="axf-YN-DU5" kind="relationship" relationship="rootViewController" id="xkG-Hw-LML"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YCI-g9-crY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-723" y="143"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="IJP-15-blk">
+            <size key="intrinsicContentSize" width="38" height="30"/>
+        </designable>
+        <designable name="eLr-J5-RUL">
+            <size key="intrinsicContentSize" width="107" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="getStartedIllustration" width="287" height="287"/>
+        <namedColor name="primary">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pureWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sapphireLight">
+            <color red="0.83921568627450982" green="0.8901960784313725" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

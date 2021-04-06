@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gwt-be-JbG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Success State View Controller-->
+        <scene sceneID="2kC-nh-eqX">
+            <objects>
+                <viewController storyboardIdentifier="SuccessStateViewController" id="gwt-be-JbG" customClass="SuccessStateViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KZx-Ll-FhB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FbY-Cb-U1e">
+                                <rect key="frame" x="32" y="216" width="350" height="464.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TDX-N8-4Cc">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+                                        <color key="backgroundColor" name="SapphireLightTranslucent"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="TDX-N8-4Cc" secondAttribute="height" id="RKq-Qw-gGF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Thank You!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M06-P2-KyJ" customClass="HeadingLabel" customModule="Teachers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="398" width="350" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Now you need to complete your profile to be able to join Edukko family." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYU-6c-IS8">
+                                        <rect key="frame" x="0.0" y="427" width="350" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <color key="textColor" name="gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="zYU-6c-IS8" firstAttribute="top" secondItem="M06-P2-KyJ" secondAttribute="bottom" constant="8" id="25g-CI-gjt"/>
+                                    <constraint firstAttribute="trailing" secondItem="zYU-6c-IS8" secondAttribute="trailing" id="2jL-QS-YP4"/>
+                                    <constraint firstItem="M06-P2-KyJ" firstAttribute="top" secondItem="TDX-N8-4Cc" secondAttribute="bottom" constant="48" id="7Ds-4u-8Uo"/>
+                                    <constraint firstAttribute="trailing" secondItem="TDX-N8-4Cc" secondAttribute="trailing" id="Crz-p8-h8Y"/>
+                                    <constraint firstItem="TDX-N8-4Cc" firstAttribute="leading" secondItem="FbY-Cb-U1e" secondAttribute="leading" id="IKF-vy-moR"/>
+                                    <constraint firstItem="TDX-N8-4Cc" firstAttribute="top" secondItem="FbY-Cb-U1e" secondAttribute="top" id="VHe-Ue-Uv2"/>
+                                    <constraint firstAttribute="trailing" secondItem="M06-P2-KyJ" secondAttribute="trailing" id="cev-TL-5fR"/>
+                                    <constraint firstItem="M06-P2-KyJ" firstAttribute="leading" secondItem="FbY-Cb-U1e" secondAttribute="leading" id="dxT-es-yIP"/>
+                                    <constraint firstAttribute="bottom" secondItem="zYU-6c-IS8" secondAttribute="bottom" id="h03-n8-k67"/>
+                                    <constraint firstItem="zYU-6c-IS8" firstAttribute="leading" secondItem="FbY-Cb-U1e" secondAttribute="leading" id="nhX-gG-IJJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sST-YQ-AMd" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                                <rect key="frame" x="16" y="790" width="382" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Ffa-iZ-H8Q"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Complete My Profile"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                        <color key="value" name="primary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
+                                        <color key="value" name="aquaMarine"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapPrimaryCTAButton:" destination="gwt-be-JbG" eventType="touchUpInside" id="PY9-32-Atc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="59A-iP-ctg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sST-YQ-AMd" secondAttribute="trailing" constant="16" id="0f8-vo-Y0q"/>
+                            <constraint firstItem="59A-iP-ctg" firstAttribute="trailing" secondItem="FbY-Cb-U1e" secondAttribute="trailing" constant="32" id="32q-We-eKH"/>
+                            <constraint firstItem="sST-YQ-AMd" firstAttribute="leading" secondItem="59A-iP-ctg" secondAttribute="leading" constant="16" id="4Pd-sH-WWL"/>
+                            <constraint firstItem="59A-iP-ctg" firstAttribute="bottom" secondItem="sST-YQ-AMd" secondAttribute="bottom" constant="16" id="KP5-1s-jbv"/>
+                            <constraint firstItem="FbY-Cb-U1e" firstAttribute="centerY" secondItem="KZx-Ll-FhB" secondAttribute="centerY" id="ixR-eQ-KzO"/>
+                            <constraint firstItem="sST-YQ-AMd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FbY-Cb-U1e" secondAttribute="bottom" constant="24" id="jtq-qq-8Am"/>
+                            <constraint firstItem="FbY-Cb-U1e" firstAttribute="leading" secondItem="59A-iP-ctg" secondAttribute="leading" constant="32" id="k6x-ac-cy4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ctaButton" destination="sST-YQ-AMd" id="OuS-ad-Ruj"/>
+                        <outlet property="descriptionLabel" destination="zYU-6c-IS8" id="KQs-Ni-cCu"/>
+                        <outlet property="titleImageView" destination="TDX-N8-4Cc" id="L4R-ZJ-F1u"/>
+                        <outlet property="titleLabel" destination="M06-P2-KyJ" id="gxL-8n-PGE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btH-Ta-G8A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3337.68115942029" y="233.70535714285714"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="M06-P2-KyJ">
+            <size key="intrinsicContentSize" width="85" height="20.5"/>
+        </designable>
+        <designable name="sST-YQ-AMd">
+            <size key="intrinsicContentSize" width="163" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="SapphireLightTranslucent">
+            <color red="0.83921568627450982" green="0.8901960784313725" blue="0.97647058823529409" alpha="0.31999999284744263" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="aquaMarine">
+            <color red="0.27058823529411763" green="0.99607843137254903" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.47843137254901963" green="0.49803921568627452" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

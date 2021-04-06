@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Bottom Sheet-->
+        <scene sceneID="A8b-88-9HL">
+            <objects>
+                <viewController storyboardIdentifier="BottomSheet" id="YT8-O3-ASF" customClass="BottomSheet" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DYc-dg-iIi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lX2-e5-cic">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1172"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgH-Js-E4d">
+                                <rect key="frame" x="0.0" y="1224" width="414" height="672"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHV-3c-lVZ">
+                                        <rect key="frame" x="16" y="16" width="382" height="28"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="24"/>
+                                        <color key="textColor" name="darkBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="zeb-xE-ErU">
+                                        <rect key="frame" x="12" y="56" width="390" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pXv-fk-T38">
+                                        <rect key="frame" x="16" y="128" width="382" height="440"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXt-gS-EMQ" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="584" width="382" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="3nA-d0-eF3"/>
+                                        </constraints>
+                                        <state key="normal" title="Done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                                <color key="value" name="primary"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
+                                                <color key="value" name="aquaMarine"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapCTAButton:" destination="YT8-O3-ASF" eventType="touchUpInside" id="x3b-r0-72G"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="WHV-3c-lVZ" firstAttribute="top" secondItem="dgH-Js-E4d" secondAttribute="top" constant="16" id="0TY-gY-ms2"/>
+                                    <constraint firstItem="ZXt-gS-EMQ" firstAttribute="top" secondItem="pXv-fk-T38" secondAttribute="bottom" constant="16" id="1ZM-fn-vGO"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZXt-gS-EMQ" secondAttribute="trailing" constant="16" id="8uG-3v-WxE"/>
+                                    <constraint firstItem="pXv-fk-T38" firstAttribute="leading" secondItem="dgH-Js-E4d" secondAttribute="leading" constant="16" id="DgM-X0-eC6"/>
+                                    <constraint firstAttribute="trailing" secondItem="zeb-xE-ErU" secondAttribute="trailing" constant="12" id="EQk-Id-F1A"/>
+                                    <constraint firstItem="pXv-fk-T38" firstAttribute="top" secondItem="zeb-xE-ErU" secondAttribute="bottom" constant="16" id="MVY-8D-LdB"/>
+                                    <constraint firstAttribute="trailing" secondItem="pXv-fk-T38" secondAttribute="trailing" constant="16" id="Mn9-R6-2KT"/>
+                                    <constraint firstItem="zeb-xE-ErU" firstAttribute="leading" secondItem="dgH-Js-E4d" secondAttribute="leading" constant="12" id="Okv-mF-BOd"/>
+                                    <constraint firstAttribute="trailing" secondItem="WHV-3c-lVZ" secondAttribute="trailing" constant="16" id="kcV-Ud-aCN"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZXt-gS-EMQ" secondAttribute="bottom" constant="32" id="mdK-NK-Usd"/>
+                                    <constraint firstItem="WHV-3c-lVZ" firstAttribute="leading" secondItem="dgH-Js-E4d" secondAttribute="leading" constant="16" id="uOu-yd-iuI"/>
+                                    <constraint firstItem="ZXt-gS-EMQ" firstAttribute="leading" secondItem="dgH-Js-E4d" secondAttribute="leading" constant="16" id="v8E-vi-LEh"/>
+                                    <constraint firstItem="zeb-xE-ErU" firstAttribute="top" secondItem="WHV-3c-lVZ" secondAttribute="bottom" constant="12" id="xih-um-rT2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pd4-bo-Yfs"/>
+                        <color key="backgroundColor" name="darkOverlay"/>
+                        <constraints>
+                            <constraint firstItem="dgH-Js-E4d" firstAttribute="top" secondItem="lX2-e5-cic" secondAttribute="bottom" constant="8" symbolic="YES" id="0XK-u6-S41"/>
+                            <constraint firstItem="lX2-e5-cic" firstAttribute="leading" secondItem="pd4-bo-Yfs" secondAttribute="leading" id="11i-gD-DTD"/>
+                            <constraint firstItem="lX2-e5-cic" firstAttribute="top" secondItem="pd4-bo-Yfs" secondAttribute="top" id="5CU-rA-Wkq"/>
+                            <constraint firstItem="pd4-bo-Yfs" firstAttribute="trailing" secondItem="lX2-e5-cic" secondAttribute="trailing" id="AlY-gz-H4d"/>
+                            <constraint firstItem="pd4-bo-Yfs" firstAttribute="trailing" secondItem="dgH-Js-E4d" secondAttribute="trailing" id="Cpe-7I-Db4"/>
+                            <constraint firstItem="dgH-Js-E4d" firstAttribute="height" secondItem="DYc-dg-iIi" secondAttribute="height" multiplier="0.75" id="Jbo-DV-iTZ"/>
+                            <constraint firstAttribute="bottom" secondItem="dgH-Js-E4d" secondAttribute="bottom" constant="-1000" id="Tsg-P4-gGX"/>
+                            <constraint firstItem="dgH-Js-E4d" firstAttribute="leading" secondItem="pd4-bo-Yfs" secondAttribute="leading" id="ruc-tK-LoT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomSheetBottomSpacing" destination="Tsg-P4-gGX" id="E5w-WK-nKv"/>
+                        <outlet property="bottomSheetView" destination="dgH-Js-E4d" id="bTB-fp-fCf"/>
+                        <outlet property="ctaButton" destination="ZXt-gS-EMQ" id="FNd-Pe-1YS"/>
+                        <outlet property="tableView" destination="pXv-fk-T38" id="4dW-DD-eN2"/>
+                        <outlet property="titleLabel" destination="WHV-3c-lVZ" id="K2e-2f-fcV"/>
+                        <outlet property="topDismissLayer" destination="lX2-e5-cic" id="UvB-EQ-Ncu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNq-Rv-PyA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="166"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="ZXt-gS-EMQ">
+            <size key="intrinsicContentSize" width="37" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="aquaMarine">
+            <color red="0.27058823529411763" green="0.99607843137254903" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkBlue">
+            <color red="0.066666666666666666" green="0.10588235294117647" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkOverlay">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

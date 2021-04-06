@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Add Subject View Controller-->
+        <scene sceneID="BZx-1P-Vob">
+            <objects>
+                <viewController storyboardIdentifier="AddSubjectViewController" id="sL3-sG-j8Y" customClass="AddSubjectViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z0i-pc-zK3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uX8-T8-hZs">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1"/>
+                                <color key="backgroundColor" name="sapphireLight"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="TbS-dU-ocg"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2a-uA-aLF">
+                                <rect key="frame" x="0.0" y="45" width="414" height="733"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="0pY-g0-OBM">
+                                        <rect key="frame" x="16" y="16" width="382" height="533"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WkW-J5-5lH" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" placeholder="YES" id="Iuc-Sg-zxc"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Education Type"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select Education Type"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTappable" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEditable" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0A-96-7M5" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="104" width="382" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" placeholder="YES" id="2Az-8H-n14"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Curriculum"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select Curriculum"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEditable" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTappable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHr-aR-xIZ" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="208" width="382" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" placeholder="YES" id="LkK-hL-ZpV"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Subject"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select Subject"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEditable" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTappable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QS1-qy-tbP" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="312" width="382" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" placeholder="YES" id="ufa-NL-AFL"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Session Rate"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="00.00"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0rr-Js-zdb">
+                                                <rect key="frame" x="0.0" y="416" width="382" height="69"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Edukko Fee Excluding VAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzU-Bp-ZTe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="336" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                                        <color key="textColor" name="gray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LK4-pQ-QD4">
+                                                        <rect key="frame" x="352" y="0.0" width="30" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                        <color key="textColor" name="primary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mb-LD-veG">
+                                                        <rect key="frame" x="0.0" y="24.5" width="324.5" height="44.5"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                                        <color key="textColor" name="gray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80G-jS-3TQ">
+                                                        <rect key="frame" x="340.5" y="24.5" width="41.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="uzU-Bp-ZTe" firstAttribute="top" secondItem="0rr-Js-zdb" secondAttribute="top" id="4Gi-ZD-LUX"/>
+                                                    <constraint firstItem="uzU-Bp-ZTe" firstAttribute="leading" secondItem="0rr-Js-zdb" secondAttribute="leading" id="9bL-Za-6KG"/>
+                                                    <constraint firstItem="6Mb-LD-veG" firstAttribute="leading" secondItem="0rr-Js-zdb" secondAttribute="leading" id="Dvf-kF-2D2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="80G-jS-3TQ" secondAttribute="trailing" id="TlZ-hG-hEk"/>
+                                                    <constraint firstItem="LK4-pQ-QD4" firstAttribute="leading" secondItem="uzU-Bp-ZTe" secondAttribute="trailing" constant="16" id="ZYg-Nl-9ZM"/>
+                                                    <constraint firstItem="LK4-pQ-QD4" firstAttribute="top" secondItem="0rr-Js-zdb" secondAttribute="top" id="bos-M9-ywL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LK4-pQ-QD4" secondAttribute="trailing" id="cgB-fq-JW5"/>
+                                                    <constraint firstItem="80G-jS-3TQ" firstAttribute="leading" secondItem="6Mb-LD-veG" secondAttribute="trailing" constant="16" id="d0k-zG-p8u"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6Mb-LD-veG" secondAttribute="bottom" id="dTm-EA-nEg"/>
+                                                    <constraint firstItem="6Mb-LD-veG" firstAttribute="top" secondItem="uzU-Bp-ZTe" secondAttribute="bottom" constant="8" id="pIL-gG-kVu"/>
+                                                    <constraint firstItem="80G-jS-3TQ" firstAttribute="top" secondItem="6Mb-LD-veG" secondAttribute="top" id="sM9-a9-8cF"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yR2-Gg-o67">
+                                                <rect key="frame" x="0.0" y="509" width="382" height="24"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="errorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5sj-vU-Mvq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                        <color key="tintColor" name="halfBaked"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="OlK-RO-m3M"/>
+                                                            <constraint firstAttribute="width" secondItem="5sj-vU-Mvq" secondAttribute="height" id="Stg-XB-881"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn more about pricing." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ns7-xZ-HMk">
+                                                        <rect key="frame" x="32" y="0.0" width="350" height="24"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                                        <color key="textColor" name="halfBaked"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0pY-g0-OBM" firstAttribute="top" secondItem="h2a-uA-aLF" secondAttribute="top" constant="16" id="8HW-Tl-exS"/>
+                                    <constraint firstItem="0pY-g0-OBM" firstAttribute="leading" secondItem="h2a-uA-aLF" secondAttribute="leading" constant="16" id="rmV-J6-vJa"/>
+                                    <constraint firstAttribute="trailing" secondItem="0pY-g0-OBM" secondAttribute="trailing" constant="16" id="vLG-oW-Gdo"/>
+                                    <constraint firstAttribute="bottom" secondItem="0pY-g0-OBM" secondAttribute="bottom" id="waK-zX-XXd"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BB-Tg-COl" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                                <rect key="frame" x="16" y="794" width="382" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ja4-yV-kfr"/>
+                                </constraints>
+                                <state key="normal" title="Done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                        <color key="value" name="primary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
+                                        <color key="value" name="aquaMarine"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapDoneButton:" destination="sL3-sG-j8Y" eventType="touchUpInside" id="MCT-c7-l7k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mpu-xz-Z4V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uX8-T8-hZs" firstAttribute="top" secondItem="mpu-xz-Z4V" secondAttribute="top" id="0lu-9l-e1k"/>
+                            <constraint firstItem="mpu-xz-Z4V" firstAttribute="bottom" secondItem="6BB-Tg-COl" secondAttribute="bottom" constant="16" id="29E-J0-6GD"/>
+                            <constraint firstItem="mpu-xz-Z4V" firstAttribute="trailing" secondItem="6BB-Tg-COl" secondAttribute="trailing" constant="16" id="4pF-em-25y"/>
+                            <constraint firstItem="0pY-g0-OBM" firstAttribute="width" secondItem="Z0i-pc-zK3" secondAttribute="width" constant="-32" id="8Tx-x9-X31"/>
+                            <constraint firstItem="mpu-xz-Z4V" firstAttribute="trailing" secondItem="uX8-T8-hZs" secondAttribute="trailing" id="9sN-NM-gPS"/>
+                            <constraint firstItem="h2a-uA-aLF" firstAttribute="top" secondItem="uX8-T8-hZs" secondAttribute="bottom" id="M2t-wx-t6t"/>
+                            <constraint firstItem="h2a-uA-aLF" firstAttribute="leading" secondItem="mpu-xz-Z4V" secondAttribute="leading" id="OfK-VC-VxX"/>
+                            <constraint firstItem="0pY-g0-OBM" firstAttribute="centerX" secondItem="mpu-xz-Z4V" secondAttribute="centerX" id="PRY-0l-2rg"/>
+                            <constraint firstItem="mpu-xz-Z4V" firstAttribute="trailing" secondItem="h2a-uA-aLF" secondAttribute="trailing" id="SBK-2W-rSl"/>
+                            <constraint firstItem="6BB-Tg-COl" firstAttribute="top" secondItem="h2a-uA-aLF" secondAttribute="bottom" constant="16" id="Tpt-On-OC8"/>
+                            <constraint firstItem="uX8-T8-hZs" firstAttribute="leading" secondItem="mpu-xz-Z4V" secondAttribute="leading" id="WGu-q0-ZCS"/>
+                            <constraint firstItem="6BB-Tg-COl" firstAttribute="leading" secondItem="mpu-xz-Z4V" secondAttribute="leading" constant="16" id="gvB-Pf-ogY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ctaButtonBottomConstraint" destination="29E-J0-6GD" id="4pd-PJ-8zt"/>
+                        <outlet property="curriculumLabel" destination="g0A-96-7M5" id="TMP-OD-STd"/>
+                        <outlet property="educationTypeLabel" destination="WkW-J5-5lH" id="n3n-mG-128"/>
+                        <outlet property="sessionRateLabel" destination="QS1-qy-tbP" id="6ZA-71-X4b"/>
+                        <outlet property="subjectLabel" destination="lHr-aR-xIZ" id="aKj-0q-nqS"/>
+                        <outlet property="totalAmountLabel" destination="80G-jS-3TQ" id="s0j-Dh-rAE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVv-75-XJz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152.17391304347828" y="86.383928571428569"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="6BB-Tg-COl">
+            <size key="intrinsicContentSize" width="37" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="errorIcon" width="16" height="16"/>
+        <namedColor name="aquaMarine">
+            <color red="0.27058823529411763" green="0.99607843137254903" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.47843137254901963" green="0.49803921568627452" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="halfBaked">
+            <color red="0.47058823529411764" green="0.77647058823529413" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sapphireLight">
+            <color red="0.83921568627450982" green="0.8901960784313725" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

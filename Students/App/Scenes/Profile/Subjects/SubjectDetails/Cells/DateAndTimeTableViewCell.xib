@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="fZp-Ci-CCn" customClass="DateAndTimeTableViewCell" customModule="Teachers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="550" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fZp-Ci-CCn" id="Ta4-YL-czi">
+                <rect key="frame" x="0.0" y="0.0" width="550" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q84-Qc-Ed2">
+                        <rect key="frame" x="16" y="16" width="518" height="16"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="12"/>
+                        <color key="textColor" name="gray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cYB-FV-K4L">
+                        <rect key="frame" x="16" y="42" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="a8f-Uv-Yg3"/>
+                            <constraint firstAttribute="width" secondItem="cYB-FV-K4L" secondAttribute="height" id="yD1-h2-9cg"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0d4-fJ-jgg">
+                        <rect key="frame" x="52" y="42" width="411" height="42"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSl-EU-bAx">
+                                <rect key="frame" x="0.0" y="0.0" width="411" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <color key="textColor" name="darkOverlay"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrE-pX-yOR">
+                                <rect key="frame" x="0.0" y="25.5" width="411" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <color key="textColor" name="gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fTF-bK-IGV">
+                        <rect key="frame" x="475" y="46" width="59" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fTF-bK-IGV" secondAttribute="height" multiplier="59:16" id="dMB-iN-MI7"/>
+                            <constraint firstAttribute="width" constant="59" id="lzh-Ro-43g"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fTF-bK-IGV" firstAttribute="leading" secondItem="0d4-fJ-jgg" secondAttribute="trailing" constant="12" id="15i-q4-MVG"/>
+                    <constraint firstItem="0d4-fJ-jgg" firstAttribute="leading" secondItem="cYB-FV-K4L" secondAttribute="trailing" constant="12" id="Iz9-cX-mHB"/>
+                    <constraint firstItem="Q84-Qc-Ed2" firstAttribute="leading" secondItem="Ta4-YL-czi" secondAttribute="leading" constant="16" id="MRd-Mi-ENR"/>
+                    <constraint firstAttribute="trailing" secondItem="Q84-Qc-Ed2" secondAttribute="trailing" constant="16" id="RUP-Az-DCD"/>
+                    <constraint firstItem="Q84-Qc-Ed2" firstAttribute="top" secondItem="Ta4-YL-czi" secondAttribute="top" constant="16" id="VHZ-8N-WTG"/>
+                    <constraint firstItem="cYB-FV-K4L" firstAttribute="top" secondItem="Q84-Qc-Ed2" secondAttribute="bottom" constant="10" id="VUE-m4-AW1"/>
+                    <constraint firstItem="cYB-FV-K4L" firstAttribute="leading" secondItem="Ta4-YL-czi" secondAttribute="leading" constant="16" id="Vsr-JJ-Qzc"/>
+                    <constraint firstAttribute="bottom" secondItem="0d4-fJ-jgg" secondAttribute="bottom" constant="16" id="cDA-0d-QtB"/>
+                    <constraint firstItem="fTF-bK-IGV" firstAttribute="centerY" secondItem="cYB-FV-K4L" secondAttribute="centerY" id="dW7-D9-nte"/>
+                    <constraint firstAttribute="trailing" secondItem="fTF-bK-IGV" secondAttribute="trailing" constant="16" id="uAZ-gl-PmP"/>
+                    <constraint firstItem="fTF-bK-IGV" firstAttribute="top" secondItem="Ta4-YL-czi" secondAttribute="top" constant="46" id="wm6-Zg-mKt"/>
+                    <constraint firstItem="0d4-fJ-jgg" firstAttribute="top" secondItem="cYB-FV-K4L" secondAttribute="top" id="wp1-LI-kga"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="QSl-EU-bAx" id="zrk-BP-rU7"/>
+                <outlet property="lectureModeImageView" destination="fTF-bK-IGV" id="TKa-An-c2X"/>
+                <outlet property="timeImageView" destination="cYB-FV-K4L" id="cUS-2g-REb"/>
+                <outlet property="timeLabel" destination="vrE-pX-yOR" id="Jhs-1b-dr5"/>
+            </connections>
+            <point key="canvasLocation" x="5.7971014492753632" y="81.696428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="darkOverlay">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.47843137254901963" green="0.49803921568627452" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

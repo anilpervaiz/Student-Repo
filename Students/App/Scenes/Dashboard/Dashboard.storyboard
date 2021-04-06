@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3ah-B4-S6z">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Dashboard View Controller-->
+        <scene sceneID="CEJ-Qf-9Zk">
+            <objects>
+                <viewController storyboardIdentifier="DashboardViewController" id="3ah-B4-S6z" customClass="DashboardViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y7X-lt-yVL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have a good day!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rk0-Rw-5lp">
+                                <rect key="frame" x="12" y="52" width="390" height="34"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-On-MFd">
+                                <rect key="frame" x="0.0" y="102" width="414" height="760"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ywS-nQ-gCJ">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="264"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="08r-ds-Atr">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDL-Wf-H8A" customClass="DashboardCard" customModule="Teachers" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="128"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2W-HY-zNh" customClass="DashboardCard" customModule="Teachers" customModuleProvider="target">
+                                                        <rect key="frame" x="195" y="0.0" width="187" height="128"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" placeholder="YES" id="fCg-Gr-oXz"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v78-z9-i2T">
+                                                <rect key="frame" x="0.0" y="136" width="382" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgA-aR-rjG" customClass="DashboardCard" customModule="Teachers" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="128"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RnP-KI-2sf" customClass="DashboardCard" customModule="Teachers" customModuleProvider="target">
+                                                        <rect key="frame" x="195" y="0.0" width="187" height="128"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4L-Na-zSt" customClass="CollectionViewTitleHeader" customModule="Teachers" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="288" width="382" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="5rm-cx-Fu7"/>
+                                        </constraints>
+                                    </view>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ocb-Kh-3U9">
+                                        <rect key="frame" x="0.0" y="324" width="414" height="124"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="124" id="EZt-6q-75b"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Esw-4L-VqB">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="a23-zO-lYT">
+                                        <rect key="frame" x="0.0" y="508" width="414" height="160"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="Hcg-SF-R08"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5lc-f3-e0Y">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KA8-oD-Lt8" customClass="CollectionViewTitleHeader" customModule="Teachers" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="472" width="382" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="YJy-Tu-uPa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KA8-oD-Lt8" secondAttribute="trailing" constant="16" id="3bs-Wh-4jL"/>
+                                    <constraint firstItem="a23-zO-lYT" firstAttribute="top" secondItem="KA8-oD-Lt8" secondAttribute="bottom" constant="12" id="6au-Rp-64X"/>
+                                    <constraint firstAttribute="trailing" secondItem="ywS-nQ-gCJ" secondAttribute="trailing" constant="16" id="8Z0-eF-Voo"/>
+                                    <constraint firstItem="ocb-Kh-3U9" firstAttribute="top" secondItem="d4L-Na-zSt" secondAttribute="bottom" constant="12" id="Jqn-9v-gKN"/>
+                                    <constraint firstItem="KA8-oD-Lt8" firstAttribute="top" secondItem="ocb-Kh-3U9" secondAttribute="bottom" constant="24" id="KaX-Jv-fve"/>
+                                    <constraint firstAttribute="trailing" secondItem="ocb-Kh-3U9" secondAttribute="trailing" id="MsZ-en-DlT"/>
+                                    <constraint firstItem="d4L-Na-zSt" firstAttribute="top" secondItem="ywS-nQ-gCJ" secondAttribute="bottom" constant="24" id="OVu-jQ-40U"/>
+                                    <constraint firstItem="ywS-nQ-gCJ" firstAttribute="top" secondItem="8bA-On-MFd" secondAttribute="top" id="RZ7-gs-iis"/>
+                                    <constraint firstItem="a23-zO-lYT" firstAttribute="leading" secondItem="8bA-On-MFd" secondAttribute="leading" id="bVi-3R-tfp"/>
+                                    <constraint firstItem="ywS-nQ-gCJ" firstAttribute="leading" secondItem="8bA-On-MFd" secondAttribute="leading" constant="16" id="eDI-R5-53G"/>
+                                    <constraint firstItem="KA8-oD-Lt8" firstAttribute="leading" secondItem="8bA-On-MFd" secondAttribute="leading" constant="16" id="fos-rh-3xs"/>
+                                    <constraint firstItem="d4L-Na-zSt" firstAttribute="leading" secondItem="8bA-On-MFd" secondAttribute="leading" constant="16" id="ldd-vS-XbX"/>
+                                    <constraint firstAttribute="trailing" secondItem="d4L-Na-zSt" secondAttribute="trailing" constant="16" id="nle-NV-s31"/>
+                                    <constraint firstItem="ocb-Kh-3U9" firstAttribute="leading" secondItem="8bA-On-MFd" secondAttribute="leading" id="qOB-Jx-30Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="a23-zO-lYT" secondAttribute="bottom" constant="24" id="rh5-3m-90q"/>
+                                    <constraint firstAttribute="trailing" secondItem="a23-zO-lYT" secondAttribute="trailing" id="wjl-jA-pfS"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FY0-LI-RJ6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FY0-LI-RJ6" firstAttribute="trailing" secondItem="8bA-On-MFd" secondAttribute="trailing" id="7aV-d9-oTA"/>
+                            <constraint firstItem="FY0-LI-RJ6" firstAttribute="trailing" secondItem="Rk0-Rw-5lp" secondAttribute="trailing" constant="12" id="AVI-2D-VQ9"/>
+                            <constraint firstItem="Rk0-Rw-5lp" firstAttribute="leading" secondItem="FY0-LI-RJ6" secondAttribute="leading" constant="12" id="DLE-EI-ISq"/>
+                            <constraint firstItem="Rk0-Rw-5lp" firstAttribute="top" secondItem="FY0-LI-RJ6" secondAttribute="top" constant="8" id="MoJ-2t-0SS"/>
+                            <constraint firstItem="8bA-On-MFd" firstAttribute="top" secondItem="Rk0-Rw-5lp" secondAttribute="bottom" constant="16" id="aPR-Ih-f6k"/>
+                            <constraint firstItem="ywS-nQ-gCJ" firstAttribute="width" secondItem="y7X-lt-yVL" secondAttribute="width" constant="-32" id="ay3-Ki-pnP"/>
+                            <constraint firstItem="8bA-On-MFd" firstAttribute="leading" secondItem="FY0-LI-RJ6" secondAttribute="leading" id="cc6-yh-h1h"/>
+                            <constraint firstItem="FY0-LI-RJ6" firstAttribute="bottom" secondItem="8bA-On-MFd" secondAttribute="bottom" id="rqj-Ao-bFp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="E8h-nJ-87Y"/>
+                    <connections>
+                        <outlet property="earningCard" destination="mDL-Wf-H8A" id="18y-at-KwO"/>
+                        <outlet property="reviewCollectionViewHeader" destination="KA8-oD-Lt8" id="lLc-2o-qN5"/>
+                        <outlet property="reviewsCollectionView" destination="a23-zO-lYT" id="7G3-kt-FWw"/>
+                        <outlet property="sessionCollectionView" destination="ocb-Kh-3U9" id="Vh8-Mw-2yG"/>
+                        <outlet property="sessionCollectionViewHeader" destination="d4L-Na-zSt" id="gaM-P5-3hA"/>
+                        <outlet property="totalSessionsCard" destination="RnP-KI-2sf" id="mAD-13-OGG"/>
+                        <outlet property="tutoredHourCard" destination="S2W-HY-zNh" id="Ees-Cv-tS0"/>
+                        <outlet property="tutoredStudentCard" destination="jgA-aR-rjG" id="QJ5-iL-XSR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUp-7l-96r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="428.98550724637687" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

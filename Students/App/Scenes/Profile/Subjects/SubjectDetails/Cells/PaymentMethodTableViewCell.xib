@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="77" id="fZp-Ci-CCn" customClass="PaymentMethodTableViewCell" customModule="Teachers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="77"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fZp-Ci-CCn" id="Ta4-YL-czi">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q84-Qc-Ed2">
+                        <rect key="frame" x="16" y="16" width="378" height="11"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="12"/>
+                        <color key="textColor" name="gray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cYB-FV-K4L">
+                        <rect key="frame" x="16" y="37" width="34" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="a8f-Uv-Yg3"/>
+                            <constraint firstAttribute="width" secondItem="cYB-FV-K4L" secondAttribute="height" multiplier="34:24" id="yD1-h2-9cg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfw-u6-PIB">
+                        <rect key="frame" x="62" y="37" width="332" height="24"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <color key="textColor" name="darkBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cYB-FV-K4L" secondAttribute="bottom" constant="16" id="BOX-hU-6Lg"/>
+                    <constraint firstItem="Q84-Qc-Ed2" firstAttribute="leading" secondItem="Ta4-YL-czi" secondAttribute="leading" constant="16" id="MRd-Mi-ENR"/>
+                    <constraint firstItem="Kfw-u6-PIB" firstAttribute="leading" secondItem="cYB-FV-K4L" secondAttribute="trailing" constant="12" id="OHa-Js-rk6"/>
+                    <constraint firstAttribute="trailing" secondItem="Q84-Qc-Ed2" secondAttribute="trailing" constant="16" id="RUP-Az-DCD"/>
+                    <constraint firstItem="Q84-Qc-Ed2" firstAttribute="top" secondItem="Ta4-YL-czi" secondAttribute="top" constant="16" id="VHZ-8N-WTG"/>
+                    <constraint firstItem="cYB-FV-K4L" firstAttribute="top" secondItem="Q84-Qc-Ed2" secondAttribute="bottom" constant="10" id="VUE-m4-AW1"/>
+                    <constraint firstItem="cYB-FV-K4L" firstAttribute="leading" secondItem="Ta4-YL-czi" secondAttribute="leading" constant="16" id="Vsr-JJ-Qzc"/>
+                    <constraint firstItem="Kfw-u6-PIB" firstAttribute="top" secondItem="cYB-FV-K4L" secondAttribute="top" id="XCa-ux-qgW"/>
+                    <constraint firstAttribute="bottom" secondItem="Kfw-u6-PIB" secondAttribute="bottom" constant="16" id="l4Y-sl-9mM"/>
+                    <constraint firstAttribute="trailing" secondItem="Kfw-u6-PIB" secondAttribute="trailing" constant="16" id="rF7-rh-MH4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="paymentMethodImageView" destination="cYB-FV-K4L" id="DIR-Ch-x97"/>
+                <outlet property="paymentMethodLabel" destination="Kfw-u6-PIB" id="hlC-fg-8hb"/>
+            </connections>
+            <point key="canvasLocation" x="107.24637681159422" y="72.65625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="darkBlue">
+            <color red="0.066666666666666666" green="0.10588235294117647" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.47843137254901963" green="0.49803921568627452" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

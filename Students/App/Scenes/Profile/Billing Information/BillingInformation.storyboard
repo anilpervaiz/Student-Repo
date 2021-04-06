@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Billing Information View Controller-->
+        <scene sceneID="feo-di-tND">
+            <objects>
+                <viewController storyboardIdentifier="BillingInformationViewController" id="Udd-vU-7aJ" customClass="BillingInformationViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WqX-sv-11b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcf-9m-CBv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1"/>
+                                <color key="backgroundColor" name="disableGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Sow-O8-Ygj"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9g-P9-1ur">
+                                <rect key="frame" x="0.0" y="53" width="414" height="713"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPz-tD-ryU" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="382" height="58"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" placeholder="YES" id="fdR-hO-zOX"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Bank Name"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter Bank Name"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbe-Gd-mNi" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="98" width="382" height="56"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" placeholder="YES" id="bj2-Qj-kJ2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="IBAN"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter IBAN"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loR-VV-Pgv" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="178" width="382" height="56"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" placeholder="YES" id="fM5-ZD-cJs"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Account Owner Name"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter Your Name"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09Q-Gx-7DY" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="258" width="382" height="56"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" placeholder="YES" id="ZVT-dX-XMg"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Account Number"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter Account Number"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzo-Op-7cq" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="338" width="382" height="56"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" placeholder="YES" id="RVr-gm-YDe"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Currency"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select Currency"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OPz-tD-ryU" firstAttribute="leading" secondItem="E9g-P9-1ur" secondAttribute="leading" constant="16" id="4LA-cb-AFe"/>
+                                    <constraint firstItem="OPz-tD-ryU" firstAttribute="top" secondItem="E9g-P9-1ur" secondAttribute="top" constant="16" id="4kb-3V-ppf"/>
+                                    <constraint firstItem="loR-VV-Pgv" firstAttribute="top" secondItem="mbe-Gd-mNi" secondAttribute="bottom" constant="24" id="NFb-jH-TgO"/>
+                                    <constraint firstItem="09Q-Gx-7DY" firstAttribute="top" secondItem="loR-VV-Pgv" secondAttribute="bottom" constant="24" id="Oh4-to-OoO"/>
+                                    <constraint firstAttribute="trailing" secondItem="mbe-Gd-mNi" secondAttribute="trailing" constant="16" id="OyS-Gw-IGw"/>
+                                    <constraint firstAttribute="trailing" secondItem="OPz-tD-ryU" secondAttribute="trailing" constant="16" id="SuE-04-zEy"/>
+                                    <constraint firstAttribute="trailing" secondItem="09Q-Gx-7DY" secondAttribute="trailing" constant="16" id="XmG-jd-xvK"/>
+                                    <constraint firstItem="loR-VV-Pgv" firstAttribute="leading" secondItem="E9g-P9-1ur" secondAttribute="leading" constant="16" id="dgz-eP-XpU"/>
+                                    <constraint firstItem="Tzo-Op-7cq" firstAttribute="leading" secondItem="E9g-P9-1ur" secondAttribute="leading" constant="16" id="eGJ-1O-Bpf"/>
+                                    <constraint firstItem="Tzo-Op-7cq" firstAttribute="top" secondItem="09Q-Gx-7DY" secondAttribute="bottom" constant="24" id="eJY-FF-OgB"/>
+                                    <constraint firstAttribute="trailing" secondItem="loR-VV-Pgv" secondAttribute="trailing" constant="16" id="ob6-HM-IGt"/>
+                                    <constraint firstItem="mbe-Gd-mNi" firstAttribute="top" secondItem="OPz-tD-ryU" secondAttribute="bottom" constant="24" id="och-Zv-dPN"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tzo-Op-7cq" secondAttribute="bottom" constant="24" id="ohJ-4K-dPp"/>
+                                    <constraint firstItem="mbe-Gd-mNi" firstAttribute="leading" secondItem="E9g-P9-1ur" secondAttribute="leading" constant="16" id="qIz-ta-HkU"/>
+                                    <constraint firstItem="09Q-Gx-7DY" firstAttribute="leading" secondItem="E9g-P9-1ur" secondAttribute="leading" constant="16" id="xbk-JW-66S"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tzo-Op-7cq" secondAttribute="trailing" constant="16" id="xm8-zx-gPy"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwg-O0-N0c" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                                <rect key="frame" x="16" y="790" width="382" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="m1X-kL-Q2p"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                        <color key="value" name="primary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
+                                        <color key="value" name="aquaMarine"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapSaveButton:" destination="Udd-vU-7aJ" eventType="touchUpInside" id="rpf-Hx-axu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="llv-Ce-wmf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pcf-9m-CBv" firstAttribute="top" secondItem="llv-Ce-wmf" secondAttribute="top" id="3R0-Fd-jdj"/>
+                            <constraint firstItem="llv-Ce-wmf" firstAttribute="trailing" secondItem="Kwg-O0-N0c" secondAttribute="trailing" constant="16" id="7Bb-Sm-bQe"/>
+                            <constraint firstItem="OPz-tD-ryU" firstAttribute="width" secondItem="WqX-sv-11b" secondAttribute="width" constant="-32" id="9hA-aq-h2B"/>
+                            <constraint firstItem="E9g-P9-1ur" firstAttribute="leading" secondItem="llv-Ce-wmf" secondAttribute="leading" id="CHC-lj-ILk"/>
+                            <constraint firstItem="llv-Ce-wmf" firstAttribute="trailing" secondItem="E9g-P9-1ur" secondAttribute="trailing" id="Jx9-vm-Y38"/>
+                            <constraint firstItem="llv-Ce-wmf" firstAttribute="trailing" secondItem="pcf-9m-CBv" secondAttribute="trailing" id="W2e-aN-We6"/>
+                            <constraint firstItem="Kwg-O0-N0c" firstAttribute="top" secondItem="E9g-P9-1ur" secondAttribute="bottom" constant="24" id="WsU-6Y-ae9"/>
+                            <constraint firstItem="llv-Ce-wmf" firstAttribute="bottom" secondItem="Kwg-O0-N0c" secondAttribute="bottom" constant="16" id="ehl-Kl-K1A"/>
+                            <constraint firstItem="E9g-P9-1ur" firstAttribute="top" secondItem="pcf-9m-CBv" secondAttribute="bottom" constant="8" id="n4w-op-x0S"/>
+                            <constraint firstItem="Kwg-O0-N0c" firstAttribute="leading" secondItem="llv-Ce-wmf" secondAttribute="leading" constant="16" id="rWN-z7-gdc"/>
+                            <constraint firstItem="pcf-9m-CBv" firstAttribute="leading" secondItem="llv-Ce-wmf" secondAttribute="leading" id="wbT-le-KY3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accountHolderNameTextField" destination="loR-VV-Pgv" id="E3L-0y-z2d"/>
+                        <outlet property="accountNumberTextField" destination="09Q-Gx-7DY" id="cSJ-PH-sun"/>
+                        <outlet property="bankNameTextField" destination="OPz-tD-ryU" id="bmX-2h-r7C"/>
+                        <outlet property="ctaButtonBottomSpacing" destination="ehl-Kl-K1A" id="1X5-Ir-Bqv"/>
+                        <outlet property="currencyTextField" destination="Tzo-Op-7cq" id="bLL-fK-vC2"/>
+                        <outlet property="ibanTextField" destination="mbe-Gd-mNi" id="yBQ-SX-Toi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXf-dH-mTk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178.2608695652174" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Kwg-O0-N0c">
+            <size key="intrinsicContentSize" width="34" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="aquaMarine">
+            <color red="0.27058823529411763" green="0.99607843137254903" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="disableGray">
+            <color red="0.92156862745098034" green="0.92941176470588238" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
