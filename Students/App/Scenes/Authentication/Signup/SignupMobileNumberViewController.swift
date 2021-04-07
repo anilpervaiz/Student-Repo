@@ -10,6 +10,7 @@ import FlagPhoneNumber
 
 class SignupMobileNumberViewController: BaseViewController {
 
+    var userType: UserType?
     lazy var closeButton: UIBarButtonItem = {
         let button = UIBarButtonItem(image: Asset.Media.close.image,
                         style: .plain,
@@ -70,7 +71,10 @@ extension SignupMobileNumberViewController: FPNTextFieldDelegate {
 
 extension SignupMobileNumberViewController {
     @IBAction func didTapVerifyNumberButton(_ sender: Any) {
-        
+        let viewModel = NumberVerificationViewModel(userType: userType)
+        let viewController = NumberVerificationViewController.getInstance()
+        viewController.viewModel = viewModel
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

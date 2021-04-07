@@ -7,15 +7,27 @@
 
 import Foundation
 
-struct SignupCompletedSuccessStateViewModel: SuccessStateViewModel {
+struct StudentSignupCompletedSuccessStateViewModel: SuccessStateViewModel {
     var router: SignupSuccessStateRouter
     var title: String = "Thank You!"
-    var message: String = "Now you need to complete your profile to be able to join Edukko family."
+    var message: String = "You have successfully joined Edukko family. Searching for subjects/teachers and start an enjoyable learning journey"
     var imageName: String?
-    var ctaButtonTitle: String = "Complete My Profile"
+    var ctaButtonTitle: String = "Search Teachers"
 
     func didTapCTAButton() {
-        router.navigateToCreateProfile()
+        router.navigateToGetStarted()
+    }
+}
+
+struct ParentSignupCompletedSuccessStateViewModel: SuccessStateViewModel {
+    var router: SignupSuccessStateRouter
+    var title: String = "Thank You!"
+    var message: String = "You have successfully joined Edukko family. Start add your children accounts and browse a list of our high qualified teachers."
+    var imageName: String?
+    var ctaButtonTitle: String = "Manage Account"
+
+    func didTapCTAButton() {
+        router.navigateToGetStarted()
     }
 }
 

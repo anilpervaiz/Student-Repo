@@ -125,6 +125,7 @@ class AddSubjectViewController: BaseViewController {
                               curriculum: curriculumLabel.inputText ?? "",
                               subject: subjectLabel.inputText ?? "",
                               rate: sessionRateLabel.inputText ?? "",
+                              iconName: Asset.Media.subjectIcon.name,
                               documents: [])
         viewModel?.didTapCTAButton(subject: subject)
     }

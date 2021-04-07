@@ -1,0 +1,9 @@
+input_dir: Students/
+output_dir: Students/Common/Generated/
+
+xcassets:
+    inputs: ./
+    filter: ^(?!.*Preview Content).+\.xcassets$
+    outputs:
+      - templateName: swift5
+        output: Assets+Generated.swift

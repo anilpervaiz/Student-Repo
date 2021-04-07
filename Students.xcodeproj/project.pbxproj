@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C960E34D261B251200DC19EE /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E336261B251100DC19EE /* Assets+Generated.swift */; };
 		C960E34E261B251200DC19EE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C960E338261B251100DC19EE /* Media.xcassets */; };
 		C960E34F261B251200DC19EE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C960E339261B251100DC19EE /* Colors.xcassets */; };
 		C960E350261B251200DC19EE /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C960E33B261B251100DC19EE /* Poppins-ExtraLight.ttf */; };
@@ -279,8 +278,14 @@
 		C960E5D1261B288A00DC19EE /* AppDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E4D9261B288900DC19EE /* AppDimension.swift */; };
 		C960E5D2261B288A00DC19EE /* CalendarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E4DA261B288900DC19EE /* CalendarStyle.swift */; };
 		C960E5D7261B5E9000DC19EE /* SignupAccountTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E5D6261B5E9000DC19EE /* SignupAccountTypeViewController.swift */; };
-		C960E5DC261B65B900DC19EE /* SignupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E5DB261B65B900DC19EE /* SignupRouter.swift */; };
 		C960E5F0261B6E8E00DC19EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E5EF261B6E8E00DC19EE /* User.swift */; };
+		C99D0003261D5CA400816E5C /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D0002261D5CA400816E5C /* Assets+Generated.swift */; };
+		C99D000B261D5E9E00816E5C /* AddStudyingSubjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D000A261D5E9E00816E5C /* AddStudyingSubjectViewModel.swift */; };
+		C99DFFCC261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFFCB261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift */; };
+		C99DFFD2261CE65800816E5C /* AddStudyingSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFFD1261CE65800816E5C /* AddStudyingSubjectViewController.swift */; };
+		C99DFFD7261CE68400816E5C /* AddStudyingSubject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99DFFD6261CE68400816E5C /* AddStudyingSubject.storyboard */; };
+		C99DFFDD261D59A800816E5C /* AddSubjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99DFFDC261D59A800816E5C /* AddSubjectTableViewCell.xib */; };
+		C99DFFE2261D59BE00816E5C /* AddSubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFFE1261D59BE00816E5C /* AddSubjectTableViewCell.swift */; };
 		CE66C6C425FF904000A2FA72 /* Students.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE66C6C225FF904000A2FA72 /* Students.xcdatamodeld */; };
 		CE66C6D425FF904400A2FA72 /* StudentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66C6D325FF904400A2FA72 /* StudentsTests.swift */; };
 		CE66C6DF25FF904400A2FA72 /* StudentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66C6DE25FF904400A2FA72 /* StudentsUITests.swift */; };
@@ -308,7 +313,6 @@
 		3F4F98627FD331A2FB618A31 /* Pods_Students.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Students.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		540AF0D1C63763D3AFB1B673 /* Pods-Students.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Students.debug.xcconfig"; path = "Target Support Files/Pods-Students/Pods-Students.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3EBAF8A9A6B3E0667DC982 /* Pods-Students.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Students.release.xcconfig"; path = "Target Support Files/Pods-Students/Pods-Students.release.xcconfig"; sourceTree = "<group>"; };
-		C960E336261B251100DC19EE /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
 		C960E338261B251100DC19EE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C960E339261B251100DC19EE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C960E33B261B251100DC19EE /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -581,8 +585,14 @@
 		C960E4D9261B288900DC19EE /* AppDimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDimension.swift; sourceTree = "<group>"; };
 		C960E4DA261B288900DC19EE /* CalendarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarStyle.swift; sourceTree = "<group>"; };
 		C960E5D6261B5E9000DC19EE /* SignupAccountTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupAccountTypeViewController.swift; sourceTree = "<group>"; };
-		C960E5DB261B65B900DC19EE /* SignupRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRouter.swift; sourceTree = "<group>"; };
 		C960E5EF261B6E8E00DC19EE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C99D0002261D5CA400816E5C /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
+		C99D000A261D5E9E00816E5C /* AddStudyingSubjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudyingSubjectViewModel.swift; sourceTree = "<group>"; };
+		C99DFFCB261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentEducationDetailsViewController.swift; sourceTree = "<group>"; };
+		C99DFFD1261CE65800816E5C /* AddStudyingSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudyingSubjectViewController.swift; sourceTree = "<group>"; };
+		C99DFFD6261CE68400816E5C /* AddStudyingSubject.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddStudyingSubject.storyboard; sourceTree = "<group>"; };
+		C99DFFDC261D59A800816E5C /* AddSubjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSubjectTableViewCell.xib; sourceTree = "<group>"; };
+		C99DFFE1261D59BE00816E5C /* AddSubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubjectTableViewCell.swift; sourceTree = "<group>"; };
 		CE66C6B625FF904000A2FA72 /* Students.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Students.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE66C6C325FF904000A2FA72 /* Students.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Students.xcdatamodel; sourceTree = "<group>"; };
 		CE66C6CF25FF904400A2FA72 /* StudentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -649,7 +659,7 @@
 		C960E335261B251100DC19EE /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				C960E336261B251100DC19EE /* Assets+Generated.swift */,
+				C99D0002261D5CA400816E5C /* Assets+Generated.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -718,6 +728,7 @@
 		C960E390261B288800DC19EE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C99DFFD0261CE62D00816E5C /* Subject */,
 				C960E391261B288800DC19EE /* Schedule */,
 				C960E39B261B288800DC19EE /* Messages */,
 				C960E3B0261B288800DC19EE /* MockData */,
@@ -1278,7 +1289,7 @@
 				C960E453261B288900DC19EE /* SignupMobileNumberViewController.swift */,
 				C960E454261B288900DC19EE /* Router */,
 				C960E5D6261B5E9000DC19EE /* SignupAccountTypeViewController.swift */,
-				C960E5DB261B65B900DC19EE /* SignupRouter.swift */,
+				C99DFFCB261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -1628,6 +1639,26 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
+		C99DFFD0261CE62D00816E5C /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				C99DFFDB261D599A00816E5C /* Cell */,
+				C99DFFD1261CE65800816E5C /* AddStudyingSubjectViewController.swift */,
+				C99DFFD6261CE68400816E5C /* AddStudyingSubject.storyboard */,
+				C99D000A261D5E9E00816E5C /* AddStudyingSubjectViewModel.swift */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
+		C99DFFDB261D599A00816E5C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C99DFFDC261D59A800816E5C /* AddSubjectTableViewCell.xib */,
+				C99DFFE1261D59BE00816E5C /* AddSubjectTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		CE66C6AD25FF904000A2FA72 = {
 			isa = PBXGroup;
 			children = (
@@ -1687,6 +1718,7 @@
 			buildConfigurationList = CE66C6E325FF904400A2FA72 /* Build configuration list for PBXNativeTarget "Students" */;
 			buildPhases = (
 				F71A2243764F4EE4CC100F1E /* [CP] Check Pods Manifest.lock */,
+				C99DFFE9261D5B4800816E5C /* [SWIFTGEN] Generate code */,
 				CE66C6B225FF904000A2FA72 /* Sources */,
 				CE66C6B325FF904000A2FA72 /* Frameworks */,
 				CE66C6B425FF904000A2FA72 /* Resources */,
@@ -1787,6 +1819,7 @@
 			files = (
 				C960E50E261B288900DC19EE /* Tabbar.storyboard in Resources */,
 				C960E527261B288900DC19EE /* LinkTableViewCell.xib in Resources */,
+				C99DFFDD261D59A800816E5C /* AddSubjectTableViewCell.xib in Resources */,
 				C960E5A2261B288A00DC19EE /* LabelledTextField.xib in Resources */,
 				C960E596261B288A00DC19EE /* SessionDetail.storyboard in Resources */,
 				C960E531261B288900DC19EE /* BillingInformation.storyboard in Resources */,
@@ -1824,6 +1857,7 @@
 				C960E53B261B288900DC19EE /* DateAndTimeTableViewCell.xib in Resources */,
 				C960E583261B288A00DC19EE /* CreateProfileSectionTableViewCell.xib in Resources */,
 				C960E5C0261B288A00DC19EE /* TableSectionHeaderView.xib in Resources */,
+				C99DFFD7261CE68400816E5C /* AddStudyingSubject.storyboard in Resources */,
 				C960E5BA261B288A00DC19EE /* BottomSheetListCell.xib in Resources */,
 				C960E4E2261B288900DC19EE /* MessageCell.xib in Resources */,
 				C960E59D261B288A00DC19EE /* SessionTableViewCell.xib in Resources */,
@@ -1923,6 +1957,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Students/Pods-Students-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C99DFFE9261D5B4800816E5C /* [SWIFTGEN] Generate code */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[SWIFTGEN] Generate code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# If you're running on Apple Silicon with SwiftGen installed through Homebrew\n# and you need to force it to run through Rosetta, put the following lines\n# in ~/.bash_profile\n#\n# alias swiftgen=\"arch -x86_64 swiftgen\"\n#\n# As of 20/12/2020 Homebrew's SwiftGen seems to be a universal binary,\n# but the arm64 slice doesn't execute.\nif [ -f \"${PROJECT_DIR}/swiftgen/bin/swiftgen\" ]; then\n\"${PROJECT_DIR}/swiftgen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n\n";
+		};
 		F71A2243764F4EE4CC100F1E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1966,6 +2018,7 @@
 				C960E57D261B288A00DC19EE /* CreateProfileViewModel.swift in Sources */,
 				C960E58E261B288A00DC19EE /* RegisteredSubjectsViewController.swift in Sources */,
 				C960E552261B288900DC19EE /* MyEarningsViewModel.swift in Sources */,
+				C99DFFE2261D59BE00816E5C /* AddSubjectTableViewCell.swift in Sources */,
 				C960E588261B288A00DC19EE /* PaymentMethodViewController.swift in Sources */,
 				C960E57A261B288A00DC19EE /* AvailibilityViewModel.swift in Sources */,
 				C960E52A261B288900DC19EE /* SettingsViewController.swift in Sources */,
@@ -2014,6 +2067,7 @@
 				C960E519261B288900DC19EE /* DashboardCard.swift in Sources */,
 				C960E530261B288900DC19EE /* BillingInformationViewController.swift in Sources */,
 				C960E52C261B288900DC19EE /* LanguageTableViewCell.swift in Sources */,
+				C99DFFCC261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift in Sources */,
 				C960E56F261B288A00DC19EE /* LoginViewModel.swift in Sources */,
 				C960E51A261B288900DC19EE /* DashboardSceneRouter.swift in Sources */,
 				C960E4ED261B288900DC19EE /* ChatMessageReceivedCell.swift in Sources */,
@@ -2057,13 +2111,13 @@
 				C960E556261B288900DC19EE /* ProfileSceneBuilder.swift in Sources */,
 				C960E591261B288A00DC19EE /* BaseNavigationViewController.swift in Sources */,
 				C960E57E261B288A00DC19EE /* UploadImageViewModel.swift in Sources */,
-				C960E5DC261B65B900DC19EE /* SignupRouter.swift in Sources */,
 				C960E4DF261B288900DC19EE /* ScheduleListingSceneBuilder.swift in Sources */,
 				C960E55D261B288900DC19EE /* SuccessStateViewController.swift in Sources */,
 				C960E4E9261B288900DC19EE /* ChatViewModel.swift in Sources */,
 				C960E53E261B288900DC19EE /* SubjectDetailsViewController.swift in Sources */,
 				C960E5CF261B288A00DC19EE /* UINavigationController+Pop.swift in Sources */,
 				C960E50C261B288900DC19EE /* StudentProfileViewModel.swift in Sources */,
+				C99DFFD2261CE65800816E5C /* AddStudyingSubjectViewController.swift in Sources */,
 				C960E5CD261B288A00DC19EE /* UILabel+TapGesture.swift in Sources */,
 				C960E5A3261B288A00DC19EE /* FlowDescriptionLabel.swift in Sources */,
 				C960E4E0261B288900DC19EE /* ScheduleListingViewModel.swift in Sources */,
@@ -2083,7 +2137,6 @@
 				C960E581261B288A00DC19EE /* CreateProfileSectionTableViewCell.swift in Sources */,
 				C960E572261B288A00DC19EE /* LoginViewController.swift in Sources */,
 				C960E514261B288900DC19EE /* OnboardingViewController.swift in Sources */,
-				C960E34D261B251200DC19EE /* Assets+Generated.swift in Sources */,
 				C960E4F6261B288900DC19EE /* NotificationMock.swift in Sources */,
 				C960E4F1261B288900DC19EE /* MockData.swift in Sources */,
 				C960E547261B288900DC19EE /* SubjectRouter.swift in Sources */,
@@ -2114,6 +2167,7 @@
 				C960E510261B288900DC19EE /* OnboardingPage.swift in Sources */,
 				C960E595261B288A00DC19EE /* AddSubjectViewController.swift in Sources */,
 				C960E5AF261B288A00DC19EE /* CollapsedTableViewCell.swift in Sources */,
+				C99D0003261D5CA400816E5C /* Assets+Generated.swift in Sources */,
 				C960E5C5261B288A00DC19EE /* UITextField+Placeholder.swift in Sources */,
 				C960E559261B288900DC19EE /* ReviewsViewController.swift in Sources */,
 				C960E520261B288900DC19EE /* DashboardViewModel.swift in Sources */,
@@ -2134,6 +2188,7 @@
 				C960E5C7261B288A00DC19EE /* UIViewController+Keyboard.swift in Sources */,
 				C960E534261B288900DC19EE /* DateAndTimeTableViewCell.swift in Sources */,
 				C960E532261B288900DC19EE /* SubjectMainViewController.swift in Sources */,
+				C99D000B261D5E9E00816E5C /* AddStudyingSubjectViewModel.swift in Sources */,
 				C960E533261B288900DC19EE /* SubjectMainViewModel.swift in Sources */,
 				C960E4EC261B288900DC19EE /* ChatMessageSentCell.swift in Sources */,
 				C960E5C9261B288A00DC19EE /* UIStoryboard+helpers.swift in Sources */,

@@ -49,5 +49,6 @@ extension UIStoryboard {
         case rejectSession = "RejectSession"
         case billingInformation = "BillingInformation"
         case language = "Language"
+        case addStudyingSubject = "AddStudyingSubject"
     }
 }

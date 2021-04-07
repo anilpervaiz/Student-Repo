@@ -12,13 +12,14 @@ struct Subject {
     var curriculum: String
     var subject: String
     var rate: String
+    var iconName: String
     var documents: [Document]
 
     static var mockData: [Subject] {
         [
-            Subject(educationType: "Grade 6", curriculum: "American Curriculum", subject: "History", rate: "4.0", documents: Document.mockData),
-            Subject(educationType: "Grade 6", curriculum: "British Curriculum", subject: "History", rate: "4.0", documents: Document.mockData),
-            Subject(educationType: "Grade 7", curriculum: "American Curriculum", subject: "History", rate: "4.0", documents: Document.mockData)
+            Subject(educationType: "Grade 6", curriculum: "American Curriculum", subject: "History", rate: "4.0", iconName: Asset.Media.subjectIcon.name, documents: Document.mockData),
+            Subject(educationType: "Grade 6", curriculum: "British Curriculum", subject: "History", rate: "4.0", iconName: Asset.Media.subjectIcon.name, documents: Document.mockData),
+            Subject(educationType: "Grade 7", curriculum: "American Curriculum", subject: "History", rate: "4.0", iconName: Asset.Media.subjectIcon.name, documents: Document.mockData)
         ]
     }
 }

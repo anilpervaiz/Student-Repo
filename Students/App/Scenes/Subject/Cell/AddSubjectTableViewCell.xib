@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="364" id="Fwl-7u-YCJ" customClass="AddSubjectTableViewCell" customModule="Students" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fwl-7u-YCJ" id="gPj-Bz-V6v">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wau-Ag-vy3">
+                        <rect key="frame" x="16" y="14" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Wau-Ag-vy3" secondAttribute="height" id="GCe-vO-HNa"/>
+                            <constraint firstAttribute="width" constant="28" id="gqB-f9-NvD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WC3-cb-NsK">
+                        <rect key="frame" x="60" y="18.5" width="302" height="19"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hw9-Fe-hub">
+                        <rect key="frame" x="374" y="16" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hw9-Fe-hub" secondAttribute="height" id="If0-Mj-bhs"/>
+                            <constraint firstAttribute="width" constant="24" id="Vgj-Iu-O6X"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WC3-cb-NsK" firstAttribute="centerY" secondItem="gPj-Bz-V6v" secondAttribute="centerY" id="Dqo-D8-2w8"/>
+                    <constraint firstItem="hw9-Fe-hub" firstAttribute="centerY" secondItem="gPj-Bz-V6v" secondAttribute="centerY" id="M6A-CD-Dnj"/>
+                    <constraint firstItem="Wau-Ag-vy3" firstAttribute="leading" secondItem="gPj-Bz-V6v" secondAttribute="leading" constant="16" id="Qdu-O7-TNX"/>
+                    <constraint firstItem="Wau-Ag-vy3" firstAttribute="top" secondItem="gPj-Bz-V6v" secondAttribute="top" constant="14" id="Ype-pS-DJd"/>
+                    <constraint firstAttribute="bottom" secondItem="Wau-Ag-vy3" secondAttribute="bottom" constant="14" id="bcs-k8-ltf"/>
+                    <constraint firstAttribute="trailing" secondItem="hw9-Fe-hub" secondAttribute="trailing" constant="16" id="sWD-v9-Sq4"/>
+                    <constraint firstItem="WC3-cb-NsK" firstAttribute="leading" secondItem="Wau-Ag-vy3" secondAttribute="trailing" constant="16" id="sdh-QK-WBV"/>
+                    <constraint firstItem="hw9-Fe-hub" firstAttribute="leading" secondItem="WC3-cb-NsK" secondAttribute="trailing" constant="12" id="yEE-RN-h3N"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                        <color key="value" name="lightGray"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                        <real key="value" value="1"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="4"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="Wau-Ag-vy3" id="y0Q-ck-WUq"/>
+                <outlet property="stateImageView" destination="hw9-Fe-hub" id="2U3-3h-rDB"/>
+                <outlet property="titleLabel" destination="WC3-cb-NsK" id="qjB-6o-Cdk"/>
+            </connections>
+            <point key="canvasLocation" x="182.60869565217394" y="208.59375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="lightGray">
+            <color red="0.67843137254901964" green="0.70196078431372544" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

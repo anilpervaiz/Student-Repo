@@ -9,6 +9,8 @@ import UIKit
 
 class SignupAuthenticationDetailsViewController: BaseViewController {
 
+    var userType: UserType?
+
     @IBOutlet weak var passwordTextField: LabelledTextField! {
         didSet {
             passwordTextField.secureEntry = true
@@ -37,6 +39,12 @@ class SignupAuthenticationDetailsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupKeyboardNotification()
+    }
+
+    @IBAction func didTapCTAButton(_ sender: Any) {
+        let viewController = SignupMobileNumberViewController.getInstance()
+        viewController.userType = userType
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

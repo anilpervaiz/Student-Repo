@@ -136,6 +136,9 @@
                                         <color key="value" name="aquaMarine"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapContinueButton:" destination="Ffr-Ac-r7l" eventType="touchUpInside" id="Eq0-HR-y1b"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mqn-Mr-PWz"/>
@@ -167,7 +170,7 @@
         <!--Signup Authentication Details View Controller-->
         <scene sceneID="kQc-sM-LkN">
             <objects>
-                <viewController id="J0d-YF-zZd" customClass="SignupAuthenticationDetailsViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignupAuthenticationDetailsViewController" id="J0d-YF-zZd" customClass="SignupAuthenticationDetailsViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tnF-rz-8fy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,6 +190,9 @@
                                         <color key="value" name="aquaMarine"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapCTAButton:" destination="J0d-YF-zZd" eventType="touchUpInside" id="9hm-9w-oJI"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvf-72-NHB">
                                 <rect key="frame" x="0.0" y="60" width="414" height="706"/>
@@ -300,7 +306,7 @@
         <!--Signup Mobile Number View Controller-->
         <scene sceneID="wJm-UL-YWT">
             <objects>
-                <viewController id="IHA-Fm-VqY" customClass="SignupMobileNumberViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignupMobileNumberViewController" id="IHA-Fm-VqY" customClass="SignupMobileNumberViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iDx-I4-XaN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -601,7 +607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvP-Pk-sYe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2430.434782608696" y="233.70535714285714"/>
+            <point key="canvasLocation" x="2555" y="234"/>
         </scene>
         <!--Signup Account Type View Controller-->
         <scene sceneID="oLz-Jc-MiB">
@@ -637,6 +643,9 @@
                                                 <color key="value" name="primary"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="continueWithStudentFlow:" destination="5Na-ss-r2O" eventType="touchUpInside" id="AFj-ES-uel"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wd1-f5-Y6x" customClass="SecondaryCTAButton" customModule="Students" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="68" width="382" height="56"/>
@@ -649,6 +658,9 @@
                                                 <color key="value" name="primary"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="continueWithParentFlow:" destination="5Na-ss-r2O" eventType="touchUpInside" id="5Pb-QP-xZs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -683,6 +695,142 @@
             </objects>
             <point key="canvasLocation" x="-901" y="234"/>
         </scene>
+        <!--Add Student Education Details View Controller-->
+        <scene sceneID="dvw-jP-0wB">
+            <objects>
+                <viewController storyboardIdentifier="AddStudentEducationDetailsViewController" id="d4W-AN-ms1" customClass="AddStudentEducationDetailsViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NbO-D1-7LV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How can Edukko help you?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXi-eQ-bcx" customClass="HeadingLabel" customModule="Students" customModuleProvider="target">
+                                <rect key="frame" x="16" y="89" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwk-XW-dIv" customClass="FlowDescriptionLabel" customModule="Students" customModuleProvider="target">
+                                <rect key="frame" x="16" y="56" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAD-5H-Fk4">
+                                <rect key="frame" x="0.0" y="133.5" width="414" height="644.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNa-EV-yyZ" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="8" width="382" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" placeholder="YES" id="uNi-g3-Vsk"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select Education Type"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Education Type"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgv-Tl-Rak" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="112" width="382" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" placeholder="YES" id="2uT-7P-TwR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="School"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select School"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAQ-pG-4Te" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="216" width="382" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" placeholder="YES" id="X0H-Hc-D1i"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Curriculum"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select Curriculum"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z03-R5-Ruc" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="320" width="382" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" placeholder="YES" id="G6W-3l-LiH"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select Grade"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Grade"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lgv-Tl-Rak" firstAttribute="top" secondItem="tNa-EV-yyZ" secondAttribute="bottom" constant="24" id="1ln-Ps-RPr"/>
+                                    <constraint firstItem="xAQ-pG-4Te" firstAttribute="top" secondItem="lgv-Tl-Rak" secondAttribute="bottom" constant="24" id="9AW-ws-NNl"/>
+                                    <constraint firstItem="xAQ-pG-4Te" firstAttribute="leading" secondItem="lgv-Tl-Rak" secondAttribute="leading" id="Eng-00-fj2"/>
+                                    <constraint firstItem="xAQ-pG-4Te" firstAttribute="trailing" secondItem="lgv-Tl-Rak" secondAttribute="trailing" id="GSi-KG-w8D"/>
+                                    <constraint firstAttribute="trailing" secondItem="tNa-EV-yyZ" secondAttribute="trailing" constant="16" id="HVh-XT-i64"/>
+                                    <constraint firstItem="lgv-Tl-Rak" firstAttribute="trailing" secondItem="tNa-EV-yyZ" secondAttribute="trailing" id="SVH-ar-aQJ"/>
+                                    <constraint firstItem="z03-R5-Ruc" firstAttribute="top" secondItem="xAQ-pG-4Te" secondAttribute="bottom" constant="24" id="UXg-Sh-RUu"/>
+                                    <constraint firstItem="tNa-EV-yyZ" firstAttribute="leading" secondItem="GAD-5H-Fk4" secondAttribute="leading" constant="16" id="WOP-y4-p8s"/>
+                                    <constraint firstItem="tNa-EV-yyZ" firstAttribute="top" secondItem="GAD-5H-Fk4" secondAttribute="top" constant="8" id="YmT-yd-DU0"/>
+                                    <constraint firstItem="lgv-Tl-Rak" firstAttribute="leading" secondItem="tNa-EV-yyZ" secondAttribute="leading" id="a9M-yY-A1i"/>
+                                    <constraint firstAttribute="bottom" secondItem="z03-R5-Ruc" secondAttribute="bottom" constant="24" id="hjM-d0-sgM"/>
+                                    <constraint firstItem="z03-R5-Ruc" firstAttribute="leading" secondItem="xAQ-pG-4Te" secondAttribute="leading" id="iVp-C9-WHa"/>
+                                    <constraint firstItem="z03-R5-Ruc" firstAttribute="trailing" secondItem="xAQ-pG-4Te" secondAttribute="trailing" id="vck-j4-IO4"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9o-o4-HA1" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
+                                <rect key="frame" x="16" y="794" width="382" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="uee-cW-kgu"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Continue" image="forward-arrow"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                        <color key="value" name="primary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
+                                        <color key="value" name="aquaMarine"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapCTAButton:" destination="d4W-AN-ms1" eventType="touchUpInside" id="nZl-xP-eAS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P0U-7z-wN9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GXi-eQ-bcx" firstAttribute="top" secondItem="lwk-XW-dIv" secondAttribute="bottom" constant="12" id="5dV-x4-Npa"/>
+                            <constraint firstItem="P0U-7z-wN9" firstAttribute="trailing" secondItem="GXi-eQ-bcx" secondAttribute="trailing" constant="16" id="93n-on-mcT"/>
+                            <constraint firstItem="GAD-5H-Fk4" firstAttribute="leading" secondItem="P0U-7z-wN9" secondAttribute="leading" id="F6S-07-D9B"/>
+                            <constraint firstItem="P0U-7z-wN9" firstAttribute="trailing" secondItem="GAD-5H-Fk4" secondAttribute="trailing" id="It5-dL-XRA"/>
+                            <constraint firstItem="GAD-5H-Fk4" firstAttribute="top" secondItem="GXi-eQ-bcx" secondAttribute="bottom" constant="24" id="NnV-yX-WNT"/>
+                            <constraint firstItem="tNa-EV-yyZ" firstAttribute="width" secondItem="NbO-D1-7LV" secondAttribute="width" constant="-32" id="Psw-ic-jyz"/>
+                            <constraint firstItem="lwk-XW-dIv" firstAttribute="top" secondItem="P0U-7z-wN9" secondAttribute="top" constant="12" id="RJk-AH-bWd"/>
+                            <constraint firstItem="lwk-XW-dIv" firstAttribute="leading" secondItem="P0U-7z-wN9" secondAttribute="leading" constant="16" id="aJF-Fb-6J5"/>
+                            <constraint firstItem="GXi-eQ-bcx" firstAttribute="leading" secondItem="P0U-7z-wN9" secondAttribute="leading" constant="16" id="flV-Jc-OXk"/>
+                            <constraint firstItem="GXi-eQ-bcx" firstAttribute="top" secondItem="lwk-XW-dIv" secondAttribute="bottom" constant="12" id="gZc-QY-aFD"/>
+                            <constraint firstItem="P0U-7z-wN9" firstAttribute="trailing" secondItem="lwk-XW-dIv" secondAttribute="trailing" constant="16" id="orZ-XA-O2R"/>
+                            <constraint firstItem="M9o-o4-HA1" firstAttribute="top" secondItem="GAD-5H-Fk4" secondAttribute="bottom" constant="16" id="uxn-tj-Fbv"/>
+                            <constraint firstItem="P0U-7z-wN9" firstAttribute="bottom" secondItem="M9o-o4-HA1" secondAttribute="bottom" constant="16" id="xTf-Zs-Ee9"/>
+                            <constraint firstItem="M9o-o4-HA1" firstAttribute="leading" secondItem="P0U-7z-wN9" secondAttribute="leading" constant="16" id="yKw-aX-gTd"/>
+                            <constraint firstItem="P0U-7z-wN9" firstAttribute="trailing" secondItem="M9o-o4-HA1" secondAttribute="trailing" constant="16" id="ykM-vh-ZqR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ctaButtonBottomConstraints" destination="xTf-Zs-Ee9" id="jyQ-qS-hMN"/>
+                        <outlet property="curriculumTextField" destination="xAQ-pG-4Te" id="G6e-1D-coP"/>
+                        <outlet property="educationTypeTextField" destination="tNa-EV-yyZ" id="Ffg-9J-EbB"/>
+                        <outlet property="gradeTextField" destination="z03-R5-Ruc" id="1z7-zh-Gwz"/>
+                        <outlet property="schoolTextField" destination="lgv-Tl-Rak" id="CtG-ig-gUj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pvy-d5-zzK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3472" y="234"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="10n-Gd-TOL">
@@ -700,8 +848,14 @@
         <designable name="F7a-vf-n1o">
             <size key="intrinsicContentSize" width="210.5" height="20.5"/>
         </designable>
+        <designable name="GXi-eQ-bcx">
+            <size key="intrinsicContentSize" width="204" height="20.5"/>
+        </designable>
         <designable name="LEo-ib-08c">
             <size key="intrinsicContentSize" width="88.5" height="20.5"/>
+        </designable>
+        <designable name="M9o-o4-HA1">
+            <size key="intrinsicContentSize" width="97" height="24"/>
         </designable>
         <designable name="QJ3-AW-25E">
             <size key="intrinsicContentSize" width="92" height="30"/>
@@ -735,6 +889,9 @@
         </designable>
         <designable name="lgv-Rb-lKy">
             <size key="intrinsicContentSize" width="97" height="24"/>
+        </designable>
+        <designable name="lwk-XW-dIv">
+            <size key="intrinsicContentSize" width="88.5" height="20.5"/>
         </designable>
     </designables>
     <resources>

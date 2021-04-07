@@ -10,6 +10,8 @@ import Combine
 
 class SignupPersonalInformationViewController: BaseViewController {
 
+    var userType: UserType?
+    
     private lazy var itemPickerView: ItemPickerView! = {
         var pickerView = ItemPickerView()
         pickerView.toolbarDelegate = self
@@ -55,6 +57,18 @@ class SignupPersonalInformationViewController: BaseViewController {
         super.viewDidLoad()
         setupKeyboardNotification()
         navigationController?.navigationBar.barStyle = .default
+    }
+
+    @IBAction func didTapContinueButton(_ sender: Any) {
+        // TODO: Make diversion for navigation
+        if userType == .student {
+            let viewController = AddStudentEducationDetailsViewController.getInstance()
+            navigationController?.pushViewController(viewController, animated: true)
+        } else {
+            let viewController = SignupAuthenticationDetailsViewController.getInstance()
+            viewController.userType = userType
+            navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }
 

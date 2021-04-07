@@ -101,8 +101,14 @@ extension NumberVerificationViewController {
 
     func presentSuccessScreen() {
         let viewController = SuccessStateViewController.getInstance()
-        let viewModel = SignupCompletedSuccessStateViewModel(router: SignupSuccessStateRouter(with: viewController))
-        
+
+        let viewModel: SuccessStateViewModel
+        if self.viewModel.userType == .student {
+            viewModel = StudentSignupCompletedSuccessStateViewModel(router: SignupSuccessStateRouter(with: viewController))
+        } else {
+            viewModel = ParentSignupCompletedSuccessStateViewModel(router: SignupSuccessStateRouter(with: viewController))
+        }
+
         viewController.viewModel = viewModel
         viewController.modalPresentationStyle = .fullScreen
         viewController.modalTransitionStyle = .coverVertical

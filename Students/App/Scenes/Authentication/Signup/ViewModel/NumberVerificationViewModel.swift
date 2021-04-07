@@ -10,6 +10,7 @@ import Foundation
 class NumberVerificationViewModel {
     private var resendOtpTimer: Timer?
     private var otpExpireTimer: Timer?
+    var userType: UserType?
 
     private var otpExpireStartTimerInterval: Date!
 
@@ -18,6 +19,10 @@ class NumberVerificationViewModel {
     internal func invalidateTimer() {
         resendOtpTimer?.invalidate()
         resendOtpTimer = nil
+    }
+
+    init(userType: UserType?) {
+        self.userType = userType
     }
 
     func viewDidLoad() {
