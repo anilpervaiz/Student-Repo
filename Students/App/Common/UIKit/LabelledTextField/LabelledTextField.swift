@@ -39,7 +39,11 @@ class LabelledTextField: CustomNibView {
     var onTextFieldChanged: TextFieldChangedCallBack?
     var onTextFieldTapped: TextFieldTappedCallBack?
     var onTextFieldFocusChange: TextFieldFocusChangeCallBack?
-    var leadingImageTintColor: UIColor?
+    var leadingImageTintColor: UIColor? {
+        didSet {
+            leftImageView.tintColor = leadingImageTintColor
+        }
+    }
 
     private var tap: UITapGestureRecognizer?
 
