@@ -43,25 +43,11 @@ class DashboardViewController: BaseViewController {
                                                                  description: "24")
         }
     }
-    @IBOutlet weak var tutoredStudentCard: DashboardCard! {
+    @IBOutlet weak var learningHourCard: DashboardCard! {
         didSet {
-            tutoredStudentCard.viewModel = DashboardCardViewModel(imageAsset: Asset.Media.tutoredStudentsCardIcon,
-                                                                 title: "Tutored Students",
-                                                                 description: "23")
-        }
-    }
-    @IBOutlet weak var tutoredHourCard: DashboardCard! {
-        didSet {
-            tutoredHourCard.viewModel = DashboardCardViewModel(imageAsset: Asset.Media.tutoredHoursCardIcon,
-                                                                 title: "Tutored Hours",
+            learningHourCard.viewModel = DashboardCardViewModel(imageAsset: Asset.Media.tutoredHoursCardIcon,
+                                                                 title: "Learning Hours",
                                                                  description: "102")
-        }
-    }
-    @IBOutlet weak var earningCard: DashboardCard! {
-        didSet {
-            earningCard.viewModel = DashboardCardViewModel(imageAsset: Asset.Media.earningCardIcon,
-                                                                 title: "Total Earnings",
-                                                                 description: "AED 1200")
         }
     }
     lazy var chatNavigationBarButton: UIBarButtonItem = {

@@ -32,9 +32,8 @@ class TabbarController: UITabBarController {
         tabBar.tintColor = Asset.Colors.primary.color
         viewControllers = [
             DashboardSceneBuilder().makeViewController(),
-            RequestListingSceneBuilder().makeViewController(),
+            BrowseSessionBuilder().makeViewController(),
             ScheduleListingSceneBuilder().makeViewController(),
-            StudentListingSceneBuilder().makeViewController(),
             ProfileSceneBuilder().makeViewController()
         ]
 
@@ -54,17 +53,15 @@ extension TabbarController: Initializable {
 
 enum Tabs: Int, CaseIterable {
     case dashboard
-    case request
+    case browse
     case schedule
-    case student
     case profile
 
     var normalStyleImageName: ImageAsset {
         switch self {
         case .dashboard: return Asset.Media.tabbarDashboardNormal
-        case .request: return Asset.Media.tabbarRequestNormal
+        case .browse: return Asset.Media.tabbarBrowseNormal
         case .schedule: return Asset.Media.tabbarScheduleNormal
-        case .student: return Asset.Media.tabbarStudentNormal
         case .profile: return Asset.Media.tabbarProfileNormal
         }
     }
@@ -72,9 +69,8 @@ enum Tabs: Int, CaseIterable {
     var selectedStyleImageName: ImageAsset {
         switch self {
         case .dashboard: return Asset.Media.tabbarDashboardSelected
-        case .request: return Asset.Media.tabbarRequestsSelected
+        case .browse: return Asset.Media.tabbarBrowseSelected
         case .schedule: return Asset.Media.tabbarScheduleSelected
-        case .student: return Asset.Media.tabbarStudentSelected
         case .profile: return Asset.Media.tabbarProfileSelected
         }
     }
@@ -82,9 +78,8 @@ enum Tabs: Int, CaseIterable {
     var title: String {
         switch self {
         case .dashboard: return "Dashboard"
-        case .request: return "Requests"
+        case .browse: return "Browse"
         case .schedule: return "Schedule"
-        case .student: return "Students"
         case .profile: return "Profile"
         }
     }

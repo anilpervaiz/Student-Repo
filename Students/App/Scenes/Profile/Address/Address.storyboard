@@ -10,6 +10,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
         <array key="Poppins-SemiBold.ttf">
             <string>Poppins-SemiBold</string>
         </array>
@@ -190,10 +196,246 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="162.72321428571428"/>
         </scene>
+        <!--Add Address View Controller-->
+        <scene sceneID="rZ0-2G-1Z2">
+            <objects>
+                <viewController storyboardIdentifier="AddAddressViewController" id="te8-pQ-f90" customClass="AddAddressViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lbg-8A-XiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJY-l6-qbY">
+                                <rect key="frame" x="0.0" y="52" width="414" height="722"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZo-V1-gaK">
+                                        <rect key="frame" x="16" y="16" width="382" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" name="gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pd1-MH-hHR" customClass="GMSMapView">
+                                        <rect key="frame" x="16" y="42.5" width="382" height="92"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="92" id="bHg-Xi-O7B"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfJ-t0-veT" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="158.5" width="382" height="56"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" placeholder="YES" id="wCE-XM-4sm"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Address Name"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter Address Name (ex.home)"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRc-CG-mE5" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="238.5" width="382" height="56"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" placeholder="YES" id="TIw-UY-8FY"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Country"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter Country"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tB-cI-w7B" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="318.5" width="382" height="56"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" placeholder="YES" id="78p-Hf-3ma"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Area"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter Area"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSs-1I-exy" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="398.5" width="382" height="56"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" placeholder="YES" id="xVc-lc-Omp"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Street"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter Street"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="j8e-aw-IKd">
+                                        <rect key="frame" x="16" y="478.5" width="382" height="56"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9o-aw-3gM" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="56"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Building"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Building"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JoF-SM-pSo" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                                <rect key="frame" x="132" y="0.0" width="118" height="56"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Floor"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Floor"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfC-uX-mAK" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                                <rect key="frame" x="264" y="0.0" width="118" height="56"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Flat"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Flat"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" placeholder="YES" id="ssW-Ty-2Pr"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqF-kk-eTF">
+                                        <rect key="frame" x="16" y="558.5" width="382" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" name="gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Type your note here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GMN-sW-2zZ">
+                                        <rect key="frame" x="16" y="583" width="382" height="96"/>
+                                        <color key="backgroundColor" name="lightBackgroundTransparent"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96" id="Jes-s6-yT2"/>
+                                        </constraints>
+                                        <color key="textColor" name="lightGray"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="lightGray"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="lightGray"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2Q-R8-yFQ">
+                                        <rect key="frame" x="16" y="699" width="382" height="24"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1VI-vy-AfJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="AHA-7t-Ydc"/>
+                                                    <constraint firstAttribute="width" secondItem="1VI-vy-AfJ" secondAttribute="height" id="ezs-Ro-DrN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set as Default Address." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNm-18-3Ys">
+                                                <rect key="frame" x="40" y="0.0" width="342" height="24"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                                <color key="textColor" name="darkBlue"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="1VI-vy-AfJ" firstAttribute="top" secondItem="x2Q-R8-yFQ" secondAttribute="top" id="E5u-fJ-XZ8"/>
+                                            <constraint firstItem="aNm-18-3Ys" firstAttribute="top" secondItem="x2Q-R8-yFQ" secondAttribute="top" id="LRs-yy-dCm"/>
+                                            <constraint firstAttribute="trailing" secondItem="aNm-18-3Ys" secondAttribute="trailing" id="QA6-PZ-xkI"/>
+                                            <constraint firstItem="aNm-18-3Ys" firstAttribute="leading" secondItem="1VI-vy-AfJ" secondAttribute="trailing" constant="16" id="RhD-OS-56P"/>
+                                            <constraint firstItem="1VI-vy-AfJ" firstAttribute="leading" secondItem="x2Q-R8-yFQ" secondAttribute="leading" id="hTl-VP-It2"/>
+                                            <constraint firstAttribute="bottom" secondItem="aNm-18-3Ys" secondAttribute="bottom" id="nfb-Yo-yBS"/>
+                                            <constraint firstAttribute="bottom" secondItem="1VI-vy-AfJ" secondAttribute="bottom" id="sWV-NG-049"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Pd1-MH-hHR" secondAttribute="trailing" constant="16" id="0Cg-9C-v4C"/>
+                                    <constraint firstItem="GMN-sW-2zZ" firstAttribute="leading" secondItem="AJY-l6-qbY" secondAttribute="leading" constant="16" id="0hY-up-4bj"/>
+                                    <constraint firstAttribute="trailing" secondItem="tfJ-t0-veT" secondAttribute="trailing" constant="16" id="3Jg-85-bLf"/>
+                                    <constraint firstAttribute="trailing" secondItem="oZo-V1-gaK" secondAttribute="trailing" constant="16" id="4Rj-so-ZHl"/>
+                                    <constraint firstAttribute="trailing" secondItem="j8e-aw-IKd" secondAttribute="trailing" constant="16" id="9ba-HI-UCS"/>
+                                    <constraint firstItem="YqF-kk-eTF" firstAttribute="leading" secondItem="AJY-l6-qbY" secondAttribute="leading" constant="16" id="A4Q-Sz-tn5"/>
+                                    <constraint firstItem="pSs-1I-exy" firstAttribute="top" secondItem="7tB-cI-w7B" secondAttribute="bottom" constant="24" id="Bk6-mW-WXh"/>
+                                    <constraint firstAttribute="trailing" secondItem="YqF-kk-eTF" secondAttribute="trailing" constant="16" id="FcO-oe-Iv9"/>
+                                    <constraint firstItem="x2Q-R8-yFQ" firstAttribute="leading" secondItem="AJY-l6-qbY" secondAttribute="leading" constant="16" id="GCB-El-FoT"/>
+                                    <constraint firstAttribute="bottom" secondItem="x2Q-R8-yFQ" secondAttribute="bottom" constant="16" id="HQK-4S-apN"/>
+                                    <constraint firstAttribute="trailing" secondItem="GMN-sW-2zZ" secondAttribute="trailing" constant="16" id="Jfq-rr-1yM"/>
+                                    <constraint firstItem="j8e-aw-IKd" firstAttribute="leading" secondItem="AJY-l6-qbY" secondAttribute="leading" constant="16" id="Kau-ip-qJY"/>
+                                    <constraint firstAttribute="trailing" secondItem="7tB-cI-w7B" secondAttribute="trailing" constant="16" id="Le7-M4-CWi"/>
+                                    <constraint firstItem="tfJ-t0-veT" firstAttribute="leading" secondItem="AJY-l6-qbY" secondAttribute="leading" constant="16" id="LlY-dc-tNP"/>
+                                    <constraint firstItem="oZo-V1-gaK" firstAttribute="top" secondItem="AJY-l6-qbY" secondAttribute="top" constant="16" id="MHv-fj-8Ql"/>
+                                    <constraint firstItem="pSs-1I-exy" firstAttribute="leading" secondItem="AJY-l6-qbY" secondAttribute="leading" constant="16" id="MuK-A1-9wc"/>
+                                    <constraint firstItem="7tB-cI-w7B" firstAttribute="leading" secondItem="AJY-l6-qbY" secondAttribute="leading" constant="16" id="QYj-MX-2pi"/>
+                                    <constraint firstItem="j8e-aw-IKd" firstAttribute="top" secondItem="pSs-1I-exy" secondAttribute="bottom" constant="24" id="RRO-eP-WWh"/>
+                                    <constraint firstItem="YqF-kk-eTF" firstAttribute="top" secondItem="j8e-aw-IKd" secondAttribute="bottom" constant="24" id="S2A-mQ-lfO"/>
+                                    <constraint firstItem="GRc-CG-mE5" firstAttribute="leading" secondItem="AJY-l6-qbY" secondAttribute="leading" constant="16" id="SN1-fs-jfK"/>
+                                    <constraint firstItem="tfJ-t0-veT" firstAttribute="top" secondItem="Pd1-MH-hHR" secondAttribute="bottom" constant="24" id="XL5-c1-CrB"/>
+                                    <constraint firstAttribute="trailing" secondItem="GRc-CG-mE5" secondAttribute="trailing" constant="16" id="YN3-WT-D1G"/>
+                                    <constraint firstItem="x2Q-R8-yFQ" firstAttribute="top" secondItem="GMN-sW-2zZ" secondAttribute="bottom" constant="20" id="YlK-He-eHU"/>
+                                    <constraint firstItem="Pd1-MH-hHR" firstAttribute="top" secondItem="oZo-V1-gaK" secondAttribute="bottom" constant="10" id="cGc-RO-m0v"/>
+                                    <constraint firstItem="GRc-CG-mE5" firstAttribute="top" secondItem="tfJ-t0-veT" secondAttribute="bottom" constant="24" id="d5p-Mr-U7z"/>
+                                    <constraint firstAttribute="trailing" secondItem="pSs-1I-exy" secondAttribute="trailing" constant="16" id="hd5-rq-6jU"/>
+                                    <constraint firstItem="oZo-V1-gaK" firstAttribute="leading" secondItem="AJY-l6-qbY" secondAttribute="leading" constant="16" id="oZ5-f7-YXm"/>
+                                    <constraint firstAttribute="trailing" secondItem="x2Q-R8-yFQ" secondAttribute="trailing" constant="16" id="rff-9g-XNq"/>
+                                    <constraint firstItem="Pd1-MH-hHR" firstAttribute="leading" secondItem="AJY-l6-qbY" secondAttribute="leading" constant="16" id="uBC-RR-KUT"/>
+                                    <constraint firstItem="GMN-sW-2zZ" firstAttribute="top" secondItem="YqF-kk-eTF" secondAttribute="bottom" constant="8" id="vJM-ab-Kpo"/>
+                                    <constraint firstItem="7tB-cI-w7B" firstAttribute="top" secondItem="GRc-CG-mE5" secondAttribute="bottom" constant="24" id="xIS-Ie-Tdm"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxs-eZ-JL8" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
+                                <rect key="frame" x="16" y="790" width="382" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="E3j-vt-iWU"/>
+                                </constraints>
+                                <state key="normal" title="Save Address"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                        <color key="value" name="primary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
+                                        <color key="value" name="aquaMarine"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L1q-Gu-5Bh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L1q-Gu-5Bh" firstAttribute="bottom" secondItem="zxs-eZ-JL8" secondAttribute="bottom" constant="16" id="IlL-6l-t7p"/>
+                            <constraint firstItem="L1q-Gu-5Bh" firstAttribute="trailing" secondItem="zxs-eZ-JL8" secondAttribute="trailing" constant="16" id="K7S-hm-V7i"/>
+                            <constraint firstItem="L1q-Gu-5Bh" firstAttribute="trailing" secondItem="AJY-l6-qbY" secondAttribute="trailing" id="KtT-Xw-Cxy"/>
+                            <constraint firstItem="zxs-eZ-JL8" firstAttribute="leading" secondItem="L1q-Gu-5Bh" secondAttribute="leading" constant="16" id="LDd-tB-Olf"/>
+                            <constraint firstItem="AJY-l6-qbY" firstAttribute="leading" secondItem="L1q-Gu-5Bh" secondAttribute="leading" id="Mp1-Hn-9R8"/>
+                            <constraint firstItem="zxs-eZ-JL8" firstAttribute="top" secondItem="AJY-l6-qbY" secondAttribute="bottom" constant="16" id="NCc-nL-JQN"/>
+                            <constraint firstItem="Pd1-MH-hHR" firstAttribute="width" secondItem="Lbg-8A-XiQ" secondAttribute="width" constant="-32" id="bcr-KO-CQm"/>
+                            <constraint firstItem="AJY-l6-qbY" firstAttribute="top" secondItem="L1q-Gu-5Bh" secondAttribute="top" constant="8" id="qhy-VR-aLX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ctaButtonBottomConstraint" destination="IlL-6l-t7p" id="q3O-LT-aiu"/>
+                        <outlet property="defaultAddressCheckbox" destination="1VI-vy-AfJ" id="Efj-bc-wgV"/>
+                        <outlet property="defaultAddressView" destination="x2Q-R8-yFQ" id="aDw-aP-fTe"/>
+                        <outlet property="mapView" destination="Pd1-MH-hHR" id="ExB-TR-Jjo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="76x-gU-kii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.8550724637682" y="169.41964285714286"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="7de-jq-Hr3">
             <size key="intrinsicContentSize" width="118" height="30"/>
+        </designable>
+        <designable name="zxs-eZ-JL8">
+            <size key="intrinsicContentSize" width="94" height="30"/>
         </designable>
     </designables>
     <resources>
@@ -213,6 +455,9 @@
         </namedColor>
         <namedColor name="halfBaked">
             <color red="0.47058823529411764" green="0.77647058823529413" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightBackgroundTransparent">
+            <color red="0.96078431372549022" green="0.97254901960784312" blue="0.99607843137254903" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="lightGray">
             <color red="0.67843137254901964" green="0.70196078431372544" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

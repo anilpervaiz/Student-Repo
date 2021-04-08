@@ -88,6 +88,8 @@ internal enum Asset {
     internal static let timeIcon = ImageAsset(name: "timeIcon")
     internal static let facebookIcon = ImageAsset(name: "facebookIcon")
     internal static let googleIcon = ImageAsset(name: "googleIcon")
+    internal static let tabbarBrowseNormal = ImageAsset(name: "tabbarBrowseNormal")
+    internal static let tabbarBrowseSelected = ImageAsset(name: "tabbarBrowseSelected")
     internal static let tabbarDashboardNormal = ImageAsset(name: "tabbarDashboardNormal")
     internal static let tabbarDashboardSelected = ImageAsset(name: "tabbarDashboardSelected")
     internal static let tabbarProfileNormal = ImageAsset(name: "tabbarProfileNormal")

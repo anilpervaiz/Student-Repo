@@ -65,12 +65,6 @@
 		C960E4FC261B288900DC19EE /* RateAndReviewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3BE261B288800DC19EE /* RateAndReviewBuilder.swift */; };
 		C960E4FD261B288900DC19EE /* RateAndReview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960E3BF261B288800DC19EE /* RateAndReview.storyboard */; };
 		C960E4FE261B288900DC19EE /* RateAndReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3C0261B288800DC19EE /* RateAndReviewViewController.swift */; };
-		C960E4FF261B288900DC19EE /* StudentListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3C3261B288800DC19EE /* StudentListingViewModel.swift */; };
-		C960E500261B288900DC19EE /* StudentListingSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3C4261B288800DC19EE /* StudentListingSceneBuilder.swift */; };
-		C960E501261B288900DC19EE /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3C6261B288800DC19EE /* StudentTableViewCell.swift */; };
-		C960E502261B288900DC19EE /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E3C7261B288800DC19EE /* StudentTableViewCell.xib */; };
-		C960E503261B288900DC19EE /* StudentListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3C8261B288800DC19EE /* StudentListingViewController.swift */; };
-		C960E504261B288900DC19EE /* StudentListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3C9261B288800DC19EE /* StudentListingRouter.swift */; };
 		C960E505261B288900DC19EE /* StudentProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3CB261B288800DC19EE /* StudentProfileRouter.swift */; };
 		C960E506261B288900DC19EE /* StudentProfileTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3CC261B288800DC19EE /* StudentProfileTableHeaderView.swift */; };
 		C960E507261B288900DC19EE /* RateStudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E3CE261B288800DC19EE /* RateStudentTableViewCell.xib */; };
@@ -160,11 +154,6 @@
 		C960E55B261B288900DC19EE /* SuccessStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E440261B288900DC19EE /* SuccessStateViewModel.swift */; };
 		C960E55C261B288900DC19EE /* SuccessState.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960E441261B288900DC19EE /* SuccessState.storyboard */; };
 		C960E55D261B288900DC19EE /* SuccessStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E442261B288900DC19EE /* SuccessStateViewController.swift */; };
-		C960E55E261B288900DC19EE /* Requests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960E444261B288900DC19EE /* Requests.storyboard */; };
-		C960E55F261B288900DC19EE /* RequestListingSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E446261B288900DC19EE /* RequestListingSceneBuilder.swift */; };
-		C960E560261B288A00DC19EE /* RequestListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E447261B288900DC19EE /* RequestListingViewModel.swift */; };
-		C960E561261B288A00DC19EE /* RequestListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E448261B288900DC19EE /* RequestListingRouter.swift */; };
-		C960E562261B288A00DC19EE /* RequestListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E449261B288900DC19EE /* RequestListingViewController.swift */; };
 		C960E563261B288A00DC19EE /* LocationPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E44D261B288900DC19EE /* LocationPickerViewModel.swift */; };
 		C960E564261B288A00DC19EE /* NumberVerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E44E261B288900DC19EE /* NumberVerificationViewModel.swift */; };
 		C960E565261B288A00DC19EE /* SignupAuthenticationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E44F261B288900DC19EE /* SignupAuthenticationDetailsViewController.swift */; };
@@ -289,6 +278,10 @@
 		C99D0069261EA94C00816E5C /* AddressListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99D0068261EA94C00816E5C /* AddressListingTableViewCell.xib */; };
 		C99D006E261EAC8400816E5C /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D006D261EAC8300816E5C /* Address.swift */; };
 		C99D0073261EB1CB00816E5C /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D0072261EB1CB00816E5C /* SelectLocationViewController.swift */; };
+		C99D008B261F784400816E5C /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D008A261F784400816E5C /* AddAddressViewController.swift */; };
+		C99D009A261F85A400816E5C /* Browse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99D0099261F85A400816E5C /* Browse.storyboard */; };
+		C99D009F261F85B100816E5C /* BrowseSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D009E261F85B100816E5C /* BrowseSessionViewController.swift */; };
+		C99D00A7261F85C400816E5C /* BrowseSessionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D00A6261F85C400816E5C /* BrowseSessionBuilder.swift */; };
 		C99DFFCC261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFFCB261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift */; };
 		C99DFFD2261CE65800816E5C /* AddStudyingSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFFD1261CE65800816E5C /* AddStudyingSubjectViewController.swift */; };
 		C99DFFD7261CE68400816E5C /* AddStudyingSubject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99DFFD6261CE68400816E5C /* AddStudyingSubject.storyboard */; };
@@ -380,12 +373,6 @@
 		C960E3BE261B288800DC19EE /* RateAndReviewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateAndReviewBuilder.swift; sourceTree = "<group>"; };
 		C960E3BF261B288800DC19EE /* RateAndReview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RateAndReview.storyboard; sourceTree = "<group>"; };
 		C960E3C0261B288800DC19EE /* RateAndReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateAndReviewViewController.swift; sourceTree = "<group>"; };
-		C960E3C3261B288800DC19EE /* StudentListingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentListingViewModel.swift; sourceTree = "<group>"; };
-		C960E3C4261B288800DC19EE /* StudentListingSceneBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentListingSceneBuilder.swift; sourceTree = "<group>"; };
-		C960E3C6261B288800DC19EE /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
-		C960E3C7261B288800DC19EE /* StudentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
-		C960E3C8261B288800DC19EE /* StudentListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentListingViewController.swift; sourceTree = "<group>"; };
-		C960E3C9261B288800DC19EE /* StudentListingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentListingRouter.swift; sourceTree = "<group>"; };
 		C960E3CB261B288800DC19EE /* StudentProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentProfileRouter.swift; sourceTree = "<group>"; };
 		C960E3CC261B288800DC19EE /* StudentProfileTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentProfileTableHeaderView.swift; sourceTree = "<group>"; };
 		C960E3CE261B288800DC19EE /* RateStudentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RateStudentTableViewCell.xib; sourceTree = "<group>"; };
@@ -475,11 +462,6 @@
 		C960E440261B288900DC19EE /* SuccessStateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessStateViewModel.swift; sourceTree = "<group>"; };
 		C960E441261B288900DC19EE /* SuccessState.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SuccessState.storyboard; sourceTree = "<group>"; };
 		C960E442261B288900DC19EE /* SuccessStateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessStateViewController.swift; sourceTree = "<group>"; };
-		C960E444261B288900DC19EE /* Requests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Requests.storyboard; sourceTree = "<group>"; };
-		C960E446261B288900DC19EE /* RequestListingSceneBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestListingSceneBuilder.swift; sourceTree = "<group>"; };
-		C960E447261B288900DC19EE /* RequestListingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestListingViewModel.swift; sourceTree = "<group>"; };
-		C960E448261B288900DC19EE /* RequestListingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestListingRouter.swift; sourceTree = "<group>"; };
-		C960E449261B288900DC19EE /* RequestListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestListingViewController.swift; sourceTree = "<group>"; };
 		C960E44D261B288900DC19EE /* LocationPickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerViewModel.swift; sourceTree = "<group>"; };
 		C960E44E261B288900DC19EE /* NumberVerificationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberVerificationViewModel.swift; sourceTree = "<group>"; };
 		C960E44F261B288900DC19EE /* SignupAuthenticationDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupAuthenticationDetailsViewController.swift; sourceTree = "<group>"; };
@@ -604,6 +586,10 @@
 		C99D0068261EA94C00816E5C /* AddressListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressListingTableViewCell.xib; sourceTree = "<group>"; };
 		C99D006D261EAC8300816E5C /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		C99D0072261EB1CB00816E5C /* SelectLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
+		C99D008A261F784400816E5C /* AddAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressViewController.swift; sourceTree = "<group>"; };
+		C99D0099261F85A400816E5C /* Browse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Browse.storyboard; sourceTree = "<group>"; };
+		C99D009E261F85B100816E5C /* BrowseSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseSessionViewController.swift; sourceTree = "<group>"; };
+		C99D00A6261F85C400816E5C /* BrowseSessionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseSessionBuilder.swift; sourceTree = "<group>"; };
 		C99DFFCB261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentEducationDetailsViewController.swift; sourceTree = "<group>"; };
 		C99DFFD1261CE65800816E5C /* AddStudyingSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudyingSubjectViewController.swift; sourceTree = "<group>"; };
 		C99DFFD6261CE68400816E5C /* AddStudyingSubject.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddStudyingSubject.storyboard; sourceTree = "<group>"; };
@@ -744,6 +730,7 @@
 		C960E390261B288800DC19EE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C99D0095261F84F700816E5C /* Browse */,
 				C99DFFD0261CE62D00816E5C /* Subject */,
 				C960E391261B288800DC19EE /* Schedule */,
 				C960E39B261B288800DC19EE /* Messages */,
@@ -756,7 +743,6 @@
 				C960E3E3261B288900DC19EE /* Dashboard */,
 				C960E3F1261B288900DC19EE /* Profile */,
 				C960E43D261B288900DC19EE /* SuccessState */,
-				C960E443261B288900DC19EE /* Request */,
 				C960E44A261B288900DC19EE /* Authentication */,
 				C960E483261B288900DC19EE /* Base */,
 				C960E487261B288900DC19EE /* AddSubject */,
@@ -897,31 +883,9 @@
 		C960E3C1261B288800DC19EE /* Student */ = {
 			isa = PBXGroup;
 			children = (
-				C960E3C2261B288800DC19EE /* Student Listing */,
 				C960E3CA261B288800DC19EE /* Student Profile */,
 			);
 			path = Student;
-			sourceTree = "<group>";
-		};
-		C960E3C2261B288800DC19EE /* Student Listing */ = {
-			isa = PBXGroup;
-			children = (
-				C960E3C3261B288800DC19EE /* StudentListingViewModel.swift */,
-				C960E3C4261B288800DC19EE /* StudentListingSceneBuilder.swift */,
-				C960E3C5261B288800DC19EE /* Cell */,
-				C960E3C8261B288800DC19EE /* StudentListingViewController.swift */,
-				C960E3C9261B288800DC19EE /* StudentListingRouter.swift */,
-			);
-			path = "Student Listing";
-			sourceTree = "<group>";
-		};
-		C960E3C5261B288800DC19EE /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				C960E3C6261B288800DC19EE /* StudentTableViewCell.swift */,
-				C960E3C7261B288800DC19EE /* StudentTableViewCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		C960E3CA261B288800DC19EE /* Student Profile */ = {
@@ -1263,26 +1227,6 @@
 				C960E440261B288900DC19EE /* SuccessStateViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		C960E443261B288900DC19EE /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				C960E444261B288900DC19EE /* Requests.storyboard */,
-				C960E445261B288900DC19EE /* Request List */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		C960E445261B288900DC19EE /* Request List */ = {
-			isa = PBXGroup;
-			children = (
-				C960E446261B288900DC19EE /* RequestListingSceneBuilder.swift */,
-				C960E447261B288900DC19EE /* RequestListingViewModel.swift */,
-				C960E448261B288900DC19EE /* RequestListingRouter.swift */,
-				C960E449261B288900DC19EE /* RequestListingViewController.swift */,
-			);
-			path = "Request List";
 			sourceTree = "<group>";
 		};
 		C960E44A261B288900DC19EE /* Authentication */ = {
@@ -1674,6 +1618,7 @@
 				C99D0055261EA8F600816E5C /* AddressListingViewController.swift */,
 				C99D005A261EA90000816E5C /* Address.storyboard */,
 				C99D0072261EB1CB00816E5C /* SelectLocationViewController.swift */,
+				C99D008A261F784400816E5C /* AddAddressViewController.swift */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -1685,6 +1630,16 @@
 				C99D0068261EA94C00816E5C /* AddressListingTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C99D0095261F84F700816E5C /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				C99D0099261F85A400816E5C /* Browse.storyboard */,
+				C99D009E261F85B100816E5C /* BrowseSessionViewController.swift */,
+				C99D00A6261F85C400816E5C /* BrowseSessionBuilder.swift */,
+			);
+			path = Browse;
 			sourceTree = "<group>";
 		};
 		C99DFFD0261CE62D00816E5C /* Subject */ = {
@@ -1891,11 +1846,11 @@
 				C960E352261B251200DC19EE /* Poppins-ExtraLightItalic.ttf in Resources */,
 				C960E507261B288900DC19EE /* RateStudentTableViewCell.xib in Resources */,
 				C960E518261B288900DC19EE /* DashboardCard.xib in Resources */,
+				C99D009A261F85A400816E5C /* Browse.storyboard in Resources */,
 				C960E58F261B288A00DC19EE /* CreateProfile.storyboard in Resources */,
 				C960E5AE261B288A00DC19EE /* CollapsedTableViewCell.xib in Resources */,
 				C960E4DB261B288900DC19EE /* Student.storyboard in Resources */,
 				C960E359261B251200DC19EE /* Poppins-BlackItalic.ttf in Resources */,
-				C960E502261B288900DC19EE /* StudentTableViewCell.xib in Resources */,
 				C960E5B8261B288A00DC19EE /* BottomSheet.storyboard in Resources */,
 				C960E361261B251200DC19EE /* Poppins-MediumItalic.ttf in Resources */,
 				C960E357261B251200DC19EE /* Poppins-ExtraBoldItalic.ttf in Resources */,
@@ -1941,7 +1896,6 @@
 				C960E542261B288900DC19EE /* DocumentCell.xib in Resources */,
 				C960E541261B288900DC19EE /* NewDocumentCell.xib in Resources */,
 				C960E59F261B288A00DC19EE /* NavigationBarItem.xib in Resources */,
-				C960E55E261B288900DC19EE /* Requests.storyboard in Resources */,
 				C960E36E261B255500DC19EE /* LaunchScreen.storyboard in Resources */,
 				C960E4E8261B288900DC19EE /* ChatParentView.xib in Resources */,
 				C960E34E261B251200DC19EE /* Media.xcassets in Resources */,
@@ -2059,10 +2013,9 @@
 				C960E544261B288900DC19EE /* NewDocumentCell.swift in Sources */,
 				C960E5AC261B288A00DC19EE /* ItemPickerViewModel.swift in Sources */,
 				C960E571261B288A00DC19EE /* LoginStateNavigationView.swift in Sources */,
-				C960E501261B288900DC19EE /* StudentTableViewCell.swift in Sources */,
 				C960E4F9261B288900DC19EE /* NotificationTableViewCell.swift in Sources */,
-				C960E562261B288A00DC19EE /* RequestListingViewController.swift in Sources */,
 				C960E51F261B288900DC19EE /* DashboardSceneBuilder.swift in Sources */,
+				C99D00A7261F85C400816E5C /* BrowseSessionBuilder.swift in Sources */,
 				C960E5AB261B288A00DC19EE /* ItemPickerView.swift in Sources */,
 				C960E5B0261B288A00DC19EE /* PageControlView.swift in Sources */,
 				C960E508261B288900DC19EE /* StudentProfileParentTableViewCell.swift in Sources */,
@@ -2112,7 +2065,6 @@
 				C960E5D1261B288A00DC19EE /* AppDimension.swift in Sources */,
 				C960E4E4261B288900DC19EE /* MessageCell.swift in Sources */,
 				C960E5D0261B288A00DC19EE /* UIColor+Image.swift in Sources */,
-				C960E561261B288A00DC19EE /* RequestListingRouter.swift in Sources */,
 				C960E516261B288900DC19EE /* GetStartedViewController.swift in Sources */,
 				C960E566261B288A00DC19EE /* NumberVerificationViewController.swift in Sources */,
 				C960E519261B288900DC19EE /* DashboardCard.swift in Sources */,
@@ -2132,7 +2084,6 @@
 				C960E4DD261B288900DC19EE /* ScheduleListingViewController.swift in Sources */,
 				C960E57C261B288A00DC19EE /* AvailibilityCellViewModel.swift in Sources */,
 				C960E51D261B288900DC19EE /* DashboardReviewCollectionViewCell.swift in Sources */,
-				C960E55F261B288900DC19EE /* RequestListingSceneBuilder.swift in Sources */,
 				C960E59B261B288A00DC19EE /* SessionDetailBuilder.swift in Sources */,
 				C960E535261B288900DC19EE /* StudentParentDetailsTableViewCell.swift in Sources */,
 				C960E567261B288A00DC19EE /* SignupPersonalInformationViewController.swift in Sources */,
@@ -2146,7 +2097,6 @@
 				C960E36F261B255500DC19EE /* AppDelegate.swift in Sources */,
 				C960E5B7261B288A00DC19EE /* BottomSheetListCellViewModel.swift in Sources */,
 				C960E580261B288A00DC19EE /* RegisteredSubjectTableViewCell.swift in Sources */,
-				C960E4FF261B288900DC19EE /* StudentListingViewModel.swift in Sources */,
 				C99D0056261EA8F600816E5C /* AddressListingViewController.swift in Sources */,
 				C960E576261B288A00DC19EE /* LoginPendingProcessViewController.swift in Sources */,
 				C99D0073261EB1CB00816E5C /* SelectLocationViewController.swift in Sources */,
@@ -2159,10 +2109,10 @@
 				C960E5C8261B288A00DC19EE /* UIWindow+RootView.swift in Sources */,
 				C960E598261B288A00DC19EE /* SessionDetailViewModel.swift in Sources */,
 				C960E4F2261B288900DC19EE /* StudentMock.swift in Sources */,
-				C960E503261B288900DC19EE /* StudentListingViewController.swift in Sources */,
 				C960E551261B288900DC19EE /* MyEarningsViewController.swift in Sources */,
 				C960E556261B288900DC19EE /* ProfileSceneBuilder.swift in Sources */,
 				C960E591261B288A00DC19EE /* BaseNavigationViewController.swift in Sources */,
+				C99D009F261F85B100816E5C /* BrowseSessionViewController.swift in Sources */,
 				C960E57E261B288A00DC19EE /* UploadImageViewModel.swift in Sources */,
 				C99D006E261EAC8400816E5C /* Address.swift in Sources */,
 				C960E4DF261B288900DC19EE /* ScheduleListingSceneBuilder.swift in Sources */,
@@ -2206,12 +2156,12 @@
 				C960E5C2261B288A00DC19EE /* ReviewTableViewCell.swift in Sources */,
 				C960E536261B288900DC19EE /* SessionFeesTableViewCell.swift in Sources */,
 				C960E57B261B288A00DC19EE /* CreateProfileSectionTableCellViewModel.swift in Sources */,
+				C99D008B261F784400816E5C /* AddAddressViewController.swift in Sources */,
 				C960E5AA261B288A00DC19EE /* SecondaryCTAButton.swift in Sources */,
 				C960E592261B288A00DC19EE /* BaseRouter.swift in Sources */,
 				C960E4FB261B288900DC19EE /* NotificationViewController.swift in Sources */,
 				C960E59E261B288A00DC19EE /* NavigationBarItem.swift in Sources */,
 				C960E5BD261B288A00DC19EE /* CollectionViewTitleHeader.swift in Sources */,
-				C960E560261B288A00DC19EE /* RequestListingViewModel.swift in Sources */,
 				C960E5CE261B288A00DC19EE /* ReusableView.swift in Sources */,
 				C960E55A261B288900DC19EE /* SignupCompletedSuccessStateViewModel.swift in Sources */,
 				C960E5CA261B288A00DC19EE /* String+Regex.swift in Sources */,
@@ -2232,7 +2182,6 @@
 				C960E50F261B288900DC19EE /* TabbarController.swift in Sources */,
 				C960E5A4261B288A00DC19EE /* TagFlowLayout.swift in Sources */,
 				C960E5B4261B288A00DC19EE /* HeadingLabel.swift in Sources */,
-				C960E504261B288900DC19EE /* StudentListingRouter.swift in Sources */,
 				C960E57F261B288A00DC19EE /* CreateProfileRouter.swift in Sources */,
 				C960E509261B288900DC19EE /* RateStudentTableViewCell.swift in Sources */,
 				C960E574261B288A00DC19EE /* LoginProfileRejectViewModel.swift in Sources */,
@@ -2249,7 +2198,6 @@
 				C960E5C9261B288A00DC19EE /* UIStoryboard+helpers.swift in Sources */,
 				C960E5C4261B288A00DC19EE /* UIView+Extensions.swift in Sources */,
 				C960E594261B288A00DC19EE /* AddSubjectViewModel.swift in Sources */,
-				C960E500261B288900DC19EE /* StudentListingSceneBuilder.swift in Sources */,
 				C99D0050261E0A8700816E5C /* ProfileCardCollectionViewCell.swift in Sources */,
 				C960E5A6261B288A00DC19EE /* OptionSelectionView.swift in Sources */,
 				CE66C6C425FF904000A2FA72 /* Students.xcdatamodeld in Sources */,

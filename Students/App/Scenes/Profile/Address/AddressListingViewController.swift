@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddressListingViewController: UIViewController {
+class AddressListingViewController: BaseViewController {
 
     var data: [Address] = Address.mockData
 
@@ -44,8 +44,8 @@ class AddressListingViewController: UIViewController {
     }
 
     @IBAction func didTapAddAddressButton(_ sender: Any) {
-        let viewController = SelectLocationViewController.getInstance()
-        present(viewController, animated: true, completion: nil)
+        let viewController = AddAddressViewController.getInstance()
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

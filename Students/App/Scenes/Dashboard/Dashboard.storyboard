@@ -17,7 +17,7 @@
         <!--Dashboard View Controller-->
         <scene sceneID="CEJ-Qf-9Zk">
             <objects>
-                <viewController storyboardIdentifier="DashboardViewController" id="3ah-B4-S6z" customClass="DashboardViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardViewController" id="3ah-B4-S6z" customClass="DashboardViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y7X-lt-yVL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,16 +32,16 @@
                                 <rect key="frame" x="0.0" y="102" width="414" height="760"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ywS-nQ-gCJ">
-                                        <rect key="frame" x="16" y="0.0" width="382" height="264"/>
+                                        <rect key="frame" x="16" y="0.0" width="382" height="128"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="08r-ds-Atr">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="128"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDL-Wf-H8A" customClass="DashboardCard" customModule="Teachers" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDL-Wf-H8A" customClass="DashboardCard" customModule="Students" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="187" height="128"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2W-HY-zNh" customClass="DashboardCard" customModule="Teachers" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2W-HY-zNh" customClass="DashboardCard" customModule="Students" customModuleProvider="target">
                                                         <rect key="frame" x="195" y="0.0" width="187" height="128"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
@@ -50,30 +50,17 @@
                                                     <constraint firstAttribute="height" constant="128" placeholder="YES" id="fCg-Gr-oXz"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v78-z9-i2T">
-                                                <rect key="frame" x="0.0" y="136" width="382" height="128"/>
-                                                <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgA-aR-rjG" customClass="DashboardCard" customModule="Teachers" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="128"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RnP-KI-2sf" customClass="DashboardCard" customModule="Teachers" customModuleProvider="target">
-                                                        <rect key="frame" x="195" y="0.0" width="187" height="128"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    </view>
-                                                </subviews>
-                                            </stackView>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4L-Na-zSt" customClass="CollectionViewTitleHeader" customModule="Teachers" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="288" width="382" height="24"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4L-Na-zSt" customClass="CollectionViewTitleHeader" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="152" width="382" height="24"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" placeholder="YES" id="5rm-cx-Fu7"/>
                                         </constraints>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ocb-Kh-3U9">
-                                        <rect key="frame" x="0.0" y="324" width="414" height="124"/>
+                                        <rect key="frame" x="0.0" y="188" width="414" height="124"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="124" id="EZt-6q-75b"/>
@@ -87,7 +74,7 @@
                                         <cells/>
                                     </collectionView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="a23-zO-lYT">
-                                        <rect key="frame" x="0.0" y="508" width="414" height="160"/>
+                                        <rect key="frame" x="0.0" y="372" width="414" height="160"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="160" id="Hcg-SF-R08"/>
@@ -100,8 +87,8 @@
                                         </collectionViewFlowLayout>
                                         <cells/>
                                     </collectionView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KA8-oD-Lt8" customClass="CollectionViewTitleHeader" customModule="Teachers" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="472" width="382" height="24"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KA8-oD-Lt8" customClass="CollectionViewTitleHeader" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="336" width="382" height="24"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" placeholder="YES" id="YJy-Tu-uPa"/>
@@ -143,14 +130,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="E8h-nJ-87Y"/>
                     <connections>
-                        <outlet property="earningCard" destination="mDL-Wf-H8A" id="18y-at-KwO"/>
+                        <outlet property="learningHourCard" destination="mDL-Wf-H8A" id="A2q-MP-o0b"/>
                         <outlet property="reviewCollectionViewHeader" destination="KA8-oD-Lt8" id="lLc-2o-qN5"/>
                         <outlet property="reviewsCollectionView" destination="a23-zO-lYT" id="7G3-kt-FWw"/>
                         <outlet property="sessionCollectionView" destination="ocb-Kh-3U9" id="Vh8-Mw-2yG"/>
                         <outlet property="sessionCollectionViewHeader" destination="d4L-Na-zSt" id="gaM-P5-3hA"/>
-                        <outlet property="totalSessionsCard" destination="RnP-KI-2sf" id="mAD-13-OGG"/>
-                        <outlet property="tutoredHourCard" destination="S2W-HY-zNh" id="Ees-Cv-tS0"/>
-                        <outlet property="tutoredStudentCard" destination="jgA-aR-rjG" id="QJ5-iL-XSR"/>
+                        <outlet property="totalSessionsCard" destination="S2W-HY-zNh" id="I2g-ho-NoV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUp-7l-96r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
