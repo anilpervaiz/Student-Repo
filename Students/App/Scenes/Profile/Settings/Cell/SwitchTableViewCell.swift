@@ -18,7 +18,7 @@ class SwitchTableViewCell: UITableViewCell,
 
 
     func configure(row: SettingsModel.Row) {
-        descriptionLabel.text = row.description
+        descriptionLabel.text = ""
         switchComponent.isOn = row.isOn
 
         titleLabel.text = row.title

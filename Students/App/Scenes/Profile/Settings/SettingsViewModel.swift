@@ -12,7 +12,7 @@ class SettingsViewModel {
     var section = SettingsModel.Section.allCases
 
     init() {
-        data[.account] = [.changePassword, .language("English"), .notification(true), .goOffline(false), .signout]
+        data[.account] = [.changePassword, .language("English"), .notification(true), .signout]
         data[.more] = [.termsAndPrivacy, .helpCenter, .about]
     }
 

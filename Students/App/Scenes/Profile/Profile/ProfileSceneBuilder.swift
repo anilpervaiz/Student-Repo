@@ -12,7 +12,7 @@ struct ProfileSceneBuilder {
         let controller = ProfileViewController.getInstance()
         let navigationController = BaseNavigationController(rootViewController: controller)
 
-        controller.router = TeacherProfileRouter(with: navigationController)
+        controller.router = ProfileRouter(with: navigationController)
 
         return navigationController
     }

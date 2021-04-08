@@ -50,5 +50,6 @@ extension UIStoryboard {
         case billingInformation = "BillingInformation"
         case language = "Language"
         case addStudyingSubject = "AddStudyingSubject"
+        case address = "Address"
     }
 }

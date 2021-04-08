@@ -15,6 +15,9 @@ typealias TextFieldFocusChangeCallBack = ((String?) -> Void)
 @IBDesignable
 class LabelledTextField: CustomNibView {
     //IBOutlets
+    @IBOutlet weak var leftImageViewContainer: UIView!
+    @IBOutlet weak var textFieldStackView: UIStackView!
+    @IBOutlet weak var leftImageView: UIImageView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var inputTextField: PaddedTextField!
     @IBOutlet private weak var bottomDescriptionLabel: UILabel!
@@ -36,6 +39,7 @@ class LabelledTextField: CustomNibView {
     var onTextFieldChanged: TextFieldChangedCallBack?
     var onTextFieldTapped: TextFieldTappedCallBack?
     var onTextFieldFocusChange: TextFieldFocusChangeCallBack?
+    var leadingImageTintColor: UIColor?
 
     private var tap: UITapGestureRecognizer?
 
@@ -221,11 +225,13 @@ class LabelledTextField: CustomNibView {
         }
     }
 
-    var leadingImage: UIImage = .init() {
+    var leadingImage: UIImage? = nil {
         didSet {
-            let imageView = UIImageView(frame: CGRect(x: 8, y: 0, width: 24, height: 24))
-            imageView.image = leadingImage
-            inputTextField.leftView = imageView
+            if let tintColor = leadingImageTintColor {
+                leftImageView.tintColor = tintColor
+            }
+            leftImageView.image = leadingImage
+            leftImageViewContainer.isHidden = leadingImage == nil
         }
     }
 
@@ -255,7 +261,9 @@ class LabelledTextField: CustomNibView {
         setNormalState()
 
         inputTextField.textAlignment = .left
-        inputTextField.backgroundColor = Asset.Colors.dullWhite.color
+        textFieldStackView.backgroundColor = Asset.Colors.dullWhite.color
+
+        leftImageViewContainer.isHidden = leadingImage == nil
     }
 
     @discardableResult
@@ -327,9 +335,9 @@ class LabelledTextField: CustomNibView {
     }
 
     func setTextViewBorder(with color: UIColor) {
-        inputTextField.layer.borderColor = color.cgColor
-        inputTextField.layer.borderWidth = 1
-        inputTextField.layer.cornerRadius = 4
+        textFieldStackView.layer.borderColor = color.cgColor
+        textFieldStackView.layer.borderWidth = 1
+        textFieldStackView.layer.cornerRadius = 4
     }
 
     @IBAction func textFieldDidChange(_ sender: UITextField) {

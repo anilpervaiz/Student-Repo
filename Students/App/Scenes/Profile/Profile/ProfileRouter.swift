@@ -1,5 +1,5 @@
 //
-//  TeacherProfileRouter.swift
+//  ProfileRouter.swift
 //  Teachers
 //
 //  Created by Rahim on 30/03/2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TeacherProfileRouter: BaseRouter {
+class ProfileRouter: BaseRouter {
 
     func navigateToEditPersonalInformation() {
         let viewController = CreateProfilePersonalInformationViewController.getInstance()
@@ -63,6 +63,12 @@ class TeacherProfileRouter: BaseRouter {
         let viewModel = RegisteredSubjectsViewModel()
         viewModel.subjects = [Subject.mockData.first!]
         viewController.viewModel = viewModel
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    func didTapAddressView() {
+        let viewController = AddressListingViewController.getInstance()
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
