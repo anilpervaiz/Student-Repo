@@ -21,7 +21,7 @@ class CreateProfileRouter: BaseRouter {
         navigationController?.pushViewController(viewController, animated: true)
     }
 
-    func navigateToAddPaymentMethod() {
+    func navigateToPaymentMethod() {
         let viewController = PaymentMethodViewController.getInstance()
         navigationController?.pushViewController(viewController,
                                                  animated: true)

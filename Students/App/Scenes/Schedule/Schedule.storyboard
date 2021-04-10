@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Schedule Listing View Controller-->
+        <!--My Schedule View Controller-->
         <scene sceneID="fR6-Vc-i14">
             <objects>
-                <viewController storyboardIdentifier="ScheduleListingViewController" id="CNS-sw-kRc" customClass="ScheduleListingViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyScheduleViewController" id="CNS-sw-kRc" customClass="MyScheduleViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Oo-si-FbO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,24 +103,15 @@
                                     <constraint firstAttribute="bottom" secondItem="VFQ-l7-uJy" secondAttribute="bottom" id="yUS-ET-dy8"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kQE-Nz-vtT">
-                                <rect key="frame" x="0.0" y="381" width="414" height="481"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LMz-W2-QgK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="92K-4Z-5WP" firstAttribute="top" secondItem="ihN-ap-Nqf" secondAttribute="bottom" id="4GE-UT-0VA"/>
                             <constraint firstItem="92K-4Z-5WP" firstAttribute="leading" secondItem="LMz-W2-QgK" secondAttribute="leading" id="5Sn-8E-GZq"/>
-                            <constraint firstItem="kQE-Nz-vtT" firstAttribute="top" secondItem="92K-4Z-5WP" secondAttribute="bottom" id="9IB-xm-iaq"/>
-                            <constraint firstItem="LMz-W2-QgK" firstAttribute="bottom" secondItem="kQE-Nz-vtT" secondAttribute="bottom" id="Btg-t0-fdM"/>
-                            <constraint firstItem="kQE-Nz-vtT" firstAttribute="leading" secondItem="LMz-W2-QgK" secondAttribute="leading" id="hbA-uh-ODa"/>
                             <constraint firstItem="ihN-ap-Nqf" firstAttribute="top" secondItem="LMz-W2-QgK" secondAttribute="top" id="htq-8Z-01t"/>
                             <constraint firstItem="ihN-ap-Nqf" firstAttribute="leading" secondItem="LMz-W2-QgK" secondAttribute="leading" id="n9l-wF-uMN"/>
-                            <constraint firstItem="kQE-Nz-vtT" firstAttribute="top" secondItem="92K-4Z-5WP" secondAttribute="bottom" id="plH-vp-Die"/>
                             <constraint firstItem="LMz-W2-QgK" firstAttribute="trailing" secondItem="92K-4Z-5WP" secondAttribute="trailing" id="rFe-Y3-Hna"/>
-                            <constraint firstItem="LMz-W2-QgK" firstAttribute="trailing" secondItem="kQE-Nz-vtT" secondAttribute="trailing" id="sid-4r-nTa"/>
                             <constraint firstItem="LMz-W2-QgK" firstAttribute="trailing" secondItem="ihN-ap-Nqf" secondAttribute="trailing" id="vEx-i8-WJU"/>
                         </constraints>
                     </view>
@@ -129,7 +120,6 @@
                         <outlet property="calendarView" destination="6wL-M6-7eQ" id="4ib-IJ-LDO"/>
                         <outlet property="calendarViewHeightConstraint" destination="E8v-Hh-XKH" id="sgv-IP-O5F"/>
                         <outlet property="monthLabel" destination="cVh-EB-LER" id="zue-4R-LkY"/>
-                        <outlet property="scheduleTableView" destination="kQE-Nz-vtT" id="YfQ-VJ-C4z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tKk-yz-tYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -139,7 +129,7 @@
         <!--Session End Note View Controller-->
         <scene sceneID="Njy-Nj-rHR">
             <objects>
-                <viewController storyboardIdentifier="SessionEndNoteViewController" id="Xas-Rc-xtr" customClass="SessionEndNoteViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SessionEndNoteViewController" id="Xas-Rc-xtr" customClass="SessionEndNoteViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M3P-fI-jus">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,7 +181,7 @@ Parent.</string>
                                     <constraint firstItem="P7q-IN-wDd" firstAttribute="leading" secondItem="N93-kK-Q5g" secondAttribute="leading" constant="16" id="ztg-52-c24"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1O-j2-RaH" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1O-j2-RaH" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
                                 <rect key="frame" x="16" y="782" width="382" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="ggl-nb-6LP"/>
@@ -226,7 +216,85 @@ Parent.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AiE-Ki-Zw0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1112" y="194"/>
+            <point key="canvasLocation" x="1087" y="194"/>
+        </scene>
+        <!--Schedule Listing View Controller-->
+        <scene sceneID="9gY-E0-wmF">
+            <objects>
+                <viewController storyboardIdentifier="ScheduleListingViewController" id="Vaw-zN-ILK" customClass="ScheduleListingViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YoN-ic-Wua">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S1Q-6O-vne">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mS7-EG-gP7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mS7-EG-gP7" firstAttribute="trailing" secondItem="S1Q-6O-vne" secondAttribute="trailing" id="5lv-cq-nIS"/>
+                            <constraint firstItem="mS7-EG-gP7" firstAttribute="bottom" secondItem="S1Q-6O-vne" secondAttribute="bottom" id="ZhL-Ks-ls0"/>
+                            <constraint firstItem="S1Q-6O-vne" firstAttribute="leading" secondItem="mS7-EG-gP7" secondAttribute="leading" id="lwP-O9-QjC"/>
+                            <constraint firstItem="S1Q-6O-vne" firstAttribute="top" secondItem="mS7-EG-gP7" secondAttribute="top" id="vZr-dT-dB5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scheduleTableView" destination="S1Q-6O-vne" id="vtS-vq-Gr8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9UO-NC-htr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="184"/>
+        </scene>
+        <!--My Filtered Schedule View Controller-->
+        <scene sceneID="VFy-Eb-Bfe">
+            <objects>
+                <viewController storyboardIdentifier="MyFilteredScheduleViewController" id="pzp-9v-3v2" customClass="MyFilteredScheduleViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gVv-Y4-CUI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c0t-NO-uJV">
+                                <rect key="frame" x="16" y="52" width="382" height="32"/>
+                                <color key="backgroundColor" name="pureWhite"/>
+                                <segments>
+                                    <segment title="Upcoming"/>
+                                    <segment title="Past"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="primary"/>
+                                <connections>
+                                    <action selector="onSegmentValueChanged:" destination="pzp-9v-3v2" eventType="valueChanged" id="mgG-SM-ck7"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbM-Hj-Zdn">
+                                <rect key="frame" x="0.0" y="99" width="414" height="1"/>
+                                <color key="backgroundColor" name="disableGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="cJk-Od-FvF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QKv-6e-yHz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HbM-Hj-Zdn" firstAttribute="top" secondItem="c0t-NO-uJV" secondAttribute="bottom" constant="16" id="CcK-HT-VkD"/>
+                            <constraint firstItem="c0t-NO-uJV" firstAttribute="leading" secondItem="QKv-6e-yHz" secondAttribute="leading" constant="16" id="VxV-Bq-UNX"/>
+                            <constraint firstItem="QKv-6e-yHz" firstAttribute="trailing" secondItem="HbM-Hj-Zdn" secondAttribute="trailing" id="bWC-BW-lZr"/>
+                            <constraint firstItem="QKv-6e-yHz" firstAttribute="trailing" secondItem="c0t-NO-uJV" secondAttribute="trailing" constant="16" id="gfB-bb-D4q"/>
+                            <constraint firstItem="c0t-NO-uJV" firstAttribute="top" secondItem="QKv-6e-yHz" secondAttribute="top" constant="8" id="lvF-Es-sca"/>
+                            <constraint firstItem="HbM-Hj-Zdn" firstAttribute="leading" secondItem="QKv-6e-yHz" secondAttribute="leading" id="sEC-Ep-fbV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dividerView" destination="HbM-Hj-Zdn" id="Odc-aI-gsm"/>
+                        <outlet property="segmentControl" destination="c0t-NO-uJV" id="PRE-5b-9qe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uwm-Ue-e9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3001" y="198"/>
         </scene>
     </scenes>
     <designables>
@@ -255,6 +323,9 @@ Parent.</string>
         </namedColor>
         <namedColor name="primary">
             <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pureWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

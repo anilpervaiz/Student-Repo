@@ -20,7 +20,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="o1z-ht-Wfe" customClass="DashboardReviewCollectionViewCell" customModule="Teachers" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="o1z-ht-Wfe" customClass="DashboardReviewCollectionViewCell" customModule="Students" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="379" height="253"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gR1-Aj-Qbf">
@@ -53,12 +53,18 @@
                                                 <rect key="frame" x="0.0" y="19" width="299" height="21"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gH-iw-u27" customClass="CosmosView" customModule="Cosmos">
-                                                        <rect key="frame" x="0.0" y="0.0" width="243.5" height="21"/>
+                                                        <rect key="frame" x="0.0" y="2.5" width="243.5" height="16"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="EAB-0D-BHi"/>
+                                                        </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
                                                             <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="starIconFilled"/>
                                                             <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="starIconEmpty"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQv-1k-zsR">
@@ -76,12 +82,11 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="1gH-iw-u27" secondAttribute="bottom" id="HNB-uj-ftE"/>
+                                                    <constraint firstItem="1gH-iw-u27" firstAttribute="centerY" secondItem="iCL-Js-CAs" secondAttribute="centerY" id="Pwl-C3-sM7"/>
                                                     <constraint firstAttribute="bottom" secondItem="OQv-1k-zsR" secondAttribute="bottom" id="RuP-9m-zOF"/>
                                                     <constraint firstItem="OQv-1k-zsR" firstAttribute="leading" secondItem="1gH-iw-u27" secondAttribute="trailing" constant="8" id="Ssk-jg-uBs"/>
                                                     <constraint firstItem="1gH-iw-u27" firstAttribute="leading" secondItem="iCL-Js-CAs" secondAttribute="leading" id="il8-fa-8uO"/>
                                                     <constraint firstItem="gXC-Y9-ySB" firstAttribute="leading" secondItem="OQv-1k-zsR" secondAttribute="trailing" constant="8" id="inw-sW-mNc"/>
-                                                    <constraint firstItem="1gH-iw-u27" firstAttribute="top" secondItem="iCL-Js-CAs" secondAttribute="top" id="jEi-PJ-lKl"/>
                                                     <constraint firstItem="OQv-1k-zsR" firstAttribute="top" secondItem="iCL-Js-CAs" secondAttribute="top" id="oxG-di-MTp"/>
                                                     <constraint firstAttribute="trailing" secondItem="gXC-Y9-ySB" secondAttribute="trailing" id="qap-MV-aO1"/>
                                                     <constraint firstAttribute="bottom" secondItem="gXC-Y9-ySB" secondAttribute="bottom" id="wnK-WN-H9i"/>

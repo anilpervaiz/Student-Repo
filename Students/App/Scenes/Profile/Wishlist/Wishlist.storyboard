@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Categorized Wishlist View Controller-->
+        <scene sceneID="O5V-S2-i5D">
+            <objects>
+                <viewController storyboardIdentifier="CategorizedWishlistViewController" id="cHS-rK-20V" customClass="CategorizedWishlistViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uml-fG-0nP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QwR-6G-ZbG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1"/>
+                                <color key="backgroundColor" name="disableGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="iTj-bF-6r2"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wiQ-Q0-JPD">
+                                <rect key="frame" x="0.0" y="53" width="414" height="809"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XnQ-bc-x8r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XnQ-bc-x8r" firstAttribute="trailing" secondItem="wiQ-Q0-JPD" secondAttribute="trailing" id="CgO-iw-gP2"/>
+                            <constraint firstItem="wiQ-Q0-JPD" firstAttribute="top" secondItem="QwR-6G-ZbG" secondAttribute="bottom" constant="8" id="d4C-CE-oYo"/>
+                            <constraint firstItem="wiQ-Q0-JPD" firstAttribute="leading" secondItem="XnQ-bc-x8r" secondAttribute="leading" id="dDf-xz-S0d"/>
+                            <constraint firstItem="QwR-6G-ZbG" firstAttribute="leading" secondItem="XnQ-bc-x8r" secondAttribute="leading" id="ena-ID-XK5"/>
+                            <constraint firstItem="XnQ-bc-x8r" firstAttribute="bottom" secondItem="wiQ-Q0-JPD" secondAttribute="bottom" id="xgg-6D-NmM"/>
+                            <constraint firstItem="QwR-6G-ZbG" firstAttribute="top" secondItem="XnQ-bc-x8r" secondAttribute="top" id="y9c-CB-dmJ"/>
+                            <constraint firstItem="XnQ-bc-x8r" firstAttribute="trailing" secondItem="QwR-6G-ZbG" secondAttribute="trailing" id="zr3-tK-pAg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="wiQ-Q0-JPD" id="clm-hi-F47"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ftt-4W-Loa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6916" y="209"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="disableGray">
+            <color red="0.92156862745098034" green="0.92941176470588238" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

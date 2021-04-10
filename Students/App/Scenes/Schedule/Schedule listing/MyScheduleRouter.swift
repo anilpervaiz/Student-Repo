@@ -7,15 +7,7 @@
 
 import Foundation
 
-class ProfileScheduleListingRouter: ScheduleListingRouter {
-    override func navigateToSessionDetail() {
-        let viewController = SubjectMainViewBuilder().makeViewController(navigationController: navigationController)
-        viewController.hidesBottomBarWhenPushed = true
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-}
-
-class ScheduleListingRouter: BaseRouter {
+class MyScheduleRouter: BaseRouter {
 
     func navigateToNotificationView() {
         let viewController = NotificationViewController.getInstance()
@@ -39,6 +31,12 @@ class ScheduleListingRouter: BaseRouter {
     func didEndedSession() {
         let viewController = SessionEndNoteViewController.getInstance()
 
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    func navigateToPastSessionDetail() {
+        let viewController = SubjectMainViewBuilder().makeViewController(navigationController: navigationController)
+        viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

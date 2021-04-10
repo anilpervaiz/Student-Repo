@@ -8,7 +8,7 @@ import Foundation
 struct DocumentsViewModel {
     private let router: SubjectRouter
     let documents: [DocumentCellViewModel]
-    var numberOfItems: Int { documents.count + 1}
+    var numberOfItems: Int { documents.count }
 
     init(router: SubjectRouter,
          documents: [Document]) {
@@ -23,14 +23,8 @@ struct DocumentsViewModel {
         guard index >= 0, index < documents.count else { return nil }
         return documents[index]
     }
-    
-    func isLastItem(index: Int) -> Bool {
-        return index == documents.count
-    }
 
     func didTapRow(at index: Int) {
-        if isLastItem(index: index) {
-            router.navigateToAddNewDocument()
-        }
+        
     }
 }

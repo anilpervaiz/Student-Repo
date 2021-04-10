@@ -8,7 +8,7 @@
 import Foundation
 import DateToolsSwift
 
-struct Document {
+struct Document: Hashable {
     var name: String
     var size: String
     var date: Date

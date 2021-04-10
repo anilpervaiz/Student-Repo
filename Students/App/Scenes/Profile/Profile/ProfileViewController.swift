@@ -79,13 +79,13 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let card = ProfileCards(rawValue: indexPath.row)
         switch card {
-        case .wishlist: break
-        case .subject: break
+        case .wishlist: router?.didTapWishList()
+        case .subject: router?.didTapSubjectsView()
         case .session: router?.didTapSessionView()
         case .reviews: router?.didTapReviewView()
         case .address: router?.didTapAddressView()
         case .wallet: router?.didTapWalletView()
-        case .paymentMethod: break
+        case .paymentMethod: router?.didTapPaymentMethod()
         default: break
         }
     }

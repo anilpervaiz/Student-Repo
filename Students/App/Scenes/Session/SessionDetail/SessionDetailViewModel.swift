@@ -11,7 +11,7 @@ class SessionDetailViewModel {
     private let router: SessionDetailRouter
 
     var session: Session = Session.mockData.first!
-    var student: Student = Student.mockData.first!
+    var teacher: User = User.mockData
     var subject: Subject = Subject.mockData.first!
     var sessionState: Session.State
 

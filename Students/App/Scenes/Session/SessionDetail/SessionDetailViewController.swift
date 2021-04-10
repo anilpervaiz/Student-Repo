@@ -12,10 +12,9 @@ class SessionDetailViewController: BaseViewController {
     @IBOutlet weak var endSessionView: UIView!
     @IBOutlet weak var startSessionView: UIView!
     @IBOutlet weak var requestedSessionButtonView: UIView!
-    @IBOutlet weak var studentRatingLabel: UILabel!
-    @IBOutlet weak var studentName: UILabel!
-    @IBOutlet weak var parentImageView: UIImageView!
-    @IBOutlet weak var studentImageView: UIImageView!
+    @IBOutlet weak var teacherRatingLabel: UILabel!
+    @IBOutlet weak var teacherName: UILabel!
+    @IBOutlet weak var teacherImageView: UIImageView!
     @IBOutlet weak var sessionMediumTitleLabel: UILabel!
     @IBOutlet weak var sessionMediumImageView: UIImageView!
     @IBOutlet weak var sessionTimeLabel: UILabel!
@@ -41,10 +40,9 @@ class SessionDetailViewController: BaseViewController {
     }
 
     func setupData() {
-        studentRatingLabel.text = "\(viewModel?.student.rating ?? 0)"
-        studentName.text = viewModel?.student.name
-        parentImageView.image = UIImage(named: viewModel?.student.parent.profileImage ?? "")
-        studentImageView.image = UIImage(named: viewModel?.student.profileImage ?? "")
+        teacherRatingLabel.text = "\(viewModel?.teacher.rating ?? 0)"
+        teacherName.text = viewModel?.teacher.name
+        teacherImageView.image = UIImage(named: viewModel?.teacher.profileImage ?? "")
         sessionMediumImageView.image = viewModel?.session.medium.icon.image
         sessionMediumTitleLabel.text = viewModel?.session.medium.title
         sessionMediumTitleLabel.textColor = viewModel?.session.medium.themeColor.color
@@ -83,8 +81,7 @@ class SessionDetailViewController: BaseViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-        studentImageView.circular = true
-        parentImageView.circular = true
+        teacherImageView.circular = true
     }
     @IBAction func didTapStartSessionButton(_ sender: Any) {
         viewModel?.didTapStartSessionButton()

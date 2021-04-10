@@ -21,12 +21,12 @@
         <!--Create Profile View Controller-->
         <scene sceneID="1qn-BX-2XK">
             <objects>
-                <viewController storyboardIdentifier="CreateProfileViewController" id="BoK-u7-gmB" customClass="CreateProfileViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateProfileViewController" id="BoK-u7-gmB" customClass="CreateProfileViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uB4-5h-5Uf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeG-W5-ftU" customClass="FlowDescriptionLabel" customModule="Teachers" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeG-W5-ftU" customClass="FlowDescriptionLabel" customModule="Students" customModuleProvider="target">
                                 <rect key="frame" x="16" y="60" width="382" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -43,7 +43,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugd-8o-Z4C" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugd-8o-Z4C" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
                                 <rect key="frame" x="16" y="790" width="382" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="tFB-bB-b1K"/>
@@ -91,7 +91,7 @@
         <!--Create Profile Personal Information View Controller-->
         <scene sceneID="fXS-hw-pFN">
             <objects>
-                <viewController storyboardIdentifier="CreateProfilePersonalInformationViewController" id="Sxk-Bg-op6" customClass="CreateProfilePersonalInformationViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateProfilePersonalInformationViewController" id="Sxk-Bg-op6" customClass="CreateProfilePersonalInformationViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9UO-NI-B2v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,7 +282,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PRH-Xg-Msc">
                                                         <rect key="frame" x="0.0" y="38.5" width="382" height="312"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dju-qV-Azs" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dju-qV-Azs" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="56"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
@@ -292,7 +292,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="University"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7M-F6-PSg" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7M-F6-PSg" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="64" width="382" height="56"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
@@ -302,7 +302,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Major"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8l-Yv-Kn3" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8l-Yv-Kn3" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="128" width="382" height="56"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
@@ -312,7 +312,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Degree"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYd-aS-P1G" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYd-aS-P1G" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="192" width="382" height="56"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
@@ -322,7 +322,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="00/00/0000"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4T-wK-kEz" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4T-wK-kEz" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="256" width="382" height="56"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
@@ -362,7 +362,7 @@
                                                         <color key="textColor" name="darkBlue"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HI1-MW-7sV" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HI1-MW-7sV" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="34.5" width="382" height="56"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -453,7 +453,7 @@
                                                         <color key="textColor" name="darkBlue"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4i-mP-sSN" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4i-mP-sSN" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="34.5" width="382" height="56"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -524,7 +524,7 @@
                                     <constraint firstAttribute="bottom" secondItem="bde-Cx-TtD" secondAttribute="bottom" id="ogd-T0-nKw"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-St-SBc" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-St-SBc" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
                                 <rect key="frame" x="16" y="1398" width="382" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="Xep-hQ-KqP"/>
@@ -587,7 +587,7 @@
         <!--Registered Subjects View Controller-->
         <scene sceneID="fuC-i8-lji">
             <objects>
-                <viewController storyboardIdentifier="RegisteredSubjectsViewController" id="r5i-Ji-crG" customClass="RegisteredSubjectsViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisteredSubjectsViewController" id="r5i-Ji-crG" customClass="RegisteredSubjectsViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VNu-eH-bHP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -628,7 +628,7 @@
                                                     <constraint firstAttribute="width" secondItem="hZg-c6-sPT" secondAttribute="height" multiplier="1:1" id="unX-qs-XUO"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="No Subjects Yet!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tk-ik-uFJ" customClass="HeadingLabel" customModule="Teachers" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="No Subjects Yet!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tk-ik-uFJ" customClass="HeadingLabel" customModule="Students" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="316.5" width="350" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -654,7 +654,7 @@
                                             <constraint firstItem="hZg-c6-sPT" firstAttribute="top" secondItem="MpT-tB-Blx" secondAttribute="top" id="vsg-ph-Xcf"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPd-f5-jkN" customClass="SecondaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPd-f5-jkN" customClass="SecondaryCTAButton" customModule="Students" customModuleProvider="target">
                                         <rect key="frame" x="16" y="745" width="382" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="eeC-Sc-hhw"/>
@@ -719,7 +719,7 @@
         <!--Availibility View Controller-->
         <scene sceneID="4HW-8q-vEf">
             <objects>
-                <viewController storyboardIdentifier="AvailibilityViewController" id="m64-u4-qkX" customClass="AvailibilityViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AvailibilityViewController" id="m64-u4-qkX" customClass="AvailibilityViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OSn-un-AEh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -760,7 +760,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XFs-g8-i8h">
                                 <rect key="frame" x="16" y="219" width="382" height="555"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="6" id="Lth-dK-HLu" customClass="TagFlowLayout" customModule="Teachers" customModuleProvider="target">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="6" id="Lth-dK-HLu" customClass="TagFlowLayout" customModule="Students" customModuleProvider="target">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -768,7 +768,7 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RG1-92-rx1" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RG1-92-rx1" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
                                 <rect key="frame" x="16" y="790" width="382" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="fNh-oL-6b2"/>
@@ -820,118 +820,10 @@
             </objects>
             <point key="canvasLocation" x="1539" y="121"/>
         </scene>
-        <!--Payment Method View Controller-->
-        <scene sceneID="wDX-bl-sqb">
-            <objects>
-                <viewController storyboardIdentifier="PaymentMethodViewController" id="wfZ-v9-9M4" customClass="PaymentMethodViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZMz-aN-70l">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wD0-51-cLV">
-                                <rect key="frame" x="0.0" y="44" width="414" height="1"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="L8a-WK-O7V"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sb3-Tl-Vtf" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
-                                <rect key="frame" x="16" y="69" width="382" height="56"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" placeholder="YES" id="05k-fl-dBV"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Credit Card Number"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyr-4B-47v" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
-                                <rect key="frame" x="16" y="133" width="249.5" height="56"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" placeholder="YES" id="J8M-nI-D3e"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="MM/YY"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IwX-8e-vnO" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
-                                <rect key="frame" x="273.5" y="133" width="124.5" height="56"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="CVC"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secureEntry" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIE-Oy-UV1" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
-                                <rect key="frame" x="16" y="197" width="382" height="56"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" placeholder="YES" id="52h-nR-eEk"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Name on Card"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HR-2I-eve" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
-                                <rect key="frame" x="16" y="790" width="382" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="qXV-w7-GzW"/>
-                                </constraints>
-                                <state key="normal" title="Done"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
-                                        <color key="value" name="primary"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
-                                        <color key="value" name="aquaMarine"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="didTapCTAButton:" destination="wfZ-v9-9M4" eventType="touchUpInside" id="8NH-h0-xO3"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="iL8-4D-RZV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="iL8-4D-RZV" firstAttribute="trailing" secondItem="dIE-Oy-UV1" secondAttribute="trailing" constant="16" id="2Nc-wd-Mxw"/>
-                            <constraint firstItem="wD0-51-cLV" firstAttribute="top" secondItem="iL8-4D-RZV" secondAttribute="top" id="5f4-At-qyj"/>
-                            <constraint firstItem="IwX-8e-vnO" firstAttribute="width" secondItem="qyr-4B-47v" secondAttribute="width" multiplier="0.5" id="6hJ-Z5-Jtq"/>
-                            <constraint firstItem="7HR-2I-eve" firstAttribute="leading" secondItem="iL8-4D-RZV" secondAttribute="leading" constant="16" id="7Ub-Pd-0xo"/>
-                            <constraint firstItem="iL8-4D-RZV" firstAttribute="trailing" secondItem="Sb3-Tl-Vtf" secondAttribute="trailing" constant="16" id="Bw3-c5-Qnq"/>
-                            <constraint firstItem="IwX-8e-vnO" firstAttribute="top" secondItem="qyr-4B-47v" secondAttribute="top" id="JfB-Pa-B8G"/>
-                            <constraint firstItem="iL8-4D-RZV" firstAttribute="trailing" secondItem="wD0-51-cLV" secondAttribute="trailing" id="OUB-5n-DCS"/>
-                            <constraint firstItem="Sb3-Tl-Vtf" firstAttribute="top" secondItem="wD0-51-cLV" secondAttribute="bottom" constant="24" id="W8J-gF-M0r"/>
-                            <constraint firstItem="wD0-51-cLV" firstAttribute="leading" secondItem="iL8-4D-RZV" secondAttribute="leading" id="Z97-Zz-jKF"/>
-                            <constraint firstItem="IwX-8e-vnO" firstAttribute="bottom" secondItem="qyr-4B-47v" secondAttribute="bottom" id="ZwL-ys-IPL"/>
-                            <constraint firstItem="iL8-4D-RZV" firstAttribute="trailing" secondItem="7HR-2I-eve" secondAttribute="trailing" constant="16" id="akV-q5-1op"/>
-                            <constraint firstItem="qyr-4B-47v" firstAttribute="leading" secondItem="iL8-4D-RZV" secondAttribute="leading" constant="16" id="elA-3g-7Vv"/>
-                            <constraint firstItem="dIE-Oy-UV1" firstAttribute="top" secondItem="qyr-4B-47v" secondAttribute="bottom" constant="8" id="f5w-fN-gpW"/>
-                            <constraint firstItem="dIE-Oy-UV1" firstAttribute="leading" secondItem="iL8-4D-RZV" secondAttribute="leading" constant="16" id="gb6-jU-7RD"/>
-                            <constraint firstItem="IwX-8e-vnO" firstAttribute="leading" secondItem="qyr-4B-47v" secondAttribute="trailing" constant="8" id="h8p-2s-GQw"/>
-                            <constraint firstItem="qyr-4B-47v" firstAttribute="top" secondItem="Sb3-Tl-Vtf" secondAttribute="bottom" constant="8" id="inb-QH-MFE"/>
-                            <constraint firstItem="Sb3-Tl-Vtf" firstAttribute="leading" secondItem="iL8-4D-RZV" secondAttribute="leading" constant="16" id="tKv-re-WcU"/>
-                            <constraint firstItem="iL8-4D-RZV" firstAttribute="bottom" secondItem="7HR-2I-eve" secondAttribute="bottom" constant="16" id="w9M-fH-ZuS"/>
-                            <constraint firstAttribute="trailing" secondItem="IwX-8e-vnO" secondAttribute="trailing" constant="16" id="y1D-Op-Ygd"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="CVVTextField" destination="IwX-8e-vnO" id="oXl-EI-yJt"/>
-                        <outlet property="cardHolderNameTextField" destination="dIE-Oy-UV1" id="nwn-3H-O3V"/>
-                        <outlet property="cardNumberTextField" destination="Sb3-Tl-Vtf" id="maD-An-fMY"/>
-                        <outlet property="ctaButtonBottomConstraint" destination="w9M-fH-ZuS" id="0xB-5K-6nn"/>
-                        <outlet property="expiryDateTextField" destination="qyr-4B-47v" id="VPG-2i-oZK"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B4c-MP-Nb4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2592.753623188406" y="120.53571428571428"/>
-        </scene>
         <!--ID Card-->
         <scene sceneID="Pqd-8P-4HR">
             <objects>
-                <viewController storyboardIdentifier="UploadImageViewController" title="ID Card" id="ESh-Ha-X36" customClass="UploadImageViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UploadImageViewController" title="ID Card" id="ESh-Ha-X36" customClass="UploadImageViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PW2-KQ-U11">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -952,7 +844,7 @@
                                             <constraint firstAttribute="width" secondItem="tpg-Zl-lTf" secondAttribute="height" multiplier="343:202" id="qQq-9k-mUi"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZK-E1-gP8" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZK-E1-gP8" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="733" width="382" height="52"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="52" id="8e1-Ch-I3D"/>
@@ -1007,7 +899,7 @@
                                                     <constraint firstAttribute="width" secondItem="vQj-o1-uSN" secondAttribute="height" id="PSB-1h-Vne"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="No Files Uploaded!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4R-OC-c17" customClass="HeadingLabel" customModule="Teachers" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="No Files Uploaded!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4R-OC-c17" customClass="HeadingLabel" customModule="Students" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="317" width="350" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -1033,7 +925,7 @@
                                             <constraint firstItem="c4R-OC-c17" firstAttribute="leading" secondItem="rQd-Qu-NK5" secondAttribute="leading" id="vXF-H7-SNa"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoD-mB-tMG" customClass="SecondaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoD-mB-tMG" customClass="SecondaryCTAButton" customModule="Students" customModuleProvider="target">
                                         <rect key="frame" x="16" y="745" width="382" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="9NT-zZ-gRf"/>
@@ -1101,7 +993,7 @@
         <!--Upload Video View Controller-->
         <scene sceneID="qyZ-xv-ByH">
             <objects>
-                <viewController storyboardIdentifier="UploadVideoViewController" id="D5p-nX-TyZ" customClass="UploadVideoViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UploadVideoViewController" id="D5p-nX-TyZ" customClass="UploadVideoViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BhO-Kp-P11">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1112,7 +1004,7 @@
                                 <color key="textColor" name="darkBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moM-l3-9uk" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moM-l3-9uk" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
                                 <rect key="frame" x="16" y="148" width="382" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="mFl-tr-l4Q"/>
@@ -1203,7 +1095,7 @@
                                     <constraint firstItem="YXt-5o-wU0" firstAttribute="centerY" secondItem="kEN-q4-kgl" secondAttribute="centerY" id="aoY-Pe-dFp"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiT-2g-n1f" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiT-2g-n1f" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
                                 <rect key="frame" x="16" y="794" width="382" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="g4k-93-lAn"/>
@@ -1263,9 +1155,6 @@
         </designable>
         <designable name="3tk-ik-uFJ">
             <size key="intrinsicContentSize" width="126" height="20.5"/>
-        </designable>
-        <designable name="7HR-2I-eve">
-            <size key="intrinsicContentSize" width="37" height="30"/>
         </designable>
         <designable name="AoD-mB-tMG">
             <size key="intrinsicContentSize" width="127" height="24"/>

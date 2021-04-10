@@ -19,6 +19,26 @@ struct User {
     }
 }
 
+struct Teacher {
+    var name: String
+    var profileImage: String
+    var rating: Double
+    var tutoredHour: Int
+    var students: Int
+    var subjects: [Subject]
+
+    var formattedSubjects: String {
+        subjects.map { $0.subject }.joined(separator: " ,")
+    }
+
+    static var mockData: Teacher = .init(name: "Ahmed Mohammed",
+                                         profileImage: Asset.Media.userProfileImage.name,
+                                         rating: 4.5,
+                                         tutoredHour: 130,
+                                         students: 4,
+                                         subjects: Subject.mockData)
+}
+
 struct Review {
     var reviewedBy: User
     var rating: Int

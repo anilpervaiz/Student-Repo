@@ -8,27 +8,38 @@
 import Foundation
 
 class ScheduleListingViewModel {
-    var router: ScheduleListingRouter
     var calendarState: CalendarState = .expanded
-    
-    init(router: ScheduleListingRouter) {
-        self.router = router
+    var output: ((Output)->Void)?
+    private var didSelectRow: ((Int) -> Void)?
+    private var session = Session.mockData
+
+    var numberOfItems: Int {
+        session.count
     }
 
-    func didTapNotificationButton() {
-        router.navigateToNotificationView()
+    init(didSelectRow: ((Int) -> Void)?) {
+        self.didSelectRow = didSelectRow
     }
 
-    func didTapChatButton() {
-        router.navigateToChatView()
+    func updateData(to session: [Session]) {
+        self.session = session
+        output?(.reloadData)
+    }
+
+    func getSession(at index: Int) -> Session {
+        session[index]
     }
 
     func didTapRequest(at index: Int) {
-        router.navigateToSessionDetail()
+        didSelectRow?(index)
     }
 
     enum CalendarState {
         case expanded
         case collapsed
+    }
+
+    enum Output {
+        case reloadData
     }
 }

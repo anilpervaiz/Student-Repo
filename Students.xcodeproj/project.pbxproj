@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C924C4642621823E00A5499F /* MyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C4632621823E00A5499F /* MyScheduleViewController.swift */; };
+		C924C469262183DE00A5499F /* MyScheduleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C468262183DE00A5499F /* MyScheduleBuilder.swift */; };
+		C924C474262184E900A5499F /* MyScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C473262184E900A5499F /* MyScheduleViewModel.swift */; };
+		C924C479262188C800A5499F /* MyFilteredScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C478262188C800A5499F /* MyFilteredScheduleViewController.swift */; };
+		C924C47E26218CC000A5499F /* MyFilteredScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C47D26218CC000A5499F /* MyFilteredScheduleViewModel.swift */; };
+		C924C4992621B27A00A5499F /* PaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C4982621B27A00A5499F /* PaymentMethodViewController.swift */; };
+		C924C49E2621B2F700A5499F /* AddPaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C49D2621B2F700A5499F /* AddPaymentMethodViewController.swift */; };
+		C924C4A62621B35400A5499F /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C4A52621B35400A5499F /* PaymentMethod.swift */; };
+		C924C4AC2621B6BF00A5499F /* PaymentMethodListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C4AB2621B6BF00A5499F /* PaymentMethodListingTableViewCell.swift */; };
+		C924C4B42621B6CA00A5499F /* PaymentMethodListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C924C4B32621B6CA00A5499F /* PaymentMethodListingTableViewCell.xib */; };
+		C924C4C02621C7A800A5499F /* UpdateSubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C4BF2621C7A800A5499F /* UpdateSubjectsViewController.swift */; };
+		C924C4C92621C96900A5499F /* Wishlist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C924C4C82621C96900A5499F /* Wishlist.storyboard */; };
+		C924C4CE2621C9A200A5499F /* CategorizedWishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C4CD2621C9A200A5499F /* CategorizedWishlistViewController.swift */; };
+		C924C4D32621CA6D00A5499F /* CategorizedWishlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C4D22621CA6D00A5499F /* CategorizedWishlistViewModel.swift */; };
+		C924C4D82621CA7F00A5499F /* Wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C4D72621CA7F00A5499F /* Wishlist.swift */; };
+		C924C4DE2621DD4E00A5499F /* WishlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C4DD2621DD4E00A5499F /* WishlistTableViewCell.swift */; };
+		C924C4E62621DD5700A5499F /* WishlistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C924C4E52621DD5700A5499F /* WishlistTableViewCell.xib */; };
 		C960E34E261B251200DC19EE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C960E338261B251100DC19EE /* Media.xcassets */; };
 		C960E34F261B251200DC19EE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C960E339261B251100DC19EE /* Colors.xcassets */; };
 		C960E350261B251200DC19EE /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C960E33B261B251100DC19EE /* Poppins-ExtraLight.ttf */; };
@@ -32,8 +49,7 @@
 		C960E4DB261B288900DC19EE /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960E392261B288800DC19EE /* Student.storyboard */; };
 		C960E4DC261B288900DC19EE /* SessionEndNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E394261B288800DC19EE /* SessionEndNoteViewController.swift */; };
 		C960E4DD261B288900DC19EE /* ScheduleListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E396261B288800DC19EE /* ScheduleListingViewController.swift */; };
-		C960E4DE261B288900DC19EE /* ScheduleListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E397261B288800DC19EE /* ScheduleListingRouter.swift */; };
-		C960E4DF261B288900DC19EE /* ScheduleListingSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E398261B288800DC19EE /* ScheduleListingSceneBuilder.swift */; };
+		C960E4DE261B288900DC19EE /* MyScheduleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E397261B288800DC19EE /* MyScheduleRouter.swift */; };
 		C960E4E0261B288900DC19EE /* ScheduleListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E399261B288800DC19EE /* ScheduleListingViewModel.swift */; };
 		C960E4E1261B288900DC19EE /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960E39A261B288800DC19EE /* Schedule.storyboard */; };
 		C960E4E2261B288900DC19EE /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E39E261B288800DC19EE /* MessageCell.xib */; };
@@ -67,7 +83,7 @@
 		C960E4FE261B288900DC19EE /* RateAndReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3C0261B288800DC19EE /* RateAndReviewViewController.swift */; };
 		C960E505261B288900DC19EE /* StudentProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3CB261B288800DC19EE /* StudentProfileRouter.swift */; };
 		C960E506261B288900DC19EE /* StudentProfileTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3CC261B288800DC19EE /* StudentProfileTableHeaderView.swift */; };
-		C960E507261B288900DC19EE /* RateStudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E3CE261B288800DC19EE /* RateStudentTableViewCell.xib */; };
+		C960E507261B288900DC19EE /* RateTeacherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E3CE261B288800DC19EE /* RateTeacherTableViewCell.xib */; };
 		C960E508261B288900DC19EE /* StudentProfileParentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3CF261B288800DC19EE /* StudentProfileParentTableViewCell.swift */; };
 		C960E509261B288900DC19EE /* RateStudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E3D0261B288800DC19EE /* RateStudentTableViewCell.swift */; };
 		C960E50A261B288900DC19EE /* StudentProfileParentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E3D1261B288800DC19EE /* StudentProfileParentTableViewCell.xib */; };
@@ -117,7 +133,7 @@
 		C960E536261B288900DC19EE /* SessionFeesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E40E261B288900DC19EE /* SessionFeesTableViewCell.swift */; };
 		C960E537261B288900DC19EE /* PaymentMethodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E40F261B288900DC19EE /* PaymentMethodTableViewCell.xib */; };
 		C960E538261B288900DC19EE /* PaymentMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E410261B288900DC19EE /* PaymentMethodTableViewCell.swift */; };
-		C960E539261B288900DC19EE /* StudentParentDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E411261B288900DC19EE /* StudentParentDetailsTableViewCell.xib */; };
+		C960E539261B288900DC19EE /* PersonDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E411261B288900DC19EE /* PersonDetailsTableViewCell.xib */; };
 		C960E53A261B288900DC19EE /* SubjectDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E412261B288900DC19EE /* SubjectDetailTableViewCell.swift */; };
 		C960E53B261B288900DC19EE /* DateAndTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E413261B288900DC19EE /* DateAndTimeTableViewCell.xib */; };
 		C960E53C261B288900DC19EE /* SessionFeesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E414261B288900DC19EE /* SessionFeesTableViewCell.xib */; };
@@ -125,24 +141,15 @@
 		C960E53E261B288900DC19EE /* SubjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E416261B288900DC19EE /* SubjectDetailsViewController.swift */; };
 		C960E53F261B288900DC19EE /* SubjectDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E417261B288900DC19EE /* SubjectDetailsViewModel.swift */; };
 		C960E540261B288900DC19EE /* SubjectMainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E418261B288900DC19EE /* SubjectMainViewBuilder.swift */; };
-		C960E541261B288900DC19EE /* NewDocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E41B261B288900DC19EE /* NewDocumentCell.xib */; };
 		C960E542261B288900DC19EE /* DocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E41C261B288900DC19EE /* DocumentCell.xib */; };
 		C960E543261B288900DC19EE /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E41D261B288900DC19EE /* DocumentCell.swift */; };
-		C960E544261B288900DC19EE /* NewDocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E41E261B288900DC19EE /* NewDocumentCell.swift */; };
 		C960E545261B288900DC19EE /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E41F261B288900DC19EE /* DocumentsViewController.swift */; };
 		C960E546261B288900DC19EE /* DocumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E420261B288900DC19EE /* DocumentsViewModel.swift */; };
 		C960E547261B288900DC19EE /* SubjectRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E421261B288900DC19EE /* SubjectRouter.swift */; };
-		C960E548261B288900DC19EE /* MyWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E423261B288900DC19EE /* MyWalletViewController.swift */; };
 		C960E549261B288900DC19EE /* MyTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E425261B288900DC19EE /* MyTransactionsViewController.swift */; };
 		C960E54A261B288900DC19EE /* MyTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E426261B288900DC19EE /* MyTransactionViewModel.swift */; };
 		C960E54B261B288900DC19EE /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E428261B288900DC19EE /* TransactionTableViewCell.xib */; };
 		C960E54C261B288900DC19EE /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E429261B288900DC19EE /* TransactionTableViewCell.swift */; };
-		C960E54D261B288900DC19EE /* EarningSummaryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E42C261B288900DC19EE /* EarningSummaryTableHeaderView.swift */; };
-		C960E54E261B288900DC19EE /* EarningRowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E42D261B288900DC19EE /* EarningRowTableViewCell.xib */; };
-		C960E54F261B288900DC19EE /* EarningSummaryTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E42E261B288900DC19EE /* EarningSummaryTableHeaderView.xib */; };
-		C960E550261B288900DC19EE /* EarningRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E42F261B288900DC19EE /* EarningRowTableViewCell.swift */; };
-		C960E551261B288900DC19EE /* MyEarningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E430261B288900DC19EE /* MyEarningsViewController.swift */; };
-		C960E552261B288900DC19EE /* MyEarningsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E431261B288900DC19EE /* MyEarningsViewModel.swift */; };
 		C960E553261B288900DC19EE /* AddDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E433261B288900DC19EE /* AddDocumentViewController.swift */; };
 		C960E554261B288900DC19EE /* DocumentLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E435261B288900DC19EE /* DocumentLibraryViewController.swift */; };
 		C960E555261B288900DC19EE /* DocumentLibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E436261B288900DC19EE /* DocumentLibraryViewModel.swift */; };
@@ -191,7 +198,6 @@
 		C960E585261B288A00DC19EE /* AvailibilityDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E477261B288900DC19EE /* AvailibilityDayCell.swift */; };
 		C960E586261B288A00DC19EE /* AvailibilityDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E478261B288900DC19EE /* AvailibilityDayCell.xib */; };
 		C960E587261B288A00DC19EE /* AvailibilityHourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C960E479261B288900DC19EE /* AvailibilityHourCell.xib */; };
-		C960E588261B288A00DC19EE /* PaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E47B261B288900DC19EE /* PaymentMethodViewController.swift */; };
 		C960E589261B288A00DC19EE /* UploadVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E47C261B288900DC19EE /* UploadVideoViewController.swift */; };
 		C960E58A261B288A00DC19EE /* CreateProfilePersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E47D261B288900DC19EE /* CreateProfilePersonalInformationViewController.swift */; };
 		C960E58B261B288A00DC19EE /* UploadImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E47E261B288900DC19EE /* UploadImageViewController.swift */; };
@@ -268,6 +274,7 @@
 		C960E5D2261B288A00DC19EE /* CalendarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E4DA261B288900DC19EE /* CalendarStyle.swift */; };
 		C960E5D7261B5E9000DC19EE /* SignupAccountTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E5D6261B5E9000DC19EE /* SignupAccountTypeViewController.swift */; };
 		C960E5F0261B6E8E00DC19EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E5EF261B6E8E00DC19EE /* User.swift */; };
+		C98AB69C2622097B008FA243 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB69B2622097B008FA243 /* Collection+Extensions.swift */; };
 		C99D0003261D5CA400816E5C /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D0002261D5CA400816E5C /* Assets+Generated.swift */; };
 		C99D000B261D5E9E00816E5C /* AddStudyingSubjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D000A261D5E9E00816E5C /* AddStudyingSubjectViewModel.swift */; };
 		C99D004B261E0A6900816E5C /* ProfileCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99D004A261E0A6900816E5C /* ProfileCardCollectionViewCell.xib */; };
@@ -314,6 +321,23 @@
 		3F4F98627FD331A2FB618A31 /* Pods_Students.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Students.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		540AF0D1C63763D3AFB1B673 /* Pods-Students.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Students.debug.xcconfig"; path = "Target Support Files/Pods-Students/Pods-Students.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3EBAF8A9A6B3E0667DC982 /* Pods-Students.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Students.release.xcconfig"; path = "Target Support Files/Pods-Students/Pods-Students.release.xcconfig"; sourceTree = "<group>"; };
+		C924C4632621823E00A5499F /* MyScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleViewController.swift; sourceTree = "<group>"; };
+		C924C468262183DE00A5499F /* MyScheduleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleBuilder.swift; sourceTree = "<group>"; };
+		C924C473262184E900A5499F /* MyScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleViewModel.swift; sourceTree = "<group>"; };
+		C924C478262188C800A5499F /* MyFilteredScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFilteredScheduleViewController.swift; sourceTree = "<group>"; };
+		C924C47D26218CC000A5499F /* MyFilteredScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFilteredScheduleViewModel.swift; sourceTree = "<group>"; };
+		C924C4982621B27A00A5499F /* PaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewController.swift; sourceTree = "<group>"; };
+		C924C49D2621B2F700A5499F /* AddPaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentMethodViewController.swift; sourceTree = "<group>"; };
+		C924C4A52621B35400A5499F /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		C924C4AB2621B6BF00A5499F /* PaymentMethodListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodListingTableViewCell.swift; sourceTree = "<group>"; };
+		C924C4B32621B6CA00A5499F /* PaymentMethodListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodListingTableViewCell.xib; sourceTree = "<group>"; };
+		C924C4BF2621C7A800A5499F /* UpdateSubjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSubjectsViewController.swift; sourceTree = "<group>"; };
+		C924C4C82621C96900A5499F /* Wishlist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wishlist.storyboard; sourceTree = "<group>"; };
+		C924C4CD2621C9A200A5499F /* CategorizedWishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizedWishlistViewController.swift; sourceTree = "<group>"; };
+		C924C4D22621CA6D00A5499F /* CategorizedWishlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizedWishlistViewModel.swift; sourceTree = "<group>"; };
+		C924C4D72621CA7F00A5499F /* Wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wishlist.swift; sourceTree = "<group>"; };
+		C924C4DD2621DD4E00A5499F /* WishlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistTableViewCell.swift; sourceTree = "<group>"; };
+		C924C4E52621DD5700A5499F /* WishlistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishlistTableViewCell.xib; sourceTree = "<group>"; };
 		C960E338261B251100DC19EE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C960E339261B251100DC19EE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C960E33B261B251100DC19EE /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -340,8 +364,7 @@
 		C960E392261B288800DC19EE /* Student.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Student.storyboard; sourceTree = "<group>"; };
 		C960E394261B288800DC19EE /* SessionEndNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionEndNoteViewController.swift; sourceTree = "<group>"; };
 		C960E396261B288800DC19EE /* ScheduleListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleListingViewController.swift; sourceTree = "<group>"; };
-		C960E397261B288800DC19EE /* ScheduleListingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleListingRouter.swift; sourceTree = "<group>"; };
-		C960E398261B288800DC19EE /* ScheduleListingSceneBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleListingSceneBuilder.swift; sourceTree = "<group>"; };
+		C960E397261B288800DC19EE /* MyScheduleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScheduleRouter.swift; sourceTree = "<group>"; };
 		C960E399261B288800DC19EE /* ScheduleListingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleListingViewModel.swift; sourceTree = "<group>"; };
 		C960E39A261B288800DC19EE /* Schedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		C960E39E261B288800DC19EE /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
@@ -375,7 +398,7 @@
 		C960E3C0261B288800DC19EE /* RateAndReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateAndReviewViewController.swift; sourceTree = "<group>"; };
 		C960E3CB261B288800DC19EE /* StudentProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentProfileRouter.swift; sourceTree = "<group>"; };
 		C960E3CC261B288800DC19EE /* StudentProfileTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentProfileTableHeaderView.swift; sourceTree = "<group>"; };
-		C960E3CE261B288800DC19EE /* RateStudentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RateStudentTableViewCell.xib; sourceTree = "<group>"; };
+		C960E3CE261B288800DC19EE /* RateTeacherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RateTeacherTableViewCell.xib; sourceTree = "<group>"; };
 		C960E3CF261B288800DC19EE /* StudentProfileParentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentProfileParentTableViewCell.swift; sourceTree = "<group>"; };
 		C960E3D0261B288800DC19EE /* RateStudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateStudentTableViewCell.swift; sourceTree = "<group>"; };
 		C960E3D1261B288800DC19EE /* StudentProfileParentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentProfileParentTableViewCell.xib; sourceTree = "<group>"; };
@@ -425,7 +448,7 @@
 		C960E40E261B288900DC19EE /* SessionFeesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionFeesTableViewCell.swift; sourceTree = "<group>"; };
 		C960E40F261B288900DC19EE /* PaymentMethodTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentMethodTableViewCell.xib; sourceTree = "<group>"; };
 		C960E410261B288900DC19EE /* PaymentMethodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodTableViewCell.swift; sourceTree = "<group>"; };
-		C960E411261B288900DC19EE /* StudentParentDetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentParentDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		C960E411261B288900DC19EE /* PersonDetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		C960E412261B288900DC19EE /* SubjectDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectDetailTableViewCell.swift; sourceTree = "<group>"; };
 		C960E413261B288900DC19EE /* DateAndTimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateAndTimeTableViewCell.xib; sourceTree = "<group>"; };
 		C960E414261B288900DC19EE /* SessionFeesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SessionFeesTableViewCell.xib; sourceTree = "<group>"; };
@@ -433,24 +456,15 @@
 		C960E416261B288900DC19EE /* SubjectDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectDetailsViewController.swift; sourceTree = "<group>"; };
 		C960E417261B288900DC19EE /* SubjectDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectDetailsViewModel.swift; sourceTree = "<group>"; };
 		C960E418261B288900DC19EE /* SubjectMainViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectMainViewBuilder.swift; sourceTree = "<group>"; };
-		C960E41B261B288900DC19EE /* NewDocumentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewDocumentCell.xib; sourceTree = "<group>"; };
 		C960E41C261B288900DC19EE /* DocumentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocumentCell.xib; sourceTree = "<group>"; };
 		C960E41D261B288900DC19EE /* DocumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
-		C960E41E261B288900DC19EE /* NewDocumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDocumentCell.swift; sourceTree = "<group>"; };
 		C960E41F261B288900DC19EE /* DocumentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
 		C960E420261B288900DC19EE /* DocumentsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentsViewModel.swift; sourceTree = "<group>"; };
 		C960E421261B288900DC19EE /* SubjectRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectRouter.swift; sourceTree = "<group>"; };
-		C960E423261B288900DC19EE /* MyWalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWalletViewController.swift; sourceTree = "<group>"; };
 		C960E425261B288900DC19EE /* MyTransactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTransactionsViewController.swift; sourceTree = "<group>"; };
 		C960E426261B288900DC19EE /* MyTransactionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTransactionViewModel.swift; sourceTree = "<group>"; };
 		C960E428261B288900DC19EE /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
 		C960E429261B288900DC19EE /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
-		C960E42C261B288900DC19EE /* EarningSummaryTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarningSummaryTableHeaderView.swift; sourceTree = "<group>"; };
-		C960E42D261B288900DC19EE /* EarningRowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EarningRowTableViewCell.xib; sourceTree = "<group>"; };
-		C960E42E261B288900DC19EE /* EarningSummaryTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EarningSummaryTableHeaderView.xib; sourceTree = "<group>"; };
-		C960E42F261B288900DC19EE /* EarningRowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarningRowTableViewCell.swift; sourceTree = "<group>"; };
-		C960E430261B288900DC19EE /* MyEarningsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEarningsViewController.swift; sourceTree = "<group>"; };
-		C960E431261B288900DC19EE /* MyEarningsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEarningsViewModel.swift; sourceTree = "<group>"; };
 		C960E433261B288900DC19EE /* AddDocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDocumentViewController.swift; sourceTree = "<group>"; };
 		C960E435261B288900DC19EE /* DocumentLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentLibraryViewController.swift; sourceTree = "<group>"; };
 		C960E436261B288900DC19EE /* DocumentLibraryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentLibraryViewModel.swift; sourceTree = "<group>"; };
@@ -499,7 +513,6 @@
 		C960E477261B288900DC19EE /* AvailibilityDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailibilityDayCell.swift; sourceTree = "<group>"; };
 		C960E478261B288900DC19EE /* AvailibilityDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvailibilityDayCell.xib; sourceTree = "<group>"; };
 		C960E479261B288900DC19EE /* AvailibilityHourCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvailibilityHourCell.xib; sourceTree = "<group>"; };
-		C960E47B261B288900DC19EE /* PaymentMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewController.swift; sourceTree = "<group>"; };
 		C960E47C261B288900DC19EE /* UploadVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadVideoViewController.swift; sourceTree = "<group>"; };
 		C960E47D261B288900DC19EE /* CreateProfilePersonalInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfilePersonalInformationViewController.swift; sourceTree = "<group>"; };
 		C960E47E261B288900DC19EE /* UploadImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageViewController.swift; sourceTree = "<group>"; };
@@ -576,6 +589,7 @@
 		C960E4DA261B288900DC19EE /* CalendarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarStyle.swift; sourceTree = "<group>"; };
 		C960E5D6261B5E9000DC19EE /* SignupAccountTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupAccountTypeViewController.swift; sourceTree = "<group>"; };
 		C960E5EF261B6E8E00DC19EE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C98AB69B2622097B008FA243 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		C99D0002261D5CA400816E5C /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
 		C99D000A261D5E9E00816E5C /* AddStudyingSubjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudyingSubjectViewModel.swift; sourceTree = "<group>"; };
 		C99D004A261E0A6900816E5C /* ProfileCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCardCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -646,6 +660,53 @@
 				6D3EBAF8A9A6B3E0667DC982 /* Pods-Students.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C924C4942621AB9700A5499F /* Payment Method */ = {
+			isa = PBXGroup;
+			children = (
+				C924C4AA2621B6AB00A5499F /* Cell */,
+				C924C4982621B27A00A5499F /* PaymentMethodViewController.swift */,
+				C924C49D2621B2F700A5499F /* AddPaymentMethodViewController.swift */,
+			);
+			path = "Payment Method";
+			sourceTree = "<group>";
+		};
+		C924C4AA2621B6AB00A5499F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C924C4AB2621B6BF00A5499F /* PaymentMethodListingTableViewCell.swift */,
+				C924C4B32621B6CA00A5499F /* PaymentMethodListingTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C924C4BE2621C79900A5499F /* UpdateSubjects */ = {
+			isa = PBXGroup;
+			children = (
+				C924C4BF2621C7A800A5499F /* UpdateSubjectsViewController.swift */,
+			);
+			path = UpdateSubjects;
+			sourceTree = "<group>";
+		};
+		C924C4C42621C8C000A5499F /* Wishlist */ = {
+			isa = PBXGroup;
+			children = (
+				C924C4DC2621DD3A00A5499F /* Cell */,
+				C924C4C82621C96900A5499F /* Wishlist.storyboard */,
+				C924C4CD2621C9A200A5499F /* CategorizedWishlistViewController.swift */,
+				C924C4D22621CA6D00A5499F /* CategorizedWishlistViewModel.swift */,
+			);
+			path = Wishlist;
+			sourceTree = "<group>";
+		};
+		C924C4DC2621DD3A00A5499F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C924C4DD2621DD4E00A5499F /* WishlistTableViewCell.swift */,
+				C924C4E52621DD5700A5499F /* WishlistTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C960E334261B251100DC19EE /* Common */ = {
@@ -774,9 +835,13 @@
 			isa = PBXGroup;
 			children = (
 				C960E396261B288800DC19EE /* ScheduleListingViewController.swift */,
-				C960E397261B288800DC19EE /* ScheduleListingRouter.swift */,
-				C960E398261B288800DC19EE /* ScheduleListingSceneBuilder.swift */,
+				C960E397261B288800DC19EE /* MyScheduleRouter.swift */,
 				C960E399261B288800DC19EE /* ScheduleListingViewModel.swift */,
+				C924C4632621823E00A5499F /* MyScheduleViewController.swift */,
+				C924C468262183DE00A5499F /* MyScheduleBuilder.swift */,
+				C924C473262184E900A5499F /* MyScheduleViewModel.swift */,
+				C924C478262188C800A5499F /* MyFilteredScheduleViewController.swift */,
+				C924C47D26218CC000A5499F /* MyFilteredScheduleViewModel.swift */,
 			);
 			path = "Schedule listing";
 			sourceTree = "<group>";
@@ -847,6 +912,8 @@
 				C960E3B6261B288800DC19EE /* ReviewsMock.swift */,
 				C960E5EF261B6E8E00DC19EE /* User.swift */,
 				C99D006D261EAC8300816E5C /* Address.swift */,
+				C924C4A52621B35400A5499F /* PaymentMethod.swift */,
+				C924C4D72621CA7F00A5499F /* Wishlist.swift */,
 			);
 			path = MockData;
 			sourceTree = "<group>";
@@ -904,7 +971,7 @@
 		C960E3CD261B288800DC19EE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C960E3CE261B288800DC19EE /* RateStudentTableViewCell.xib */,
+				C960E3CE261B288800DC19EE /* RateTeacherTableViewCell.xib */,
 				C960E3CF261B288800DC19EE /* StudentProfileParentTableViewCell.swift */,
 				C960E3D0261B288800DC19EE /* RateStudentTableViewCell.swift */,
 				C960E3D1261B288800DC19EE /* StudentProfileParentTableViewCell.xib */,
@@ -996,6 +1063,9 @@
 		C960E3F1261B288900DC19EE /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C924C4C42621C8C000A5499F /* Wishlist */,
+				C924C4BE2621C79900A5499F /* UpdateSubjects */,
+				C924C4942621AB9700A5499F /* Payment Method */,
 				C99D0054261EA8E000816E5C /* Address */,
 				C960E3F2261B288900DC19EE /* Settings */,
 				C960E3FD261B288900DC19EE /* Profile.storyboard */,
@@ -1094,7 +1164,7 @@
 				C960E40E261B288900DC19EE /* SessionFeesTableViewCell.swift */,
 				C960E40F261B288900DC19EE /* PaymentMethodTableViewCell.xib */,
 				C960E410261B288900DC19EE /* PaymentMethodTableViewCell.swift */,
-				C960E411261B288900DC19EE /* StudentParentDetailsTableViewCell.xib */,
+				C960E411261B288900DC19EE /* PersonDetailsTableViewCell.xib */,
 				C960E412261B288900DC19EE /* SubjectDetailTableViewCell.swift */,
 				C960E413261B288900DC19EE /* DateAndTimeTableViewCell.xib */,
 				C960E414261B288900DC19EE /* SessionFeesTableViewCell.xib */,
@@ -1116,10 +1186,8 @@
 		C960E41A261B288900DC19EE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				C960E41B261B288900DC19EE /* NewDocumentCell.xib */,
 				C960E41C261B288900DC19EE /* DocumentCell.xib */,
 				C960E41D261B288900DC19EE /* DocumentCell.swift */,
-				C960E41E261B288900DC19EE /* NewDocumentCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1127,9 +1195,7 @@
 		C960E422261B288900DC19EE /* My Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				C960E423261B288900DC19EE /* MyWalletViewController.swift */,
 				C960E424261B288900DC19EE /* Transactions */,
-				C960E42A261B288900DC19EE /* Earnings */,
 			);
 			path = "My Wallet";
 			sourceTree = "<group>";
@@ -1149,27 +1215,6 @@
 			children = (
 				C960E428261B288900DC19EE /* TransactionTableViewCell.xib */,
 				C960E429261B288900DC19EE /* TransactionTableViewCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		C960E42A261B288900DC19EE /* Earnings */ = {
-			isa = PBXGroup;
-			children = (
-				C960E42B261B288900DC19EE /* Cell */,
-				C960E430261B288900DC19EE /* MyEarningsViewController.swift */,
-				C960E431261B288900DC19EE /* MyEarningsViewModel.swift */,
-			);
-			path = Earnings;
-			sourceTree = "<group>";
-		};
-		C960E42B261B288900DC19EE /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				C960E42C261B288900DC19EE /* EarningSummaryTableHeaderView.swift */,
-				C960E42D261B288900DC19EE /* EarningRowTableViewCell.xib */,
-				C960E42E261B288900DC19EE /* EarningSummaryTableHeaderView.xib */,
-				C960E42F261B288900DC19EE /* EarningRowTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1360,7 +1405,6 @@
 		C960E47A261B288900DC19EE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C960E47B261B288900DC19EE /* PaymentMethodViewController.swift */,
 				C960E47C261B288900DC19EE /* UploadVideoViewController.swift */,
 				C960E47D261B288900DC19EE /* CreateProfilePersonalInformationViewController.swift */,
 				C960E47E261B288900DC19EE /* UploadImageViewController.swift */,
@@ -1589,6 +1633,7 @@
 				C960E4D5261B288900DC19EE /* ReusableView.swift */,
 				C960E4D6261B288900DC19EE /* UINavigationController+Pop.swift */,
 				C960E4D7261B288900DC19EE /* UIColor+Image.swift */,
+				C98AB69B2622097B008FA243 /* Collection+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1839,12 +1884,12 @@
 				C960E35A261B251200DC19EE /* Poppins-Regular.ttf in Resources */,
 				C960E56B261B288A00DC19EE /* Subjects.storyboard in Resources */,
 				C960E586261B288A00DC19EE /* AvailibilityDayCell.xib in Resources */,
-				C960E54E261B288900DC19EE /* EarningRowTableViewCell.xib in Resources */,
+				C924C4B42621B6CA00A5499F /* PaymentMethodListingTableViewCell.xib in Resources */,
 				C960E351261B251200DC19EE /* Poppins-ThinItalic.ttf in Resources */,
 				C960E5BE261B288A00DC19EE /* CollectionViewTitleHeader.xib in Resources */,
 				C960E51B261B288900DC19EE /* DashboardReviewCollectionViewCell.xib in Resources */,
 				C960E352261B251200DC19EE /* Poppins-ExtraLightItalic.ttf in Resources */,
-				C960E507261B288900DC19EE /* RateStudentTableViewCell.xib in Resources */,
+				C960E507261B288900DC19EE /* RateTeacherTableViewCell.xib in Resources */,
 				C960E518261B288900DC19EE /* DashboardCard.xib in Resources */,
 				C99D009A261F85A400816E5C /* Browse.storyboard in Resources */,
 				C960E58F261B288A00DC19EE /* CreateProfile.storyboard in Resources */,
@@ -1855,8 +1900,8 @@
 				C960E361261B251200DC19EE /* Poppins-MediumItalic.ttf in Resources */,
 				C960E357261B251200DC19EE /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				C960E570261B288A00DC19EE /* Login.storyboard in Resources */,
-				C960E54F261B288900DC19EE /* EarningSummaryTableHeaderView.xib in Resources */,
 				C960E35C261B251200DC19EE /* Poppins-Bold.ttf in Resources */,
+				C924C4E62621DD5700A5499F /* WishlistTableViewCell.xib in Resources */,
 				C960E525261B288900DC19EE /* SettingTableHeaderView.xib in Resources */,
 				C960E4F0261B288900DC19EE /* Messages.storyboard in Resources */,
 				C960E53B261B288900DC19EE /* DateAndTimeTableViewCell.xib in Resources */,
@@ -1890,11 +1935,10 @@
 				C960E587261B288A00DC19EE /* AvailibilityHourCell.xib in Resources */,
 				C960E5B2261B288A00DC19EE /* ImagePickerOptionSheet.storyboard in Resources */,
 				C960E4EB261B288900DC19EE /* ChatMessageReceivedCell.xib in Resources */,
-				C960E539261B288900DC19EE /* StudentParentDetailsTableViewCell.xib in Resources */,
+				C960E539261B288900DC19EE /* PersonDetailsTableViewCell.xib in Resources */,
 				C960E54B261B288900DC19EE /* TransactionTableViewCell.xib in Resources */,
 				C960E4EE261B288900DC19EE /* ChatMessageSentCell.xib in Resources */,
 				C960E542261B288900DC19EE /* DocumentCell.xib in Resources */,
-				C960E541261B288900DC19EE /* NewDocumentCell.xib in Resources */,
 				C960E59F261B288A00DC19EE /* NavigationBarItem.xib in Resources */,
 				C960E36E261B255500DC19EE /* LaunchScreen.storyboard in Resources */,
 				C960E4E8261B288900DC19EE /* ChatParentView.xib in Resources */,
@@ -1903,6 +1947,7 @@
 				C960E528261B288900DC19EE /* SwitchTableViewCell.xib in Resources */,
 				C960E511261B288900DC19EE /* Onboarding.storyboard in Resources */,
 				C960E50B261B288900DC19EE /* StudentProfileTableHeaderView.xib in Resources */,
+				C924C4C92621C96900A5499F /* Wishlist.storyboard in Resources */,
 				C960E51C261B288900DC19EE /* DashboardSessionCollectionViewCell.xib in Resources */,
 				C960E34F261B251200DC19EE /* Colors.xcassets in Resources */,
 				C960E568261B288A00DC19EE /* Signup.storyboard in Resources */,
@@ -2010,7 +2055,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C960E4F5261B288900DC19EE /* Transaction.swift in Sources */,
-				C960E544261B288900DC19EE /* NewDocumentCell.swift in Sources */,
 				C960E5AC261B288A00DC19EE /* ItemPickerViewModel.swift in Sources */,
 				C960E571261B288A00DC19EE /* LoginStateNavigationView.swift in Sources */,
 				C960E4F9261B288900DC19EE /* NotificationTableViewCell.swift in Sources */,
@@ -2021,9 +2065,9 @@
 				C960E508261B288900DC19EE /* StudentProfileParentTableViewCell.swift in Sources */,
 				C960E57D261B288A00DC19EE /* CreateProfileViewModel.swift in Sources */,
 				C960E58E261B288A00DC19EE /* RegisteredSubjectsViewController.swift in Sources */,
-				C960E552261B288900DC19EE /* MyEarningsViewModel.swift in Sources */,
 				C99DFFE2261D59BE00816E5C /* AddSubjectTableViewCell.swift in Sources */,
-				C960E588261B288A00DC19EE /* PaymentMethodViewController.swift in Sources */,
+				C924C469262183DE00A5499F /* MyScheduleBuilder.swift in Sources */,
+				C924C4A62621B35400A5499F /* PaymentMethod.swift in Sources */,
 				C960E57A261B288A00DC19EE /* AvailibilityViewModel.swift in Sources */,
 				C960E52A261B288900DC19EE /* SettingsViewController.swift in Sources */,
 				C960E526261B288900DC19EE /* LinkTableViewCell.swift in Sources */,
@@ -2039,16 +2083,19 @@
 				C960E512261B288900DC19EE /* OnboardingCollectionViewCell.swift in Sources */,
 				C960E5C3261B288A00DC19EE /* ErrorView.swift in Sources */,
 				C960E529261B288900DC19EE /* SwitchTableViewCell.swift in Sources */,
-				C960E4DE261B288900DC19EE /* ScheduleListingRouter.swift in Sources */,
+				C98AB69C2622097B008FA243 /* Collection+Extensions.swift in Sources */,
+				C960E4DE261B288900DC19EE /* MyScheduleRouter.swift in Sources */,
 				C960E589261B288A00DC19EE /* UploadVideoViewController.swift in Sources */,
 				C960E5A5261B288A00DC19EE /* CustomNibView.swift in Sources */,
 				C960E59A261B288A00DC19EE /* SessionDetailViewController.swift in Sources */,
 				C960E54A261B288900DC19EE /* MyTransactionViewModel.swift in Sources */,
 				C960E554261B288900DC19EE /* DocumentLibraryViewController.swift in Sources */,
+				C924C4C02621C7A800A5499F /* UpdateSubjectsViewController.swift in Sources */,
 				C960E56A261B288A00DC19EE /* SignupSuccessStateRouter.swift in Sources */,
-				C960E548261B288900DC19EE /* MyWalletViewController.swift in Sources */,
+				C924C474262184E900A5499F /* MyScheduleViewModel.swift in Sources */,
 				C960E545261B288900DC19EE /* DocumentsViewController.swift in Sources */,
 				C960E5F0261B6E8E00DC19EE /* User.swift in Sources */,
+				C924C49E2621B2F700A5499F /* AddPaymentMethodViewController.swift in Sources */,
 				C960E58B261B288A00DC19EE /* UploadImageViewController.swift in Sources */,
 				C960E53F261B288900DC19EE /* SubjectDetailsViewModel.swift in Sources */,
 				C960E5BC261B288A00DC19EE /* HeadingLabel2.swift in Sources */,
@@ -2056,6 +2103,7 @@
 				C960E56C261B288A00DC19EE /* NewPasswordViewController.swift in Sources */,
 				C960E558261B288900DC19EE /* ProfileViewController.swift in Sources */,
 				C960E4FE261B288900DC19EE /* RateAndReviewViewController.swift in Sources */,
+				C924C4992621B27A00A5499F /* PaymentMethodViewController.swift in Sources */,
 				C960E505261B288900DC19EE /* StudentProfileRouter.swift in Sources */,
 				C960E573261B288A00DC19EE /* LoginAccountWaitingReviewViewModel.swift in Sources */,
 				C960E4E5261B288900DC19EE /* MessagesListViewController.swift in Sources */,
@@ -2071,6 +2119,7 @@
 				C960E530261B288900DC19EE /* BillingInformationViewController.swift in Sources */,
 				C960E52C261B288900DC19EE /* LanguageTableViewCell.swift in Sources */,
 				C99DFFCC261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift in Sources */,
+				C924C47E26218CC000A5499F /* MyFilteredScheduleViewModel.swift in Sources */,
 				C960E56F261B288A00DC19EE /* LoginViewModel.swift in Sources */,
 				C960E51A261B288900DC19EE /* DashboardSceneRouter.swift in Sources */,
 				C960E4ED261B288900DC19EE /* ChatMessageReceivedCell.swift in Sources */,
@@ -2085,8 +2134,10 @@
 				C960E57C261B288A00DC19EE /* AvailibilityCellViewModel.swift in Sources */,
 				C960E51D261B288900DC19EE /* DashboardReviewCollectionViewCell.swift in Sources */,
 				C960E59B261B288A00DC19EE /* SessionDetailBuilder.swift in Sources */,
+				C924C4AC2621B6BF00A5499F /* PaymentMethodListingTableViewCell.swift in Sources */,
 				C960E535261B288900DC19EE /* StudentParentDetailsTableViewCell.swift in Sources */,
 				C960E567261B288A00DC19EE /* SignupPersonalInformationViewController.swift in Sources */,
+				C924C4DE2621DD4E00A5499F /* WishlistTableViewCell.swift in Sources */,
 				C960E54C261B288900DC19EE /* TransactionTableViewCell.swift in Sources */,
 				C960E5C6261B288A00DC19EE /* UIView+Autolayout.swift in Sources */,
 				C960E5A9261B288A00DC19EE /* CustomDatePicker.swift in Sources */,
@@ -2101,6 +2152,8 @@
 				C960E576261B288A00DC19EE /* LoginPendingProcessViewController.swift in Sources */,
 				C99D0073261EB1CB00816E5C /* SelectLocationViewController.swift in Sources */,
 				C960E5B1261B288A00DC19EE /* ImagePickerOptionSheetViewController.swift in Sources */,
+				C924C479262188C800A5499F /* MyFilteredScheduleViewController.swift in Sources */,
+				C924C4CE2621C9A200A5499F /* CategorizedWishlistViewController.swift in Sources */,
 				C960E4F7261B288900DC19EE /* ReviewsMock.swift in Sources */,
 				C960E569261B288A00DC19EE /* SignupMobileNumberViewController.swift in Sources */,
 				C960E50D261B288900DC19EE /* StudentProfileViewController.swift in Sources */,
@@ -2109,13 +2162,11 @@
 				C960E5C8261B288A00DC19EE /* UIWindow+RootView.swift in Sources */,
 				C960E598261B288A00DC19EE /* SessionDetailViewModel.swift in Sources */,
 				C960E4F2261B288900DC19EE /* StudentMock.swift in Sources */,
-				C960E551261B288900DC19EE /* MyEarningsViewController.swift in Sources */,
 				C960E556261B288900DC19EE /* ProfileSceneBuilder.swift in Sources */,
 				C960E591261B288A00DC19EE /* BaseNavigationViewController.swift in Sources */,
 				C99D009F261F85B100816E5C /* BrowseSessionViewController.swift in Sources */,
 				C960E57E261B288A00DC19EE /* UploadImageViewModel.swift in Sources */,
 				C99D006E261EAC8400816E5C /* Address.swift in Sources */,
-				C960E4DF261B288900DC19EE /* ScheduleListingSceneBuilder.swift in Sources */,
 				C960E55D261B288900DC19EE /* SuccessStateViewController.swift in Sources */,
 				C960E4E9261B288900DC19EE /* ChatViewModel.swift in Sources */,
 				C960E53E261B288900DC19EE /* SubjectDetailsViewController.swift in Sources */,
@@ -2133,10 +2184,10 @@
 				C960E5CC261B288A00DC19EE /* NSAttributedString+Styling.swift in Sources */,
 				C960E5A1261B288A00DC19EE /* LabelledTextField.swift in Sources */,
 				C960E5B3261B288A00DC19EE /* Fonts.swift in Sources */,
-				C960E550261B288900DC19EE /* EarningRowTableViewCell.swift in Sources */,
 				C960E53A261B288900DC19EE /* SubjectDetailTableViewCell.swift in Sources */,
 				C960E549261B288900DC19EE /* MyTransactionsViewController.swift in Sources */,
 				C960E538261B288900DC19EE /* PaymentMethodTableViewCell.swift in Sources */,
+				C924C4D32621CA6D00A5499F /* CategorizedWishlistViewModel.swift in Sources */,
 				C960E579261B288A00DC19EE /* ProfileSection.swift in Sources */,
 				C960E581261B288A00DC19EE /* CreateProfileSectionTableViewCell.swift in Sources */,
 				C960E572261B288A00DC19EE /* LoginViewController.swift in Sources */,
@@ -2149,7 +2200,6 @@
 				C960E59C261B288A00DC19EE /* SessionTableViewCell.swift in Sources */,
 				C960E58A261B288A00DC19EE /* CreateProfilePersonalInformationViewController.swift in Sources */,
 				C960E5D2261B288A00DC19EE /* CalendarStyle.swift in Sources */,
-				C960E54D261B288900DC19EE /* EarningSummaryTableHeaderView.swift in Sources */,
 				C960E4E6261B288900DC19EE /* ChatViewController.swift in Sources */,
 				C960E585261B288A00DC19EE /* AvailibilityDayCell.swift in Sources */,
 				C960E52F261B288900DC19EE /* LanguageViewController.swift in Sources */,
@@ -2166,12 +2216,14 @@
 				C960E55A261B288900DC19EE /* SignupCompletedSuccessStateViewModel.swift in Sources */,
 				C960E5CA261B288A00DC19EE /* String+Regex.swift in Sources */,
 				C960E5BB261B288A00DC19EE /* PaddedTextField.swift in Sources */,
+				C924C4D82621CA7F00A5499F /* Wishlist.swift in Sources */,
 				C960E506261B288900DC19EE /* StudentProfileTableHeaderView.swift in Sources */,
 				C960E5D7261B5E9000DC19EE /* SignupAccountTypeViewController.swift in Sources */,
 				C960E510261B288900DC19EE /* OnboardingPage.swift in Sources */,
 				C960E595261B288A00DC19EE /* AddSubjectViewController.swift in Sources */,
 				C99D0061261EA94600816E5C /* AddressListingTableViewCell.swift in Sources */,
 				C960E5AF261B288A00DC19EE /* CollapsedTableViewCell.swift in Sources */,
+				C924C4642621823E00A5499F /* MyScheduleViewController.swift in Sources */,
 				C99D0003261D5CA400816E5C /* Assets+Generated.swift in Sources */,
 				C960E5C5261B288A00DC19EE /* UITextField+Placeholder.swift in Sources */,
 				C960E559261B288900DC19EE /* ReviewsViewController.swift in Sources */,

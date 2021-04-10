@@ -8,11 +8,11 @@ import Foundation
 protocol SubjectDetailTableCellViewModel {}
 
 class SubjectDetailsViewModel {
-    lazy var studentParentDetailsViewModel: StudentParentDetailsTableViewCellViewModel = {
-        StudentParentDetailsTableViewCellViewModel(
-            studentImage: Asset.Media.student.image,
-            studentName: "Assem Mohammed",
-            parentImage: Asset.Media.studentParent.image,
+    lazy var personDetailsViewModel: PersonDetailsTableViewCellViewModel = {
+        PersonDetailsTableViewCellViewModel(
+            title: "Teacher",
+            personImage: Asset.Media.student.image,
+            personName: "Assem Mohammed",
             ratingImage: Asset.Media.ratingStar.image,
             rating: "4.5") { [weak self] in
             self?.router.navigateToChatView()

@@ -44,7 +44,7 @@ class CreateProfileViewModel {
         case .availability:
             router.navigateToAvilibilitySelection()
         case .paymentMethod:
-            router.navigateToAddPaymentMethod()
+            router.navigateToPaymentMethod()
         case .idCard:
             router.navigateToAddIdCard()
         case .teachingLicense:

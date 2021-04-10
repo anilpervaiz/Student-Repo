@@ -1,14 +1,32 @@
 //
-//  PaymentMethodViewController.swift
-//  Teachers
+//  AddPaymentMethodViewController.swift
+//  Students
 //
-//  Created by Rahim on 21/03/2021.
+//  Created by Rahim on 10/04/2021.
 //
 
 import UIKit
 
-class PaymentMethodViewController: BaseViewController {
+class AddPaymentMethodViewController: BaseViewController {
 
+    private var isDefaultPayment = false {
+        didSet {
+            if isDefaultPayment {
+                defaultPaymentCheckboxImageView.image = Asset.Media.checkboxSelected.image
+                defaultPaymentCheckboxImageView.tintColor = Asset.Colors.halfBaked.color
+            } else {
+                defaultPaymentCheckboxImageView.image = Asset.Media.checkbox.image
+            }
+
+        }
+    }
+    @IBOutlet weak var defaultPaymentCheckboxImageView: UIImageView!
+    @IBOutlet weak var isDefaultPaymentView: UIView! {
+        didSet {
+            let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapDefaultPaymentCheckbox))
+            isDefaultPaymentView.addGestureRecognizer(gesture)
+        }
+    }
     @IBOutlet weak var ctaButtonBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var cardNumberTextField: LabelledTextField! {
         didSet {
@@ -38,16 +56,21 @@ class PaymentMethodViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Payment Method"
+        title = "New Payment Method"
         navigationController?.navigationBar.barStyle = .default
     }
 
     @IBAction func didTapCTAButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+
+    @objc
+    func didTapDefaultPaymentCheckbox() {
+        isDefaultPayment = !isDefaultPayment
+    }
 }
 
-extension PaymentMethodViewController {
+extension AddPaymentMethodViewController {
     func setupKeyboardNotification() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
 
@@ -57,7 +80,7 @@ extension PaymentMethodViewController {
 
 // MARK: - Keyboard target events
 @objc
-extension PaymentMethodViewController {
+extension AddPaymentMethodViewController {
     private func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
            let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double {
@@ -76,7 +99,7 @@ extension PaymentMethodViewController {
     }
 }
 
-extension PaymentMethodViewController: CustomDatePickerViewDelegate {
+extension AddPaymentMethodViewController: CustomDatePickerViewDelegate {
     func didTapCancelButton() {
         view.endEditing(true)
     }
@@ -90,6 +113,6 @@ extension PaymentMethodViewController: CustomDatePickerViewDelegate {
     }
 }
 
-extension PaymentMethodViewController: Initializable {
-    static var storyboardName: UIStoryboard.Name { .createProfile }
+extension AddPaymentMethodViewController: Initializable {
+    static var storyboardName: UIStoryboard.Name { .profile }
 }

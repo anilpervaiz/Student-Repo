@@ -8,7 +8,7 @@
 import UIKit
 import Cosmos
 
-class RateStudentTableViewCell: UITableViewCell,
+class RateTeacherTableViewCell: UITableViewCell,
                                 ReusableView {
 
 

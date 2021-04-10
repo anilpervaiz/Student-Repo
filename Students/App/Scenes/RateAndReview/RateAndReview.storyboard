@@ -21,7 +21,7 @@
         <!--Rate And Review View Controller-->
         <scene sceneID="Fgq-yV-bkv">
             <objects>
-                <viewController storyboardIdentifier="RateAndReviewViewController" id="3FJ-dc-Ov8" customClass="RateAndReviewViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RateAndReviewViewController" id="3FJ-dc-Ov8" customClass="RateAndReviewViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w2r-Kp-wrV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,7 +143,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Dcg-z8-8pZ" secondAttribute="trailing" constant="32" id="xvx-HR-Wqa"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v68-Pt-KUe" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v68-Pt-KUe" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
                                 <rect key="frame" x="16" y="782" width="382" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="Jsh-7w-ADZ"/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +19,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="371" id="P4U-P2-rkK" customClass="StudentParentDetailsTableViewCell" customModule="Teachers" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="371" id="P4U-P2-rkK" customClass="PersonDetailsTableViewCell" customModule="Students" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="371"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P4U-P2-rkK" id="j1J-VC-DwP">
@@ -44,21 +44,6 @@
                                             <constraint firstAttribute="width" constant="44" id="XIf-qf-W9X"/>
                                             <constraint firstAttribute="width" secondItem="wLz-EJ-x73" secondAttribute="height" id="fdF-tz-CZ1"/>
                                         </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zvs-0s-RtU">
-                                        <rect key="frame" x="40" y="40" width="16" height="16"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="16" id="9x8-NY-6IA"/>
-                                            <constraint firstAttribute="width" secondItem="zvs-0s-RtU" secondAttribute="height" id="pkv-vj-h0y"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" name="pureWhite"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sv-Ye-WOz">
                                         <rect key="frame" x="68" y="12" width="266" height="16.5"/>
@@ -106,8 +91,6 @@
                                     <constraint firstItem="KnG-QV-5FW" firstAttribute="centerY" secondItem="afA-xM-EQC" secondAttribute="centerY" id="oNm-8T-IoH"/>
                                     <constraint firstItem="afA-xM-EQC" firstAttribute="leading" secondItem="wLz-EJ-x73" secondAttribute="trailing" constant="12" id="sXU-Yo-V39"/>
                                     <constraint firstItem="wLz-EJ-x73" firstAttribute="leading" secondItem="WGW-LD-ftm" secondAttribute="leading" constant="12" id="sgG-I8-H74"/>
-                                    <constraint firstItem="zvs-0s-RtU" firstAttribute="trailing" secondItem="wLz-EJ-x73" secondAttribute="trailing" id="ueq-e5-MyB"/>
-                                    <constraint firstItem="zvs-0s-RtU" firstAttribute="bottom" secondItem="wLz-EJ-x73" secondAttribute="bottom" id="zQv-in-2uw"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -142,11 +125,11 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="parentImageView" destination="zvs-0s-RtU" id="Lnu-Io-AIq"/>
+                <outlet property="personImageView" destination="wLz-EJ-x73" id="qsj-Py-mAe"/>
+                <outlet property="personNameLabel" destination="0Sv-Ye-WOz" id="i9C-Hm-Lmr"/>
                 <outlet property="ratingImageView" destination="afA-xM-EQC" id="Ofy-F8-0Qg"/>
                 <outlet property="ratingLabel" destination="KnG-QV-5FW" id="Hts-c0-Hkd"/>
-                <outlet property="studentImageView" destination="wLz-EJ-x73" id="dfr-DT-Ujl"/>
-                <outlet property="studentNameLabel" destination="0Sv-Ye-WOz" id="sC4-4r-HAF"/>
+                <outlet property="titleLabel" destination="wgo-E1-bTC" id="wBR-Ov-luS"/>
             </connections>
             <point key="canvasLocation" x="134.78260869565219" y="173.10267857142856"/>
         </tableViewCell>
@@ -165,9 +148,6 @@
         </namedColor>
         <namedColor name="primary">
             <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="pureWhite">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

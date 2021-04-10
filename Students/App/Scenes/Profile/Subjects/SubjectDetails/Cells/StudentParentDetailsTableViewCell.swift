@@ -6,11 +6,12 @@
 import Foundation
 import UIKit
 
-
-class StudentParentDetailsTableViewCell: UITableViewCell, ReusableView {
-    @IBOutlet weak var studentImageView: UIImageView!
-    @IBOutlet weak var parentImageView: UIImageView!
-    @IBOutlet weak var studentNameLabel: UILabel!
+class PersonDetailsTableViewCell: UITableViewCell,
+                                  ReusableView {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var personImageView: UIImageView!
+    @IBOutlet weak var personNameLabel: UILabel!
     @IBOutlet weak var ratingImageView: UIImageView!
     @IBOutlet weak var ratingLabel: UILabel!
     
@@ -18,16 +19,13 @@ class StudentParentDetailsTableViewCell: UITableViewCell, ReusableView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        studentImageView.circular = true
-        parentImageView.circular = true
-        parentImageView.borderWidth = 1.0
-        parentImageView.borderColor = Asset.Colors.borderColor.color
+        personImageView.circular = true
     }
     
-    func configure(with viewModel: StudentParentDetailsTableViewCellViewModel) {
-        studentImageView.image = viewModel.studentImage
-        studentNameLabel.text = viewModel.studentName
-        parentImageView.image = viewModel.parentImage
+    func configure(with viewModel: PersonDetailsTableViewCellViewModel) {
+        titleLabel.text = viewModel.title
+        personImageView.image = viewModel.personImage
+        personNameLabel.text = viewModel.personName
         ratingImageView.image = viewModel.ratingImage
         ratingLabel.text = viewModel.rating
         self.onChatButtonTapped = viewModel.onChatButtonTapped
@@ -38,10 +36,10 @@ class StudentParentDetailsTableViewCell: UITableViewCell, ReusableView {
     }
 }
 
-struct StudentParentDetailsTableViewCellViewModel: SubjectDetailTableCellViewModel {
-    let studentImage: UIImage
-    let studentName: String
-    let parentImage: UIImage
+struct PersonDetailsTableViewCellViewModel: SubjectDetailTableCellViewModel {
+    let title: String
+    let personImage: UIImage
+    let personName: String
     let ratingImage: UIImage
     let rating: String
     let onChatButtonTapped: (()->())?

@@ -33,7 +33,7 @@ class TabbarController: UITabBarController {
         viewControllers = [
             DashboardSceneBuilder().makeViewController(),
             BrowseSessionBuilder().makeViewController(),
-            ScheduleListingSceneBuilder().makeViewController(),
+            MyScheduleBuilder().makeViewController(),
             ProfileSceneBuilder().makeViewController()
         ]
 

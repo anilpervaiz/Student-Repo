@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="99" id="oq8-xF-1IP" customClass="PaymentMethodListingTableViewCell" customModule="Students" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oq8-xF-1IP" id="oAG-YO-ELm">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDj-fz-mMb">
+                        <rect key="frame" x="16" y="35.5" width="40" height="28"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="cIb-3K-mu0">
+                                <rect key="frame" x="6" y="6" width="28" height="16"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cIb-3K-mu0" firstAttribute="top" secondItem="oDj-fz-mMb" secondAttribute="top" constant="6" id="2rb-Xn-C9f"/>
+                            <constraint firstAttribute="bottom" secondItem="cIb-3K-mu0" secondAttribute="bottom" constant="6" id="8UP-Du-czb"/>
+                            <constraint firstAttribute="trailing" secondItem="cIb-3K-mu0" secondAttribute="trailing" constant="6" id="GsC-3a-3WZ"/>
+                            <constraint firstItem="cIb-3K-mu0" firstAttribute="leading" secondItem="oDj-fz-mMb" secondAttribute="leading" constant="6" id="R8c-gs-Pht"/>
+                            <constraint firstAttribute="width" secondItem="oDj-fz-mMb" secondAttribute="height" multiplier="10:7" id="ZtD-k5-ucY"/>
+                            <constraint firstAttribute="width" constant="40" id="evm-XV-RZq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="lightGray"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Uf-0k-xNC">
+                        <rect key="frame" x="72" y="16" width="326" height="67"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPo-tm-5o9">
+                                <rect key="frame" x="0.0" y="0.0" width="276" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                <color key="textColor" name="darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Default" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaR-KG-z4J">
+                                <rect key="frame" x="288" y="27.5" width="38" height="12"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="10"/>
+                                <color key="textColor" name="blue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbg-Vm-aUE">
+                                <rect key="frame" x="0.0" y="26.5" width="326" height="17"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                <color key="textColor" name="gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dbg-Vm-aUE" secondAttribute="bottom" id="6Sm-oU-TYP"/>
+                            <constraint firstItem="dbg-Vm-aUE" firstAttribute="leading" secondItem="1Uf-0k-xNC" secondAttribute="leading" id="FUJ-sD-jk0"/>
+                            <constraint firstItem="WaR-KG-z4J" firstAttribute="centerY" secondItem="1Uf-0k-xNC" secondAttribute="centerY" id="Mea-Vw-cj4"/>
+                            <constraint firstItem="WaR-KG-z4J" firstAttribute="leading" secondItem="vPo-tm-5o9" secondAttribute="trailing" constant="12" id="MpC-zh-ezD"/>
+                            <constraint firstItem="vPo-tm-5o9" firstAttribute="leading" secondItem="1Uf-0k-xNC" secondAttribute="leading" id="R8D-2O-Eqx"/>
+                            <constraint firstItem="dbg-Vm-aUE" firstAttribute="top" secondItem="vPo-tm-5o9" secondAttribute="bottom" constant="4" id="Tbf-9D-MWV"/>
+                            <constraint firstAttribute="trailing" secondItem="dbg-Vm-aUE" secondAttribute="trailing" id="VZs-Lc-aA1"/>
+                            <constraint firstAttribute="trailing" secondItem="WaR-KG-z4J" secondAttribute="trailing" id="uCO-Ex-glf"/>
+                            <constraint firstItem="vPo-tm-5o9" firstAttribute="top" secondItem="1Uf-0k-xNC" secondAttribute="top" id="y6e-CL-2wH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="1Uf-0k-xNC" secondAttribute="trailing" constant="16" id="2tb-qp-XRg"/>
+                    <constraint firstItem="oDj-fz-mMb" firstAttribute="centerY" secondItem="oAG-YO-ELm" secondAttribute="centerY" id="MkJ-ci-Gu7"/>
+                    <constraint firstItem="oDj-fz-mMb" firstAttribute="leading" secondItem="oAG-YO-ELm" secondAttribute="leading" constant="16" id="Wee-7T-tOw"/>
+                    <constraint firstItem="1Uf-0k-xNC" firstAttribute="leading" secondItem="oDj-fz-mMb" secondAttribute="trailing" constant="16" id="XUm-3C-yKx"/>
+                    <constraint firstAttribute="bottom" secondItem="1Uf-0k-xNC" secondAttribute="bottom" constant="16" id="aSz-3e-B1x"/>
+                    <constraint firstItem="1Uf-0k-xNC" firstAttribute="top" secondItem="oAG-YO-ELm" secondAttribute="top" constant="16" id="vv6-25-uoz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardNumberLabel" destination="vPo-tm-5o9" id="l1w-Q1-79w"/>
+                <outlet property="expiryDateLabel" destination="dbg-Vm-aUE" id="gRk-CF-YPv"/>
+                <outlet property="isDefaultLabel" destination="WaR-KG-z4J" id="m7X-64-7wM"/>
+                <outlet property="paymentMethodTypeImageView" destination="cIb-3K-mu0" id="ZeA-QB-Ltk"/>
+            </connections>
+            <point key="canvasLocation" x="218.84057971014494" y="134.93303571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home" width="20" height="20"/>
+        <namedColor name="blue">
+            <color red="0.4823529411764706" green="0.85882352941176465" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkBlue">
+            <color red="0.066666666666666666" green="0.10588235294117647" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.47843137254901963" green="0.49803921568627452" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightGray">
+            <color red="0.67843137254901964" green="0.70196078431372544" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

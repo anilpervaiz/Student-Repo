@@ -18,7 +18,7 @@ class StudentProfileViewController: BaseViewController {
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
-            tableView.registerNibCell(with: RateStudentTableViewCell.self)
+            tableView.registerNibCell(with: RateTeacherTableViewCell.self)
             tableView.registerNibCell(with: StudentProfileParentTableViewCell.self)
             tableView.registerNibCell(with: CollapsedTableViewCell.self)
             tableView.registerNibCell(with: SessionTableViewCell.self)
@@ -75,7 +75,7 @@ extension StudentProfileViewController: UITableViewDelegate, UITableViewDataSour
         if let cellType = viewModel?.cellType(for: indexPath) {
             switch cellType {
             case .writeAReview:
-                let cell = tableView.dequeueReusableCell(withType: RateStudentTableViewCell.self)
+                let cell = tableView.dequeueReusableCell(withType: RateTeacherTableViewCell.self)
                 return cell
             case .parent(let parent):
                 let cell = tableView.dequeueReusableCell(withType: StudentProfileParentTableViewCell.self)

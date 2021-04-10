@@ -11,10 +11,18 @@ import UIKit
 class PrimaryCTAButton: UIButton {
 
     @IBInspectable
-    var buttonBackgroundColor: UIColor = Asset.Colors.aquaMarine.color
+    var buttonBackgroundColor: UIColor = Asset.Colors.aquaMarine.color {
+        didSet {
+            setupStyle()
+        }
+    }
 
     @IBInspectable
-    var buttonThemeColor: UIColor = Asset.Colors.primary.color
+    var buttonThemeColor: UIColor = Asset.Colors.primary.color {
+        didSet {
+            setupStyle()
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

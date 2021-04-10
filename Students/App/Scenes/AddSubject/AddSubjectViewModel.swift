@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Subject {
+struct Subject: Hashable {
     var educationType: String
     var curriculum: String
     var subject: String
@@ -15,12 +15,24 @@ struct Subject {
     var iconName: String
     var documents: [Document]
 
+    var identifier: String {
+        "\(subject) - \(curriculum)"
+    }
+
     static var mockData: [Subject] {
         [
             Subject(educationType: "Grade 6", curriculum: "American Curriculum", subject: "History", rate: "4.0", iconName: Asset.Media.subjectIcon.name, documents: Document.mockData),
             Subject(educationType: "Grade 6", curriculum: "British Curriculum", subject: "History", rate: "4.0", iconName: Asset.Media.subjectIcon.name, documents: Document.mockData),
             Subject(educationType: "Grade 7", curriculum: "American Curriculum", subject: "History", rate: "4.0", iconName: Asset.Media.subjectIcon.name, documents: Document.mockData)
         ]
+    }
+
+    static func == (lhs: Subject, rhs: Subject) -> Bool {
+        (lhs.educationType == rhs.educationType) &&
+            (lhs.curriculum == rhs.curriculum) &&
+            (lhs.subject == rhs.subject) &&
+            (lhs.rate == rhs.rate) &&
+            (lhs.documents == rhs.documents)
     }
 }
 

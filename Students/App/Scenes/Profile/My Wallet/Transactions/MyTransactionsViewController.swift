@@ -23,6 +23,7 @@ class MyTransactionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
+        title = "My Wallet"
     }
 
     func bindViewModel() {

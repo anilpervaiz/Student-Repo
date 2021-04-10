@@ -15,7 +15,11 @@ class ReviewTableViewCell: UITableViewCell,
     @IBOutlet weak var timeAgoLabel: UILabel!
     @IBOutlet weak var starRatingView: CosmosView!
     @IBOutlet weak var reviewedByLabel: UILabel!
-    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var profileImageView: UIImageView! {
+        didSet {
+            profileImageView.cornerRadius = 20
+        }
+    }
     @IBOutlet weak var reviewLabel: UILabel!
 
     func configure(with review: Review) {
@@ -34,11 +38,5 @@ class ReviewTableViewCell: UITableViewCell,
         reviewedByLabel.text = ""
         profileImageView.image = nil
         reviewLabel.text = ""
-    }
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
-
-        profileImageView.circular = true
     }
 }

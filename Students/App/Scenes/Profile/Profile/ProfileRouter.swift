@@ -15,12 +15,6 @@ class ProfileRouter: BaseRouter {
         navigationController?.pushViewController(viewController, animated: true)
     }
 
-    func didTapBillingInformationView() {
-        let viewController = BillingInformationViewController.getInstance()
-        viewController.hidesBottomBarWhenPushed = true
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
     func didTapDocumentView() {
         let viewController = DocumentLibraryViewController.getInstance()
         viewController.hidesBottomBarWhenPushed = true
@@ -34,7 +28,7 @@ class ProfileRouter: BaseRouter {
     }
 
     func didTapWalletView() {
-        let viewController = MyWalletViewController.getInstance()
+        let viewController = MyTransactionsViewController.getInstance()
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
@@ -46,7 +40,8 @@ class ProfileRouter: BaseRouter {
     }  
 
     func didTapSessionView() {
-        let viewController = ScheduleListingSceneBuilder().makeProfileSessionsViewController(with: navigationController)
+        let viewController = MyFilteredScheduleViewController.getInstance()
+        viewController.viewModel = MyFilteredScheduleViewModel(router: MyScheduleRouter(with: navigationController))
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
@@ -59,16 +54,25 @@ class ProfileRouter: BaseRouter {
     }
 
     func didTapSubjectsView() {
-        let viewController = RegisteredSubjectsViewController.getInstance()
-        let viewModel = RegisteredSubjectsViewModel()
-        viewModel.subjects = [Subject.mockData.first!]
-        viewController.viewModel = viewModel
+        let viewController = UpdateSubjectsViewController.getInstance()
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
 
     func didTapAddressView() {
         let viewController = AddressListingViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    func didTapPaymentMethod() {
+        let viewController = PaymentMethodViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    func didTapWishList() {
+        let viewController = CategorizedWishlistViewController.getInstance()
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
