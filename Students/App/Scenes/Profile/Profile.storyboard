@@ -53,6 +53,7 @@
                                             <constraint firstAttribute="width" secondItem="Qyb-nP-pwh" secondAttribute="height" id="5mA-Zz-Fsj"/>
                                             <constraint firstAttribute="width" constant="40" id="Pv4-cs-wkI"/>
                                         </constraints>
+                                        <color key="tintColor" name="aquaMarine"/>
                                         <state key="normal" image="edit"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">

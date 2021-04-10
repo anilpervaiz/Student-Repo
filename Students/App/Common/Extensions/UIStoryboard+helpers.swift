@@ -53,5 +53,6 @@ extension UIStoryboard {
         case address = "Address"
         case browse = "Browse"
         case wishlist = "Wishlist"
+        case updatePersonalInformation = "UpdatePersonalInformation"
     }
 }

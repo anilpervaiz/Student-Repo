@@ -10,7 +10,7 @@ import Foundation
 class ProfileRouter: BaseRouter {
 
     func navigateToEditPersonalInformation() {
-        let viewController = CreateProfilePersonalInformationViewController.getInstance()
+        let viewController = EditProfileViewController.getInstance()
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
