@@ -33,19 +33,19 @@
                                 <rect key="frame" x="0.0" y="60" width="414" height="706"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b37-JV-zwd">
-                                        <rect key="frame" x="16" y="0.0" width="382" height="669"/>
+                                        <rect key="frame" x="16" y="0.0" width="382" height="639.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Zm-TF-5bD">
-                                                <rect key="frame" x="0.0" y="532" width="382" height="137"/>
+                                                <rect key="frame" x="0.0" y="532" width="382" height="107.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohV-uB-d9C">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="16.5"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                                                         <color key="textColor" name="gray"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enN-bq-4IM" customClass="FPNTextField" customModule="FlagPhoneNumber">
-                                                        <rect key="frame" x="0.0" y="28" width="382" height="56"/>
+                                                        <rect key="frame" x="0.0" y="24.5" width="382" height="56"/>
                                                         <color key="backgroundColor" name="dullWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="56" id="Ued-Zt-dBy"/>
@@ -63,7 +63,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will send you a verification code on your number." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJH-4o-ZT7">
-                                                        <rect key="frame" x="0.0" y="92" width="382" height="45"/>
+                                                        <rect key="frame" x="0.0" y="88.5" width="382" height="19"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                                         <color key="textColor" name="gray"/>
                                                         <nil key="highlightedColor"/>

@@ -36,6 +36,7 @@ class LabelledTextField: CustomNibView {
         }
     }
 
+    var didTapTrailingView: (() -> ())?
     var onTextFieldChanged: TextFieldChangedCallBack?
     var onTextFieldTapped: TextFieldTappedCallBack?
     var onTextFieldFocusChange: TextFieldFocusChangeCallBack?
@@ -372,7 +373,9 @@ class LabelledTextField: CustomNibView {
         if trailingIconStyle.isSecure {
             inputTextField.isSecureTextEntry = !inputTextField.isSecureTextEntry
         }
+
         setupTrailingIconStyle()
+        didTapTrailingView?()
     }
 
     func updateTextfieldTrailingIcon(for style: TrailingIconStyle) {

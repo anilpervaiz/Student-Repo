@@ -35,6 +35,11 @@ class OptionSelectionView<Enum: OptionCaseIterable>: UIControl {
     }
 
     func setupView() {
+
+        titleLabel.removeFromSuperview()
+        stackView.removeFromSuperview()
+        stackView.removeSubviews()
+
         addSubview(titleLabel)
         addSubview(stackView)
         titleLabel.fillSuperviewHorizontally()

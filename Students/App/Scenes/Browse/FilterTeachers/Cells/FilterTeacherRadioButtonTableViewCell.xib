@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="pvU-Jk-0AB" customClass="FilterTeacherRadioButtonTableViewCell" customModule="Students" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pvU-Jk-0AB" id="UaZ-KW-rj9">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwC-sD-FCi">
+                        <rect key="frame" x="16" y="12" width="342" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                        <color key="textColor" name="darkBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radioButtonEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="cfR-QU-rxg">
+                        <rect key="frame" x="374" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="3cj-G2-Y6q"/>
+                            <constraint firstAttribute="width" secondItem="cfR-QU-rxg" secondAttribute="height" id="I4T-3u-RCg"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9s-Ql-pfi">
+                        <rect key="frame" x="16" y="43" width="398" height="1"/>
+                        <color key="backgroundColor" name="disableGray"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="nFA-tw-UmY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cfR-QU-rxg" firstAttribute="leading" secondItem="GwC-sD-FCi" secondAttribute="trailing" constant="16" id="4j0-ys-X7k"/>
+                    <constraint firstAttribute="bottom" secondItem="h9s-Ql-pfi" secondAttribute="bottom" id="DRu-aS-mB5"/>
+                    <constraint firstItem="cfR-QU-rxg" firstAttribute="centerY" secondItem="UaZ-KW-rj9" secondAttribute="centerY" id="NPq-eQ-jcd"/>
+                    <constraint firstItem="GwC-sD-FCi" firstAttribute="top" secondItem="UaZ-KW-rj9" secondAttribute="top" constant="12" id="YAL-lI-zJ1"/>
+                    <constraint firstItem="GwC-sD-FCi" firstAttribute="leading" secondItem="UaZ-KW-rj9" secondAttribute="leading" constant="16" id="by4-rQ-ruT"/>
+                    <constraint firstItem="h9s-Ql-pfi" firstAttribute="leading" secondItem="UaZ-KW-rj9" secondAttribute="leading" constant="16" id="c4R-cI-vot"/>
+                    <constraint firstAttribute="trailing" secondItem="h9s-Ql-pfi" secondAttribute="trailing" id="dJo-yG-cOV"/>
+                    <constraint firstAttribute="bottom" secondItem="GwC-sD-FCi" secondAttribute="bottom" constant="12" id="k3e-dd-8ag"/>
+                    <constraint firstAttribute="trailing" secondItem="cfR-QU-rxg" secondAttribute="trailing" constant="16" id="m1u-us-JaB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="radioButtonImageView" destination="cfR-QU-rxg" id="RRa-oA-F89"/>
+                <outlet property="titleLabel" destination="GwC-sD-FCi" id="35C-fe-E17"/>
+            </connections>
+            <point key="canvasLocation" x="208.69565217391306" y="75.669642857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radioButtonEmpty" width="24" height="24"/>
+        <namedColor name="darkBlue">
+            <color red="0.066666666666666666" green="0.10588235294117647" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="disableGray">
+            <color red="0.92156862745098034" green="0.92941176470588238" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

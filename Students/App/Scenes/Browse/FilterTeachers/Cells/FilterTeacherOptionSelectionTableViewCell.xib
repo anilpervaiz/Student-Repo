@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="57" id="Xfy-24-r0u" customClass="FilterTeacherOptionSelectionTableViewCell" customModule="Students" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xfy-24-r0u" id="ZmJ-XB-TGr">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzR-U4-Wd8">
+                        <rect key="frame" x="16" y="0.0" width="382" height="57"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wzR-U4-Wd8" firstAttribute="top" secondItem="ZmJ-XB-TGr" secondAttribute="top" id="0ya-yS-ph1"/>
+                    <constraint firstAttribute="bottom" secondItem="wzR-U4-Wd8" secondAttribute="bottom" id="CVS-Vt-17t"/>
+                    <constraint firstItem="wzR-U4-Wd8" firstAttribute="leading" secondItem="ZmJ-XB-TGr" secondAttribute="leading" constant="16" id="NDF-wb-ukz"/>
+                    <constraint firstAttribute="trailing" secondItem="wzR-U4-Wd8" secondAttribute="trailing" constant="16" id="NJq-2o-bKr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="genderOptionContainerView" destination="wzR-U4-Wd8" id="Q1X-cb-7JK"/>
+            </connections>
+            <point key="canvasLocation" x="249.27536231884059" y="75.334821428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

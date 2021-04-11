@@ -274,6 +274,21 @@
 		C98AB6A7262221AA008FA243 /* UpdatePersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6A6262221AA008FA243 /* UpdatePersonalInformationViewController.swift */; };
 		C98AB6B526222664008FA243 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6B426222664008FA243 /* EditProfileViewController.swift */; };
 		C98AB6C026222A6F008FA243 /* UpdateEducationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6BF26222A6F008FA243 /* UpdateEducationDetailsViewController.swift */; };
+		C98AB6C52622EE99008FA243 /* BrowseTeacherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6C42622EE99008FA243 /* BrowseTeacherViewModel.swift */; };
+		C98AB6CA2622EEEA008FA243 /* BrowseTeacherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6C92622EEEA008FA243 /* BrowseTeacherRouter.swift */; };
+		C98AB6DD2622F32C008FA243 /* FilteredTeachersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6DC2622F32C008FA243 /* FilteredTeachersViewController.swift */; };
+		C98AB6E52622F342008FA243 /* FilteredTeachersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6E42622F342008FA243 /* FilteredTeachersViewModel.swift */; };
+		C98AB6EB2622F366008FA243 /* FilterTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6EA2622F366008FA243 /* FilterTagCollectionViewCell.swift */; };
+		C98AB6F32622F36C008FA243 /* FilterTagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98AB6F22622F36C008FA243 /* FilterTagCollectionViewCell.xib */; };
+		C98AB6FC262300C7008FA243 /* FilterTeachersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6FB262300C7008FA243 /* FilterTeachersViewController.swift */; };
+		C98AB705262300E6008FA243 /* FilterTeacherSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB704262300E6008FA243 /* FilterTeacherSwitchTableViewCell.swift */; };
+		C98AB70D262300ED008FA243 /* FilterTeacherSwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98AB70C262300ED008FA243 /* FilterTeacherSwitchTableViewCell.xib */; };
+		C98AB71226230108008FA243 /* FilterTeacherRadioButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB71126230108008FA243 /* FilterTeacherRadioButtonTableViewCell.swift */; };
+		C98AB71726230113008FA243 /* FilterTeacherRadioButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98AB71626230113008FA243 /* FilterTeacherRadioButtonTableViewCell.xib */; };
+		C98AB72626230150008FA243 /* FilterTeacherDropdownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB72526230150008FA243 /* FilterTeacherDropdownTableViewCell.swift */; };
+		C98AB72B26230156008FA243 /* FilterTeacherDropdownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98AB72A26230156008FA243 /* FilterTeacherDropdownTableViewCell.xib */; };
+		C98AB7332623016A008FA243 /* FilterTeacherRangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB7322623016A008FA243 /* FilterTeacherRangeTableViewCell.swift */; };
+		C98AB73826230170008FA243 /* FilterTeacherRangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98AB73726230170008FA243 /* FilterTeacherRangeTableViewCell.xib */; };
 		C99D0003261D5CA400816E5C /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D0002261D5CA400816E5C /* Assets+Generated.swift */; };
 		C99D000B261D5E9E00816E5C /* AddStudyingSubjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D000A261D5E9E00816E5C /* AddStudyingSubjectViewModel.swift */; };
 		C99D004B261E0A6900816E5C /* ProfileCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99D004A261E0A6900816E5C /* ProfileCardCollectionViewCell.xib */; };
@@ -286,13 +301,18 @@
 		C99D0073261EB1CB00816E5C /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D0072261EB1CB00816E5C /* SelectLocationViewController.swift */; };
 		C99D008B261F784400816E5C /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D008A261F784400816E5C /* AddAddressViewController.swift */; };
 		C99D009A261F85A400816E5C /* Browse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99D0099261F85A400816E5C /* Browse.storyboard */; };
-		C99D009F261F85B100816E5C /* BrowseSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D009E261F85B100816E5C /* BrowseSessionViewController.swift */; };
-		C99D00A7261F85C400816E5C /* BrowseSessionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D00A6261F85C400816E5C /* BrowseSessionBuilder.swift */; };
+		C99D009F261F85B100816E5C /* BrowseTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D009E261F85B100816E5C /* BrowseTeacherViewController.swift */; };
+		C99D00A7261F85C400816E5C /* BrowseTeacherBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D00A6261F85C400816E5C /* BrowseTeacherBuilder.swift */; };
 		C99DFFCC261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFFCB261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift */; };
 		C99DFFD2261CE65800816E5C /* AddStudyingSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFFD1261CE65800816E5C /* AddStudyingSubjectViewController.swift */; };
 		C99DFFD7261CE68400816E5C /* AddStudyingSubject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99DFFD6261CE68400816E5C /* AddStudyingSubject.storyboard */; };
 		C99DFFDD261D59A800816E5C /* AddSubjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99DFFDC261D59A800816E5C /* AddSubjectTableViewCell.xib */; };
 		C99DFFE2261D59BE00816E5C /* AddSubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFFE1261D59BE00816E5C /* AddSubjectTableViewCell.swift */; };
+		C99EE8AD262319FA00D795BA /* FilterTeacherOptionSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EE8AC262319FA00D795BA /* FilterTeacherOptionSelectionTableViewCell.swift */; };
+		C99EE8B226231A0100D795BA /* FilterTeacherOptionSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99EE8B126231A0100D795BA /* FilterTeacherOptionSelectionTableViewCell.xib */; };
+		C99EE8B726231C7500D795BA /* FilterTeacherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EE8B626231C7500D795BA /* FilterTeacherViewModel.swift */; };
+		C99EE8BF2623475E00D795BA /* FilterTeacherCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EE8BE2623475E00D795BA /* FilterTeacherCellViewModel.swift */; };
+		C99EE8C42623680E00D795BA /* FilterTeacherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EE8C32623680E00D795BA /* FilterTeacherRouter.swift */; };
 		CE66C6C425FF904000A2FA72 /* Students.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE66C6C225FF904000A2FA72 /* Students.xcdatamodeld */; };
 		CE66C6D425FF904400A2FA72 /* StudentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66C6D325FF904400A2FA72 /* StudentsTests.swift */; };
 		CE66C6DF25FF904400A2FA72 /* StudentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66C6DE25FF904400A2FA72 /* StudentsUITests.swift */; };
@@ -588,6 +608,21 @@
 		C98AB6A6262221AA008FA243 /* UpdatePersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonalInformationViewController.swift; sourceTree = "<group>"; };
 		C98AB6B426222664008FA243 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		C98AB6BF26222A6F008FA243 /* UpdateEducationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEducationDetailsViewController.swift; sourceTree = "<group>"; };
+		C98AB6C42622EE99008FA243 /* BrowseTeacherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTeacherViewModel.swift; sourceTree = "<group>"; };
+		C98AB6C92622EEEA008FA243 /* BrowseTeacherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTeacherRouter.swift; sourceTree = "<group>"; };
+		C98AB6DC2622F32C008FA243 /* FilteredTeachersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredTeachersViewController.swift; sourceTree = "<group>"; };
+		C98AB6E42622F342008FA243 /* FilteredTeachersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredTeachersViewModel.swift; sourceTree = "<group>"; };
+		C98AB6EA2622F366008FA243 /* FilterTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTagCollectionViewCell.swift; sourceTree = "<group>"; };
+		C98AB6F22622F36C008FA243 /* FilterTagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTagCollectionViewCell.xib; sourceTree = "<group>"; };
+		C98AB6FB262300C7008FA243 /* FilterTeachersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeachersViewController.swift; sourceTree = "<group>"; };
+		C98AB704262300E6008FA243 /* FilterTeacherSwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeacherSwitchTableViewCell.swift; sourceTree = "<group>"; };
+		C98AB70C262300ED008FA243 /* FilterTeacherSwitchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTeacherSwitchTableViewCell.xib; sourceTree = "<group>"; };
+		C98AB71126230108008FA243 /* FilterTeacherRadioButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeacherRadioButtonTableViewCell.swift; sourceTree = "<group>"; };
+		C98AB71626230113008FA243 /* FilterTeacherRadioButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTeacherRadioButtonTableViewCell.xib; sourceTree = "<group>"; };
+		C98AB72526230150008FA243 /* FilterTeacherDropdownTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeacherDropdownTableViewCell.swift; sourceTree = "<group>"; };
+		C98AB72A26230156008FA243 /* FilterTeacherDropdownTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTeacherDropdownTableViewCell.xib; sourceTree = "<group>"; };
+		C98AB7322623016A008FA243 /* FilterTeacherRangeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeacherRangeTableViewCell.swift; sourceTree = "<group>"; };
+		C98AB73726230170008FA243 /* FilterTeacherRangeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTeacherRangeTableViewCell.xib; sourceTree = "<group>"; };
 		C99D0002261D5CA400816E5C /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
 		C99D000A261D5E9E00816E5C /* AddStudyingSubjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudyingSubjectViewModel.swift; sourceTree = "<group>"; };
 		C99D004A261E0A6900816E5C /* ProfileCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCardCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -600,13 +635,18 @@
 		C99D0072261EB1CB00816E5C /* SelectLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
 		C99D008A261F784400816E5C /* AddAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressViewController.swift; sourceTree = "<group>"; };
 		C99D0099261F85A400816E5C /* Browse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Browse.storyboard; sourceTree = "<group>"; };
-		C99D009E261F85B100816E5C /* BrowseSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseSessionViewController.swift; sourceTree = "<group>"; };
-		C99D00A6261F85C400816E5C /* BrowseSessionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseSessionBuilder.swift; sourceTree = "<group>"; };
+		C99D009E261F85B100816E5C /* BrowseTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTeacherViewController.swift; sourceTree = "<group>"; };
+		C99D00A6261F85C400816E5C /* BrowseTeacherBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTeacherBuilder.swift; sourceTree = "<group>"; };
 		C99DFFCB261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentEducationDetailsViewController.swift; sourceTree = "<group>"; };
 		C99DFFD1261CE65800816E5C /* AddStudyingSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudyingSubjectViewController.swift; sourceTree = "<group>"; };
 		C99DFFD6261CE68400816E5C /* AddStudyingSubject.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddStudyingSubject.storyboard; sourceTree = "<group>"; };
 		C99DFFDC261D59A800816E5C /* AddSubjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSubjectTableViewCell.xib; sourceTree = "<group>"; };
 		C99DFFE1261D59BE00816E5C /* AddSubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubjectTableViewCell.swift; sourceTree = "<group>"; };
+		C99EE8AC262319FA00D795BA /* FilterTeacherOptionSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeacherOptionSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		C99EE8B126231A0100D795BA /* FilterTeacherOptionSelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTeacherOptionSelectionTableViewCell.xib; sourceTree = "<group>"; };
+		C99EE8B626231C7500D795BA /* FilterTeacherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeacherViewModel.swift; sourceTree = "<group>"; };
+		C99EE8BE2623475E00D795BA /* FilterTeacherCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeacherCellViewModel.swift; sourceTree = "<group>"; };
+		C99EE8C32623680E00D795BA /* FilterTeacherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeacherRouter.swift; sourceTree = "<group>"; };
 		CE66C6B625FF904000A2FA72 /* Students.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Students.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE66C6C325FF904000A2FA72 /* Students.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Students.xcdatamodel; sourceTree = "<group>"; };
 		CE66C6CF25FF904400A2FA72 /* StudentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1652,6 +1692,65 @@
 			path = "Update Personal Information";
 			sourceTree = "<group>";
 		};
+		C98AB6DA2622F30C008FA243 /* FilteredTeachers */ = {
+			isa = PBXGroup;
+			children = (
+				C98AB6E92622F34F008FA243 /* Cell */,
+				C98AB6DC2622F32C008FA243 /* FilteredTeachersViewController.swift */,
+				C98AB6E42622F342008FA243 /* FilteredTeachersViewModel.swift */,
+			);
+			path = FilteredTeachers;
+			sourceTree = "<group>";
+		};
+		C98AB6DB2622F316008FA243 /* TeacherList */ = {
+			isa = PBXGroup;
+			children = (
+				C99D009E261F85B100816E5C /* BrowseTeacherViewController.swift */,
+				C99D00A6261F85C400816E5C /* BrowseTeacherBuilder.swift */,
+				C98AB6C42622EE99008FA243 /* BrowseTeacherViewModel.swift */,
+				C98AB6C92622EEEA008FA243 /* BrowseTeacherRouter.swift */,
+			);
+			path = TeacherList;
+			sourceTree = "<group>";
+		};
+		C98AB6E92622F34F008FA243 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C98AB6EA2622F366008FA243 /* FilterTagCollectionViewCell.swift */,
+				C98AB6F22622F36C008FA243 /* FilterTagCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C98AB6FA262300B6008FA243 /* FilterTeachers */ = {
+			isa = PBXGroup;
+			children = (
+				C98AB703262300CA008FA243 /* Cells */,
+				C98AB6FB262300C7008FA243 /* FilterTeachersViewController.swift */,
+				C99EE8B626231C7500D795BA /* FilterTeacherViewModel.swift */,
+				C99EE8C32623680E00D795BA /* FilterTeacherRouter.swift */,
+			);
+			path = FilterTeachers;
+			sourceTree = "<group>";
+		};
+		C98AB703262300CA008FA243 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C98AB704262300E6008FA243 /* FilterTeacherSwitchTableViewCell.swift */,
+				C98AB70C262300ED008FA243 /* FilterTeacherSwitchTableViewCell.xib */,
+				C98AB71126230108008FA243 /* FilterTeacherRadioButtonTableViewCell.swift */,
+				C98AB71626230113008FA243 /* FilterTeacherRadioButtonTableViewCell.xib */,
+				C98AB72526230150008FA243 /* FilterTeacherDropdownTableViewCell.swift */,
+				C98AB72A26230156008FA243 /* FilterTeacherDropdownTableViewCell.xib */,
+				C98AB7322623016A008FA243 /* FilterTeacherRangeTableViewCell.swift */,
+				C98AB73726230170008FA243 /* FilterTeacherRangeTableViewCell.xib */,
+				C99EE8AC262319FA00D795BA /* FilterTeacherOptionSelectionTableViewCell.swift */,
+				C99EE8B126231A0100D795BA /* FilterTeacherOptionSelectionTableViewCell.xib */,
+				C99EE8BE2623475E00D795BA /* FilterTeacherCellViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C99D0049261E0A5900816E5C /* cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1685,9 +1784,10 @@
 		C99D0095261F84F700816E5C /* Browse */ = {
 			isa = PBXGroup;
 			children = (
+				C98AB6FA262300B6008FA243 /* FilterTeachers */,
+				C98AB6DB2622F316008FA243 /* TeacherList */,
+				C98AB6DA2622F30C008FA243 /* FilteredTeachers */,
 				C99D0099261F85A400816E5C /* Browse.storyboard */,
-				C99D009E261F85B100816E5C /* BrowseSessionViewController.swift */,
-				C99D00A6261F85C400816E5C /* BrowseSessionBuilder.swift */,
 			);
 			path = Browse;
 			sourceTree = "<group>";
@@ -1898,6 +1998,7 @@
 				C960E518261B288900DC19EE /* DashboardCard.xib in Resources */,
 				C99D009A261F85A400816E5C /* Browse.storyboard in Resources */,
 				C960E58F261B288A00DC19EE /* CreateProfile.storyboard in Resources */,
+				C98AB70D262300ED008FA243 /* FilterTeacherSwitchTableViewCell.xib in Resources */,
 				C960E5AE261B288A00DC19EE /* CollapsedTableViewCell.xib in Resources */,
 				C960E4DB261B288900DC19EE /* Student.storyboard in Resources */,
 				C960E359261B251200DC19EE /* Poppins-BlackItalic.ttf in Resources */,
@@ -1911,10 +2012,12 @@
 				C960E4F0261B288900DC19EE /* Messages.storyboard in Resources */,
 				C960E53B261B288900DC19EE /* DateAndTimeTableViewCell.xib in Resources */,
 				C960E583261B288A00DC19EE /* CreateProfileSectionTableViewCell.xib in Resources */,
+				C99EE8B226231A0100D795BA /* FilterTeacherOptionSelectionTableViewCell.xib in Resources */,
 				C98AB6A22622219E008FA243 /* UpdatePersonalInformation.storyboard in Resources */,
 				C960E5C0261B288A00DC19EE /* TableSectionHeaderView.xib in Resources */,
 				C99DFFD7261CE68400816E5C /* AddStudyingSubject.storyboard in Resources */,
 				C960E5BA261B288A00DC19EE /* BottomSheetListCell.xib in Resources */,
+				C98AB73826230170008FA243 /* FilterTeacherRangeTableViewCell.xib in Resources */,
 				C99D0069261EA94C00816E5C /* AddressListingTableViewCell.xib in Resources */,
 				C960E4E2261B288900DC19EE /* MessageCell.xib in Resources */,
 				C960E59D261B288A00DC19EE /* SessionTableViewCell.xib in Resources */,
@@ -1931,6 +2034,7 @@
 				C960E50A261B288900DC19EE /* StudentProfileParentTableViewCell.xib in Resources */,
 				C960E4E1261B288900DC19EE /* Schedule.storyboard in Resources */,
 				C960E537261B288900DC19EE /* PaymentMethodTableViewCell.xib in Resources */,
+				C98AB71726230113008FA243 /* FilterTeacherRadioButtonTableViewCell.xib in Resources */,
 				C960E4F8261B288900DC19EE /* NotificationTableViewCell.xib in Resources */,
 				C960E513261B288900DC19EE /* OnboardingCollectionViewCell.xib in Resources */,
 				C960E358261B251200DC19EE /* Poppins-ExtraBold.ttf in Resources */,
@@ -1942,10 +2046,12 @@
 				C960E5B2261B288A00DC19EE /* ImagePickerOptionSheet.storyboard in Resources */,
 				C960E4EB261B288900DC19EE /* ChatMessageReceivedCell.xib in Resources */,
 				C960E539261B288900DC19EE /* PersonDetailsTableViewCell.xib in Resources */,
+				C98AB72B26230156008FA243 /* FilterTeacherDropdownTableViewCell.xib in Resources */,
 				C960E54B261B288900DC19EE /* TransactionTableViewCell.xib in Resources */,
 				C960E4EE261B288900DC19EE /* ChatMessageSentCell.xib in Resources */,
 				C960E542261B288900DC19EE /* DocumentCell.xib in Resources */,
 				C960E59F261B288A00DC19EE /* NavigationBarItem.xib in Resources */,
+				C98AB6F32622F36C008FA243 /* FilterTagCollectionViewCell.xib in Resources */,
 				C960E36E261B255500DC19EE /* LaunchScreen.storyboard in Resources */,
 				C960E4E8261B288900DC19EE /* ChatParentView.xib in Resources */,
 				C960E34E261B251200DC19EE /* Media.xcassets in Resources */,
@@ -2065,7 +2171,7 @@
 				C960E571261B288A00DC19EE /* LoginStateNavigationView.swift in Sources */,
 				C960E4F9261B288900DC19EE /* NotificationTableViewCell.swift in Sources */,
 				C960E51F261B288900DC19EE /* DashboardSceneBuilder.swift in Sources */,
-				C99D00A7261F85C400816E5C /* BrowseSessionBuilder.swift in Sources */,
+				C99D00A7261F85C400816E5C /* BrowseTeacherBuilder.swift in Sources */,
 				C960E5AB261B288A00DC19EE /* ItemPickerView.swift in Sources */,
 				C960E5B0261B288A00DC19EE /* PageControlView.swift in Sources */,
 				C960E508261B288900DC19EE /* StudentProfileParentTableViewCell.swift in Sources */,
@@ -2081,6 +2187,7 @@
 				C960E5B5261B288A00DC19EE /* BottomSheetViewModel.swift in Sources */,
 				C960E524261B288900DC19EE /* SettingTableHeaderView.swift in Sources */,
 				C960E563261B288A00DC19EE /* LocationPickerViewModel.swift in Sources */,
+				C98AB7332623016A008FA243 /* FilterTeacherRangeTableViewCell.swift in Sources */,
 				C960E4E7261B288900DC19EE /* ChatParentView.swift in Sources */,
 				C960E577261B288A00DC19EE /* LoginRouter.swift in Sources */,
 				C960E5A0261B288A00DC19EE /* FormatValidator.swift in Sources */,
@@ -2096,9 +2203,11 @@
 				C960E59A261B288A00DC19EE /* SessionDetailViewController.swift in Sources */,
 				C960E54A261B288900DC19EE /* MyTransactionViewModel.swift in Sources */,
 				C960E554261B288900DC19EE /* DocumentLibraryViewController.swift in Sources */,
+				C98AB705262300E6008FA243 /* FilterTeacherSwitchTableViewCell.swift in Sources */,
 				C924C4C02621C7A800A5499F /* UpdateSubjectsViewController.swift in Sources */,
 				C960E56A261B288A00DC19EE /* SignupSuccessStateRouter.swift in Sources */,
 				C924C474262184E900A5499F /* MyScheduleViewModel.swift in Sources */,
+				C98AB71226230108008FA243 /* FilterTeacherRadioButtonTableViewCell.swift in Sources */,
 				C960E545261B288900DC19EE /* DocumentsViewController.swift in Sources */,
 				C960E5F0261B6E8E00DC19EE /* User.swift in Sources */,
 				C924C49E2621B2F700A5499F /* AddPaymentMethodViewController.swift in Sources */,
@@ -2110,6 +2219,7 @@
 				C960E558261B288900DC19EE /* ProfileViewController.swift in Sources */,
 				C960E4FE261B288900DC19EE /* RateAndReviewViewController.swift in Sources */,
 				C924C4992621B27A00A5499F /* PaymentMethodViewController.swift in Sources */,
+				C98AB72626230150008FA243 /* FilterTeacherDropdownTableViewCell.swift in Sources */,
 				C960E505261B288900DC19EE /* StudentProfileRouter.swift in Sources */,
 				C960E573261B288A00DC19EE /* LoginAccountWaitingReviewViewModel.swift in Sources */,
 				C960E4E5261B288900DC19EE /* MessagesListViewController.swift in Sources */,
@@ -2122,6 +2232,7 @@
 				C960E516261B288900DC19EE /* GetStartedViewController.swift in Sources */,
 				C960E566261B288A00DC19EE /* NumberVerificationViewController.swift in Sources */,
 				C960E519261B288900DC19EE /* DashboardCard.swift in Sources */,
+				C99EE8BF2623475E00D795BA /* FilterTeacherCellViewModel.swift in Sources */,
 				C960E530261B288900DC19EE /* BillingInformationViewController.swift in Sources */,
 				C960E52C261B288900DC19EE /* LanguageTableViewCell.swift in Sources */,
 				C99DFFCC261CDE8300816E5C /* AddStudentEducationDetailsViewController.swift in Sources */,
@@ -2129,11 +2240,13 @@
 				C960E56F261B288A00DC19EE /* LoginViewModel.swift in Sources */,
 				C960E51A261B288900DC19EE /* DashboardSceneRouter.swift in Sources */,
 				C960E4ED261B288900DC19EE /* ChatMessageReceivedCell.swift in Sources */,
+				C98AB6FC262300C7008FA243 /* FilterTeachersViewController.swift in Sources */,
 				C960E584261B288A00DC19EE /* AvailibilityHourCell.swift in Sources */,
 				C960E4F4261B288900DC19EE /* Document.swift in Sources */,
 				C960E55B261B288900DC19EE /* SuccessStateViewModel.swift in Sources */,
 				C960E4E3261B288900DC19EE /* MessageViewModel.swift in Sources */,
 				C960E540261B288900DC19EE /* SubjectMainViewBuilder.swift in Sources */,
+				C98AB6DD2622F32C008FA243 /* FilteredTeachersViewController.swift in Sources */,
 				C960E4F3261B288900DC19EE /* SessionMock.swift in Sources */,
 				C960E575261B288A00DC19EE /* LoginPendingProcessViewModel.swift in Sources */,
 				C960E4DD261B288900DC19EE /* ScheduleListingViewController.swift in Sources */,
@@ -2142,6 +2255,7 @@
 				C960E59B261B288A00DC19EE /* SessionDetailBuilder.swift in Sources */,
 				C924C4AC2621B6BF00A5499F /* PaymentMethodListingTableViewCell.swift in Sources */,
 				C98AB6C026222A6F008FA243 /* UpdateEducationDetailsViewController.swift in Sources */,
+				C98AB6C52622EE99008FA243 /* BrowseTeacherViewModel.swift in Sources */,
 				C960E535261B288900DC19EE /* StudentParentDetailsTableViewCell.swift in Sources */,
 				C960E567261B288A00DC19EE /* SignupPersonalInformationViewController.swift in Sources */,
 				C924C4DE2621DD4E00A5499F /* WishlistTableViewCell.swift in Sources */,
@@ -2150,9 +2264,11 @@
 				C960E5A9261B288A00DC19EE /* CustomDatePicker.swift in Sources */,
 				C960E5A8261B288A00DC19EE /* CustomDatePickerViewModel.swift in Sources */,
 				C960E58C261B288A00DC19EE /* AvailibilityViewController.swift in Sources */,
+				C98AB6CA2622EEEA008FA243 /* BrowseTeacherRouter.swift in Sources */,
 				C960E5AD261B288A00DC19EE /* PrimaryCTAButton.swift in Sources */,
 				C960E578261B288A00DC19EE /* RegisteredSubjectsViewModel.swift in Sources */,
 				C960E36F261B255500DC19EE /* AppDelegate.swift in Sources */,
+				C99EE8AD262319FA00D795BA /* FilterTeacherOptionSelectionTableViewCell.swift in Sources */,
 				C960E5B7261B288A00DC19EE /* BottomSheetListCellViewModel.swift in Sources */,
 				C960E580261B288A00DC19EE /* RegisteredSubjectTableViewCell.swift in Sources */,
 				C99D0056261EA8F600816E5C /* AddressListingViewController.swift in Sources */,
@@ -2171,7 +2287,7 @@
 				C960E4F2261B288900DC19EE /* StudentMock.swift in Sources */,
 				C960E556261B288900DC19EE /* ProfileSceneBuilder.swift in Sources */,
 				C960E591261B288A00DC19EE /* BaseNavigationViewController.swift in Sources */,
-				C99D009F261F85B100816E5C /* BrowseSessionViewController.swift in Sources */,
+				C99D009F261F85B100816E5C /* BrowseTeacherViewController.swift in Sources */,
 				C960E57E261B288A00DC19EE /* UploadImageViewModel.swift in Sources */,
 				C99D006E261EAC8400816E5C /* Address.swift in Sources */,
 				C960E55D261B288900DC19EE /* SuccessStateViewController.swift in Sources */,
@@ -2181,6 +2297,7 @@
 				C960E50C261B288900DC19EE /* StudentProfileViewModel.swift in Sources */,
 				C99DFFD2261CE65800816E5C /* AddStudyingSubjectViewController.swift in Sources */,
 				C960E5CD261B288A00DC19EE /* UILabel+TapGesture.swift in Sources */,
+				C99EE8C42623680E00D795BA /* FilterTeacherRouter.swift in Sources */,
 				C960E5A3261B288A00DC19EE /* FlowDescriptionLabel.swift in Sources */,
 				C960E4E0261B288900DC19EE /* ScheduleListingViewModel.swift in Sources */,
 				C960E546261B288900DC19EE /* DocumentsViewModel.swift in Sources */,
@@ -2218,6 +2335,7 @@
 				C960E4FB261B288900DC19EE /* NotificationViewController.swift in Sources */,
 				C960E59E261B288A00DC19EE /* NavigationBarItem.swift in Sources */,
 				C960E5BD261B288A00DC19EE /* CollectionViewTitleHeader.swift in Sources */,
+				C99EE8B726231C7500D795BA /* FilterTeacherViewModel.swift in Sources */,
 				C960E5CE261B288A00DC19EE /* ReusableView.swift in Sources */,
 				C960E55A261B288900DC19EE /* SignupCompletedSuccessStateViewModel.swift in Sources */,
 				C960E5CA261B288A00DC19EE /* String+Regex.swift in Sources */,
@@ -2225,6 +2343,7 @@
 				C924C4D82621CA7F00A5499F /* Wishlist.swift in Sources */,
 				C960E506261B288900DC19EE /* StudentProfileTableHeaderView.swift in Sources */,
 				C960E5D7261B5E9000DC19EE /* SignupAccountTypeViewController.swift in Sources */,
+				C98AB6EB2622F366008FA243 /* FilterTagCollectionViewCell.swift in Sources */,
 				C960E510261B288900DC19EE /* OnboardingPage.swift in Sources */,
 				C960E595261B288A00DC19EE /* AddSubjectViewController.swift in Sources */,
 				C99D0061261EA94600816E5C /* AddressListingTableViewCell.swift in Sources */,
@@ -2247,6 +2366,7 @@
 				C960E565261B288A00DC19EE /* SignupAuthenticationDetailsViewController.swift in Sources */,
 				C960E5C7261B288A00DC19EE /* UIViewController+Keyboard.swift in Sources */,
 				C960E534261B288900DC19EE /* DateAndTimeTableViewCell.swift in Sources */,
+				C98AB6E52622F342008FA243 /* FilteredTeachersViewModel.swift in Sources */,
 				C960E532261B288900DC19EE /* SubjectMainViewController.swift in Sources */,
 				C99D000B261D5E9E00816E5C /* AddStudyingSubjectViewModel.swift in Sources */,
 				C960E533261B288900DC19EE /* SubjectMainViewModel.swift in Sources */,

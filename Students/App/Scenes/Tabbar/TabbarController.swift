@@ -32,7 +32,7 @@ class TabbarController: UITabBarController {
         tabBar.tintColor = Asset.Colors.primary.color
         viewControllers = [
             DashboardSceneBuilder().makeViewController(),
-            BrowseSessionBuilder().makeViewController(),
+            BrowseTeacherBuilder().makeViewController(),
             MyScheduleBuilder().makeViewController(),
             ProfileSceneBuilder().makeViewController()
         ]

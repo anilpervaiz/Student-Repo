@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="AGw-8x-eDn" customClass="FilterTeacherSwitchTableViewCell" customModule="Students" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AGw-8x-eDn" id="J3k-fX-eVA">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q34-iX-2ON">
+                        <rect key="frame" x="16" y="12" width="317" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                        <color key="textColor" name="darkBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="POH-WB-hAG">
+                        <rect key="frame" x="349" y="6.5" width="51" height="31"/>
+                        <color key="tintColor" name="halfBaked"/>
+                        <color key="onTintColor" name="halfBaked"/>
+                    </switch>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANn-f7-9ao">
+                        <rect key="frame" x="16" y="43" width="398" height="1"/>
+                        <color key="backgroundColor" name="disableGray"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="QHv-zn-cod"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Q34-iX-2ON" secondAttribute="bottom" constant="12" id="64U-FZ-dcu"/>
+                    <constraint firstItem="POH-WB-hAG" firstAttribute="centerY" secondItem="J3k-fX-eVA" secondAttribute="centerY" id="7BN-09-dPX"/>
+                    <constraint firstItem="POH-WB-hAG" firstAttribute="leading" secondItem="Q34-iX-2ON" secondAttribute="trailing" constant="16" id="BU1-az-KA2"/>
+                    <constraint firstItem="Q34-iX-2ON" firstAttribute="top" secondItem="J3k-fX-eVA" secondAttribute="top" constant="12" id="GGv-zG-LjP"/>
+                    <constraint firstItem="Q34-iX-2ON" firstAttribute="leading" secondItem="J3k-fX-eVA" secondAttribute="leading" constant="16" id="Jgc-Cq-3dd"/>
+                    <constraint firstItem="ANn-f7-9ao" firstAttribute="leading" secondItem="J3k-fX-eVA" secondAttribute="leading" constant="16" id="K1Z-YU-sba"/>
+                    <constraint firstAttribute="trailing" secondItem="POH-WB-hAG" secondAttribute="trailing" constant="16" id="RSw-VS-AFG"/>
+                    <constraint firstAttribute="bottom" secondItem="ANn-f7-9ao" secondAttribute="bottom" id="XBC-9S-wkh"/>
+                    <constraint firstAttribute="trailing" secondItem="ANn-f7-9ao" secondAttribute="trailing" id="XkH-js-Js3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="switch" destination="POH-WB-hAG" id="EEK-sk-o2k"/>
+                <outlet property="titleLabel" destination="Q34-iX-2ON" id="UdU-HL-dK4"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="109"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="darkBlue">
+            <color red="0.066666666666666666" green="0.10588235294117647" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="disableGray">
+            <color red="0.92156862745098034" green="0.92941176470588238" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="halfBaked">
+            <color red="0.47058823529411764" green="0.77647058823529413" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
