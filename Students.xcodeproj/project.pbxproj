@@ -269,13 +269,16 @@
 		C960E5D2261B288A00DC19EE /* CalendarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E4DA261B288900DC19EE /* CalendarStyle.swift */; };
 		C960E5D7261B5E9000DC19EE /* SignupAccountTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E5D6261B5E9000DC19EE /* SignupAccountTypeViewController.swift */; };
 		C960E5F0261B6E8E00DC19EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960E5EF261B6E8E00DC19EE /* User.swift */; };
+		C9747B1D2629370D00CE5DC9 /* TeacherProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9747B1C2629370D00CE5DC9 /* TeacherProfileViewController.swift */; };
+		C9747B222629383000CE5DC9 /* TeacherProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9747B212629383000CE5DC9 /* TeacherProfile.storyboard */; };
+		C9747B27262939BF00CE5DC9 /* TeacherProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9747B26262939BF00CE5DC9 /* TeacherProfileHeaderView.swift */; };
+		C9747B2C262939C800CE5DC9 /* TeacherProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9747B2B262939C800CE5DC9 /* TeacherProfileHeaderView.xib */; };
 		C98AB69C2622097B008FA243 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB69B2622097B008FA243 /* Collection+Extensions.swift */; };
 		C98AB6A22622219E008FA243 /* UpdatePersonalInformation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98AB6A12622219E008FA243 /* UpdatePersonalInformation.storyboard */; };
 		C98AB6A7262221AA008FA243 /* UpdatePersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6A6262221AA008FA243 /* UpdatePersonalInformationViewController.swift */; };
 		C98AB6B526222664008FA243 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6B426222664008FA243 /* EditProfileViewController.swift */; };
 		C98AB6C026222A6F008FA243 /* UpdateEducationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6BF26222A6F008FA243 /* UpdateEducationDetailsViewController.swift */; };
 		C98AB6C52622EE99008FA243 /* BrowseTeacherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6C42622EE99008FA243 /* BrowseTeacherViewModel.swift */; };
-		C98AB6CA2622EEEA008FA243 /* BrowseTeacherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6C92622EEEA008FA243 /* BrowseTeacherRouter.swift */; };
 		C98AB6DD2622F32C008FA243 /* FilteredTeachersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6DC2622F32C008FA243 /* FilteredTeachersViewController.swift */; };
 		C98AB6E52622F342008FA243 /* FilteredTeachersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6E42622F342008FA243 /* FilteredTeachersViewModel.swift */; };
 		C98AB6EB2622F366008FA243 /* FilterTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98AB6EA2622F366008FA243 /* FilterTagCollectionViewCell.swift */; };
@@ -309,10 +312,31 @@
 		C99DFFDD261D59A800816E5C /* AddSubjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99DFFDC261D59A800816E5C /* AddSubjectTableViewCell.xib */; };
 		C99DFFE2261D59BE00816E5C /* AddSubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFFE1261D59BE00816E5C /* AddSubjectTableViewCell.swift */; };
 		C99EE8AD262319FA00D795BA /* FilterTeacherOptionSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EE8AC262319FA00D795BA /* FilterTeacherOptionSelectionTableViewCell.swift */; };
-		C99EE8B226231A0100D795BA /* FilterTeacherOptionSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99EE8B126231A0100D795BA /* FilterTeacherOptionSelectionTableViewCell.xib */; };
+		C99EE8B226231A0100D795BA /* OptionSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99EE8B126231A0100D795BA /* OptionSelectionTableViewCell.xib */; };
 		C99EE8B726231C7500D795BA /* FilterTeacherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EE8B626231C7500D795BA /* FilterTeacherViewModel.swift */; };
 		C99EE8BF2623475E00D795BA /* FilterTeacherCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EE8BE2623475E00D795BA /* FilterTeacherCellViewModel.swift */; };
-		C99EE8C42623680E00D795BA /* FilterTeacherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EE8C32623680E00D795BA /* FilterTeacherRouter.swift */; };
+		C9C6A8AC262B187300050B21 /* TeacherProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A8AB262B187300050B21 /* TeacherProfileViewModel.swift */; };
+		C9C6A8B2262B18F900050B21 /* TitleWithDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C6A8B1262B18F900050B21 /* TitleWithDescriptionTableViewCell.xib */; };
+		C9C6A8B7262B190100050B21 /* TitleWithDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A8B6262B190100050B21 /* TitleWithDescriptionTableViewCell.swift */; };
+		C9C6A8BD262B2A6600050B21 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A8BC262B2A6600050B21 /* TagCollectionViewCell.swift */; };
+		C9C6A8C5262B2A6D00050B21 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C6A8C4262B2A6D00050B21 /* TagCollectionViewCell.xib */; };
+		C9C6A8CB262B2B3700050B21 /* TagCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A8CA262B2B3700050B21 /* TagCollectionTableViewCell.swift */; };
+		C9C6A8D0262B2B3F00050B21 /* TagCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C6A8CF262B2B3F00050B21 /* TagCollectionTableViewCell.xib */; };
+		C9C6A8D5262B324B00050B21 /* TeacherListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A8D4262B324B00050B21 /* TeacherListingRouter.swift */; };
+		C9C6A8E1262B3F5700050B21 /* BookSession.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C6A8E0262B3F5700050B21 /* BookSession.storyboard */; };
+		C9C6A8E6262B3F6100050B21 /* BookSessionDateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A8E5262B3F6100050B21 /* BookSessionDateTimeViewController.swift */; };
+		C9C6A8EC262B41DE00050B21 /* AvailabilityHourCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A8EB262B41DE00050B21 /* AvailabilityHourCollectionTableViewCell.swift */; };
+		C9C6A8F4262B41E600050B21 /* AvailabilityHourCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C6A8F3262B41E600050B21 /* AvailabilityHourCollectionTableViewCell.xib */; };
+		C9C6A8F9262B43D500050B21 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A8F8262B43D400050B21 /* CalendarTableViewCell.swift */; };
+		C9C6A8FE262B43DD00050B21 /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C6A8FD262B43DD00050B21 /* CalendarTableViewCell.xib */; };
+		C9C6A903262B474300050B21 /* BookSessionDateTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A902262B474300050B21 /* BookSessionDateTimeViewModel.swift */; };
+		C9C6A908262B504F00050B21 /* BookSessionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A907262B504F00050B21 /* BookSessionRouter.swift */; };
+		C9C6A912262BFB4200050B21 /* BookSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A911262BFB4200050B21 /* BookSessionViewController.swift */; };
+		C9C6A91A262BFBD500050B21 /* BookSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A919262BFBD500050B21 /* BookSessionViewModel.swift */; };
+		C9C6A923262C0E5200050B21 /* PaymentMethodSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A922262C0E5200050B21 /* PaymentMethodSelectionTableViewCell.swift */; };
+		C9C6A92B262C0E6E00050B21 /* PaymentMethodSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C6A92A262C0E6E00050B21 /* PaymentMethodSelectionTableViewCell.xib */; };
+		C9C6A930262C0E7A00050B21 /* AddPaymentMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A92F262C0E7A00050B21 /* AddPaymentMethodTableViewCell.swift */; };
+		C9C6A935262C0E8100050B21 /* AddPaymentMethodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C6A934262C0E8100050B21 /* AddPaymentMethodTableViewCell.xib */; };
 		CE66C6C425FF904000A2FA72 /* Students.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE66C6C225FF904000A2FA72 /* Students.xcdatamodeld */; };
 		CE66C6D425FF904400A2FA72 /* StudentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66C6D325FF904400A2FA72 /* StudentsTests.swift */; };
 		CE66C6DF25FF904400A2FA72 /* StudentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66C6DE25FF904400A2FA72 /* StudentsUITests.swift */; };
@@ -603,13 +627,16 @@
 		C960E4DA261B288900DC19EE /* CalendarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarStyle.swift; sourceTree = "<group>"; };
 		C960E5D6261B5E9000DC19EE /* SignupAccountTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupAccountTypeViewController.swift; sourceTree = "<group>"; };
 		C960E5EF261B6E8E00DC19EE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C9747B1C2629370D00CE5DC9 /* TeacherProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherProfileViewController.swift; sourceTree = "<group>"; };
+		C9747B212629383000CE5DC9 /* TeacherProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeacherProfile.storyboard; sourceTree = "<group>"; };
+		C9747B26262939BF00CE5DC9 /* TeacherProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherProfileHeaderView.swift; sourceTree = "<group>"; };
+		C9747B2B262939C800CE5DC9 /* TeacherProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherProfileHeaderView.xib; sourceTree = "<group>"; };
 		C98AB69B2622097B008FA243 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		C98AB6A12622219E008FA243 /* UpdatePersonalInformation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdatePersonalInformation.storyboard; sourceTree = "<group>"; };
 		C98AB6A6262221AA008FA243 /* UpdatePersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonalInformationViewController.swift; sourceTree = "<group>"; };
 		C98AB6B426222664008FA243 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		C98AB6BF26222A6F008FA243 /* UpdateEducationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEducationDetailsViewController.swift; sourceTree = "<group>"; };
 		C98AB6C42622EE99008FA243 /* BrowseTeacherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTeacherViewModel.swift; sourceTree = "<group>"; };
-		C98AB6C92622EEEA008FA243 /* BrowseTeacherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTeacherRouter.swift; sourceTree = "<group>"; };
 		C98AB6DC2622F32C008FA243 /* FilteredTeachersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredTeachersViewController.swift; sourceTree = "<group>"; };
 		C98AB6E42622F342008FA243 /* FilteredTeachersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredTeachersViewModel.swift; sourceTree = "<group>"; };
 		C98AB6EA2622F366008FA243 /* FilterTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTagCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -643,10 +670,31 @@
 		C99DFFDC261D59A800816E5C /* AddSubjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSubjectTableViewCell.xib; sourceTree = "<group>"; };
 		C99DFFE1261D59BE00816E5C /* AddSubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubjectTableViewCell.swift; sourceTree = "<group>"; };
 		C99EE8AC262319FA00D795BA /* FilterTeacherOptionSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeacherOptionSelectionTableViewCell.swift; sourceTree = "<group>"; };
-		C99EE8B126231A0100D795BA /* FilterTeacherOptionSelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTeacherOptionSelectionTableViewCell.xib; sourceTree = "<group>"; };
+		C99EE8B126231A0100D795BA /* OptionSelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionSelectionTableViewCell.xib; sourceTree = "<group>"; };
 		C99EE8B626231C7500D795BA /* FilterTeacherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeacherViewModel.swift; sourceTree = "<group>"; };
 		C99EE8BE2623475E00D795BA /* FilterTeacherCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeacherCellViewModel.swift; sourceTree = "<group>"; };
-		C99EE8C32623680E00D795BA /* FilterTeacherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTeacherRouter.swift; sourceTree = "<group>"; };
+		C9C6A8AB262B187300050B21 /* TeacherProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherProfileViewModel.swift; sourceTree = "<group>"; };
+		C9C6A8B1262B18F900050B21 /* TitleWithDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleWithDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		C9C6A8B6262B190100050B21 /* TitleWithDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		C9C6A8BC262B2A6600050B21 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9C6A8C4262B2A6D00050B21 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		C9C6A8CA262B2B3700050B21 /* TagCollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		C9C6A8CF262B2B3F00050B21 /* TagCollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		C9C6A8D4262B324B00050B21 /* TeacherListingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListingRouter.swift; sourceTree = "<group>"; };
+		C9C6A8E0262B3F5700050B21 /* BookSession.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookSession.storyboard; sourceTree = "<group>"; };
+		C9C6A8E5262B3F6100050B21 /* BookSessionDateTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSessionDateTimeViewController.swift; sourceTree = "<group>"; };
+		C9C6A8EB262B41DE00050B21 /* AvailabilityHourCollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityHourCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		C9C6A8F3262B41E600050B21 /* AvailabilityHourCollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvailabilityHourCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		C9C6A8F8262B43D400050B21 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		C9C6A8FD262B43DD00050B21 /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
+		C9C6A902262B474300050B21 /* BookSessionDateTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSessionDateTimeViewModel.swift; sourceTree = "<group>"; };
+		C9C6A907262B504F00050B21 /* BookSessionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSessionRouter.swift; sourceTree = "<group>"; };
+		C9C6A911262BFB4200050B21 /* BookSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSessionViewController.swift; sourceTree = "<group>"; };
+		C9C6A919262BFBD500050B21 /* BookSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSessionViewModel.swift; sourceTree = "<group>"; };
+		C9C6A922262C0E5200050B21 /* PaymentMethodSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		C9C6A92A262C0E6E00050B21 /* PaymentMethodSelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodSelectionTableViewCell.xib; sourceTree = "<group>"; };
+		C9C6A92F262C0E7A00050B21 /* AddPaymentMethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentMethodTableViewCell.swift; sourceTree = "<group>"; };
+		C9C6A934262C0E8100050B21 /* AddPaymentMethodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPaymentMethodTableViewCell.xib; sourceTree = "<group>"; };
 		CE66C6B625FF904000A2FA72 /* Students.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Students.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE66C6C325FF904000A2FA72 /* Students.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Students.xcdatamodel; sourceTree = "<group>"; };
 		CE66C6CF25FF904400A2FA72 /* StudentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -853,6 +901,7 @@
 		C960E391261B288800DC19EE /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				C9C6A8DF262B3F3F00050B21 /* Book Session */,
 				C960E392261B288800DC19EE /* Student.storyboard */,
 				C960E393261B288800DC19EE /* SessionEndNote */,
 				C960E395261B288800DC19EE /* Schedule listing */,
@@ -1511,6 +1560,7 @@
 		C960E495261B288900DC19EE /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C9C6A8BB262B2A5400050B21 /* TagCell */,
 				C960E496261B288900DC19EE /* SessionTableViewCell */,
 				C960E499261B288900DC19EE /* NavigationBarItem */,
 				C960E49C261B288900DC19EE /* LabelledTextField */,
@@ -1681,6 +1731,19 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
+		C9747B1B262936F200CE5DC9 /* Teacher Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6A8B0262B18E900050B21 /* Cell */,
+				C9747B1C2629370D00CE5DC9 /* TeacherProfileViewController.swift */,
+				C9747B212629383000CE5DC9 /* TeacherProfile.storyboard */,
+				C9747B26262939BF00CE5DC9 /* TeacherProfileHeaderView.swift */,
+				C9747B2B262939C800CE5DC9 /* TeacherProfileHeaderView.xib */,
+				C9C6A8AB262B187300050B21 /* TeacherProfileViewModel.swift */,
+			);
+			path = "Teacher Profile";
+			sourceTree = "<group>";
+		};
 		C98AB6A026222181008FA243 /* Update Personal Information */ = {
 			isa = PBXGroup;
 			children = (
@@ -1708,7 +1771,6 @@
 				C99D009E261F85B100816E5C /* BrowseTeacherViewController.swift */,
 				C99D00A6261F85C400816E5C /* BrowseTeacherBuilder.swift */,
 				C98AB6C42622EE99008FA243 /* BrowseTeacherViewModel.swift */,
-				C98AB6C92622EEEA008FA243 /* BrowseTeacherRouter.swift */,
 			);
 			path = TeacherList;
 			sourceTree = "<group>";
@@ -1728,7 +1790,6 @@
 				C98AB703262300CA008FA243 /* Cells */,
 				C98AB6FB262300C7008FA243 /* FilterTeachersViewController.swift */,
 				C99EE8B626231C7500D795BA /* FilterTeacherViewModel.swift */,
-				C99EE8C32623680E00D795BA /* FilterTeacherRouter.swift */,
 			);
 			path = FilterTeachers;
 			sourceTree = "<group>";
@@ -1745,7 +1806,7 @@
 				C98AB7322623016A008FA243 /* FilterTeacherRangeTableViewCell.swift */,
 				C98AB73726230170008FA243 /* FilterTeacherRangeTableViewCell.xib */,
 				C99EE8AC262319FA00D795BA /* FilterTeacherOptionSelectionTableViewCell.swift */,
-				C99EE8B126231A0100D795BA /* FilterTeacherOptionSelectionTableViewCell.xib */,
+				C99EE8B126231A0100D795BA /* OptionSelectionTableViewCell.xib */,
 				C99EE8BE2623475E00D795BA /* FilterTeacherCellViewModel.swift */,
 			);
 			path = Cells;
@@ -1784,10 +1845,12 @@
 		C99D0095261F84F700816E5C /* Browse */ = {
 			isa = PBXGroup;
 			children = (
+				C9747B1B262936F200CE5DC9 /* Teacher Profile */,
 				C98AB6FA262300B6008FA243 /* FilterTeachers */,
 				C98AB6DB2622F316008FA243 /* TeacherList */,
 				C98AB6DA2622F30C008FA243 /* FilteredTeachers */,
 				C99D0099261F85A400816E5C /* Browse.storyboard */,
+				C9C6A8D4262B324B00050B21 /* TeacherListingRouter.swift */,
 			);
 			path = Browse;
 			sourceTree = "<group>";
@@ -1810,6 +1873,79 @@
 				C99DFFE1261D59BE00816E5C /* AddSubjectTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C9C6A8B0262B18E900050B21 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6A8B1262B18F900050B21 /* TitleWithDescriptionTableViewCell.xib */,
+				C9C6A8B6262B190100050B21 /* TitleWithDescriptionTableViewCell.swift */,
+				C9C6A8CA262B2B3700050B21 /* TagCollectionTableViewCell.swift */,
+				C9C6A8CF262B2B3F00050B21 /* TagCollectionTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C9C6A8BB262B2A5400050B21 /* TagCell */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6A8BC262B2A6600050B21 /* TagCollectionViewCell.swift */,
+				C9C6A8C4262B2A6D00050B21 /* TagCollectionViewCell.xib */,
+			);
+			path = TagCell;
+			sourceTree = "<group>";
+		};
+		C9C6A8DF262B3F3F00050B21 /* Book Session */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6A910262BFB1900050B21 /* BookSession */,
+				C9C6A90C262BFA5800050B21 /* Select session datetime */,
+				C9C6A8E0262B3F5700050B21 /* BookSession.storyboard */,
+				C9C6A907262B504F00050B21 /* BookSessionRouter.swift */,
+			);
+			path = "Book Session";
+			sourceTree = "<group>";
+		};
+		C9C6A8EA262B41B000050B21 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6A8EB262B41DE00050B21 /* AvailabilityHourCollectionTableViewCell.swift */,
+				C9C6A8F3262B41E600050B21 /* AvailabilityHourCollectionTableViewCell.xib */,
+				C9C6A8F8262B43D400050B21 /* CalendarTableViewCell.swift */,
+				C9C6A8FD262B43DD00050B21 /* CalendarTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C9C6A90C262BFA5800050B21 /* Select session datetime */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6A8EA262B41B000050B21 /* Cell */,
+				C9C6A8E5262B3F6100050B21 /* BookSessionDateTimeViewController.swift */,
+				C9C6A902262B474300050B21 /* BookSessionDateTimeViewModel.swift */,
+			);
+			path = "Select session datetime";
+			sourceTree = "<group>";
+		};
+		C9C6A910262BFB1900050B21 /* BookSession */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6A921262C0DFE00050B21 /* cell */,
+				C9C6A911262BFB4200050B21 /* BookSessionViewController.swift */,
+				C9C6A919262BFBD500050B21 /* BookSessionViewModel.swift */,
+			);
+			path = BookSession;
+			sourceTree = "<group>";
+		};
+		C9C6A921262C0DFE00050B21 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6A922262C0E5200050B21 /* PaymentMethodSelectionTableViewCell.swift */,
+				C9C6A92A262C0E6E00050B21 /* PaymentMethodSelectionTableViewCell.xib */,
+				C9C6A92F262C0E7A00050B21 /* AddPaymentMethodTableViewCell.swift */,
+				C9C6A934262C0E8100050B21 /* AddPaymentMethodTableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		CE66C6AD25FF904000A2FA72 = {
@@ -1976,11 +2112,14 @@
 				C99DFFDD261D59A800816E5C /* AddSubjectTableViewCell.xib in Resources */,
 				C960E5A2261B288A00DC19EE /* LabelledTextField.xib in Resources */,
 				C960E596261B288A00DC19EE /* SessionDetail.storyboard in Resources */,
+				C9C6A8D0262B2B3F00050B21 /* TagCollectionTableViewCell.xib in Resources */,
 				C960E531261B288900DC19EE /* BillingInformation.storyboard in Resources */,
+				C9C6A8FE262B43DD00050B21 /* CalendarTableViewCell.xib in Resources */,
 				C960E4FD261B288900DC19EE /* RateAndReview.storyboard in Resources */,
 				C960E35D261B251200DC19EE /* Poppins-Black.ttf in Resources */,
 				C960E56E261B288A00DC19EE /* ResetPassword.storyboard in Resources */,
 				C960E521261B288900DC19EE /* Dashboard.storyboard in Resources */,
+				C9C6A8B2262B18F900050B21 /* TitleWithDescriptionTableViewCell.xib in Resources */,
 				C960E354261B251200DC19EE /* Poppins-Light.ttf in Resources */,
 				C960E350261B251200DC19EE /* Poppins-ExtraLight.ttf in Resources */,
 				C960E35E261B251200DC19EE /* Poppins-Thin.ttf in Resources */,
@@ -2001,10 +2140,12 @@
 				C98AB70D262300ED008FA243 /* FilterTeacherSwitchTableViewCell.xib in Resources */,
 				C960E5AE261B288A00DC19EE /* CollapsedTableViewCell.xib in Resources */,
 				C960E4DB261B288900DC19EE /* Student.storyboard in Resources */,
+				C9C6A8E1262B3F5700050B21 /* BookSession.storyboard in Resources */,
 				C960E359261B251200DC19EE /* Poppins-BlackItalic.ttf in Resources */,
 				C960E5B8261B288A00DC19EE /* BottomSheet.storyboard in Resources */,
 				C960E361261B251200DC19EE /* Poppins-MediumItalic.ttf in Resources */,
 				C960E357261B251200DC19EE /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				C9747B2C262939C800CE5DC9 /* TeacherProfileHeaderView.xib in Resources */,
 				C960E570261B288A00DC19EE /* Login.storyboard in Resources */,
 				C960E35C261B251200DC19EE /* Poppins-Bold.ttf in Resources */,
 				C924C4E62621DD5700A5499F /* WishlistTableViewCell.xib in Resources */,
@@ -2012,7 +2153,7 @@
 				C960E4F0261B288900DC19EE /* Messages.storyboard in Resources */,
 				C960E53B261B288900DC19EE /* DateAndTimeTableViewCell.xib in Resources */,
 				C960E583261B288A00DC19EE /* CreateProfileSectionTableViewCell.xib in Resources */,
-				C99EE8B226231A0100D795BA /* FilterTeacherOptionSelectionTableViewCell.xib in Resources */,
+				C99EE8B226231A0100D795BA /* OptionSelectionTableViewCell.xib in Resources */,
 				C98AB6A22622219E008FA243 /* UpdatePersonalInformation.storyboard in Resources */,
 				C960E5C0261B288A00DC19EE /* TableSectionHeaderView.xib in Resources */,
 				C99DFFD7261CE68400816E5C /* AddStudyingSubject.storyboard in Resources */,
@@ -2028,14 +2169,18 @@
 				C960E356261B251200DC19EE /* Poppins-SemiBoldItalic.ttf in Resources */,
 				C960E53D261B288900DC19EE /* SubjectDetailTableViewCell.xib in Resources */,
 				C960E582261B288A00DC19EE /* RegisteredSubjectTableViewCell.xib in Resources */,
+				C9C6A8F4262B41E600050B21 /* AvailabilityHourCollectionTableViewCell.xib in Resources */,
+				C9C6A8C5262B2A6D00050B21 /* TagCollectionViewCell.xib in Resources */,
 				C960E35B261B251200DC19EE /* Poppins-LightItalic.ttf in Resources */,
 				C960E52D261B288900DC19EE /* LanguageTableViewCell.xib in Resources */,
 				C960E4EA261B288900DC19EE /* ChatHeaderView.xib in Resources */,
+				C9747B222629383000CE5DC9 /* TeacherProfile.storyboard in Resources */,
 				C960E50A261B288900DC19EE /* StudentProfileParentTableViewCell.xib in Resources */,
 				C960E4E1261B288900DC19EE /* Schedule.storyboard in Resources */,
 				C960E537261B288900DC19EE /* PaymentMethodTableViewCell.xib in Resources */,
 				C98AB71726230113008FA243 /* FilterTeacherRadioButtonTableViewCell.xib in Resources */,
 				C960E4F8261B288900DC19EE /* NotificationTableViewCell.xib in Resources */,
+				C9C6A935262C0E8100050B21 /* AddPaymentMethodTableViewCell.xib in Resources */,
 				C960E513261B288900DC19EE /* OnboardingCollectionViewCell.xib in Resources */,
 				C960E358261B251200DC19EE /* Poppins-ExtraBold.ttf in Resources */,
 				C960E4FA261B288900DC19EE /* Notification.storyboard in Resources */,
@@ -2058,6 +2203,7 @@
 				C960E52B261B288900DC19EE /* Profile.storyboard in Resources */,
 				C960E528261B288900DC19EE /* SwitchTableViewCell.xib in Resources */,
 				C960E511261B288900DC19EE /* Onboarding.storyboard in Resources */,
+				C9C6A92B262C0E6E00050B21 /* PaymentMethodSelectionTableViewCell.xib in Resources */,
 				C960E50B261B288900DC19EE /* StudentProfileTableHeaderView.xib in Resources */,
 				C924C4C92621C96900A5499F /* Wishlist.storyboard in Resources */,
 				C960E51C261B288900DC19EE /* DashboardSessionCollectionViewCell.xib in Resources */,
@@ -2176,6 +2322,7 @@
 				C960E5B0261B288A00DC19EE /* PageControlView.swift in Sources */,
 				C960E508261B288900DC19EE /* StudentProfileParentTableViewCell.swift in Sources */,
 				C98AB6A7262221AA008FA243 /* UpdatePersonalInformationViewController.swift in Sources */,
+				C9C6A8BD262B2A6600050B21 /* TagCollectionViewCell.swift in Sources */,
 				C99DFFE2261D59BE00816E5C /* AddSubjectTableViewCell.swift in Sources */,
 				C924C469262183DE00A5499F /* MyScheduleBuilder.swift in Sources */,
 				C924C4A62621B35400A5499F /* PaymentMethod.swift in Sources */,
@@ -2183,9 +2330,11 @@
 				C960E57A261B288A00DC19EE /* AvailibilityViewModel.swift in Sources */,
 				C960E52A261B288900DC19EE /* SettingsViewController.swift in Sources */,
 				C960E526261B288900DC19EE /* LinkTableViewCell.swift in Sources */,
+				C9C6A8CB262B2B3700050B21 /* TagCollectionTableViewCell.swift in Sources */,
 				C960E5A7261B288A00DC19EE /* OptionView.swift in Sources */,
 				C960E5B5261B288A00DC19EE /* BottomSheetViewModel.swift in Sources */,
 				C960E524261B288900DC19EE /* SettingTableHeaderView.swift in Sources */,
+				C9747B27262939BF00CE5DC9 /* TeacherProfileHeaderView.swift in Sources */,
 				C960E563261B288A00DC19EE /* LocationPickerViewModel.swift in Sources */,
 				C98AB7332623016A008FA243 /* FilterTeacherRangeTableViewCell.swift in Sources */,
 				C960E4E7261B288900DC19EE /* ChatParentView.swift in Sources */,
@@ -2203,11 +2352,13 @@
 				C960E59A261B288A00DC19EE /* SessionDetailViewController.swift in Sources */,
 				C960E54A261B288900DC19EE /* MyTransactionViewModel.swift in Sources */,
 				C960E554261B288900DC19EE /* DocumentLibraryViewController.swift in Sources */,
+				C9C6A908262B504F00050B21 /* BookSessionRouter.swift in Sources */,
 				C98AB705262300E6008FA243 /* FilterTeacherSwitchTableViewCell.swift in Sources */,
 				C924C4C02621C7A800A5499F /* UpdateSubjectsViewController.swift in Sources */,
 				C960E56A261B288A00DC19EE /* SignupSuccessStateRouter.swift in Sources */,
 				C924C474262184E900A5499F /* MyScheduleViewModel.swift in Sources */,
 				C98AB71226230108008FA243 /* FilterTeacherRadioButtonTableViewCell.swift in Sources */,
+				C9C6A923262C0E5200050B21 /* PaymentMethodSelectionTableViewCell.swift in Sources */,
 				C960E545261B288900DC19EE /* DocumentsViewController.swift in Sources */,
 				C960E5F0261B6E8E00DC19EE /* User.swift in Sources */,
 				C924C49E2621B2F700A5499F /* AddPaymentMethodViewController.swift in Sources */,
@@ -2226,6 +2377,7 @@
 				C960E5B9261B288A00DC19EE /* BottomSheetListCell.swift in Sources */,
 				C960E5B6261B288A00DC19EE /* BottomSheet.swift in Sources */,
 				C960E523261B288900DC19EE /* SettingsModel.swift in Sources */,
+				C9C6A8F9262B43D500050B21 /* CalendarTableViewCell.swift in Sources */,
 				C960E5D1261B288A00DC19EE /* AppDimension.swift in Sources */,
 				C960E4E4261B288900DC19EE /* MessageCell.swift in Sources */,
 				C960E5D0261B288A00DC19EE /* UIColor+Image.swift in Sources */,
@@ -2241,6 +2393,7 @@
 				C960E51A261B288900DC19EE /* DashboardSceneRouter.swift in Sources */,
 				C960E4ED261B288900DC19EE /* ChatMessageReceivedCell.swift in Sources */,
 				C98AB6FC262300C7008FA243 /* FilterTeachersViewController.swift in Sources */,
+				C9C6A91A262BFBD500050B21 /* BookSessionViewModel.swift in Sources */,
 				C960E584261B288A00DC19EE /* AvailibilityHourCell.swift in Sources */,
 				C960E4F4261B288900DC19EE /* Document.swift in Sources */,
 				C960E55B261B288900DC19EE /* SuccessStateViewModel.swift in Sources */,
@@ -2248,6 +2401,7 @@
 				C960E540261B288900DC19EE /* SubjectMainViewBuilder.swift in Sources */,
 				C98AB6DD2622F32C008FA243 /* FilteredTeachersViewController.swift in Sources */,
 				C960E4F3261B288900DC19EE /* SessionMock.swift in Sources */,
+				C9C6A930262C0E7A00050B21 /* AddPaymentMethodTableViewCell.swift in Sources */,
 				C960E575261B288A00DC19EE /* LoginPendingProcessViewModel.swift in Sources */,
 				C960E4DD261B288900DC19EE /* ScheduleListingViewController.swift in Sources */,
 				C960E57C261B288A00DC19EE /* AvailibilityCellViewModel.swift in Sources */,
@@ -2258,13 +2412,13 @@
 				C98AB6C52622EE99008FA243 /* BrowseTeacherViewModel.swift in Sources */,
 				C960E535261B288900DC19EE /* StudentParentDetailsTableViewCell.swift in Sources */,
 				C960E567261B288A00DC19EE /* SignupPersonalInformationViewController.swift in Sources */,
+				C9C6A903262B474300050B21 /* BookSessionDateTimeViewModel.swift in Sources */,
 				C924C4DE2621DD4E00A5499F /* WishlistTableViewCell.swift in Sources */,
 				C960E54C261B288900DC19EE /* TransactionTableViewCell.swift in Sources */,
 				C960E5C6261B288A00DC19EE /* UIView+Autolayout.swift in Sources */,
 				C960E5A9261B288A00DC19EE /* CustomDatePicker.swift in Sources */,
 				C960E5A8261B288A00DC19EE /* CustomDatePickerViewModel.swift in Sources */,
 				C960E58C261B288A00DC19EE /* AvailibilityViewController.swift in Sources */,
-				C98AB6CA2622EEEA008FA243 /* BrowseTeacherRouter.swift in Sources */,
 				C960E5AD261B288A00DC19EE /* PrimaryCTAButton.swift in Sources */,
 				C960E578261B288A00DC19EE /* RegisteredSubjectsViewModel.swift in Sources */,
 				C960E36F261B255500DC19EE /* AppDelegate.swift in Sources */,
@@ -2295,23 +2449,26 @@
 				C960E53E261B288900DC19EE /* SubjectDetailsViewController.swift in Sources */,
 				C960E5CF261B288A00DC19EE /* UINavigationController+Pop.swift in Sources */,
 				C960E50C261B288900DC19EE /* StudentProfileViewModel.swift in Sources */,
+				C9C6A8EC262B41DE00050B21 /* AvailabilityHourCollectionTableViewCell.swift in Sources */,
 				C99DFFD2261CE65800816E5C /* AddStudyingSubjectViewController.swift in Sources */,
 				C960E5CD261B288A00DC19EE /* UILabel+TapGesture.swift in Sources */,
-				C99EE8C42623680E00D795BA /* FilterTeacherRouter.swift in Sources */,
 				C960E5A3261B288A00DC19EE /* FlowDescriptionLabel.swift in Sources */,
 				C960E4E0261B288900DC19EE /* ScheduleListingViewModel.swift in Sources */,
 				C960E546261B288900DC19EE /* DocumentsViewModel.swift in Sources */,
 				C960E4FC261B288900DC19EE /* RateAndReviewBuilder.swift in Sources */,
 				C960E4DC261B288900DC19EE /* SessionEndNoteViewController.swift in Sources */,
+				C9C6A912262BFB4200050B21 /* BookSessionViewController.swift in Sources */,
 				C960E599261B288A00DC19EE /* SessionDetailRouter.swift in Sources */,
 				C960E553261B288900DC19EE /* AddDocumentViewController.swift in Sources */,
 				C960E5CC261B288A00DC19EE /* NSAttributedString+Styling.swift in Sources */,
 				C960E5A1261B288A00DC19EE /* LabelledTextField.swift in Sources */,
 				C960E5B3261B288A00DC19EE /* Fonts.swift in Sources */,
+				C9C6A8AC262B187300050B21 /* TeacherProfileViewModel.swift in Sources */,
 				C960E53A261B288900DC19EE /* SubjectDetailTableViewCell.swift in Sources */,
 				C960E549261B288900DC19EE /* MyTransactionsViewController.swift in Sources */,
 				C960E538261B288900DC19EE /* PaymentMethodTableViewCell.swift in Sources */,
 				C924C4D32621CA6D00A5499F /* CategorizedWishlistViewModel.swift in Sources */,
+				C9C6A8D5262B324B00050B21 /* TeacherListingRouter.swift in Sources */,
 				C960E579261B288A00DC19EE /* ProfileSection.swift in Sources */,
 				C960E581261B288A00DC19EE /* CreateProfileSectionTableViewCell.swift in Sources */,
 				C960E572261B288A00DC19EE /* LoginViewController.swift in Sources */,
@@ -2378,6 +2535,9 @@
 				C960E5A6261B288A00DC19EE /* OptionSelectionView.swift in Sources */,
 				CE66C6C425FF904000A2FA72 /* Students.xcdatamodeld in Sources */,
 				C960E597261B288A00DC19EE /* RejectSessionViewController.swift in Sources */,
+				C9747B1D2629370D00CE5DC9 /* TeacherProfileViewController.swift in Sources */,
+				C9C6A8E6262B3F6100050B21 /* BookSessionDateTimeViewController.swift in Sources */,
+				C9C6A8B7262B190100050B21 /* TitleWithDescriptionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

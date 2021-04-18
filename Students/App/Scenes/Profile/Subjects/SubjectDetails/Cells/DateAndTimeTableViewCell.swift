@@ -20,9 +20,10 @@ class DateAndTimeTableViewCell: UITableViewCell, ReusableView {
     }
 }
 
-struct DateAndTimeTableViewCellViewModel: SubjectDetailTableCellViewModel {
+struct DateAndTimeTableViewCellViewModel: SubjectDetailTableCellViewModel,
+                                          TableCellViewModel {
     let timeImage: UIImage
     let date: String
     let time: String
-    let lectureModeImage: UIImage
+    let lectureModeImage: UIImage?
 }

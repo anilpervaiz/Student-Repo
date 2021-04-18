@@ -25,6 +25,7 @@ struct Teacher {
     var rating: Double
     var tutoredHour: Int
     var students: Int
+    var sessionCount: Int
     var subjects: [Subject]
 
     var formattedSubjects: String {
@@ -36,6 +37,7 @@ struct Teacher {
                                          rating: 4.5,
                                          tutoredHour: 130,
                                          students: 4,
+                                         sessionCount: 10,
                                          subjects: Subject.mockData)
 }
 

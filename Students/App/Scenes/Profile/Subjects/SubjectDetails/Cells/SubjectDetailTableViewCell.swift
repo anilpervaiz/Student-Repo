@@ -18,7 +18,8 @@ class SubjectDetailTableViewCell: UITableViewCell, ReusableView {
     }
 }
 
-struct SubjectDetailTableViewCellViewModel: SubjectDetailTableCellViewModel {
+struct SubjectDetailTableViewCellViewModel: SubjectDetailTableCellViewModel,
+                                            TableCellViewModel {
     let subjectThumbnailImage: UIImage
     let subjectName: String
     let subjectDetail: String

@@ -11,9 +11,9 @@ class FilterTeacherViewModel {
 
     var sections = FilterSection.allCases
     var data: [FilterSection: [FilterTeacherTableCellViewModelType]] = [:]
-    var router: FilterTeacherRouter
+    var router: TeacherListingRouter
 
-    init(router: FilterTeacherRouter) {
+    init(router: TeacherListingRouter) {
         self.router = router
         setupData()
     }
@@ -32,7 +32,7 @@ class FilterTeacherViewModel {
                     case .subject: self.didTapSubject()
                     }
                 }
-                case .optionSelection: return FilterTeacherOptionSelectionViewModel(row: row)
+                case .optionSelection: return OptionSelectionRowViewModel(row: row)
                 case .range: return FilterTeacherRangeTableCellViewModel(row: row)
                 }
             })

@@ -66,7 +66,8 @@ class FilterTeacherRangeTableCellViewModel: FilterTeacherTableCellViewModelType 
     }
 }
 
-class FilterTeacherOptionSelectionViewModel: FilterTeacherTableCellViewModelType {
+class OptionSelectionRowViewModel: FilterTeacherTableCellViewModelType,
+                                             TableCellViewModel {
     var row: FilterRows<SessionOption>
 
     init(row: FilterRows<SessionOption>) {

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Book Session Date Time View Controller-->
+        <scene sceneID="eXu-AQ-Ygs">
+            <objects>
+                <viewController storyboardIdentifier="BookSessionDateTimeViewController" id="n18-vL-dOj" customClass="BookSessionDateTimeViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aH5-pj-dgn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Lh-Lq-YwF">
+                                <rect key="frame" x="0.0" y="53" width="414" height="721"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yo7-k4-o37">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1"/>
+                                <color key="backgroundColor" name="disableGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="pmS-Vn-jsV"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUy-dO-sdl" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
+                                <rect key="frame" x="16" y="790" width="382" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="mD0-TX-h8t"/>
+                                </constraints>
+                                <state key="normal" title="Continue"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                        <color key="value" name="primary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
+                                        <color key="value" name="aquaMarine"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapContinueBooking:" destination="n18-vL-dOj" eventType="touchUpInside" id="nTF-9x-KLg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Yk-Fm-bGK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yo7-k4-o37" firstAttribute="leading" secondItem="5Yk-Fm-bGK" secondAttribute="leading" id="2bV-bF-XXw"/>
+                            <constraint firstItem="5Yk-Fm-bGK" firstAttribute="bottom" secondItem="aUy-dO-sdl" secondAttribute="bottom" constant="16" id="3jc-4o-VOX"/>
+                            <constraint firstItem="5Yk-Fm-bGK" firstAttribute="trailing" secondItem="Yo7-k4-o37" secondAttribute="trailing" id="77X-Z2-y3w"/>
+                            <constraint firstItem="5Yk-Fm-bGK" firstAttribute="trailing" secondItem="1Lh-Lq-YwF" secondAttribute="trailing" id="N1E-be-MC8"/>
+                            <constraint firstItem="aUy-dO-sdl" firstAttribute="top" secondItem="1Lh-Lq-YwF" secondAttribute="bottom" constant="16" id="R58-eT-PMH"/>
+                            <constraint firstItem="1Lh-Lq-YwF" firstAttribute="top" secondItem="Yo7-k4-o37" secondAttribute="bottom" constant="8" id="ZgO-6v-w3C"/>
+                            <constraint firstItem="1Lh-Lq-YwF" firstAttribute="leading" secondItem="5Yk-Fm-bGK" secondAttribute="leading" id="Zlp-Ak-sDb"/>
+                            <constraint firstItem="Yo7-k4-o37" firstAttribute="top" secondItem="5Yk-Fm-bGK" secondAttribute="top" id="kg7-a8-iyF"/>
+                            <constraint firstItem="5Yk-Fm-bGK" firstAttribute="trailing" secondItem="aUy-dO-sdl" secondAttribute="trailing" constant="16" id="sNf-H5-jmP"/>
+                            <constraint firstItem="aUy-dO-sdl" firstAttribute="leading" secondItem="5Yk-Fm-bGK" secondAttribute="leading" constant="16" id="yfI-Gm-R3t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="1Lh-Lq-YwF" id="nRk-Gv-rWz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDV-Gf-Su4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.666666666666671" y="62.946428571428569"/>
+        </scene>
+        <!--Book Session View Controller-->
+        <scene sceneID="gCs-Uc-Riy">
+            <objects>
+                <viewController storyboardIdentifier="BookSessionViewController" id="gXt-5h-EOq" customClass="BookSessionViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SaD-02-Dwb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="01F-ps-dsd">
+                                <rect key="frame" x="0.0" y="53" width="414" height="809"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4V-Dz-iGY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1"/>
+                                <color key="backgroundColor" name="disableGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="yi2-GR-Jch"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K8r-tf-fKU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z4V-Dz-iGY" firstAttribute="top" secondItem="K8r-tf-fKU" secondAttribute="top" id="Dab-pP-hn3"/>
+                            <constraint firstItem="K8r-tf-fKU" firstAttribute="trailing" secondItem="Z4V-Dz-iGY" secondAttribute="trailing" id="SdE-mr-TJQ"/>
+                            <constraint firstItem="K8r-tf-fKU" firstAttribute="trailing" secondItem="01F-ps-dsd" secondAttribute="trailing" id="VYT-KH-4eQ"/>
+                            <constraint firstItem="01F-ps-dsd" firstAttribute="top" secondItem="Z4V-Dz-iGY" secondAttribute="bottom" constant="8" id="ctY-uY-rIg"/>
+                            <constraint firstItem="Z4V-Dz-iGY" firstAttribute="leading" secondItem="K8r-tf-fKU" secondAttribute="leading" id="jOP-3L-E0a"/>
+                            <constraint firstItem="01F-ps-dsd" firstAttribute="leading" secondItem="K8r-tf-fKU" secondAttribute="leading" id="oRE-zL-ZdC"/>
+                            <constraint firstItem="K8r-tf-fKU" firstAttribute="bottom" secondItem="01F-ps-dsd" secondAttribute="bottom" id="wri-8U-QD3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="01F-ps-dsd" id="vWO-jS-gO0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEo-dA-kBI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="81"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="aUy-dO-sdl">
+            <size key="intrinsicContentSize" width="62" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="aquaMarine">
+            <color red="0.27058823529411763" green="0.99607843137254903" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="disableGray">
+            <color red="0.92156862745098034" green="0.92941176470588238" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

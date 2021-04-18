@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Teacher Profile View Controller-->
+        <scene sceneID="MQw-tK-eB1">
+            <objects>
+                <viewController storyboardIdentifier="TeacherProfileViewController" id="7Y2-ie-sfb" customClass="TeacherProfileViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="siW-E4-kB9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oo1-Df-HwS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" name="primary"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="gNg-Fy-Lrn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yOG-TJ-OT3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yOG-TJ-OT3" firstAttribute="bottom" secondItem="gNg-Fy-Lrn" secondAttribute="bottom" id="1EQ-Be-md6"/>
+                            <constraint firstItem="gNg-Fy-Lrn" firstAttribute="top" secondItem="Oo1-Df-HwS" secondAttribute="bottom" id="CDC-5r-Eai"/>
+                            <constraint firstAttribute="trailing" secondItem="Oo1-Df-HwS" secondAttribute="trailing" id="NRV-Hb-Xzr"/>
+                            <constraint firstItem="Oo1-Df-HwS" firstAttribute="leading" secondItem="siW-E4-kB9" secondAttribute="leading" id="RTx-Nj-1vF"/>
+                            <constraint firstItem="gNg-Fy-Lrn" firstAttribute="top" secondItem="yOG-TJ-OT3" secondAttribute="top" id="XR9-eT-PJN"/>
+                            <constraint firstItem="Oo1-Df-HwS" firstAttribute="top" secondItem="siW-E4-kB9" secondAttribute="top" id="nO6-cf-0NV"/>
+                            <constraint firstItem="gNg-Fy-Lrn" firstAttribute="leading" secondItem="yOG-TJ-OT3" secondAttribute="leading" id="qTC-3j-P5g"/>
+                            <constraint firstItem="yOG-TJ-OT3" firstAttribute="trailing" secondItem="gNg-Fy-Lrn" secondAttribute="trailing" id="uR2-xb-CAc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="gNg-Fy-Lrn" id="TQA-Tk-hIR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N46-vq-AYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="147.99107142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="primary">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

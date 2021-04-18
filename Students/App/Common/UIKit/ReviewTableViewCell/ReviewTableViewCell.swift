@@ -30,6 +30,14 @@ class ReviewTableViewCell: UITableViewCell,
         reviewLabel.text = review.review
     }
 
+    func configure(with viewModel: ReviewTableCellViewModel) {
+        timeAgoLabel.text = viewModel.review.reviewTime.timeAgoSinceNow
+        starRatingView.rating = Double(viewModel.review.rating)
+        reviewedByLabel.text = viewModel.review.reviewedBy.name
+        profileImageView.image = UIImage(named:viewModel.review.reviewedBy.profileImage)
+        reviewLabel.text = viewModel.review.review
+    }
+
     override func prepareForReuse() {
         super.prepareForReuse()
 
@@ -39,4 +47,8 @@ class ReviewTableViewCell: UITableViewCell,
         profileImageView.image = nil
         reviewLabel.text = ""
     }
+}
+
+struct ReviewTableCellViewModel: TableCellViewModel {
+    var review: Review
 }

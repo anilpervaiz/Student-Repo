@@ -65,7 +65,6 @@ class BottomSheet: UIViewController {
             self?.onDismissWithSelection?(self?.viewModel?.selectedItem)
             self?.dismiss(animated: true, completion: nil)
         }
-
     }
 
     func setupView() {

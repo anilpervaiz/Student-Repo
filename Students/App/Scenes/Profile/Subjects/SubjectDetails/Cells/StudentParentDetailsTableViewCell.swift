@@ -36,7 +36,8 @@ class PersonDetailsTableViewCell: UITableViewCell,
     }
 }
 
-struct PersonDetailsTableViewCellViewModel: SubjectDetailTableCellViewModel {
+struct PersonDetailsTableViewCellViewModel: SubjectDetailTableCellViewModel,
+                                            TableCellViewModel {
     let title: String
     let personImage: UIImage
     let personName: String

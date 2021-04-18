@@ -29,7 +29,7 @@ class FilteredTeachersViewController: BaseViewController {
                                                        right: 16)
         }
     }
-    var viewModel: FilteredTeachersViewModel = .init()
+    var viewModel: FilteredTeachersViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +39,7 @@ class FilteredTeachersViewController: BaseViewController {
     }
 
     func bindViewModel() {
-        viewModel.output = { [weak self] output in
+        viewModel?.output = { [weak self] output in
             switch output {
             case .reloadFilters: self?.collectionView.reloadData()
             case .reloadTeacherList: self?.tableView.reloadData()
@@ -50,30 +50,34 @@ class FilteredTeachersViewController: BaseViewController {
 
 extension FilteredTeachersViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.numberOfTeachers
+        viewModel?.numberOfTeachers ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withType: WishlistTableViewCell.self)
-        cell.configure(with: viewModel.teacher(at: indexPath.row))
+        if let teacher = viewModel?.teacher(at: indexPath.row) {
+            cell.configure(with: teacher)
+        }
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.didSelectTeacher(at: indexPath.row)
+        viewModel?.didSelectTeacher(at: indexPath.row)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
 extension FilteredTeachersViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        viewModel.numberOfFilters
+        viewModel?.numberOfFilters ?? 0
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withType: FilterTagCollectionViewCell.self, for: indexPath)
-        cell.configure(with: viewModel.filter(at: indexPath.row)) { [weak self] in
-            self?.viewModel.didRemoveFilter(at: indexPath.row)
+        if let filter = viewModel?.filter(at: indexPath.row) {
+            cell.configure(with: filter) { [weak self] in
+                self?.viewModel?.didRemoveFilter(at: indexPath.row)
+            }
         }
         return cell
     }

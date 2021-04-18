@@ -7,8 +7,8 @@
 
 import UIKit
 
-class FilterTeacherOptionSelectionTableViewCell: UITableViewCell,
-                                                 ReusableView {
+class OptionSelectionTableViewCell: UITableViewCell,
+                                    ReusableView {
 
     lazy var optionSelectionView: OptionSelectionView<SessionOption> = {
         let view = OptionSelectionView<SessionOption>().preparedForAutolayout()
@@ -21,9 +21,9 @@ class FilterTeacherOptionSelectionTableViewCell: UITableViewCell,
         }
     }
     
-    var viewModel: FilterTeacherOptionSelectionViewModel?
+    var viewModel: OptionSelectionRowViewModel?
 
-    func configure(viewModel: FilterTeacherOptionSelectionViewModel) {
+    func configure(viewModel: OptionSelectionRowViewModel) {
         self.viewModel = viewModel
         if case let .optionSelection(options) = viewModel.row {
             optionSelectionView.configure(with: options, title: "")
@@ -35,3 +35,4 @@ class FilterTeacherOptionSelectionTableViewCell: UITableViewCell,
         optionSelectionView.configure(with: [], title: "")
     }
 }
+

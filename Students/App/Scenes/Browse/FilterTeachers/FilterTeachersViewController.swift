@@ -53,7 +53,7 @@ class FilterTeachersViewController: BaseViewController {
             tableView.registerNibCell(with: FilterTeacherSwitchTableViewCell.self)
             tableView.registerNibCell(with: FilterTeacherRadioButtonTableViewCell.self)
             tableView.registerNibCell(with: FilterTeacherDropdownTableViewCell.self)
-            tableView.registerNibCell(with: FilterTeacherOptionSelectionTableViewCell.self)
+            tableView.registerNibCell(with: OptionSelectionTableViewCell.self)
             tableView.registerNibCell(with: FilterTeacherRangeTableViewCell.self)
             tableView.registerNibHeaderFooterView(with: TableSectionHeaderView.self)
         }
@@ -127,8 +127,8 @@ extension FilterTeachersViewController: UITableViewDelegate, UITableViewDataSour
             }
             return cell
         case .optionSelection:
-            let cell = tableView.dequeueReusableCell(withType: FilterTeacherOptionSelectionTableViewCell.self)
-            if let cellViewModel = viewModel?.row(at: indexPath) as? FilterTeacherOptionSelectionViewModel {
+            let cell = tableView.dequeueReusableCell(withType: OptionSelectionTableViewCell.self)
+            if let cellViewModel = viewModel?.row(at: indexPath) as? OptionSelectionRowViewModel {
                 cell.configure(viewModel: cellViewModel)
             }
             return cell

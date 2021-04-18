@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="88" id="9Xr-wp-aIQ" customClass="TitleWithDescriptionTableViewCell" customModule="Students" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Xr-wp-aIQ" id="SAv-3M-scS">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4j-u1-hdQ">
+                        <rect key="frame" x="16" y="0.0" width="382" height="21"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                        <color key="textColor" name="darkBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm8-4W-yel">
+                        <rect key="frame" x="16" y="46" width="382" height="21"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <color key="textColor" name="gray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="A4j-u1-hdQ" secondAttribute="trailing" constant="16" id="BRA-zz-VoJ"/>
+                    <constraint firstAttribute="trailing" secondItem="vm8-4W-yel" secondAttribute="trailing" constant="16" id="DFO-pQ-EXc"/>
+                    <constraint firstItem="A4j-u1-hdQ" firstAttribute="top" secondItem="SAv-3M-scS" secondAttribute="top" id="FVh-KU-6VH"/>
+                    <constraint firstAttribute="bottom" secondItem="vm8-4W-yel" secondAttribute="bottom" constant="12" id="aeb-pi-rUp"/>
+                    <constraint firstItem="vm8-4W-yel" firstAttribute="leading" secondItem="SAv-3M-scS" secondAttribute="leading" constant="16" id="q3i-kz-qom"/>
+                    <constraint firstItem="A4j-u1-hdQ" firstAttribute="leading" secondItem="SAv-3M-scS" secondAttribute="leading" constant="16" id="uNX-7V-scN"/>
+                    <constraint firstItem="vm8-4W-yel" firstAttribute="top" secondItem="A4j-u1-hdQ" secondAttribute="bottom" constant="6" id="zEc-7k-I5b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="vm8-4W-yel" id="UNi-4Q-nho"/>
+                <outlet property="titleLabel" destination="A4j-u1-hdQ" id="epc-J8-hSY"/>
+            </connections>
+            <point key="canvasLocation" x="5.7971014492753632" y="111.16071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="darkBlue">
+            <color red="0.066666666666666666" green="0.10588235294117647" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.47843137254901963" green="0.49803921568627452" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

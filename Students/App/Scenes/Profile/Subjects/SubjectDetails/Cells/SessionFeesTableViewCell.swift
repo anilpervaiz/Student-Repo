@@ -7,8 +7,10 @@ import UIKit
 
 class SessionFeesTableViewCell: UITableViewCell, ReusableView {
     
+    @IBOutlet weak var descriptionView: UIView!
     @IBOutlet weak var hoursValueLabel: UILabel!
     @IBOutlet weak var totalValueLabel: UILabel!
+    @IBOutlet weak var sessionFeesTitleLabel: UILabel!
     
     func configure(with viewModel: SessionFeesTableViewCellViewModel) {        
         hoursValueLabel.text = viewModel.hoursValue
@@ -16,7 +18,8 @@ class SessionFeesTableViewCell: UITableViewCell, ReusableView {
     }
 }
 
-struct SessionFeesTableViewCellViewModel: SubjectDetailTableCellViewModel {
+struct SessionFeesTableViewCellViewModel: SubjectDetailTableCellViewModel,
+                                          TableCellViewModel {
     let hoursValue: String
     let totalValue: String
 }
