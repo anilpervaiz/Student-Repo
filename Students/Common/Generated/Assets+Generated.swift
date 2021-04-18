@@ -163,6 +163,7 @@ internal enum Asset {
     internal static let privacy = ImageAsset(name: "privacy")
     internal static let starOutline = ImageAsset(name: "starOutline")
     internal static let subjectIcon = ImageAsset(name: "subjectIcon")
+    internal static let successful = ImageAsset(name: "successful")
     internal static let transaction = ImageAsset(name: "transaction")
     internal static let recording = ImageAsset(name: "Recording")
     internal static let uploadFile = ImageAsset(name: "uploadFile")

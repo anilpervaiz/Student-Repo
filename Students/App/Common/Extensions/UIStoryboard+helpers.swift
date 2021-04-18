@@ -56,5 +56,6 @@ extension UIStoryboard {
         case updatePersonalInformation = "UpdatePersonalInformation"
         case teacherProfile = "TeacherProfile"
         case bookSession = "BookSession"
+        case sessionBookingCompleted = "SessionBookingCompleted"
     }
 }

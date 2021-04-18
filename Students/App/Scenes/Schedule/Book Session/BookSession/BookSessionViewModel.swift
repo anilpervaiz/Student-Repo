@@ -111,6 +111,10 @@ class BookSessionViewModel {
         }
     }
 
+    func didTapConfirmBooking() {
+        router.navigateToConfirmBooking()
+    }
+
     enum Output {
         case reloadSection(Int)
     }

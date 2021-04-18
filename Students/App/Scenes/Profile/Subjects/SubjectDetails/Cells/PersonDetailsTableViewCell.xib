@@ -125,6 +125,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="chatButton" destination="6EC-gA-u9D" id="NbJ-OC-zAC"/>
+                <outlet property="personDetailContainerView" destination="WGW-LD-ftm" id="cRx-eS-IhQ"/>
                 <outlet property="personImageView" destination="wLz-EJ-x73" id="qsj-Py-mAe"/>
                 <outlet property="personNameLabel" destination="0Sv-Ye-WOz" id="i9C-Hm-Lmr"/>
                 <outlet property="ratingImageView" destination="afA-xM-EQC" id="Ofy-F8-0Qg"/>

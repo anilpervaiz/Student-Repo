@@ -9,6 +9,8 @@ import UIKit
 class PersonDetailsTableViewCell: UITableViewCell,
                                   ReusableView {
     
+    @IBOutlet weak var chatButton: UIButton!
+    @IBOutlet weak var personDetailContainerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var personImageView: UIImageView!
     @IBOutlet weak var personNameLabel: UILabel!
@@ -44,4 +46,19 @@ struct PersonDetailsTableViewCellViewModel: SubjectDetailTableCellViewModel,
     let ratingImage: UIImage
     let rating: String
     let onChatButtonTapped: (()->())?
+
+    init(title: String,
+         personImage: UIImage,
+         personName: String,
+         ratingImage: UIImage,
+         rating: String,
+         onChatButtonTapped: (()->())? = nil) {
+
+        self.title = title
+        self.personImage = personImage
+        self.personName = personName
+        self.ratingImage = ratingImage
+        self.rating = rating
+        self.onChatButtonTapped = onChatButtonTapped
+    }
 }

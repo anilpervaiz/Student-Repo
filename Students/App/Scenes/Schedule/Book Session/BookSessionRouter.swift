@@ -25,4 +25,15 @@ class BookSessionRouter: BaseRouter {
         let viewController = AddPaymentMethodViewController.getInstance()
         navigationController?.pushViewController(viewController, animated: true)
     }
+
+    func navigateToConfirmBooking() {
+        let viewController = SessionBookingCompletedViewController.getInstance()
+        viewController.viewModel = SessionBookingCompletedViewModel()
+        viewController.onOperationCompleted = { [weak self] in
+            self?.navigationController?.popToRootViewController(animated: true)
+        }
+        viewController.modalPresentationStyle = .fullScreen
+
+        navigationController?.topViewController?.present(viewController, animated: true, completion: nil)
+    }
 }

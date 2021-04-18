@@ -63,7 +63,7 @@ class BookSessionViewController: BaseViewController {
 
     @objc
     func didTapConfirmBooking() {
-
+        viewModel?.didTapConfirmBooking()
     }
 }
 
