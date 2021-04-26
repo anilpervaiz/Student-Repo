@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Linked Child Profile View Controller-->
+        <scene sceneID="Rqd-AD-Xll">
+            <objects>
+                <viewController storyboardIdentifier="LinkedChildProfileViewController" id="oJp-82-ldS" customClass="LinkedChildProfileViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Htp-kY-BnO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3j-Qx-Q7c">
+                                <rect key="frame" x="0.0" y="262" width="414" height="600"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQ9-Eq-Pdh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="262"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="POe-2d-M1m">
+                                        <rect key="frame" x="16" y="207" width="382" height="32"/>
+                                        <color key="backgroundColor" name="pureWhite"/>
+                                        <segments>
+                                            <segment title="Requests"/>
+                                            <segment title="Sessions"/>
+                                            <segment title="Reviews"/>
+                                        </segments>
+                                        <color key="selectedSegmentTintColor" name="primary"/>
+                                        <connections>
+                                            <action selector="onSegmentValueChanged:" destination="oJp-82-ldS" eventType="valueChanged" id="29D-5y-p5W"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sLS-eC-yqU">
+                                        <rect key="frame" x="159.5" y="44" width="95" height="95"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sLS-eC-yqU" secondAttribute="height" id="DMf-Ft-ulX"/>
+                                            <constraint firstAttribute="width" constant="95" id="nAr-XW-jfL"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="pureWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1a-Ex-g3l">
+                                        <rect key="frame" x="95.5" y="71.5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="q4w-E5-xia"/>
+                                            <constraint firstAttribute="width" secondItem="Q1a-Ex-g3l" secondAttribute="height" id="xpa-gW-njT"/>
+                                        </constraints>
+                                        <color key="tintColor" name="aquaMarine"/>
+                                        <state key="normal" image="edit"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="aquaMarine"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapEditButton:" destination="oJp-82-ldS" eventType="touchUpInside" id="te9-9W-76v"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTP-ec-8oM">
+                                        <rect key="frame" x="278.5" y="71.5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xTP-ec-8oM" secondAttribute="height" id="dhv-jS-dWp"/>
+                                            <constraint firstAttribute="width" constant="40" id="nua-e9-aXK"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.48627450980392156" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="deleteIcon"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.69411764705882351" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapDeleteButton:" destination="oJp-82-ldS" eventType="touchUpInside" id="AAS-FW-eSx"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwW-iJ-RxW">
+                                        <rect key="frame" x="169" y="155" width="76.5" height="28"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="24"/>
+                                        <color key="textColor" name="pureWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="primary"/>
+                                <constraints>
+                                    <constraint firstItem="sLS-eC-yqU" firstAttribute="centerX" secondItem="rQ9-Eq-Pdh" secondAttribute="centerX" id="5TJ-OI-fLt"/>
+                                    <constraint firstAttribute="bottom" secondItem="POe-2d-M1m" secondAttribute="bottom" constant="24" id="Aq7-Oy-ikC"/>
+                                    <constraint firstItem="POe-2d-M1m" firstAttribute="leading" secondItem="rQ9-Eq-Pdh" secondAttribute="leading" constant="16" id="C6q-c9-L67"/>
+                                    <constraint firstItem="xTP-ec-8oM" firstAttribute="centerY" secondItem="sLS-eC-yqU" secondAttribute="centerY" id="EMD-gG-CLo"/>
+                                    <constraint firstItem="POe-2d-M1m" firstAttribute="top" secondItem="xwW-iJ-RxW" secondAttribute="bottom" constant="24" id="JEw-Pg-P6s"/>
+                                    <constraint firstItem="sLS-eC-yqU" firstAttribute="leading" secondItem="Q1a-Ex-g3l" secondAttribute="trailing" constant="24" id="JQv-iA-0uj"/>
+                                    <constraint firstItem="xwW-iJ-RxW" firstAttribute="centerX" secondItem="rQ9-Eq-Pdh" secondAttribute="centerX" id="K2h-Bk-9V7"/>
+                                    <constraint firstItem="xTP-ec-8oM" firstAttribute="leading" secondItem="sLS-eC-yqU" secondAttribute="trailing" constant="24" id="NHO-0N-Vpu"/>
+                                    <constraint firstAttribute="trailing" secondItem="POe-2d-M1m" secondAttribute="trailing" constant="16" id="Snc-w5-FfX"/>
+                                    <constraint firstItem="xwW-iJ-RxW" firstAttribute="top" secondItem="sLS-eC-yqU" secondAttribute="bottom" constant="16" id="beA-sp-ydc"/>
+                                    <constraint firstItem="Q1a-Ex-g3l" firstAttribute="centerY" secondItem="sLS-eC-yqU" secondAttribute="centerY" id="rh8-xG-dg7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YR4-92-COa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rQ9-Eq-Pdh" firstAttribute="leading" secondItem="YR4-92-COa" secondAttribute="leading" id="9Qp-E6-gN2"/>
+                            <constraint firstAttribute="trailing" secondItem="rQ9-Eq-Pdh" secondAttribute="trailing" id="DAH-bB-Aw0"/>
+                            <constraint firstItem="sLS-eC-yqU" firstAttribute="top" secondItem="YR4-92-COa" secondAttribute="top" id="Svu-SC-eZT"/>
+                            <constraint firstItem="YR4-92-COa" firstAttribute="trailing" secondItem="p3j-Qx-Q7c" secondAttribute="trailing" id="bWT-Ws-OJ8"/>
+                            <constraint firstItem="YR4-92-COa" firstAttribute="bottom" secondItem="p3j-Qx-Q7c" secondAttribute="bottom" id="f0Z-jp-qyJ"/>
+                            <constraint firstItem="p3j-Qx-Q7c" firstAttribute="top" secondItem="rQ9-Eq-Pdh" secondAttribute="bottom" id="hlj-l6-h7r"/>
+                            <constraint firstItem="p3j-Qx-Q7c" firstAttribute="leading" secondItem="YR4-92-COa" secondAttribute="leading" id="koc-Mh-OjZ"/>
+                            <constraint firstItem="rQ9-Eq-Pdh" firstAttribute="top" secondItem="Htp-kY-BnO" secondAttribute="top" id="z8p-tE-yd4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="childNameLabel" destination="xwW-iJ-RxW" id="RfR-VZ-DYG"/>
+                        <outlet property="childProfileImageView" destination="sLS-eC-yqU" id="h9U-uH-O9E"/>
+                        <outlet property="containerView" destination="p3j-Qx-Q7c" id="7Zv-X6-OF4"/>
+                        <outlet property="deleteButton" destination="xTP-ec-8oM" id="76h-V5-yIq"/>
+                        <outlet property="editButton" destination="Q1a-Ex-g3l" id="Ay3-4S-3bh"/>
+                        <outlet property="segmentControl" destination="POe-2d-M1m" id="mg0-L5-8WK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4SM-OE-iTE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="deleteIcon" width="24" height="24"/>
+        <image name="edit" width="24" height="24"/>
+        <namedColor name="aquaMarine">
+            <color red="0.27058823529411763" green="0.99607843137254903" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pureWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

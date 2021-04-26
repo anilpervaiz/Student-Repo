@@ -29,12 +29,21 @@ class LoginStateNavigationView: UIViewController {
         return button
     }()
 
-    lazy var loginSuccessfulButton: UIButton = {
+    lazy var loginStudentSuccessfulButton: UIButton = {
         let button = UIButton().preparedForAutolayout()
         button.heightAnchor.constraint(equalToConstant: 56).isActive = true
-        button.setTitle("Login successful", for: .normal)
+        button.setTitle("Login Student successful", for: .normal)
         button.backgroundColor = Asset.Colors.primary.color
-        button.addTarget(self, action: #selector(didTapLoginSuccessful), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapLoginStudentSuccessful), for: .touchUpInside)
+        return button
+    }()
+
+    lazy var loginParentSuccessfulButton: UIButton = {
+        let button = UIButton().preparedForAutolayout()
+        button.heightAnchor.constraint(equalToConstant: 56).isActive = true
+        button.setTitle("Login Parent successful", for: .normal)
+        button.backgroundColor = Asset.Colors.primary.color
+        button.addTarget(self, action: #selector(didTapLoginParentSuccessful), for: .touchUpInside)
         return button
     }()
 
@@ -52,19 +61,23 @@ class LoginStateNavigationView: UIViewController {
         view.backgroundColor = Asset.Colors.pureWhite.color
         view.addSubview(verificationRejectedButton)
         view.addSubview(verificationPendingButton)
-        view.addSubview(loginSuccessfulButton)
+        view.addSubview(loginParentSuccessfulButton)
+        view.addSubview(loginStudentSuccessfulButton)
 
         verificationRejectedButton.fillSuperviewHorizontally()
         verificationPendingButton.fillSuperviewHorizontally()
-        loginSuccessfulButton.fillSuperviewHorizontally()
+        loginParentSuccessfulButton.fillSuperviewHorizontally()
+        loginStudentSuccessfulButton.fillSuperviewHorizontally()
 
         NSLayoutConstraint.activate([
             verificationRejectedButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
                                                             constant: AppDimension.margin.extraLarge),
             verificationPendingButton.topAnchor.constraint(equalTo: verificationRejectedButton.bottomAnchor,
                                                            constant: AppDimension.margin.medium),
-            loginSuccessfulButton.topAnchor.constraint(equalTo: verificationPendingButton.bottomAnchor,
-                                                       constant: AppDimension.margin.medium)
+            loginStudentSuccessfulButton.topAnchor.constraint(equalTo: verificationPendingButton.bottomAnchor,
+                                                              constant: AppDimension.margin.medium),
+            loginParentSuccessfulButton.topAnchor.constraint(equalTo: loginStudentSuccessfulButton.bottomAnchor,
+                                                             constant: AppDimension.margin.medium)
         ])
     }
 }
@@ -78,7 +91,13 @@ class LoginStateNavigationView: UIViewController {
         router?.presentProfileVerificationPendingView()
     }
 
-    func didTapLoginSuccessful() {
+    func didTapLoginStudentSuccessful() {
+        AppManager.userType = .student
+        router?.navigateToHomeScreen()
+    }
+
+    func didTapLoginParentSuccessful() {
+        AppManager.userType = .parent
         router?.navigateToHomeScreen()
     }
 }

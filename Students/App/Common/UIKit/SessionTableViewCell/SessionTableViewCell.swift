@@ -28,6 +28,7 @@ class SessionTableViewCell: UITableViewCell,
         userNameLabel.text = session.user.name
         sessionModeLabel.text = session.medium.title
         sessionModeImageView.image = session.medium.icon.image
+        sessionModeImageView.tintColor = session.medium.themeColor.color
         sessionModeLabel.textColor = session.medium.themeColor.color
         sessionTimeLabel.text = session.sessionDate
         userDetailsView.isHidden = hiddenUserDetails

@@ -170,6 +170,7 @@
                                             <constraint firstAttribute="width" constant="24" id="CZW-SA-kge"/>
                                             <constraint firstAttribute="width" secondItem="dih-Cg-wUt" secondAttribute="height" multiplier="1:1" id="foX-Gs-KJe"/>
                                         </constraints>
+                                        <color key="tintColor" name="pureWhite"/>
                                         <state key="normal" image="deleteIcon"/>
                                         <connections>
                                             <action selector="didTapDeleteButton:" destination="ESh-Ha-X36" eventType="touchUpInside" id="4eZ-Nb-ph1"/>

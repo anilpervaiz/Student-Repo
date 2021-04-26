@@ -24,6 +24,33 @@
 		C924C4D82621CA7F00A5499F /* Wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C4D72621CA7F00A5499F /* Wishlist.swift */; };
 		C924C4DE2621DD4E00A5499F /* WishlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924C4DD2621DD4E00A5499F /* WishlistTableViewCell.swift */; };
 		C924C4E62621DD5700A5499F /* WishlistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C924C4E52621DD5700A5499F /* WishlistTableViewCell.xib */; };
+		C9583BD526351B1A00EB7ECC /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583BD426351B1A00EB7ECC /* AppManager.swift */; };
+		C9583BDB2635623A00EB7ECC /* LinkedAccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583BDA2635623A00EB7ECC /* LinkedAccountListViewController.swift */; };
+		C9583BE32635624E00EB7ECC /* LinkedAccountListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583BE22635624E00EB7ECC /* LinkedAccountListBuilder.swift */; };
+		C9583BE82635634500EB7ECC /* LinkedAccounts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9583BE72635634500EB7ECC /* LinkedAccounts.storyboard */; };
+		C9583BED263569E300EB7ECC /* LinkedAccountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583BEC263569E300EB7ECC /* LinkedAccountListViewModel.swift */; };
+		C9583BF2263569EC00EB7ECC /* LinkedAccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583BF1263569EC00EB7ECC /* LinkedAccountRouter.swift */; };
+		C9583BF826356C6C00EB7ECC /* LinkedAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9583BF726356C6C00EB7ECC /* LinkedAccountTableViewCell.xib */; };
+		C9583C0026356C7B00EB7ECC /* LinkedAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583BFF26356C7B00EB7ECC /* LinkedAccountTableViewCell.swift */; };
+		C9583C0526356CB100EB7ECC /* LinkedAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C0426356CB100EB7ECC /* LinkedAccount.swift */; };
+		C9583C0D2635715E00EB7ECC /* SearchLinkedAccountOptionBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C0C2635715E00EB7ECC /* SearchLinkedAccountOptionBottomSheet.swift */; };
+		C9583C132635810600EB7ECC /* FindLinkedAccountByEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C122635810600EB7ECC /* FindLinkedAccountByEmailViewController.swift */; };
+		C9583C1B2635823100EB7ECC /* LinkedAccountSearchedResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C1A2635823100EB7ECC /* LinkedAccountSearchedResultViewController.swift */; };
+		C9583C212635994700EB7ECC /* NewLinkedAccountPersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C202635994700EB7ECC /* NewLinkedAccountPersonalDetailsViewController.swift */; };
+		C9583C26263599D700EB7ECC /* NewLinkedAccountAuthenticationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C25263599D700EB7ECC /* NewLinkedAccountAuthenticationDetailsViewController.swift */; };
+		C9583C2B263599EA00EB7ECC /* NewLinkedAccountEducationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C2A263599EA00EB7ECC /* NewLinkedAccountEducationDetailsViewController.swift */; };
+		C9583C30263599FC00EB7ECC /* NewLinkedAccountSubjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C2F263599FC00EB7ECC /* NewLinkedAccountSubjectDetailsViewController.swift */; };
+		C9583C3526359A4000EB7ECC /* CreateNewLinkedAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9583C3426359A4000EB7ECC /* CreateNewLinkedAccount.storyboard */; };
+		C9583C3F2635A8F800EB7ECC /* LinkedChildProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C3E2635A8F800EB7ECC /* LinkedChildProfileViewController.swift */; };
+		C9583C4A2635B44C00EB7ECC /* Requests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9583C442635B44C00EB7ECC /* Requests.storyboard */; };
+		C9583C4B2635B44C00EB7ECC /* RequestListingSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C462635B44C00EB7ECC /* RequestListingSceneBuilder.swift */; };
+		C9583C4C2635B44C00EB7ECC /* RequestListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C472635B44C00EB7ECC /* RequestListingViewModel.swift */; };
+		C9583C4D2635B44C00EB7ECC /* RequestListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C482635B44C00EB7ECC /* RequestListingRouter.swift */; };
+		C9583C4E2635B44C00EB7ECC /* RequestListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C492635B44C00EB7ECC /* RequestListingViewController.swift */; };
+		C9583C532636625C00EB7ECC /* LinkedChildProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9583C522636625C00EB7ECC /* LinkedChildProfile.storyboard */; };
+		C9583C582636656900EB7ECC /* LinkedChildProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C572636656900EB7ECC /* LinkedChildProfileViewModel.swift */; };
+		C9583C5D2636673B00EB7ECC /* LinkedAccountProfileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C5C2636673B00EB7ECC /* LinkedAccountProfileBuilder.swift */; };
+		C9583C62263671E400EB7ECC /* LinkedChildProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9583C61263671E400EB7ECC /* LinkedChildProfileRouter.swift */; };
 		C960E34E261B251200DC19EE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C960E338261B251100DC19EE /* Media.xcassets */; };
 		C960E34F261B251200DC19EE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C960E339261B251100DC19EE /* Colors.xcassets */; };
 		C960E350261B251200DC19EE /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C960E33B261B251100DC19EE /* Poppins-ExtraLight.ttf */; };
@@ -386,6 +413,33 @@
 		C924C4D72621CA7F00A5499F /* Wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wishlist.swift; sourceTree = "<group>"; };
 		C924C4DD2621DD4E00A5499F /* WishlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistTableViewCell.swift; sourceTree = "<group>"; };
 		C924C4E52621DD5700A5499F /* WishlistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishlistTableViewCell.xib; sourceTree = "<group>"; };
+		C9583BD426351B1A00EB7ECC /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		C9583BDA2635623A00EB7ECC /* LinkedAccountListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAccountListViewController.swift; sourceTree = "<group>"; };
+		C9583BE22635624E00EB7ECC /* LinkedAccountListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAccountListBuilder.swift; sourceTree = "<group>"; };
+		C9583BE72635634500EB7ECC /* LinkedAccounts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LinkedAccounts.storyboard; sourceTree = "<group>"; };
+		C9583BEC263569E300EB7ECC /* LinkedAccountListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAccountListViewModel.swift; sourceTree = "<group>"; };
+		C9583BF1263569EC00EB7ECC /* LinkedAccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAccountRouter.swift; sourceTree = "<group>"; };
+		C9583BF726356C6C00EB7ECC /* LinkedAccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkedAccountTableViewCell.xib; sourceTree = "<group>"; };
+		C9583BFF26356C7B00EB7ECC /* LinkedAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAccountTableViewCell.swift; sourceTree = "<group>"; };
+		C9583C0426356CB100EB7ECC /* LinkedAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAccount.swift; sourceTree = "<group>"; };
+		C9583C0C2635715E00EB7ECC /* SearchLinkedAccountOptionBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLinkedAccountOptionBottomSheet.swift; sourceTree = "<group>"; };
+		C9583C122635810600EB7ECC /* FindLinkedAccountByEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLinkedAccountByEmailViewController.swift; sourceTree = "<group>"; };
+		C9583C1A2635823100EB7ECC /* LinkedAccountSearchedResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAccountSearchedResultViewController.swift; sourceTree = "<group>"; };
+		C9583C202635994700EB7ECC /* NewLinkedAccountPersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLinkedAccountPersonalDetailsViewController.swift; sourceTree = "<group>"; };
+		C9583C25263599D700EB7ECC /* NewLinkedAccountAuthenticationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLinkedAccountAuthenticationDetailsViewController.swift; sourceTree = "<group>"; };
+		C9583C2A263599EA00EB7ECC /* NewLinkedAccountEducationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLinkedAccountEducationDetailsViewController.swift; sourceTree = "<group>"; };
+		C9583C2F263599FC00EB7ECC /* NewLinkedAccountSubjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLinkedAccountSubjectDetailsViewController.swift; sourceTree = "<group>"; };
+		C9583C3426359A4000EB7ECC /* CreateNewLinkedAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateNewLinkedAccount.storyboard; sourceTree = "<group>"; };
+		C9583C3E2635A8F800EB7ECC /* LinkedChildProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedChildProfileViewController.swift; sourceTree = "<group>"; };
+		C9583C442635B44C00EB7ECC /* Requests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Requests.storyboard; sourceTree = "<group>"; };
+		C9583C462635B44C00EB7ECC /* RequestListingSceneBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestListingSceneBuilder.swift; sourceTree = "<group>"; };
+		C9583C472635B44C00EB7ECC /* RequestListingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestListingViewModel.swift; sourceTree = "<group>"; };
+		C9583C482635B44C00EB7ECC /* RequestListingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestListingRouter.swift; sourceTree = "<group>"; };
+		C9583C492635B44C00EB7ECC /* RequestListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestListingViewController.swift; sourceTree = "<group>"; };
+		C9583C522636625C00EB7ECC /* LinkedChildProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LinkedChildProfile.storyboard; sourceTree = "<group>"; };
+		C9583C572636656900EB7ECC /* LinkedChildProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedChildProfileViewModel.swift; sourceTree = "<group>"; };
+		C9583C5C2636673B00EB7ECC /* LinkedAccountProfileBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAccountProfileBuilder.swift; sourceTree = "<group>"; };
+		C9583C61263671E400EB7ECC /* LinkedChildProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedChildProfileRouter.swift; sourceTree = "<group>"; };
 		C960E338261B251100DC19EE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C960E339261B251100DC19EE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C960E33B261B251100DC19EE /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -805,6 +859,117 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		C9583BD92635622A00EB7ECC /* Linked Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				C9583C3A2635A8E600EB7ECC /* LinkedChildProfile */,
+				C9583C392635A8E000EB7ECC /* New Group */,
+				C9583C0A26356EBF00EB7ECC /* AddNewLinkedAccount */,
+				C9583C0926356EAD00EB7ECC /* Linked Account Listing */,
+				C9583BE72635634500EB7ECC /* LinkedAccounts.storyboard */,
+			);
+			path = "Linked Accounts";
+			sourceTree = "<group>";
+		};
+		C9583BF626356B9700EB7ECC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9583BF726356C6C00EB7ECC /* LinkedAccountTableViewCell.xib */,
+				C9583BFF26356C7B00EB7ECC /* LinkedAccountTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C9583C0926356EAD00EB7ECC /* Linked Account Listing */ = {
+			isa = PBXGroup;
+			children = (
+				C9583BF626356B9700EB7ECC /* Cell */,
+				C9583BDA2635623A00EB7ECC /* LinkedAccountListViewController.swift */,
+				C9583BE22635624E00EB7ECC /* LinkedAccountListBuilder.swift */,
+				C9583BEC263569E300EB7ECC /* LinkedAccountListViewModel.swift */,
+				C9583BF1263569EC00EB7ECC /* LinkedAccountRouter.swift */,
+			);
+			path = "Linked Account Listing";
+			sourceTree = "<group>";
+		};
+		C9583C0A26356EBF00EB7ECC /* AddNewLinkedAccount */ = {
+			isa = PBXGroup;
+			children = (
+				C9583C1F2635992500EB7ECC /* CreateNewLinkedAccount */,
+				C9583C11263580EC00EB7ECC /* FindByEmail */,
+				C9583C0B26356ECF00EB7ECC /* Bottom Sheet */,
+			);
+			path = AddNewLinkedAccount;
+			sourceTree = "<group>";
+		};
+		C9583C0B26356ECF00EB7ECC /* Bottom Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				C9583C0C2635715E00EB7ECC /* SearchLinkedAccountOptionBottomSheet.swift */,
+			);
+			path = "Bottom Sheet";
+			sourceTree = "<group>";
+		};
+		C9583C11263580EC00EB7ECC /* FindByEmail */ = {
+			isa = PBXGroup;
+			children = (
+				C9583C122635810600EB7ECC /* FindLinkedAccountByEmailViewController.swift */,
+				C9583C1A2635823100EB7ECC /* LinkedAccountSearchedResultViewController.swift */,
+			);
+			path = FindByEmail;
+			sourceTree = "<group>";
+		};
+		C9583C1F2635992500EB7ECC /* CreateNewLinkedAccount */ = {
+			isa = PBXGroup;
+			children = (
+				C9583C202635994700EB7ECC /* NewLinkedAccountPersonalDetailsViewController.swift */,
+				C9583C25263599D700EB7ECC /* NewLinkedAccountAuthenticationDetailsViewController.swift */,
+				C9583C2A263599EA00EB7ECC /* NewLinkedAccountEducationDetailsViewController.swift */,
+				C9583C2F263599FC00EB7ECC /* NewLinkedAccountSubjectDetailsViewController.swift */,
+				C9583C3426359A4000EB7ECC /* CreateNewLinkedAccount.storyboard */,
+			);
+			path = CreateNewLinkedAccount;
+			sourceTree = "<group>";
+		};
+		C9583C392635A8E000EB7ECC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		C9583C3A2635A8E600EB7ECC /* LinkedChildProfile */ = {
+			isa = PBXGroup;
+			children = (
+				C9583C3E2635A8F800EB7ECC /* LinkedChildProfileViewController.swift */,
+				C9583C522636625C00EB7ECC /* LinkedChildProfile.storyboard */,
+				C9583C572636656900EB7ECC /* LinkedChildProfileViewModel.swift */,
+				C9583C5C2636673B00EB7ECC /* LinkedAccountProfileBuilder.swift */,
+				C9583C61263671E400EB7ECC /* LinkedChildProfileRouter.swift */,
+			);
+			path = LinkedChildProfile;
+			sourceTree = "<group>";
+		};
+		C9583C432635B44C00EB7ECC /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				C9583C442635B44C00EB7ECC /* Requests.storyboard */,
+				C9583C452635B44C00EB7ECC /* Request List */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		C9583C452635B44C00EB7ECC /* Request List */ = {
+			isa = PBXGroup;
+			children = (
+				C9583C462635B44C00EB7ECC /* RequestListingSceneBuilder.swift */,
+				C9583C472635B44C00EB7ECC /* RequestListingViewModel.swift */,
+				C9583C482635B44C00EB7ECC /* RequestListingRouter.swift */,
+				C9583C492635B44C00EB7ECC /* RequestListingViewController.swift */,
+			);
+			path = "Request List";
+			sourceTree = "<group>";
+		};
 		C960E334261B251100DC19EE /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -887,6 +1052,8 @@
 		C960E390261B288800DC19EE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C9583C432635B44C00EB7ECC /* Request */,
+				C9583BD92635622A00EB7ECC /* Linked Accounts */,
 				C99D0095261F84F700816E5C /* Browse */,
 				C99DFFD0261CE62D00816E5C /* Subject */,
 				C960E391261B288800DC19EE /* Schedule */,
@@ -1012,6 +1179,7 @@
 				C99D006D261EAC8300816E5C /* Address.swift */,
 				C924C4A52621B35400A5499F /* PaymentMethod.swift */,
 				C924C4D72621CA7F00A5499F /* Wishlist.swift */,
+				C9583C0426356CB100EB7ECC /* LinkedAccount.swift */,
 			);
 			path = MockData;
 			sourceTree = "<group>";
@@ -1515,6 +1683,7 @@
 				C960E484261B288900DC19EE /* BaseViewController.swift */,
 				C960E485261B288900DC19EE /* BaseNavigationViewController.swift */,
 				C960E486261B288900DC19EE /* BaseRouter.swift */,
+				C9583BD426351B1A00EB7ECC /* AppManager.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -2195,10 +2364,13 @@
 				C960E4E2261B288900DC19EE /* MessageCell.xib in Resources */,
 				C960E59D261B288A00DC19EE /* SessionTableViewCell.xib in Resources */,
 				C960E515261B288900DC19EE /* GetStarted.storyboard in Resources */,
+				C9583C4A2635B44C00EB7ECC /* Requests.storyboard in Resources */,
 				C960E353261B251200DC19EE /* Poppins-BoldItalic.ttf in Resources */,
+				C9583BE82635634500EB7ECC /* LinkedAccounts.storyboard in Resources */,
 				C960E55C261B288900DC19EE /* SuccessState.storyboard in Resources */,
 				C960E5C1261B288A00DC19EE /* ReviewTableViewCell.xib in Resources */,
 				C960E356261B251200DC19EE /* Poppins-SemiBoldItalic.ttf in Resources */,
+				C9583C532636625C00EB7ECC /* LinkedChildProfile.storyboard in Resources */,
 				C960E53D261B288900DC19EE /* SubjectDetailTableViewCell.xib in Resources */,
 				C960E582261B288A00DC19EE /* RegisteredSubjectTableViewCell.xib in Resources */,
 				C9C6A8F4262B41E600050B21 /* AvailabilityHourCollectionTableViewCell.xib in Resources */,
@@ -2220,6 +2392,7 @@
 				C960E52E261B288900DC19EE /* Language.storyboard in Resources */,
 				C960E355261B251200DC19EE /* Poppins-Medium.ttf in Resources */,
 				C960E35F261B251200DC19EE /* Poppins-SemiBold.ttf in Resources */,
+				C9583BF826356C6C00EB7ECC /* LinkedAccountTableViewCell.xib in Resources */,
 				C960E587261B288A00DC19EE /* AvailibilityHourCell.xib in Resources */,
 				C960E5B2261B288A00DC19EE /* ImagePickerOptionSheet.storyboard in Resources */,
 				C960E4EB261B288900DC19EE /* ChatMessageReceivedCell.xib in Resources */,
@@ -2241,6 +2414,7 @@
 				C924C4C92621C96900A5499F /* Wishlist.storyboard in Resources */,
 				C960E51C261B288900DC19EE /* DashboardSessionCollectionViewCell.xib in Resources */,
 				C960E34F261B251200DC19EE /* Colors.xcassets in Resources */,
+				C9583C3526359A4000EB7ECC /* CreateNewLinkedAccount.storyboard in Resources */,
 				C960E568261B288A00DC19EE /* Signup.storyboard in Resources */,
 				C960E53C261B288900DC19EE /* SessionFeesTableViewCell.xib in Resources */,
 				C960E593261B288A00DC19EE /* AddSubject.storyboard in Resources */,
@@ -2353,8 +2527,11 @@
 				C99D00A7261F85C400816E5C /* BrowseTeacherBuilder.swift in Sources */,
 				C960E5AB261B288A00DC19EE /* ItemPickerView.swift in Sources */,
 				C960E5B0261B288A00DC19EE /* PageControlView.swift in Sources */,
+				C9583BDB2635623A00EB7ECC /* LinkedAccountListViewController.swift in Sources */,
 				C960E508261B288900DC19EE /* StudentProfileParentTableViewCell.swift in Sources */,
+				C9583C2B263599EA00EB7ECC /* NewLinkedAccountEducationDetailsViewController.swift in Sources */,
 				C98AB6A7262221AA008FA243 /* UpdatePersonalInformationViewController.swift in Sources */,
+				C9583C4B2635B44C00EB7ECC /* RequestListingSceneBuilder.swift in Sources */,
 				C9C6A8BD262B2A6600050B21 /* TagCollectionViewCell.swift in Sources */,
 				C99DFFE2261D59BE00816E5C /* AddSubjectTableViewCell.swift in Sources */,
 				C924C469262183DE00A5499F /* MyScheduleBuilder.swift in Sources */,
@@ -2376,6 +2553,7 @@
 				C960E590261B288A00DC19EE /* BaseViewController.swift in Sources */,
 				C960E5BF261B288A00DC19EE /* TableSectionHeaderView.swift in Sources */,
 				C9C6A93B262C2CB100050B21 /* SessionBookingCompletedViewController.swift in Sources */,
+				C9583BD526351B1A00EB7ECC /* AppManager.swift in Sources */,
 				C960E512261B288900DC19EE /* OnboardingCollectionViewCell.swift in Sources */,
 				C960E5C3261B288A00DC19EE /* ErrorView.swift in Sources */,
 				C960E529261B288900DC19EE /* SwitchTableViewCell.swift in Sources */,
@@ -2394,6 +2572,7 @@
 				C98AB71226230108008FA243 /* FilterTeacherRadioButtonTableViewCell.swift in Sources */,
 				C9C6A923262C0E5200050B21 /* PaymentMethodSelectionTableViewCell.swift in Sources */,
 				C960E545261B288900DC19EE /* DocumentsViewController.swift in Sources */,
+				C9583C3F2635A8F800EB7ECC /* LinkedChildProfileViewController.swift in Sources */,
 				C960E5F0261B6E8E00DC19EE /* User.swift in Sources */,
 				C924C49E2621B2F700A5499F /* AddPaymentMethodViewController.swift in Sources */,
 				C960E58B261B288A00DC19EE /* UploadImageViewController.swift in Sources */,
@@ -2412,6 +2591,7 @@
 				C960E5B6261B288A00DC19EE /* BottomSheet.swift in Sources */,
 				C960E523261B288900DC19EE /* SettingsModel.swift in Sources */,
 				C9C6A8F9262B43D500050B21 /* CalendarTableViewCell.swift in Sources */,
+				C9583C0D2635715E00EB7ECC /* SearchLinkedAccountOptionBottomSheet.swift in Sources */,
 				C960E5D1261B288A00DC19EE /* AppDimension.swift in Sources */,
 				C960E4E4261B288900DC19EE /* MessageCell.swift in Sources */,
 				C960E5D0261B288A00DC19EE /* UIColor+Image.swift in Sources */,
@@ -2426,6 +2606,7 @@
 				C9C6A94B262C6C5C00050B21 /* SelectedPaymentMethodSessionCompletionTableViewCell.swift in Sources */,
 				C960E56F261B288A00DC19EE /* LoginViewModel.swift in Sources */,
 				C9C6A945262C4D8F00050B21 /* SessionBookingCompletedViewModel.swift in Sources */,
+				C9583BF2263569EC00EB7ECC /* LinkedAccountRouter.swift in Sources */,
 				C960E51A261B288900DC19EE /* DashboardSceneRouter.swift in Sources */,
 				C960E4ED261B288900DC19EE /* ChatMessageReceivedCell.swift in Sources */,
 				C98AB6FC262300C7008FA243 /* FilterTeachersViewController.swift in Sources */,
@@ -2433,6 +2614,7 @@
 				C960E584261B288A00DC19EE /* AvailibilityHourCell.swift in Sources */,
 				C960E4F4261B288900DC19EE /* Document.swift in Sources */,
 				C960E55B261B288900DC19EE /* SuccessStateViewModel.swift in Sources */,
+				C9583C4D2635B44C00EB7ECC /* RequestListingRouter.swift in Sources */,
 				C960E4E3261B288900DC19EE /* MessageViewModel.swift in Sources */,
 				C960E540261B288900DC19EE /* SubjectMainViewBuilder.swift in Sources */,
 				C98AB6DD2622F32C008FA243 /* FilteredTeachersViewController.swift in Sources */,
@@ -2440,6 +2622,7 @@
 				C9C6A930262C0E7A00050B21 /* AddPaymentMethodTableViewCell.swift in Sources */,
 				C960E575261B288A00DC19EE /* LoginPendingProcessViewModel.swift in Sources */,
 				C960E4DD261B288900DC19EE /* ScheduleListingViewController.swift in Sources */,
+				C9583C30263599FC00EB7ECC /* NewLinkedAccountSubjectDetailsViewController.swift in Sources */,
 				C960E57C261B288A00DC19EE /* AvailibilityCellViewModel.swift in Sources */,
 				C960E51D261B288900DC19EE /* DashboardReviewCollectionViewCell.swift in Sources */,
 				C960E59B261B288A00DC19EE /* SessionDetailBuilder.swift in Sources */,
@@ -2447,6 +2630,7 @@
 				C98AB6C026222A6F008FA243 /* UpdateEducationDetailsViewController.swift in Sources */,
 				C98AB6C52622EE99008FA243 /* BrowseTeacherViewModel.swift in Sources */,
 				C960E535261B288900DC19EE /* StudentParentDetailsTableViewCell.swift in Sources */,
+				C9583C132635810600EB7ECC /* FindLinkedAccountByEmailViewController.swift in Sources */,
 				C960E567261B288A00DC19EE /* SignupPersonalInformationViewController.swift in Sources */,
 				C9C6A903262B474300050B21 /* BookSessionDateTimeViewModel.swift in Sources */,
 				C924C4DE2621DD4E00A5499F /* WishlistTableViewCell.swift in Sources */,
@@ -2457,6 +2641,7 @@
 				C960E58C261B288A00DC19EE /* AvailibilityViewController.swift in Sources */,
 				C960E5AD261B288A00DC19EE /* PrimaryCTAButton.swift in Sources */,
 				C960E578261B288A00DC19EE /* RegisteredSubjectsViewModel.swift in Sources */,
+				C9583C212635994700EB7ECC /* NewLinkedAccountPersonalDetailsViewController.swift in Sources */,
 				C960E36F261B255500DC19EE /* AppDelegate.swift in Sources */,
 				C99EE8AD262319FA00D795BA /* FilterTeacherOptionSelectionTableViewCell.swift in Sources */,
 				C960E5B7261B288A00DC19EE /* BottomSheetListCellViewModel.swift in Sources */,
@@ -2470,11 +2655,15 @@
 				C960E4F7261B288900DC19EE /* ReviewsMock.swift in Sources */,
 				C960E569261B288A00DC19EE /* SignupMobileNumberViewController.swift in Sources */,
 				C960E50D261B288900DC19EE /* StudentProfileViewController.swift in Sources */,
+				C9583C5D2636673B00EB7ECC /* LinkedAccountProfileBuilder.swift in Sources */,
 				C960E51E261B288900DC19EE /* DashboardSessionCollectionViewCell.swift in Sources */,
 				C960E557261B288900DC19EE /* ProfileRouter.swift in Sources */,
 				C960E5C8261B288A00DC19EE /* UIWindow+RootView.swift in Sources */,
+				C9583C4E2635B44C00EB7ECC /* RequestListingViewController.swift in Sources */,
 				C960E598261B288A00DC19EE /* SessionDetailViewModel.swift in Sources */,
+				C9583C1B2635823100EB7ECC /* LinkedAccountSearchedResultViewController.swift in Sources */,
 				C960E4F2261B288900DC19EE /* StudentMock.swift in Sources */,
+				C9583C62263671E400EB7ECC /* LinkedChildProfileRouter.swift in Sources */,
 				C960E556261B288900DC19EE /* ProfileSceneBuilder.swift in Sources */,
 				C960E591261B288A00DC19EE /* BaseNavigationViewController.swift in Sources */,
 				C99D009F261F85B100816E5C /* BrowseTeacherViewController.swift in Sources */,
@@ -2499,7 +2688,9 @@
 				C960E5CC261B288A00DC19EE /* NSAttributedString+Styling.swift in Sources */,
 				C960E5A1261B288A00DC19EE /* LabelledTextField.swift in Sources */,
 				C960E5B3261B288A00DC19EE /* Fonts.swift in Sources */,
+				C9583C26263599D700EB7ECC /* NewLinkedAccountAuthenticationDetailsViewController.swift in Sources */,
 				C9C6A8AC262B187300050B21 /* TeacherProfileViewModel.swift in Sources */,
+				C9583C0526356CB100EB7ECC /* LinkedAccount.swift in Sources */,
 				C960E53A261B288900DC19EE /* SubjectDetailTableViewCell.swift in Sources */,
 				C960E549261B288900DC19EE /* MyTransactionsViewController.swift in Sources */,
 				C960E538261B288900DC19EE /* PaymentMethodTableViewCell.swift in Sources */,
@@ -2522,6 +2713,7 @@
 				C960E5C2261B288A00DC19EE /* ReviewTableViewCell.swift in Sources */,
 				C960E536261B288900DC19EE /* SessionFeesTableViewCell.swift in Sources */,
 				C960E57B261B288A00DC19EE /* CreateProfileSectionTableCellViewModel.swift in Sources */,
+				C9583C582636656900EB7ECC /* LinkedChildProfileViewModel.swift in Sources */,
 				C99D008B261F784400816E5C /* AddAddressViewController.swift in Sources */,
 				C960E5AA261B288A00DC19EE /* SecondaryCTAButton.swift in Sources */,
 				C960E592261B288A00DC19EE /* BaseRouter.swift in Sources */,
@@ -2531,6 +2723,7 @@
 				C99EE8B726231C7500D795BA /* FilterTeacherViewModel.swift in Sources */,
 				C960E5CE261B288A00DC19EE /* ReusableView.swift in Sources */,
 				C960E55A261B288900DC19EE /* SignupCompletedSuccessStateViewModel.swift in Sources */,
+				C9583C0026356C7B00EB7ECC /* LinkedAccountTableViewCell.swift in Sources */,
 				C960E5CA261B288A00DC19EE /* String+Regex.swift in Sources */,
 				C960E5BB261B288A00DC19EE /* PaddedTextField.swift in Sources */,
 				C924C4D82621CA7F00A5499F /* Wishlist.swift in Sources */,
@@ -2556,6 +2749,7 @@
 				C960E574261B288A00DC19EE /* LoginProfileRejectViewModel.swift in Sources */,
 				C960E522261B288900DC19EE /* SettingsViewModel.swift in Sources */,
 				C960E4EF261B288900DC19EE /* ChatHeaderView.swift in Sources */,
+				C9583BED263569E300EB7ECC /* LinkedAccountListViewModel.swift in Sources */,
 				C960E565261B288A00DC19EE /* SignupAuthenticationDetailsViewController.swift in Sources */,
 				C960E5C7261B288A00DC19EE /* UIViewController+Keyboard.swift in Sources */,
 				C960E534261B288900DC19EE /* DateAndTimeTableViewCell.swift in Sources */,
@@ -2567,6 +2761,7 @@
 				C960E5C9261B288A00DC19EE /* UIStoryboard+helpers.swift in Sources */,
 				C960E5C4261B288A00DC19EE /* UIView+Extensions.swift in Sources */,
 				C960E594261B288A00DC19EE /* AddSubjectViewModel.swift in Sources */,
+				C9583BE32635624E00EB7ECC /* LinkedAccountListBuilder.swift in Sources */,
 				C99D0050261E0A8700816E5C /* ProfileCardCollectionViewCell.swift in Sources */,
 				C960E5A6261B288A00DC19EE /* OptionSelectionView.swift in Sources */,
 				CE66C6C425FF904000A2FA72 /* Students.xcdatamodeld in Sources */,
@@ -2574,6 +2769,7 @@
 				C9747B1D2629370D00CE5DC9 /* TeacherProfileViewController.swift in Sources */,
 				C9C6A8E6262B3F6100050B21 /* BookSessionDateTimeViewController.swift in Sources */,
 				C9C6A8B7262B190100050B21 /* TitleWithDescriptionTableViewCell.swift in Sources */,
+				C9583C4C2635B44C00EB7ECC /* RequestListingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

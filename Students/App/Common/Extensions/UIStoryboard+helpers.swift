@@ -57,5 +57,8 @@ extension UIStoryboard {
         case teacherProfile = "TeacherProfile"
         case bookSession = "BookSession"
         case sessionBookingCompleted = "SessionBookingCompleted"
+        case linkedAccount = "LinkedAccounts"
+        case createNewLinkedAccount = "CreateNewLinkedAccount"
+        case linkedChildProfile = "LinkedChildProfile"
     }
 }

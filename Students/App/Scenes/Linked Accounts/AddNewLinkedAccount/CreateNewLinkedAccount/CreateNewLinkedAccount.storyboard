@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--New Account-->
+        <scene sceneID="khV-93-cMS">
+            <objects>
+                <viewController storyboardIdentifier="NewLinkedAccountPersonalDetailsViewController" title="New Account" id="T9g-wl-bLF" customClass="NewLinkedAccountPersonalDetailsViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a0H-hL-uN5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pw3-ZB-uGm">
+                                <rect key="frame" x="0.0" y="60" width="414" height="706"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sC-GT-y6B">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="452.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell us more about child." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlt-ia-BsR" customClass="HeadingLabel" customModule="Students" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="8" width="382" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMg-po-Xbb" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="60.5" width="382" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" placeholder="YES" id="WaU-z8-kXx"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="First Name"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter your first name"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xA-jS-Gqb" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="164.5" width="382" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" placeholder="YES" id="Cso-cm-idv"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Second Name"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter your second name"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FV2-iY-9vB">
+                                                <rect key="frame" x="0.0" y="268.5" width="382" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" placeholder="YES" id="k7u-eT-6JS"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uJ-BI-SMg" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="372.5" width="382" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" placeholder="YES" id="JGk-o6-kDu"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Location"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select Location"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="fMg-po-Xbb" firstAttribute="leading" secondItem="6sC-GT-y6B" secondAttribute="leading" id="1Qw-hk-gXG"/>
+                                            <constraint firstAttribute="trailing" secondItem="fMg-po-Xbb" secondAttribute="trailing" id="1zB-rl-GIy"/>
+                                            <constraint firstItem="9xA-jS-Gqb" firstAttribute="top" secondItem="fMg-po-Xbb" secondAttribute="bottom" constant="24" id="Gls-se-x7J"/>
+                                            <constraint firstItem="Jlt-ia-BsR" firstAttribute="top" secondItem="6sC-GT-y6B" secondAttribute="top" constant="8" id="Nj2-o6-Kqd"/>
+                                            <constraint firstItem="3uJ-BI-SMg" firstAttribute="top" secondItem="FV2-iY-9vB" secondAttribute="bottom" constant="24" id="O3N-bU-513"/>
+                                            <constraint firstItem="Jlt-ia-BsR" firstAttribute="leading" secondItem="6sC-GT-y6B" secondAttribute="leading" id="Rom-WZ-lkK"/>
+                                            <constraint firstAttribute="trailing" secondItem="3uJ-BI-SMg" secondAttribute="trailing" id="YYA-1i-u4i"/>
+                                            <constraint firstItem="3uJ-BI-SMg" firstAttribute="leading" secondItem="6sC-GT-y6B" secondAttribute="leading" id="aHL-z6-f68"/>
+                                            <constraint firstAttribute="bottom" secondItem="3uJ-BI-SMg" secondAttribute="bottom" id="bGZ-Sd-uP0"/>
+                                            <constraint firstAttribute="trailing" secondItem="9xA-jS-Gqb" secondAttribute="trailing" id="dcU-Mx-2yW"/>
+                                            <constraint firstItem="FV2-iY-9vB" firstAttribute="leading" secondItem="6sC-GT-y6B" secondAttribute="leading" id="gdl-cv-PqA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jlt-ia-BsR" secondAttribute="trailing" id="gm6-40-KLF"/>
+                                            <constraint firstItem="fMg-po-Xbb" firstAttribute="top" secondItem="Jlt-ia-BsR" secondAttribute="bottom" constant="32" id="tIz-pZ-LGr"/>
+                                            <constraint firstAttribute="trailing" secondItem="FV2-iY-9vB" secondAttribute="trailing" id="tRC-Ar-s3a"/>
+                                            <constraint firstItem="9xA-jS-Gqb" firstAttribute="leading" secondItem="6sC-GT-y6B" secondAttribute="leading" id="tbP-Mx-yQQ"/>
+                                            <constraint firstItem="FV2-iY-9vB" firstAttribute="top" secondItem="9xA-jS-Gqb" secondAttribute="bottom" constant="24" id="vzV-Mx-Ovf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6sC-GT-y6B" firstAttribute="leading" secondItem="Pw3-ZB-uGm" secondAttribute="leading" id="Idw-Oa-2ml"/>
+                                    <constraint firstAttribute="bottom" secondItem="6sC-GT-y6B" secondAttribute="bottom" id="ikm-1S-dWa"/>
+                                    <constraint firstAttribute="trailing" secondItem="6sC-GT-y6B" secondAttribute="trailing" id="nRw-hg-OXB"/>
+                                    <constraint firstItem="6sC-GT-y6B" firstAttribute="top" secondItem="Pw3-ZB-uGm" secondAttribute="top" id="zL2-Kr-QDu"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="weC-dR-485"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="qFM-5W-50P"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBm-fS-8po" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
+                                <rect key="frame" x="16" y="790" width="382" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="k1s-vU-tbY"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Continue" image="forward-arrow"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                        <color key="value" name="primary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
+                                        <color key="value" name="aquaMarine"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapContinueButton:" destination="T9g-wl-bLF" eventType="touchUpInside" id="KIw-Cz-mQb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uAk-yz-iMe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6sC-GT-y6B" firstAttribute="width" secondItem="a0H-hL-uN5" secondAttribute="width" constant="-32" id="6rb-cu-AGv"/>
+                            <constraint firstItem="6sC-GT-y6B" firstAttribute="centerX" secondItem="uAk-yz-iMe" secondAttribute="centerX" id="HsK-Af-pxN"/>
+                            <constraint firstItem="wBm-fS-8po" firstAttribute="top" secondItem="Pw3-ZB-uGm" secondAttribute="bottom" constant="24" id="WJE-lf-5yg"/>
+                            <constraint firstItem="uAk-yz-iMe" firstAttribute="trailing" secondItem="Pw3-ZB-uGm" secondAttribute="trailing" id="YCc-lP-J2r"/>
+                            <constraint firstItem="uAk-yz-iMe" firstAttribute="bottom" secondItem="wBm-fS-8po" secondAttribute="bottom" constant="16" id="cR7-bi-lEe"/>
+                            <constraint firstItem="wBm-fS-8po" firstAttribute="leading" secondItem="uAk-yz-iMe" secondAttribute="leading" constant="16" id="f7U-2E-1cL"/>
+                            <constraint firstItem="Pw3-ZB-uGm" firstAttribute="leading" secondItem="uAk-yz-iMe" secondAttribute="leading" id="fzG-Ix-Ndg"/>
+                            <constraint firstItem="Pw3-ZB-uGm" firstAttribute="top" secondItem="uAk-yz-iMe" secondAttribute="top" constant="16" id="sXM-IL-P59"/>
+                            <constraint firstItem="uAk-yz-iMe" firstAttribute="trailing" secondItem="wBm-fS-8po" secondAttribute="trailing" constant="16" id="zp7-QH-4Q9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rAo-Vk-iO5"/>
+                    <connections>
+                        <outlet property="ctaButtonBottomConstraint" destination="cR7-bi-lEe" id="Cee-6K-Ae2"/>
+                        <outlet property="firstNameTextField" destination="fMg-po-Xbb" id="Rx4-FC-GWl"/>
+                        <outlet property="locationTextField" destination="3uJ-BI-SMg" id="s1E-KV-vSV"/>
+                        <outlet property="optionSelectionContainerView" destination="FV2-iY-9vB" id="aMm-3m-zwd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whm-g9-xtI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-75.362318840579718" y="233.70535714285714"/>
+        </scene>
+        <!--New Account-->
+        <scene sceneID="GZC-zP-e6R">
+            <objects>
+                <viewController storyboardIdentifier="NewLinkedAccountAuthenticationDetailsViewController" title="New Account" id="YEH-NH-cyu" customClass="NewLinkedAccountAuthenticationDetailsViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RA3-21-9lj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mW-SP-OoB" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
+                                <rect key="frame" x="16" y="790" width="382" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="dhK-Zm-82W"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Continue" image="forward-arrow"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                        <color key="value" name="primary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
+                                        <color key="value" name="aquaMarine"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapCTAButton:" destination="YEH-NH-cyu" eventType="touchUpInside" id="8Dm-Ut-WC6"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsa-HW-JWA">
+                                <rect key="frame" x="0.0" y="60" width="414" height="706"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yej-29-0dW">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="348.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your child email &amp; password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRc-n5-hD5" customClass="HeadingLabel" customModule="Students" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="8" width="382" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qca-cR-uQv" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="60.5" width="382" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" placeholder="YES" id="HPV-BN-nZR"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Email"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="example@example"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jig-ED-egc" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="164.5" width="382" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" placeholder="YES" id="LTY-ID-Lnd"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Password"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter your password"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dI1-c7-ILU" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="268.5" width="382" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" placeholder="YES" id="YRf-mg-N4z"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Confirm Password"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Confirm password"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="bRc-n5-hD5" firstAttribute="top" secondItem="yej-29-0dW" secondAttribute="top" constant="8" id="42B-km-JOx"/>
+                                            <constraint firstAttribute="trailing" secondItem="jig-ED-egc" secondAttribute="trailing" id="5XM-pQ-rzx"/>
+                                            <constraint firstItem="dI1-c7-ILU" firstAttribute="top" secondItem="jig-ED-egc" secondAttribute="bottom" constant="24" id="H2b-M6-udr"/>
+                                            <constraint firstItem="qca-cR-uQv" firstAttribute="leading" secondItem="yej-29-0dW" secondAttribute="leading" id="HQp-7I-08P"/>
+                                            <constraint firstItem="jig-ED-egc" firstAttribute="leading" secondItem="yej-29-0dW" secondAttribute="leading" id="M3B-O1-dDW"/>
+                                            <constraint firstItem="dI1-c7-ILU" firstAttribute="leading" secondItem="yej-29-0dW" secondAttribute="leading" id="P13-2U-7J0"/>
+                                            <constraint firstAttribute="bottom" secondItem="dI1-c7-ILU" secondAttribute="bottom" id="QbI-6K-0q7"/>
+                                            <constraint firstItem="bRc-n5-hD5" firstAttribute="leading" secondItem="yej-29-0dW" secondAttribute="leading" id="RzE-ug-sBh"/>
+                                            <constraint firstAttribute="trailing" secondItem="dI1-c7-ILU" secondAttribute="trailing" id="WjY-5L-owf"/>
+                                            <constraint firstAttribute="trailing" secondItem="qca-cR-uQv" secondAttribute="trailing" id="gSX-ok-2hC"/>
+                                            <constraint firstItem="qca-cR-uQv" firstAttribute="top" secondItem="bRc-n5-hD5" secondAttribute="bottom" constant="32" id="qVd-yA-kwF"/>
+                                            <constraint firstItem="jig-ED-egc" firstAttribute="top" secondItem="qca-cR-uQv" secondAttribute="bottom" constant="24" id="rLs-Oc-H6V"/>
+                                            <constraint firstAttribute="trailing" secondItem="bRc-n5-hD5" secondAttribute="trailing" id="tgw-nc-Pql"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yej-29-0dW" secondAttribute="trailing" id="31A-Oc-Oy3"/>
+                                    <constraint firstItem="yej-29-0dW" firstAttribute="top" secondItem="nsa-HW-JWA" secondAttribute="top" id="80c-xm-PBN"/>
+                                    <constraint firstAttribute="bottom" secondItem="yej-29-0dW" secondAttribute="bottom" id="R1l-Vd-ksk"/>
+                                    <constraint firstItem="yej-29-0dW" firstAttribute="leading" secondItem="nsa-HW-JWA" secondAttribute="leading" id="lD4-oY-VuV"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="NtB-7o-YvW"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="rWs-41-F0f"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bbV-zx-lbR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nsa-HW-JWA" firstAttribute="top" secondItem="bbV-zx-lbR" secondAttribute="top" constant="16" id="AJd-ib-r3f"/>
+                            <constraint firstItem="yej-29-0dW" firstAttribute="centerX" secondItem="bbV-zx-lbR" secondAttribute="centerX" id="Nqt-P6-B72"/>
+                            <constraint firstItem="bbV-zx-lbR" firstAttribute="trailing" secondItem="nsa-HW-JWA" secondAttribute="trailing" id="NuA-er-uv4"/>
+                            <constraint firstItem="bbV-zx-lbR" firstAttribute="trailing" secondItem="9mW-SP-OoB" secondAttribute="trailing" constant="16" id="dT0-Vo-Sfk"/>
+                            <constraint firstItem="bbV-zx-lbR" firstAttribute="bottom" secondItem="9mW-SP-OoB" secondAttribute="bottom" constant="16" id="gxf-hK-oI3"/>
+                            <constraint firstItem="9mW-SP-OoB" firstAttribute="top" secondItem="nsa-HW-JWA" secondAttribute="bottom" constant="24" id="uEX-N7-hpW"/>
+                            <constraint firstItem="9mW-SP-OoB" firstAttribute="leading" secondItem="RA3-21-9lj" secondAttribute="leading" constant="16" id="wh3-A5-Ohm"/>
+                            <constraint firstItem="yej-29-0dW" firstAttribute="width" secondItem="RA3-21-9lj" secondAttribute="width" constant="-32" id="wl7-3e-TiU"/>
+                            <constraint firstItem="nsa-HW-JWA" firstAttribute="leading" secondItem="RA3-21-9lj" secondAttribute="leading" id="zHA-Y3-alq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pcX-pu-N2U"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="dI1-c7-ILU" id="9Pa-ne-x5V"/>
+                        <outlet property="ctaButtonBottomConstraint" destination="gxf-hK-oI3" id="ZEY-2u-7Hc"/>
+                        <outlet property="emailTextField" destination="qca-cR-uQv" id="uTl-Y6-d4a"/>
+                        <outlet property="passwordTextField" destination="jig-ED-egc" id="6o8-RY-4gW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTi-40-WSu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="762" y="234"/>
+        </scene>
+        <!--New Account-->
+        <scene sceneID="aXn-yz-5Tb">
+            <objects>
+                <viewController storyboardIdentifier="NewLinkedAccountEducationDetailsViewController" title="New Account" id="mBt-41-sX6" customClass="NewLinkedAccountEducationDetailsViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XxU-z5-g7X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How can Edukko help your child?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNk-XA-fFs" customClass="HeadingLabel" customModule="Students" customModuleProvider="target">
+                                <rect key="frame" x="16" y="52" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2D-bl-dYr">
+                                <rect key="frame" x="0.0" y="96.5" width="414" height="681.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbC-sG-YJ4" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="8" width="382" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" placeholder="YES" id="FF4-Y0-5ep"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select Education Type"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Education Type"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6j-S8-t05" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="112" width="382" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" placeholder="YES" id="LE1-Pl-emk"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="School"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select School"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpa-FP-6PE" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="216" width="382" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" placeholder="YES" id="HQz-Px-dJp"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Curriculum"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select Curriculum"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBI-ft-jhs" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="320" width="382" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" placeholder="YES" id="VD8-yH-nw9"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select Grade"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Grade"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="XBI-ft-jhs" secondAttribute="bottom" constant="24" id="0Us-Mi-d18"/>
+                                    <constraint firstItem="XBI-ft-jhs" firstAttribute="leading" secondItem="lpa-FP-6PE" secondAttribute="leading" id="0wW-v3-jcZ"/>
+                                    <constraint firstItem="lpa-FP-6PE" firstAttribute="leading" secondItem="T6j-S8-t05" secondAttribute="leading" id="BOf-lG-J2S"/>
+                                    <constraint firstItem="T6j-S8-t05" firstAttribute="trailing" secondItem="wbC-sG-YJ4" secondAttribute="trailing" id="GWK-z7-fRT"/>
+                                    <constraint firstItem="XBI-ft-jhs" firstAttribute="top" secondItem="lpa-FP-6PE" secondAttribute="bottom" constant="24" id="Gwx-3X-fFe"/>
+                                    <constraint firstAttribute="trailing" secondItem="wbC-sG-YJ4" secondAttribute="trailing" constant="16" id="Kwu-Dc-jXw"/>
+                                    <constraint firstItem="lpa-FP-6PE" firstAttribute="top" secondItem="T6j-S8-t05" secondAttribute="bottom" constant="24" id="QFu-eg-aKg"/>
+                                    <constraint firstItem="lpa-FP-6PE" firstAttribute="trailing" secondItem="T6j-S8-t05" secondAttribute="trailing" id="WMC-Rf-ufo"/>
+                                    <constraint firstItem="T6j-S8-t05" firstAttribute="leading" secondItem="wbC-sG-YJ4" secondAttribute="leading" id="jr0-b8-yli"/>
+                                    <constraint firstItem="wbC-sG-YJ4" firstAttribute="leading" secondItem="b2D-bl-dYr" secondAttribute="leading" constant="16" id="kUv-lM-ye5"/>
+                                    <constraint firstItem="wbC-sG-YJ4" firstAttribute="top" secondItem="b2D-bl-dYr" secondAttribute="top" constant="8" id="nZA-Ru-Aay"/>
+                                    <constraint firstItem="T6j-S8-t05" firstAttribute="top" secondItem="wbC-sG-YJ4" secondAttribute="bottom" constant="24" id="oqz-lp-eSi"/>
+                                    <constraint firstItem="XBI-ft-jhs" firstAttribute="trailing" secondItem="lpa-FP-6PE" secondAttribute="trailing" id="xFV-Jd-gZq"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66e-xr-T8a" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
+                                <rect key="frame" x="16" y="794" width="382" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="b67-F9-5Tp"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Continue" image="forward-arrow"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                        <color key="value" name="primary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
+                                        <color key="value" name="aquaMarine"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapCTAButton:" destination="mBt-41-sX6" eventType="touchUpInside" id="lDf-vJ-xyl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ia1-aK-ddD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="66e-xr-T8a" firstAttribute="top" secondItem="b2D-bl-dYr" secondAttribute="bottom" constant="16" id="1vA-Zl-dmo"/>
+                            <constraint firstItem="eNk-XA-fFs" firstAttribute="top" secondItem="ia1-aK-ddD" secondAttribute="top" constant="8" id="82f-FW-Yla"/>
+                            <constraint firstItem="ia1-aK-ddD" firstAttribute="bottom" secondItem="66e-xr-T8a" secondAttribute="bottom" constant="16" id="88q-QA-Mhn"/>
+                            <constraint firstItem="b2D-bl-dYr" firstAttribute="leading" secondItem="ia1-aK-ddD" secondAttribute="leading" id="DqW-Vk-mqU"/>
+                            <constraint firstItem="66e-xr-T8a" firstAttribute="leading" secondItem="ia1-aK-ddD" secondAttribute="leading" constant="16" id="HYJ-vp-dcd"/>
+                            <constraint firstItem="eNk-XA-fFs" firstAttribute="leading" secondItem="ia1-aK-ddD" secondAttribute="leading" constant="16" id="Hku-jF-Clh"/>
+                            <constraint firstItem="ia1-aK-ddD" firstAttribute="trailing" secondItem="66e-xr-T8a" secondAttribute="trailing" constant="16" id="IRS-4Z-gfv"/>
+                            <constraint firstItem="b2D-bl-dYr" firstAttribute="top" secondItem="eNk-XA-fFs" secondAttribute="bottom" constant="24" id="Pmn-uZ-AvX"/>
+                            <constraint firstItem="wbC-sG-YJ4" firstAttribute="width" secondItem="XxU-z5-g7X" secondAttribute="width" constant="-32" id="XEk-fe-pWU"/>
+                            <constraint firstItem="ia1-aK-ddD" firstAttribute="trailing" secondItem="eNk-XA-fFs" secondAttribute="trailing" constant="16" id="bna-3C-VtF"/>
+                            <constraint firstItem="ia1-aK-ddD" firstAttribute="trailing" secondItem="b2D-bl-dYr" secondAttribute="trailing" id="h0F-L3-bET"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ctaButtonBottomConstraints" destination="88q-QA-Mhn" id="nb4-td-j5A"/>
+                        <outlet property="curriculumTextField" destination="lpa-FP-6PE" id="stE-Z4-MRv"/>
+                        <outlet property="educationTypeTextField" destination="wbC-sG-YJ4" id="oFc-2R-JAm"/>
+                        <outlet property="gradeTextField" destination="XBI-ft-jhs" id="JSv-wS-Rx8"/>
+                        <outlet property="schoolTextField" destination="T6j-S8-t05" id="fOL-gm-Ki9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBG-zl-paW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="234"/>
+        </scene>
+        <!--New Account-->
+        <scene sceneID="OTm-Oj-u3f">
+            <objects>
+                <viewController storyboardIdentifier="NewLinkedAccountSubjectDetailsViewController" title="New Account" id="Zeu-KS-EWH" customClass="NewLinkedAccountSubjectDetailsViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6WT-qY-UNC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What subjects your child looking for?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dM1-We-2tC" customClass="HeadingLabel" customModule="Students" customModuleProvider="target">
+                                <rect key="frame" x="16" y="52" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GL-FH-gX7" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
+                                <rect key="frame" x="16" y="794" width="382" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="CvF-gZ-WtS"/>
+                                </constraints>
+                                <state key="normal" title="Create"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                        <color key="value" name="primary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
+                                        <color key="value" name="aquaMarine"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapCTAButton:" destination="Zeu-KS-EWH" eventType="touchUpInside" id="AOQ-1J-Rvt"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="fTJ-7R-MWD">
+                                <rect key="frame" x="16" y="123.5" width="382" height="654.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your child can add other subjects later!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfs-gl-7wA">
+                                <rect key="frame" x="16" y="88.5" width="382" height="19"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <color key="textColor" name="gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VI3-oR-rAo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VI3-oR-rAo" firstAttribute="trailing" secondItem="dM1-We-2tC" secondAttribute="trailing" constant="16" id="2PE-K0-xTF"/>
+                            <constraint firstItem="fTJ-7R-MWD" firstAttribute="leading" secondItem="VI3-oR-rAo" secondAttribute="leading" constant="16" id="2uN-qH-cdQ"/>
+                            <constraint firstItem="fTJ-7R-MWD" firstAttribute="top" secondItem="Gfs-gl-7wA" secondAttribute="bottom" constant="16" id="IT9-lM-u9T"/>
+                            <constraint firstItem="Gfs-gl-7wA" firstAttribute="top" secondItem="dM1-We-2tC" secondAttribute="bottom" constant="16" id="JrS-m6-xKZ"/>
+                            <constraint firstItem="VI3-oR-rAo" firstAttribute="trailing" secondItem="fTJ-7R-MWD" secondAttribute="trailing" constant="16" id="MhT-zp-6Mr"/>
+                            <constraint firstItem="VI3-oR-rAo" firstAttribute="trailing" secondItem="Gfs-gl-7wA" secondAttribute="trailing" constant="16" id="N2N-KD-9v8"/>
+                            <constraint firstItem="VI3-oR-rAo" firstAttribute="trailing" secondItem="0GL-FH-gX7" secondAttribute="trailing" constant="16" id="VcG-ue-hzo"/>
+                            <constraint firstItem="Gfs-gl-7wA" firstAttribute="leading" secondItem="VI3-oR-rAo" secondAttribute="leading" constant="16" id="Zg6-5C-U02"/>
+                            <constraint firstItem="0GL-FH-gX7" firstAttribute="top" secondItem="fTJ-7R-MWD" secondAttribute="bottom" constant="16" id="Zsj-BL-q5B"/>
+                            <constraint firstItem="0GL-FH-gX7" firstAttribute="leading" secondItem="VI3-oR-rAo" secondAttribute="leading" constant="16" id="gMY-9t-zVZ"/>
+                            <constraint firstItem="VI3-oR-rAo" firstAttribute="bottom" secondItem="0GL-FH-gX7" secondAttribute="bottom" constant="16" id="plU-F3-L4H"/>
+                            <constraint firstItem="dM1-We-2tC" firstAttribute="leading" secondItem="VI3-oR-rAo" secondAttribute="leading" constant="16" id="t3s-m1-2k1"/>
+                            <constraint firstItem="dM1-We-2tC" firstAttribute="top" secondItem="VI3-oR-rAo" secondAttribute="top" constant="8" id="ukh-vn-5ve"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fTJ-7R-MWD" id="k4O-FT-0hN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAF-kA-4EF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2659" y="234"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="0GL-FH-gX7">
+            <size key="intrinsicContentSize" width="54" height="34"/>
+        </designable>
+        <designable name="66e-xr-T8a">
+            <size key="intrinsicContentSize" width="97" height="24"/>
+        </designable>
+        <designable name="9mW-SP-OoB">
+            <size key="intrinsicContentSize" width="97" height="24"/>
+        </designable>
+        <designable name="Jlt-ia-BsR">
+            <size key="intrinsicContentSize" width="185" height="20.5"/>
+        </designable>
+        <designable name="bRc-n5-hD5">
+            <size key="intrinsicContentSize" width="257" height="20.5"/>
+        </designable>
+        <designable name="dM1-We-2tC">
+            <size key="intrinsicContentSize" width="281" height="20.5"/>
+        </designable>
+        <designable name="eNk-XA-fFs">
+            <size key="intrinsicContentSize" width="250.5" height="20.5"/>
+        </designable>
+        <designable name="wBm-fS-8po">
+            <size key="intrinsicContentSize" width="97" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="forward-arrow" width="24" height="24"/>
+        <namedColor name="aquaMarine">
+            <color red="0.27058823529411763" green="0.99607843137254903" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.47843137254901963" green="0.49803921568627452" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

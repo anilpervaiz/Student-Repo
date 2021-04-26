@@ -9,6 +9,9 @@ import UIKit
 
 class SessionDetailViewController: BaseViewController {
 
+    @IBOutlet weak var paymentMethodTypeLabel: UILabel!
+    @IBOutlet weak var paymentMethodImageView: UIImageView!
+    @IBOutlet weak var paymnetMethodView: UIView!
     @IBOutlet weak var endSessionView: UIView!
     @IBOutlet weak var startSessionView: UIView!
     @IBOutlet weak var requestedSessionButtonView: UIView!
@@ -44,6 +47,7 @@ class SessionDetailViewController: BaseViewController {
         teacherName.text = viewModel?.teacher.name
         teacherImageView.image = UIImage(named: viewModel?.teacher.profileImage ?? "")
         sessionMediumImageView.image = viewModel?.session.medium.icon.image
+        sessionMediumImageView.tintColor = viewModel?.session.medium.themeColor.color
         sessionMediumTitleLabel.text = viewModel?.session.medium.title
         sessionMediumTitleLabel.textColor = viewModel?.session.medium.themeColor.color
         sessionTimeLabel.text = "Monday, 4 Feb"
@@ -64,6 +68,14 @@ class SessionDetailViewController: BaseViewController {
             requestedSessionButtonView.isHidden = true
             startSessionView.isHidden = true
             endSessionView.isHidden = false
+        }
+
+        if AppManager.userType == .parent {
+            paymnetMethodView.isHidden = false
+            paymentMethodImageView.image = Asset.Media.applePay.image
+            paymentMethodTypeLabel.text = "Apple Pay"
+        } else {
+            paymnetMethodView.isHidden = true
         }
     }
 

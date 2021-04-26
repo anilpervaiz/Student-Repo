@@ -24,7 +24,7 @@
         <!--Login View Controller-->
         <scene sceneID="q4Z-1n-gac">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="f4U-fb-G5z" customClass="LoginViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="f4U-fb-G5z" customClass="LoginViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XUg-LD-LOK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,7 +35,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajn-Ve-95z">
                                         <rect key="frame" x="16" y="8" width="382" height="586.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9Y-ZZ-H59" customClass="HeadingLabel" customModule="Teachers" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9Y-ZZ-H59" customClass="HeadingLabel" customModule="Students" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -47,7 +47,7 @@
                                                 <color key="textColor" name="gray"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHW-Z3-Eg7" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHW-Z3-Eg7" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="191.5" width="382" height="80"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -58,7 +58,7 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter your password"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1T-MF-x4E" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1T-MF-x4E" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="87.5" width="382" height="80"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -80,7 +80,7 @@
                                                     <segue destination="Qf2-P0-eS9" kind="show" id="Uql-qi-TM5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtP-rv-QVV" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtP-rv-QVV" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="372.5" width="382" height="56"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="dFp-Xr-ke0"/>
@@ -252,7 +252,7 @@
         <!--Login Pending Process View Controller-->
         <scene sceneID="8fc-yb-xOY">
             <objects>
-                <viewController storyboardIdentifier="LoginPendingProcessViewController" id="9xh-il-7H3" customClass="LoginPendingProcessViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginPendingProcessViewController" id="9xh-il-7H3" customClass="LoginPendingProcessViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eus-Uw-Auy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -273,7 +273,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ASf-cQ-aiC">
                                                 <rect key="frame" x="13.5" y="222" width="323.5" height="66"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Thank You!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfh-nq-9he" customClass="HeadingLabel" customModule="Teachers" customModuleProvider="target">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Thank You!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfh-nq-9he" customClass="HeadingLabel" customModule="Students" customModuleProvider="target">
                                                         <rect key="frame" x="119" y="0.0" width="85" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -287,7 +287,7 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="HnG-eE-W8l" customClass="ErrorView" customModule="Teachers" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="HnG-eE-W8l" customClass="ErrorView" customModule="Students" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="312" width="350" height="30"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -347,7 +347,7 @@
                                     <constraint firstItem="KlO-P6-gee" firstAttribute="leading" secondItem="8kW-ba-ZfE" secondAttribute="leading" constant="12" id="qui-i3-swf"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kub-12-quK" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kub-12-quK" customClass="PrimaryCTAButton" customModule="Students" customModuleProvider="target">
                                 <rect key="frame" x="16" y="782" width="382" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="EkT-3h-E4d"/>

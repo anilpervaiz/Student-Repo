@@ -18,7 +18,7 @@
         <!--Image Picker Option Sheet View Controller-->
         <scene sceneID="zfn-Wz-rLF">
             <objects>
-                <viewController storyboardIdentifier="ImagePickerOptionSheetViewController" id="r4i-fH-3m2" customClass="ImagePickerOptionSheetViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImagePickerOptionSheetViewController" id="r4i-fH-3m2" customClass="ImagePickerOptionSheetViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ycB-s8-Qw7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
