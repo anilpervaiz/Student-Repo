@@ -12,6 +12,7 @@ struct Transaction {
     var date: Date
     var amount: Double
     var type: TransactionType
+    var usedBy: LinkedAccount
 
     var formattedType: String {
         type.rawValue
@@ -28,13 +29,13 @@ struct Transaction {
     }
 
     static var mockData = [
-        Transaction(destinationAccount: "**** **** **** 9201", date: Date(), amount: 800, type: .online),
-        Transaction(destinationAccount: "**** **** **** 9201", date: Date(), amount: 800, type: .online),
-        Transaction(destinationAccount: "**** **** **** 9201", date: Date(), amount: 800, type: .online),
-        Transaction(destinationAccount: "**** **** **** 9201", date: Date(), amount: 800, type: .online),
-        Transaction(destinationAccount: "**** **** **** 9201", date: Date(), amount: 800, type: .online),
-        Transaction(destinationAccount: "**** **** **** 9201", date: Date(), amount: 800, type: .online),
-        Transaction(destinationAccount: "**** **** **** 9201", date: Date().addingTimeInterval(86400), amount: 800, type: .online),
-        Transaction(destinationAccount: "**** **** **** 9201", date: Date().addingTimeInterval(86400), amount: 800, type: .online),
+        Transaction(destinationAccount: "**** **** **** 9201", date: Date(), amount: 800, type: .online, usedBy: .mockData[0]),
+        Transaction(destinationAccount: "**** **** **** 9201", date: Date(), amount: 800, type: .online, usedBy: .mockData[0]),
+        Transaction(destinationAccount: "**** **** **** 9201", date: Date(), amount: 800, type: .online, usedBy: .mockData[0]),
+        Transaction(destinationAccount: "**** **** **** 9201", date: Date(), amount: 800, type: .online, usedBy: .mockData[0]),
+        Transaction(destinationAccount: "**** **** **** 9201", date: Date(), amount: 800, type: .online, usedBy: .mockData[0]),
+        Transaction(destinationAccount: "**** **** **** 9201", date: Date(), amount: 800, type: .online, usedBy: .mockData[0]),
+        Transaction(destinationAccount: "**** **** **** 9201", date: Date().addingTimeInterval(86400), amount: 800, type: .online, usedBy: .mockData[0]),
+        Transaction(destinationAccount: "**** **** **** 9201", date: Date().addingTimeInterval(86400), amount: 800, type: .online, usedBy: .mockData[0]),
     ]
 }

@@ -14,8 +14,13 @@ class TransactionTableViewCell: UITableViewCell,
     @IBOutlet weak var toAccountLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var transactionTypeLabel: UILabel!
-    
+    @IBOutlet weak var transactionDetailLabel: UILabel!
+    @IBOutlet weak var transactionPerformerImageView: UIImageView! {
+        didSet {
+            transactionPerformerImageView.cornerRadius = 9
+        }
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,14 +32,19 @@ class TransactionTableViewCell: UITableViewCell,
         toAccountLabel.text = ""
         amountLabel.text = ""
         dateLabel.text = ""
-        transactionTypeLabel.text = ""
+        transactionDetailLabel.text = ""
+        transactionPerformerImageView.image = nil
     }
 
     func configure(transaction: Transaction) {
         toAccountLabel.text = "To \(transaction.destinationAccount)"
         amountLabel.text = "\(transaction.amount) AED"
         dateLabel.text = transaction.formattedDate
-        transactionTypeLabel.text = transaction.formattedType
+        if AppManager.userType == .parent {
+            transactionPerformerImageView.image = UIImage(named: transaction.usedBy.profileImage)
+            transactionDetailLabel.text = transaction.usedBy.name
+        } else {
+            transactionDetailLabel.text = transaction.formattedType
+        }
     }
-
 }

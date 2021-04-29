@@ -9,6 +9,7 @@ import UIKit
 
 class ProfileViewController: BaseViewController {
 
+    @IBOutlet weak var ratingView: UIView!
     var mockData: User = User.mockData
     var router: ProfileRouter?
 
@@ -45,6 +46,9 @@ class ProfileViewController: BaseViewController {
         profileImageView.image = UIImage(named: mockData.profileImage)
         nameLabel.text = mockData.name
         ratingLabel.text = "\(mockData.rating)"
+        if AppManager.userType == .parent {
+            ratingView.isHidden = true
+        }
     }
 
     override func viewDidLayoutSubviews() {
@@ -64,20 +68,20 @@ class ProfileViewController: BaseViewController {
 
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        ProfileCards.allCases.count
+        ProfileCards.cards.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withType: ProfileCardCollectionViewCell.self,
                                                       for: indexPath)
 
-        let card = ProfileCards.allCases[indexPath.row]
+        let card = ProfileCards.cards[indexPath.row]
         cell.configure(profileCard: card)
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let card = ProfileCards(rawValue: indexPath.row)
+        let card = ProfileCards.cards[indexPath.row]
         switch card {
         case .wishlist: router?.didTapWishList()
         case .subject: router?.didTapSubjectsView()
@@ -86,7 +90,6 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         case .address: router?.didTapAddressView()
         case .wallet: router?.didTapWalletView()
         case .paymentMethod: router?.didTapPaymentMethod()
-        default: break
         }
     }
 
@@ -132,5 +135,12 @@ enum ProfileCards: Int,
         case .wallet: return "myWallet"
         case .paymentMethod: return "billingInformation"
         }
+    }
+
+    static var cards: [ProfileCards] {
+        if AppManager.userType == .parent {
+            return [.wallet, .paymentMethod]
+        }
+        return ProfileCards.allCases
     }
 }
