@@ -21,6 +21,10 @@ class LinkedChildProfileViewController: BaseViewController {
     }
     @IBOutlet weak var containerView: UIView!
 
+    private lazy var sessionsController: UIViewController = {
+        let viewController = LinkedAccountSessionViewController.getInstance()
+        return viewController
+    }()
     private lazy var sessionRequestController: UIViewController = {
         let viewController = RequestListingSceneBuilder().makeViewController { [weak self] session in
             self?.viewModel.didTapSessionRequest(session: session)
@@ -41,6 +45,7 @@ class LinkedChildProfileViewController: BaseViewController {
 
         add(asChildViewController: sessionRequestController)
         add(asChildViewController: reviewViewController)
+        add(asChildViewController: sessionsController)
 
         onSegmentValueChanged(segmentControl)
     }
@@ -80,12 +85,15 @@ class LinkedChildProfileViewController: BaseViewController {
         case 0:
             reviewViewController.view.isHidden = true
             sessionRequestController.view.isHidden = false
+            sessionsController.view.isHidden = true
         case 1:
             reviewViewController.view.isHidden = true
             sessionRequestController.view.isHidden = true
+            sessionsController.view.isHidden = false
         case 2:
             reviewViewController.view.isHidden = false
             sessionRequestController.view.isHidden = true
+            sessionsController.view.isHidden = true
         default: break
         }
     }

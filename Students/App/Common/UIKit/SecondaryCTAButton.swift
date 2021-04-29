@@ -20,7 +20,6 @@ class SecondaryCTAButton: UIButton {
 
     func setupStyle() {
         titleLabel?.font = .init(commonFont: PoppinsFontStyle.semiBold, size: 14)
-        backgroundColor = .clear
         cornerRadius = 4
         borderWidth = 1
         borderColor = buttonThemeColor

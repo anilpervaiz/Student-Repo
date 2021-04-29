@@ -73,6 +73,16 @@ class BookSessionViewModel {
                 SessionFeesTableViewCellViewModel(hoursValue: "2 hours", totalValue: "AED 80")
             ])
         ]
+
+        if AppManager.userType == .parent {
+            let paymentIndex = section.firstIndex { $0.type == .paymentMethod }
+            guard let index = paymentIndex else { return }
+            section.insert(Section(type: .linkedAccount, title: "Children", rows: [
+                LinkedAccountSelectionTableCellViewModel(account: .mockData[0], isSelected: false),
+                LinkedAccountSelectionTableCellViewModel(account: .mockData[1], isSelected: false)
+            ]), at: index)
+        }
+
     }
 
     func sectionHeader(for sectionIndex: Int) -> String? {
@@ -109,6 +119,22 @@ class BookSessionViewModel {
                 output? (.reloadSection(indexPath.section))
             }
         }
+
+        if selectionSection.type == .linkedAccount {
+
+            for index in 0..<selectionSection.rows.count {
+                if var cellViewModel = selectionSection.rows[index] as? LinkedAccountSelectionTableCellViewModel {
+                    cellViewModel.isSelected = false
+                    section[indexPath.section].rows[index] = cellViewModel
+                }
+            }
+            if var cellViewModel = section[indexPath.section].rows[indexPath.row] as? LinkedAccountSelectionTableCellViewModel {
+                cellViewModel.isSelected = true
+                section[indexPath.section].rows[indexPath.row] = cellViewModel
+            }
+            output? (.reloadSection(indexPath.section))
+        }
+
     }
 
     func didTapConfirmBooking() {
@@ -130,6 +156,7 @@ class BookSessionViewModel {
         case subject
         case dateAndTime
         case sessionType
+        case linkedAccount
         case paymentMethod
         case sessionFees
     }

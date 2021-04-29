@@ -8,14 +8,26 @@
 import Foundation
 
 class TeacherProfileViewModel {
-    var teacher = Teacher.mockData
+    var session: WishList
+    var teacher: Teacher {
+        session.teacher
+    }
     var section: [Section] = []
     var router: TeacherListingRouter
     var output: ((Output) -> ())?
     var numberOfSections: Int { section.count }
 
-    init(with router: TeacherListingRouter) {
+    var bookSessionButtonTitle: String {
+        if AppManager.userType == .parent {
+            return "Book Session - \(session.amount) AED/h"
+        }
+        return "Book Session"
+    }
+
+    init(with session: WishList,
+         router: TeacherListingRouter) {
         self.router = router
+        self.session = session
         setupData()
     }
 

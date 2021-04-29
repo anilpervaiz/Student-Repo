@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="153" id="vxP-qO-HAb" customClass="LinkedAccountSessionCompletedTableViewCell" customModule="Students" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vxP-qO-HAb" id="NXF-em-G7H">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="153"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeS-fx-JlZ">
+                        <rect key="frame" x="16" y="16" width="52.5" height="65"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="12"/>
+                        <color key="textColor" name="gray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2C3-iP-ccZ">
+                        <rect key="frame" x="16" y="97" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="S7z-Kc-R24"/>
+                            <constraint firstAttribute="height" constant="40" id="SYz-ZZ-Ddb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mr-Hn-Ru9">
+                        <rect key="frame" x="68" y="107" width="310" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <color key="textColor" name="darkBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CeS-fx-JlZ" firstAttribute="top" secondItem="NXF-em-G7H" secondAttribute="top" constant="16" id="4NJ-ML-qms"/>
+                    <constraint firstItem="CeS-fx-JlZ" firstAttribute="leading" secondItem="NXF-em-G7H" secondAttribute="leading" constant="16" id="5GI-iS-rG8"/>
+                    <constraint firstItem="2C3-iP-ccZ" firstAttribute="top" secondItem="CeS-fx-JlZ" secondAttribute="bottom" constant="16" id="Ag7-PB-fS6"/>
+                    <constraint firstItem="2C3-iP-ccZ" firstAttribute="leading" secondItem="NXF-em-G7H" secondAttribute="leading" constant="16" id="EMq-ji-b4M"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6mr-Hn-Ru9" secondAttribute="trailing" constant="16" id="WgI-Tj-ZzZ"/>
+                    <constraint firstItem="6mr-Hn-Ru9" firstAttribute="centerY" secondItem="2C3-iP-ccZ" secondAttribute="centerY" id="ZWY-sA-X8X"/>
+                    <constraint firstItem="6mr-Hn-Ru9" firstAttribute="leading" secondItem="2C3-iP-ccZ" secondAttribute="trailing" constant="12" id="h0I-v5-mPU"/>
+                    <constraint firstAttribute="bottom" secondItem="2C3-iP-ccZ" secondAttribute="bottom" constant="16" id="wTY-3w-EEf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="6mr-Hn-Ru9" id="UhE-dN-rEu"/>
+                <outlet property="profileImageView" destination="2C3-iP-ccZ" id="WDj-0I-9Qz"/>
+            </connections>
+            <point key="canvasLocation" x="237.68115942028987" y="138.28125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="darkBlue">
+            <color red="0.066666666666666666" green="0.10588235294117647" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.47843137254901963" green="0.49803921568627452" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

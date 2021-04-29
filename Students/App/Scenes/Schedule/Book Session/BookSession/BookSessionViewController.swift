@@ -40,6 +40,7 @@ class BookSessionViewController: BaseViewController {
 
             tableView.registerNibCell(with: AddPaymentMethodTableViewCell.self)
             tableView.registerNibCell(with: PaymentMethodSelectionTableViewCell.self)
+            tableView.registerNibCell(with: LinkedAccountSelectionTableViewCell.self)
 
             tableView.tableFooterView = tableFooterView
         }
@@ -108,6 +109,10 @@ extension BookSessionViewController: UITableViewDelegate, UITableViewDataSource 
             return cell
         } else if let cellViewModel = cellViewModel as? PaymentMethodSelectionTableCellViewModel {
             let cell = tableView.dequeueReusableCell(withType: PaymentMethodSelectionTableViewCell.self)
+            cell.configure(viewModel: cellViewModel)
+            return cell
+        } else if let cellViewModel = cellViewModel as? LinkedAccountSelectionTableCellViewModel {
+            let cell = tableView.dequeueReusableCell(withType: LinkedAccountSelectionTableViewCell.self)
             cell.configure(viewModel: cellViewModel)
             return cell
         }

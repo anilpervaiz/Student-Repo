@@ -41,6 +41,12 @@ class SessionBookingCompletedViewModel {
             SelectedPaymentMethodSessionCompletionTableCellViewModel(paymentMethod: PaymentMethod.mockData[0]),
             SessionFeesTableViewCellViewModel(hoursValue: "2 hours", totalValue: "AED 80")
         ]
+
+        if AppManager.userType == .parent {
+            let paymentIndex = row.firstIndex { $0 is SelectedPaymentMethodSessionCompletionTableCellViewModel }
+            guard let index = paymentIndex else { return }
+            row.insert(LinkedAccountSessionCompletedTableCellViewModel(linkedAccount: LinkedAccount.mockData[0]), at: index)
+        }
     }
 
     func cellViewModel(for index: Int) -> TableCellViewModel {

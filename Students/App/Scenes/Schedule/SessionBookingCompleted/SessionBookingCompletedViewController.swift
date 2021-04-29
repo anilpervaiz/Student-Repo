@@ -23,17 +23,12 @@ class SessionBookingCompletedViewController: BaseViewController {
             tableView.registerNibCell(with: DateAndTimeTableViewCell.self)
             tableView.registerNibCell(with: SessionFeesTableViewCell.self)
             tableView.registerNibCell(with: SelectedPaymentMethodSessionCompletionTableViewCell.self)
+            tableView.registerNibCell(with: LinkedAccountSessionCompletedTableViewCell.self)
 
             tableView.allowsSelection = false
             tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 8))
             tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 8))
         }
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-
     }
 
     @IBAction func didTapDoneButton(_ sender: Any) {
@@ -81,6 +76,10 @@ extension SessionBookingCompletedViewController: UITableViewDelegate, UITableVie
             let cell = tableView.dequeueReusableCell(withType: SessionFeesTableViewCell.self)
             cell.configure(with: cellViewModel)
             cell.backgroundColor = Asset.Colors.borderColor.color
+            return cell
+        } else if let cellViewModel = cellViewModel as? LinkedAccountSessionCompletedTableCellViewModel {
+            let cell = tableView.dequeueReusableCell(withType: LinkedAccountSessionCompletedTableViewCell.self)
+            cell.configure(viewModel: cellViewModel)
             return cell
         }
         return UITableViewCell()

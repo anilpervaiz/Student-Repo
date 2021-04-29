@@ -9,14 +9,17 @@ import Foundation
 
 class BrowseTeacherViewModel {
     private var data = WishList.mockData
+    let subject: Subject?
     private let router: TeacherListingRouter
 
     var numberOfRows: Int {
         data.count
     }
 
-    init(router: TeacherListingRouter) {
+    init(router: TeacherListingRouter,
+         subject: Subject? = nil) {
         self.router = router
+        self.subject = subject
     }
 
     func session(at index: Int) -> WishList {
@@ -24,7 +27,7 @@ class BrowseTeacherViewModel {
     }
 
     func didSelectSession(at index: Int) {
-        router.navigateToTeacherProfile()
+        router.navigateToTeacherProfile(session: data[index])
     }
 
     func didTapFilterButton() {

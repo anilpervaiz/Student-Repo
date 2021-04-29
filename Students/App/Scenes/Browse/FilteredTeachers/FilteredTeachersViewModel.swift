@@ -34,7 +34,7 @@ class FilteredTeachersViewModel {
     }
 
     func didSelectTeacher(at index: Int) {
-        router.navigateToTeacherProfile()
+        router.navigateToTeacherProfile(session: teachers[index])
     }
 
     func didRemoveFilter(at index: Int) {

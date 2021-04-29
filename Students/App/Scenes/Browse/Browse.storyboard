@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -163,6 +163,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FIB-qv-FzN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1563" y="-148"/>
+        </scene>
+        <!--Browse Subject Based Teacher View Controller-->
+        <scene sceneID="Jhd-HK-lIK">
+            <objects>
+                <viewController storyboardIdentifier="BrowseSubjectBasedTeacherViewController" id="bf7-Jr-bJj" customClass="BrowseSubjectBasedTeacherViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pye-ND-x19">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6fG-Z1-4PQ">
+                                <rect key="frame" x="0.0" y="53" width="414" height="793"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHh-n5-HLt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1"/>
+                                <color key="backgroundColor" name="disableGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8L4-eV-B1l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OO6-5Z-PBG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6fG-Z1-4PQ" firstAttribute="top" secondItem="pHh-n5-HLt" secondAttribute="bottom" constant="8" id="79i-Wg-09B"/>
+                            <constraint firstItem="OO6-5Z-PBG" firstAttribute="bottom" secondItem="6fG-Z1-4PQ" secondAttribute="bottom" constant="16" id="8vv-Se-gvB"/>
+                            <constraint firstItem="OO6-5Z-PBG" firstAttribute="trailing" secondItem="6fG-Z1-4PQ" secondAttribute="trailing" id="CtM-ja-wWC"/>
+                            <constraint firstItem="6fG-Z1-4PQ" firstAttribute="leading" secondItem="OO6-5Z-PBG" secondAttribute="leading" id="GyO-N0-mzy"/>
+                            <constraint firstItem="OO6-5Z-PBG" firstAttribute="trailing" secondItem="pHh-n5-HLt" secondAttribute="trailing" id="LMf-2L-bSl"/>
+                            <constraint firstItem="pHh-n5-HLt" firstAttribute="top" secondItem="OO6-5Z-PBG" secondAttribute="top" id="R5Y-sf-Nth"/>
+                            <constraint firstItem="pHh-n5-HLt" firstAttribute="leading" secondItem="OO6-5Z-PBG" secondAttribute="leading" id="ZTX-5I-PuP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="6fG-Z1-4PQ" id="Thd-tK-wGP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GmB-d9-1um" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-926.08695652173924" y="-173.4375"/>
         </scene>
     </scenes>
     <resources>

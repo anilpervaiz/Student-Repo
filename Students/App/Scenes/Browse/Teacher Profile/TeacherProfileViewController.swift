@@ -18,7 +18,7 @@ class TeacherProfileViewController: BaseViewController {
                                               height: 56 + 32))
         customView.backgroundColor = .clear
         let button = PrimaryCTAButton(type: .system).preparedForAutolayout()
-        button.setTitle("Book Session", for: .normal)
+        button.setTitle(viewModel?.bookSessionButtonTitle, for: .normal)
         button.buttonThemeColor = Asset.Colors.aquaMarine.color
         button.buttonBackgroundColor = Asset.Colors.primary.color
         button.addTarget(self, action: #selector(didTapBookSesstion), for: .touchUpInside)

@@ -36,7 +36,7 @@ class AddDocumentViewController: UIViewController {
             }
         }
     }
-    @IBOutlet weak var selectSubjectTextField: LabelledTextField!{
+    @IBOutlet weak var selectSubjectTextField: LabelledTextField! {
         didSet {
             selectSubjectTextField.trailingIconStyle = .static(icon: Asset.Media.downArrow.image)
             selectSubjectTextField.isEditable = false

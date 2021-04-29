@@ -8,10 +8,10 @@
 import Foundation
 
 class TeacherListingRouter: BaseRouter {
-    func navigateToTeacherProfile() {
+    func navigateToTeacherProfile(session: WishList) {
         let viewController = TeacherProfileViewController.getInstance()
         let router = TeacherListingRouter(with: navigationController)
-        let viewModel = TeacherProfileViewModel(with: router)
+        let viewModel = TeacherProfileViewModel(with: session, router: router)
         viewController.viewModel = viewModel
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)

@@ -15,4 +15,11 @@ struct BrowseTeacherBuilder {
         viewController.viewModel = viewModel
         return navigationController
     }
+
+    func makeViewController(subject: Subject, navigationController: BaseNavigationController) -> BrowseSubjectBasedTeacherViewController {
+        let viewController = BrowseSubjectBasedTeacherViewController.getInstance()
+        let viewModel = BrowseTeacherViewModel(router: TeacherListingRouter(with: navigationController), subject: subject)
+        viewController.viewModel = viewModel
+        return viewController
+    }
 }

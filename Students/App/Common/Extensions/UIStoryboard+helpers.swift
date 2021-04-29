@@ -60,5 +60,6 @@ extension UIStoryboard {
         case linkedAccount = "LinkedAccounts"
         case createNewLinkedAccount = "CreateNewLinkedAccount"
         case linkedChildProfile = "LinkedChildProfile"
+        case linkedAccountSession = "LinkedAccountSession"
     }
 }
