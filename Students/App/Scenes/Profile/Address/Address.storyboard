@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -69,23 +69,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jV5-mr-Liz">
-                                <rect key="frame" x="12" y="68" width="24" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="eDG-DV-Y6B"/>
-                                    <constraint firstAttribute="width" secondItem="jV5-mr-Liz" secondAttribute="height" id="lgT-kK-oBN"/>
-                                </constraints>
-                                <state key="normal" image="close"/>
-                                <connections>
-                                    <action selector="didTapCloseButton:" destination="pGD-v8-hpJ" eventType="touchUpInside" id="Vs8-vn-cft"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7z-yT-2N3" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="208" width="414" height="688"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Your Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieQ-BD-O3K">
-                                <rect key="frame" x="16" y="112" width="382" height="28"/>
+                                <rect key="frame" x="16" y="44" width="382" height="28"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="24"/>
                                 <color key="textColor" name="darkBlue"/>
                                 <nil key="highlightedColor"/>
@@ -152,7 +141,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMP-5y-2kb" customClass="LabelledTextField" customModule="Students" customModuleProvider="target">
-                                <rect key="frame" x="16" y="148" width="382" height="48"/>
+                                <rect key="frame" x="16" y="80" width="382" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="GCu-je-Ajc"/>
@@ -171,11 +160,9 @@
                             <constraint firstItem="QT1-4f-SSX" firstAttribute="leading" secondItem="TiD-hb-As0" secondAttribute="leading" constant="16" id="3eB-16-BIq"/>
                             <constraint firstItem="TiD-hb-As0" firstAttribute="trailing" secondItem="QT1-4f-SSX" secondAttribute="trailing" constant="16" id="4Sq-zz-0fT"/>
                             <constraint firstItem="TiD-hb-As0" firstAttribute="trailing" secondItem="ieQ-BD-O3K" secondAttribute="trailing" constant="16" id="6eS-GO-8jc"/>
-                            <constraint firstItem="jV5-mr-Liz" firstAttribute="leading" secondItem="TiD-hb-As0" secondAttribute="leading" constant="12" id="6p6-iR-HxE"/>
-                            <constraint firstItem="ieQ-BD-O3K" firstAttribute="top" secondItem="jV5-mr-Liz" secondAttribute="bottom" constant="20" id="9u5-P4-JIO"/>
                             <constraint firstItem="TiD-hb-As0" firstAttribute="trailing" secondItem="AMP-5y-2kb" secondAttribute="trailing" constant="16" id="Eps-eO-1HW"/>
-                            <constraint firstItem="jV5-mr-Liz" firstAttribute="top" secondItem="TiD-hb-As0" secondAttribute="top" constant="24" id="FBl-bT-jiG"/>
                             <constraint firstItem="i7z-yT-2N3" firstAttribute="top" secondItem="AMP-5y-2kb" secondAttribute="bottom" constant="12" id="JMT-Vc-w8M"/>
+                            <constraint firstItem="ieQ-BD-O3K" firstAttribute="top" secondItem="TiD-hb-As0" secondAttribute="top" id="Ljt-40-hui"/>
                             <constraint firstItem="TiD-hb-As0" firstAttribute="bottom" secondItem="QT1-4f-SSX" secondAttribute="bottom" constant="24" id="T5W-jD-0hI"/>
                             <constraint firstAttribute="bottom" secondItem="i7z-yT-2N3" secondAttribute="bottom" id="bOh-1x-5dc"/>
                             <constraint firstItem="ieQ-BD-O3K" firstAttribute="leading" secondItem="TiD-hb-As0" secondAttribute="leading" constant="16" id="fZb-lv-cjx"/>
@@ -403,6 +390,9 @@
                                         <color key="value" name="aquaMarine"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapSaveAddress:" destination="te8-pQ-f90" eventType="touchUpInside" id="jCf-Ia-wPr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L1q-Gu-5Bh"/>
@@ -439,7 +429,6 @@
         </designable>
     </designables>
     <resources>
-        <image name="close" width="24" height="24"/>
         <image name="currentLocation" width="32" height="32"/>
         <namedColor name="aquaMarine">
             <color red="0.27058823529411763" green="0.99607843137254903" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

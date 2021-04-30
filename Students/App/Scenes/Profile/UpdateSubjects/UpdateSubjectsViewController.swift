@@ -26,9 +26,7 @@ class UpdateSubjectsViewController: BaseViewController {
     }
 
     @IBAction func didTapCTAButton(_ sender: Any) {
-        let viewController = SignupAuthenticationDetailsViewController.getInstance()
-        viewController.userType = .student
-        navigationController?.pushViewController(viewController, animated: true)
+        navigationController?.popViewController(animated: true)
     }
 }
 

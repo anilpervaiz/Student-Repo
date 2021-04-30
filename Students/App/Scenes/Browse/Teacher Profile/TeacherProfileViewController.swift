@@ -48,6 +48,14 @@ class TeacherProfileViewController: BaseViewController {
         bindViewModel()
     }
 
+    override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNeedsStatusBarAppearanceUpdate()
+        navigationController?.navigationBar.barStyle = .blackTranslucent
+    }
+
     func setupView() {
 
         if let teacher = viewModel?.teacher {

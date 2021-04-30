@@ -20,7 +20,7 @@ class SessionTableViewCell: UITableViewCell,
     @IBOutlet weak var sessionModeImageView: UIImageView!
     @IBOutlet weak var sessionModeLabel: UILabel!
 
-    func configure(session: Session, hiddenUserDetails: Bool = false) {
+    func configure(session: Session, hiddenUserDetails: Bool = false, hideSessionStateView: Bool = false) {
         var session = session
         titleLabel.text = "\(session.subject) - \(session.curriculum)"
 
@@ -32,7 +32,7 @@ class SessionTableViewCell: UITableViewCell,
         sessionModeLabel.textColor = session.medium.themeColor.color
         sessionTimeLabel.text = session.sessionDate
         userDetailsView.isHidden = hiddenUserDetails
-        sessionStateView.isHidden = hiddenUserDetails
+        sessionStateView.isHidden = hiddenUserDetails || hideSessionStateView
 
         if session.isUpcoming {
             sessionState.text = "Upcoming"

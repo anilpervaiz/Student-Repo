@@ -34,6 +34,7 @@ class LanguageViewController: UIViewController {
             tableView.delegate = self
             tableView.dataSource = self
             tableView.registerNibCell(with: LanguageTableViewCell.self)
+            tableView.tableFooterView = UIView()
         }
     }
     override func viewDidLoad() {
@@ -46,6 +47,9 @@ class LanguageViewController: UIViewController {
 
     @objc
     func back() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func didTapSaveButton(_ sender: Any) {
         let selectedLanguages = languages.filter { $0.isSelected == true }.map { $0.title }
         onDismissWithSelection?(selectedLanguages)
         self.navigationController?.popViewController(animated: true)

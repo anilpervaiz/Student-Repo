@@ -9,13 +9,17 @@ import Foundation
 
 class MyScheduleViewModel {
     lazy var scheduleListingViewModel = {
-        ScheduleListingViewModel { [weak self] index in
+        return ScheduleListingViewModel(shouldShowSessionState: shouldShowSessionState) { [weak self] index in
             self?.didTapRequest(at: index)
         }
     }()
     var calendarState: CalendarState = .expanded
     var router: MyScheduleRouter
-
+    var shouldShowSessionState: Bool = true {
+        didSet {
+            scheduleListingViewModel.shouldShowSessionState = shouldShowSessionState
+        }
+    }
 
     init(router: MyScheduleRouter) {
         self.router = router

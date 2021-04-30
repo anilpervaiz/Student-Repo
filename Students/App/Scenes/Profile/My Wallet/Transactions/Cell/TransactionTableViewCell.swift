@@ -44,7 +44,7 @@ class TransactionTableViewCell: UITableViewCell,
             transactionPerformerImageView.image = UIImage(named: transaction.usedBy.profileImage)
             transactionDetailLabel.text = transaction.usedBy.name
         } else {
-            transactionDetailLabel.text = transaction.formattedType
+            transactionDetailLabel.text = ""
         }
     }
 }

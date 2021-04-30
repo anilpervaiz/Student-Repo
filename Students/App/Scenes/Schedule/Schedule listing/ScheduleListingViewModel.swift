@@ -12,13 +12,16 @@ class ScheduleListingViewModel {
     var output: ((Output)->Void)?
     private var didSelectRow: ((Int) -> Void)?
     private var session = Session.mockData
+    var shouldShowSessionState: Bool
 
     var numberOfItems: Int {
         session.count
     }
 
-    init(didSelectRow: ((Int) -> Void)?) {
+    init(shouldShowSessionState: Bool = true,
+         didSelectRow: ((Int) -> Void)?) {
         self.didSelectRow = didSelectRow
+        self.shouldShowSessionState = shouldShowSessionState
     }
 
     func updateData(to session: [Session]) {

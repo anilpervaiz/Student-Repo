@@ -44,8 +44,11 @@ class AddressListingViewController: BaseViewController {
     }
 
     @IBAction func didTapAddAddressButton(_ sender: Any) {
-        let viewController = AddAddressViewController.getInstance()
-        navigationController?.pushViewController(viewController, animated: true)
+
+        let viewController = SelectLocationViewController.getInstance()
+        let navigationController = BaseNavigationController(rootViewController: viewController)
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true, completion: nil)
     }
 }
 

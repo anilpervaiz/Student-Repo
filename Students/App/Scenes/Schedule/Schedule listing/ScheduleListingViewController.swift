@@ -42,7 +42,7 @@ extension ScheduleListingViewController: UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withType: SessionTableViewCell.self)
         if let session = viewModel?.getSession(at: indexPath.row) {
-            cell.configure(session: session)
+            cell.configure(session: session, hideSessionStateView: !(viewModel?.shouldShowSessionState ?? true))
         }
 
         return cell

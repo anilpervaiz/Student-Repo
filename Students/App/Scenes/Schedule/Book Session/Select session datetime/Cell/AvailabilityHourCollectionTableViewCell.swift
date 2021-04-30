@@ -42,8 +42,17 @@ extension AvailabilityHourCollectionTableViewCell: UICollectionViewDelegate, UIC
 
         return cell
     }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel?.didSelectHour(at: indexPath.row)
+        collectionView.reloadData()
+    }
 }
 
 struct AvailibilityHourCollectionTableCellViewModel: TableCellViewModel {
     var hours: [AvailibilityCellViewModel]
+
+    mutating func didSelectHour(at index: Int) {
+        hours[index].isSelected = true
+    }
 }

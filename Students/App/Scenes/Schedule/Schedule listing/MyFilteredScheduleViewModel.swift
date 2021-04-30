@@ -28,6 +28,7 @@ class MyFilteredScheduleViewModel: MyScheduleViewModel {
     init(router: MyScheduleRouter) {
         super.init(router: router)
         loadUpcomingSession()
+        shouldShowSessionState = false
     }
 
     func didUpdateSegment(to index: Int) {

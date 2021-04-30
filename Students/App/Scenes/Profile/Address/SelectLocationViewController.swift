@@ -8,7 +8,17 @@
 import UIKit
 import GoogleMaps
 
-class SelectLocationViewController: UIViewController {
+class SelectLocationViewController: BaseViewController {
+
+    lazy var closeNavigationBarButton: UIBarButtonItem = {
+        let view = NavigationBarItem()
+        view.itemImage = Asset.Media.close.image
+
+        let barButton = UIBarButtonItem(customView: view)
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapCloseButton))
+        view.addGestureRecognizer(gesture)
+        return barButton
+    }()
 
     @IBOutlet weak var addressLabel: LabelledTextField! {
         didSet {
@@ -19,10 +29,15 @@ class SelectLocationViewController: UIViewController {
                 if text?.isEmpty ?? true {
                     self?.addressLabel.leadingImage = Asset.Media.icSearch.image
                     self?.addressLabel.leadingImageTintColor = Asset.Colors.lightGray.color
+                    self?.addressLabel.trailingIconStyle = .none
                 } else {
                     self?.addressLabel.leadingImage = Asset.Media.currentLocation.image
                     self?.addressLabel.leadingImageTintColor = Asset.Colors.primary.color
+                    self?.addressLabel.trailingIconStyle = .static(icon: Asset.Media.close.image)
                 }
+            }
+            self.addressLabel.didTapTrailingView = {
+                self.addressLabel.inputText = ""
             }
         }
     }
@@ -37,6 +52,7 @@ class SelectLocationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.leftBarButtonItem = closeNavigationBarButton
     }
 
     func moveCameraToMyLocation() {
@@ -55,6 +71,8 @@ class SelectLocationViewController: UIViewController {
     }
 
     @IBAction func didTapConfirmLocationButton(_ sender: Any) {
+        let viewController = AddAddressViewController.getInstance()
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

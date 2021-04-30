@@ -18,6 +18,7 @@ class LanguageTableViewCell: UITableViewCell,
         if viewModel.isSelected {
             titleLabel.textColor = Asset.Colors.darkBlue.color
             stateImageView.image = Asset.Media.checkboxSelected.image
+            stateImageView.tintColor = Asset.Colors.halfBaked.color
         } else {
             titleLabel.textColor = Asset.Colors.gray.color
             stateImageView.image = Asset.Media.checkbox.image

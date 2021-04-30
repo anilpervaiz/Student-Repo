@@ -32,7 +32,7 @@ class BookSessionDateTimeViewModel {
         row = [
             CalendarTableCellViewModel(),
             AvailibilityHourCollectionTableCellViewModel(hours: availibilityCellViewModel),
-            SessionFeesTableViewCellViewModel(hoursValue: "2", totalValue: "50")
+            SessionFeesTableViewCellViewModel(hoursValue: "2 hours", totalValue: "AED 50")
         ]
     }
 

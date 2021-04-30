@@ -52,6 +52,10 @@ class AddAddressViewController: BaseViewController {
     func didTapDefaultAddressCheckbox() {
         isDefaultAddress = !isDefaultAddress
     }
+
+    @IBAction func didTapSaveAddress(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 extension AddAddressViewController: GMSMapViewDelegate {
