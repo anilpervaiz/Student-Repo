@@ -78,8 +78,8 @@ class BookSessionViewModel {
             let paymentIndex = section.firstIndex { $0.type == .paymentMethod }
             guard let index = paymentIndex else { return }
             section.insert(Section(type: .linkedAccount, title: "Children", rows: [
-                LinkedAccountSelectionTableCellViewModel(account: .mockData[0], isSelected: false),
-                LinkedAccountSelectionTableCellViewModel(account: .mockData[1], isSelected: false)
+                LinkedAccountSelectionTableCellViewModel(account: LinkedAccount.mockData[0], isSelected: false),
+                LinkedAccountSelectionTableCellViewModel(account: LinkedAccount.mockData[1], isSelected: false)
             ]), at: index)
         }
 

@@ -109,7 +109,7 @@ class LinkedAccountNewSessionViewController: BaseViewController {
     }
 
     @IBAction func didTapContinueButton(_ sender: Any) {
-        let controller = BrowseTeacherBuilder().makeViewController(subject: .mockData.first!,
+        let controller = BrowseTeacherBuilder().makeViewController(subject: Subject.mockData.first!,
                                                                    navigationController: navigationController as! BaseNavigationController)
         navigationController?.pushViewController(controller, animated: true)
     }
